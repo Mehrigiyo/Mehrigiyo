@@ -5,3 +5,7 @@
     flex-direction: none;
     list-style: none;
 }
+
+.globalContainer{
+    padding: 0 100px;
+}

@@ -1,8 +1,8 @@
 import React from "react";
-
+import './TopHeader.css'
 const TopHeader = () => {
   return (
-    <header>
+    <header className="TopHeaderContainer globalContainer">
       <section>
         <nav>
           <ul>
@@ -16,7 +16,9 @@ const TopHeader = () => {
           </ul>
         </nav>
       </section>
-      <section></section>
+      <section>
+          ontomon
+      </section>
     </header>
   );
 };
