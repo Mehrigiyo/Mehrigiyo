@@ -1,8 +1,13 @@
 import React from 'react'
+import BottomHeader from './BottomHeader'
+import TopHeader from './TopHeader'
 
 const Header = () => {
   return (
-    <div>Headerqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+  <>
+  <TopHeader/>
+  <BottomHeader/>   
+  </>
   )
 }
 
