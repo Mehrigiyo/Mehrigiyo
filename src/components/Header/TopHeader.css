@@ -1,6 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
 .TopHeaderContainer{
     display: flex;
     justify-content: space-between;
-    background-color: green;
-    padding: 5px;
+    background-color: #D6ECDF;    
 }
+.topLi > a{
+    text-decoration: none;
+    color: #505050;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  
+}
+.topUl{
+    gap: 26px;
+    display: flex;
+    padding: 10px;
+}
+.section{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    align-items: center;
+}
+.location{
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+
+}
+.stek{
+    opacity: 0.5;
+}
+
+

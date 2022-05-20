@@ -1,0 +1,35 @@
+
+
+.bottom-header{
+    
+    background-color: #f3f7f4;
+    justify-content: space-between;
+   
+}
+
+.bottom-headder-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+}
+.navi{
+    margin-right: 260px;
+}
+.topi > a{
+    text-decoration: none;
+    color: #505050;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  
+}
+.threeIcon{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}

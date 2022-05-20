@@ -1,23 +1,50 @@
 import React from "react";
-import './TopHeader.css'
+import "./TopHeader.css";
+import { Link } from "react-router-dom";
+import flag from "../../icons/UzbFlag.svg";
+import locate from "../../icons/Location.svg"
+import Adde from "../../icons/Add-User.svg"
+
 const TopHeader = () => {
   return (
     <header className="TopHeaderContainer globalContainer">
       <section>
         <nav>
-          <ul>
-            <li>
-              <a href="">Mahsulotlar katalogi</a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+          <ul className="topUl">
+            <li className="topLi">
+              <Link to="/"> Mahsulotlar katalogi</Link>
+            </li>
+            <li className="topLi">
+              <Link to="/"> Foto-lavhalar</Link>
+            </li>
+            <li className="topLi">
+              <Link to="/"> Yetkazib berish va to'lash</Link>
+            </li>
+            <li className="topLi">
+              <Link to="/">Aksiya</Link>
+            </li>
+            <li className="topLi">
+              <Link to="/">Yangi</Link>
             </li>
           </ul>
         </nav>
       </section>
-      <section>
-          ontomon
+      <section className="section">
+        <div className="location">
+            <img src={flag} alt="" />
+            <span className="stek">|</span>
+        </div>
+        <div className="location">
+            <p>Toshkent shahar</p>
+            <img src={locate} alt="" />
+            <span className="stek">|</span>
+        </div>
+        <div className="location">
+          <p>Kirish</p>
+        <img src={Adde} alt="" />
+
+
+        </div>
       </section>
     </header>
   );
