@@ -1,0 +1,6 @@
+export const ACCSESS = "ACCSESS";
+
+export const GET_TODO_SUCCESS = `GET_TODO_SUCCESS`;
+export const POST_TODO_SUCCESS = `POST_TODO_SUCCESS`;
+
+export const DELETE_TODO_SUCCESS = `DELETE_TODO_SUCCESS`;
