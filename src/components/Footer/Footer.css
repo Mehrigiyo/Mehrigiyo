@@ -1,0 +1,13 @@
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foterRight{
+
+}
+
+.foterLeft{
+    display: flex;
+}
