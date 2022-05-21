@@ -10,7 +10,6 @@ import './Card.css'
 export const Card = ({data}) => {
   const {title, img, deckriptoin, hashTag, date} = data
 
-  console.log(img);
   return (
     <>
       {/* <section className='bg'> */}
