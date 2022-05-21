@@ -4,10 +4,17 @@ export const getTodos = () =>
   axios.get(`https://jsonplaceholder.typicode.com/posts`);
 
 export const postTodos = (data) =>
-  axios.post(`https://jsonplaceholder.typicode.com/posts`,data,{
+  axios.post(`https://jsonplaceholder.typicode.com/posts`, data, {
     headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  });
+
+export const updateTodo = (id, data) =>
+  axios.put(`https://jsonplaceholder.typicode.com/posts/${id}`, data, {
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
   });
 
 export const deleteTodo = (id) =>

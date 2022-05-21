@@ -2,11 +2,12 @@ import {
   DELETE_TODO_SUCCESS,
   GET_TODO_SUCCESS,
   POST_TODO_SUCCESS,
+  UPDATE_TODO_SUCCESS,
 } from "./types";
 
 const initialState = {
   data: [],
-  loading: false,
+  
 };
 
 const userReducer = (state = initialState, { type, payload }) => {
@@ -14,10 +15,17 @@ const userReducer = (state = initialState, { type, payload }) => {
     case GET_TODO_SUCCESS:
       return {
         ...state,
-        data: payload.sort((a, b) => (a.title < b.title ? -1 : 1)),
+        data: payload,
       };
     case POST_TODO_SUCCESS:
-      return { ...state, data: [...state.data, payload] };
+      return { ...state, data: [payload, ...state.data] };
+    case UPDATE_TODO_SUCCESS:
+      return {
+        ...state,
+        data: state.data.map((item) =>
+          item.id === payload.id ? payload : item
+        ),
+      };
     case DELETE_TODO_SUCCESS:
       return {
         ...state,
