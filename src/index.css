@@ -6,6 +6,9 @@
     list-style: none;
     
 }
+body{
+    overflow-x: hidden !important;
+}
 
 .globalContainer{
     padding: 0 100px;
