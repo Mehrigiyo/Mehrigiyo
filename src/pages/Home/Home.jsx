@@ -8,6 +8,7 @@ import {
   updateTodoById,
 } from "../../store/reducers/user/action";
 import Modal from "../../components/Modal/Modal";
+import Hero from "../../components/Hero/Hero";
 
 const Home = () => {
   const { data } = useSelector((state) => state.userReducer);
@@ -48,6 +49,8 @@ const Home = () => {
   };
 
   return (
+    <>
+    <Hero/>
     <Row>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input name="title" onChange={(e) => handleChange(e)} type="text" />
@@ -85,6 +88,7 @@ const Home = () => {
       </Modal>
       <button onClick={() => setCreateModal(true)}> create Modal</button>
     </Row>
+    </>
   );
 };
 

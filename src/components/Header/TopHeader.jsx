@@ -35,12 +35,12 @@ const TopHeader = () => {
             <span className="stek">|</span>
         </div>
         <div className="location">
-            <p>Toshkent shahar</p>
+            <p className="pismo">Toshkent shahar</p>
             <img src={locate} alt="" />
             <span className="stek">|</span>
         </div>
         <div className="location">
-          <p>Kirish</p>
+          <p className="pismo">Kirish</p>
         <img src={Adde} alt="" />
 
 

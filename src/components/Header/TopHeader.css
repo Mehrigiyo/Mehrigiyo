@@ -18,6 +18,7 @@
     gap: 26px;
     display: flex;
     padding: 10px;
+    
 }
 .section{
     display: flex;
@@ -34,10 +35,16 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+    align-items: center;
 
 }
 .stek{
     opacity: 0.5;
+    align-items: center;
+}
+.pismo{
+    align-items: center;
+    margin-top: 10px;
 }
 
 
