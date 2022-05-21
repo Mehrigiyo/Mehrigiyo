@@ -1,3 +1,12 @@
+.footertop{
+    background-color: #282828;
+}
+.foterFoto {
+    background-position-x:  end;
+ background-position-x:  end;
+}
+
+
 .Footer{
     display: flex;
     align-items: center;
@@ -10,4 +19,14 @@
 
 .foterLeft{
     display: flex;
+    gap: 28px;
+}
+.foterLeft >h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #282938;
+    
 }
