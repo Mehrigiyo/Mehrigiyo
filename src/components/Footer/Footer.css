@@ -1,9 +1,53 @@
+.foterFirst{
+    background-color: #282828;
+    margin-top: 120px;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+}
+.rightFirst{
+width: 300px;
+color: #9FA5B0;
+margin-bottom: 12px;
+
+}
+.right{
+color:#9FA5B0;
+}
+.foterTwo{
+    margin-top: 70px;
+    
+}
+.foterTwo>img{
+    margin-bottom: 24px;
+}
+
+.foterThree{
+margin-top: 70px;
+
+}
+.htext{
+    color: white;
+    margin-bottom: 24px;
+}
+.rightThree{
+color: #9FA5B0;
+margin-bottom: 12px;
+}
+.foterFour{
+    margin-top: 70px;
+}
+
 .footertop{
     background-color: #282828;
+    display: flex;
+    
 }
 .foterFoto {
-    background-position-x:  end;
- background-position-x:  end;
+    align-self: end;
+    margin-left: auto;
+
 }
 
 
