@@ -14,6 +14,9 @@
     line-height: 18px;
   
 }
+.topLi > a:hover{
+    color: #63B882;
+}
 .topUl{
     gap: 26px;
     display: flex;

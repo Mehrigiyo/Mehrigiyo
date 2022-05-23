@@ -20,7 +20,8 @@ color:#9FA5B0;
     
 }
 .foterTwo>img{
-    margin-bottom: 24px;
+    margin-bottom: 15px;
+    
 }
 
 .foterThree{
@@ -74,3 +75,58 @@ margin-bottom: 12px;
     color: #282938;
     
 }
+.net{
+    display: flex;
+    gap: 107px;
+    background-color: #427A56;
+    padding-right: 100px;
+    border-radius:  20px;
+}
+.net:hover{
+    background-color: #265135;
+}
+.email{
+    margin-left: 52px;
+    margin-top: 37px;
+}
+.emailtext{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #8E939C;
+
+
+}
+.emailInfo{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: white;
+}
+.phone{
+ margin-left: 52px;
+ margin-top: 37px;
+}
+.phoneText{
+font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 21px;
+ color: #8E939C;
+    
+ }
+
+    .phoneNumber{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: white;
+ }

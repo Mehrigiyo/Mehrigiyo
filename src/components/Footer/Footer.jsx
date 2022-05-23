@@ -28,6 +28,17 @@ const Footer = () => {
     </div>
     </div>
     <div className='footertop '>
+      <div className='net'>
+        <div className='email'>
+          <p className='emailtext'>E-mail</p>
+          <p className='emailInfo'>info@mehrigiyo.uz</p>
+        </div>
+        <div className='phone'>
+          <p className='phoneText'>Bizga qo'ng'iroq qiling</p>
+          <p className='phoneNumber'>+99898 125 31 03</p>
+
+        </div>
+      </div>
     <div className='foterFoto'>
       <img src={home} alt="" />
     </div>
