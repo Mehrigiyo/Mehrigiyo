@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
 .TopHeaderContainer{
-    display: flex;
-    justify-content: space-between;
+   
     background-color: #D6ECDF;    
 }
+
 .topLi > a{
     text-decoration: none;
     color: #505050;
@@ -13,6 +13,9 @@
     font-size: 12px;
     line-height: 18px;
   
+}
+.topLi > a:hover{
+    color: #63B882;
 }
 .topUl{
     gap: 26px;

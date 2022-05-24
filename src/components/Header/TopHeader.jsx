@@ -7,7 +7,9 @@ import Adde from "../../icons/Add-User.svg"
 
 const TopHeader = () => {
   return (
-    <header className="TopHeaderContainer globalContainer">
+    <header className="TopHeaderContainer ">
+      <div className="globalContainer flex-between">
+
       <section>
         <nav>
           <ul className="topUl">
@@ -24,7 +26,7 @@ const TopHeader = () => {
               <Link to="/">Aksiya</Link>
             </li>
             <li className="topLi">
-              <Link to="/">Yangi</Link>
+              <Link to="/news">Yangi</Link>
             </li>
           </ul>
         </nav>
@@ -46,6 +48,7 @@ const TopHeader = () => {
 
         </div>
       </section>
+      </div>
     </header>
   );
 };

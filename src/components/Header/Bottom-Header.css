@@ -1,5 +1,5 @@
 .bottom-header {
-  background-color: #f3f7f4;
+  /* background-color:#BAE0C8; */
   justify-content: space-between;
 }
 
@@ -19,6 +19,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+}
+.topi>a:hover{
+  color: black;
+  font-size: 18px;
+  
 }
 .threeIcon {
   display: flex;

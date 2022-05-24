@@ -29,9 +29,9 @@ const Modal = ({ children, visible, setVisible }) => {
       <>
         <div style={styledModal}>
           {children}
-          <button onClick={() => setVisible(false)}>X</button>
+          <button onClick={setVisible}>X</button>
         </div>
-        <div style={styledBg} onClick={() => setVisible(false)} />
+        <div style={styledBg} onClick={setVisible} />
       </>
     )
   );

@@ -1,9 +1,54 @@
+.foterFirst{
+    background-color: #282828;
+    margin-top: 120px;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+}
+.rightFirst{
+width: 300px;
+color: #9FA5B0;
+margin-bottom: 12px;
+
+}
+.right{
+color:#9FA5B0;
+}
+.foterTwo{
+    margin-top: 70px;
+    
+}
+.foterTwo>img{
+    margin-bottom: 15px;
+    
+}
+
+.foterThree{
+margin-top: 70px;
+
+}
+.htext{
+    color: white;
+    margin-bottom: 24px;
+}
+.rightThree{
+color: #9FA5B0;
+margin-bottom: 12px;
+}
+.foterFour{
+    margin-top: 70px;
+}
+
 .footertop{
     background-color: #282828;
+    display: flex;
+    
 }
 .foterFoto {
-    background-position-x:  end;
- background-position-x:  end;
+    align-self: end;
+    margin-left: auto;
+
 }
 
 
@@ -30,3 +75,58 @@
     color: #282938;
     
 }
+.net{
+    display: flex;
+    gap: 107px;
+    background-color: #427A56;
+    padding-right: 100px;
+    border-radius:  20px;
+}
+.net:hover{
+    background-color: #265135;
+}
+.email{
+    margin-left: 52px;
+    margin-top: 37px;
+}
+.emailtext{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #8E939C;
+
+
+}
+.emailInfo{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: white;
+}
+.phone{
+ margin-left: 52px;
+ margin-top: 37px;
+}
+.phoneText{
+font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 21px;
+ color: #8E939C;
+    
+ }
+
+    .phoneNumber{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: white;
+ }

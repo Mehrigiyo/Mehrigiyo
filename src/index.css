@@ -3,17 +3,43 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     box-sizing: border-box;
     flex-direction: none;
     list-style: none;
     
 }
+html,
 body{
+    height: 100%;
     overflow-x: hidden !important;
     font-family: "Poppins";
 }
+button{
+    outline: none;
+
+    border: none;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.grid-center{
+    display: grid;
+    /* align-items: center; */
+    place-items:center;
+}
 
 .globalContainer{
-    padding: 0 100px;
+    max-width: 1240px;
+    margin: 0 auto;    
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    margin-left: 0;
 }
