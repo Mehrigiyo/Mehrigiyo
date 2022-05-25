@@ -10,20 +10,21 @@ import OnlineHelp from "./_components/OnlineHelp/OnlineHelp";
 import ServiceBlog from "./_components/Service_blog/Service_blog";
 import Reklama from "../../components/Reklama/Reklama";
 
+import DownloadMobile from "../../components/DownloadMobile/DownloadMobile";
+
 const Home = () => {
- 
-  
   return (
     <>
       <Hero />
-      <ServiceBlog/>
+      <ServiceBlog />
       <ConsultDoctor />
       <WelcomeOrganic />
       <OnlineHelp />
-      <MehrigiyoPlus/>
-      <Questions/>
+      <Questions />
       <Reklama />
+      <MehrigiyoPlus />
       <NewsComponent />
+      <DownloadMobile />
     </>
   );
 };
