@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
-
-
-*{
+* {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     box-sizing: border-box;
     flex-direction: none;
     list-style: none;
-    
-}
-html,
-body{
-    height: 100%;
-    overflow-x: hidden !important;
-    font-family: "Poppins";
 }
 button{
     outline: none;
@@ -40,6 +31,16 @@ a{
     text-decoration: none !important;
 }
 
+body {
+    overflow-x: hidden !important;
+    font-family: "Poppins";
+    background-color: #FAFBFC
+}
 ul{
     margin-left: 0;
+}
+
+.globalContainer {
+    margin: 0 auto;
+    max-width: 1240px;
 }
