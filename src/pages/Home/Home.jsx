@@ -16,6 +16,7 @@ import ConsultDoctor from "./_component/Consult_doctor/Consult_doctor";
 import WelcomeOrganic from "./_component/WelcomeOrganic/WelcomeOrganic";
 import OnlineHelp from "./_component/OnlineHelp/OnlineHelp";
 import Reklama from "../../components/Reklama/Reklama";
+import DownloadMobile from "../../components/DownloadMobile/DownloadMobile";
 
 const Home = () => {
   const { data, loading, error } = useSelector((state) => state.userReducer);
@@ -78,6 +79,7 @@ const Home = () => {
       <OnlineHelp />
       {/* maxsulot ruyxatlari degani blog bor */}
       <Reklama />
+      <DownloadMobile/>
       {/* <Row className="globalContainer">
         <form onSubmit={(e) => handleSubmit(e)}>
           <input name="title" onChange={(e) => handleChange(e)} type="text" />
