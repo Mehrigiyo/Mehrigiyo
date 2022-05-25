@@ -5,21 +5,18 @@ import { Provider } from "react-redux";
 import App from "./App";
 import { store } from "./store/store";
 import "./index.css";
-import 'antd/dist/antd.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render( <
-    React.StrictMode >
-    <
-    BrowserRouter >
-    <
-    Provider store = { store } >
-    <
-    App / >
-    <
-    /Provider> <
-    /BrowserRouter> <
-    /React.StrictMode>
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}> 
+      
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>
 );
+ 

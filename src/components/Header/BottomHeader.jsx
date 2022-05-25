@@ -8,7 +8,9 @@ import Cart from "../../icons/Cart.svg"
 
 const BottomHeader = () => {
   return (
-    <div className='bottom-header  globalContainer'>
+    <div className='bottom-header  '>
+      <div className="globalContainer flex-between">
+
       <section className='bottom-headder-two'>
         <div>
           <img src={logo} alt=" logo" />
@@ -19,7 +21,7 @@ const BottomHeader = () => {
               <Link to="/"> Bosh sahifa</Link>
             </li>
             <li className="topi">
-              <Link to="/"> Onlayn shifokorlar</Link>
+              <Link to="/restapi"> Onlayn shifokorlar</Link>
             </li>
             <li className="topi">
               <Link to="/">Mahsulotlar</Link>
@@ -47,6 +49,7 @@ const BottomHeader = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   )
 }

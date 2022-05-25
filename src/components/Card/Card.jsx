@@ -1,40 +1,44 @@
 // Reimboyev Shuhrat
 
 import React from 'react'
-import { Card as AntdCard } from 'antd'
-import Mehrigiyo from '../../icons/mehrigiyo.jpg'
+import {Card as BootstrapCard} from 'react-bootstrap'
+ import Mehrigiyo from '../../icons/mehrigiyo.jpg'
 import arrowIcons from '../../icons/Arrow001.svg'
 
 import './Card.css'
 
 export const Card = ({data}) => {
   const {title, img, deckriptoin, hashTag, date} = data
+  
 
   return (
     <>
       {/* <section className='bg'> */}
-          <AntdCard 
-             hoverable
-             className='card'
-            cover={<img src={Mehrigiyo} alt={'Mehrigiyo'} />}
-          >
-            <div className="card__body">
-              <p className='card-hesh'>
+      <BootstrapCard  className='myCard'>
+            <BootstrapCard.Img variant="top" src={Mehrigiyo} />
+            <BootstrapCard.Body>
+              <div className="myCard__body">
+
+              
+             <p className='myCard-hesh'>
               {hashTag}
                 <span>{date}</span>
               </p>
-              <h4>
-              {title}
-              </h4>
-              <p className='card__text'>
+               <BootstrapCard.Title> 
+                 <h4 className='myCard__h4'>
+                   {title}
+               </h4>
+              
+              </BootstrapCard.Title>
+               <BootstrapCard.Text>
+               <p className='myCard__text'>
                 {deckriptoin}
               </p>
-
-              <a href="#" className='card__link'>
-                Ko'proq o'qish <span><img src={arrowIcons} alt=">" /></span>
-              </a>
-            </div>
-          </AntdCard>
+               </BootstrapCard.Text>
+               <a href="#" className="myCard__link">Ko'proq o'qish <span><img src={arrowIcons} alt="img" /></span></a>
+               </div>
+            </BootstrapCard.Body>
+       </BootstrapCard>
       {/* </section> */}
     
     </>    

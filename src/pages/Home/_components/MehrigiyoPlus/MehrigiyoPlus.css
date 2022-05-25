@@ -1,0 +1,38 @@
+.M-plus {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(274.36deg, #FFDEC2 0.52%, #FEE0C8 21.68%, #F9E9DD 96.53%);
+  -webkit-box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.M-plus__title {
+  margin: 20px 0 36px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.white-bnt {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  /* Backgrounds/Action/Second */
+  color: #53B175;
+  padding: 7px 23px;
+  background: #FFFFFF;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=MehrigiyoPlus.css.map */
