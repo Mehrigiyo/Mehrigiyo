@@ -1,5 +1,5 @@
 import './MehrigiyoPlus.css'
-import src from '../../../../img/doktors.png'
+import src from '../../../../images/doktors.png'
 
 
 

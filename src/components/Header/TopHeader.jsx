@@ -9,7 +9,6 @@ const TopHeader = () => {
   return (
     <header className="TopHeaderContainer ">
       <div className="globalContainer flex-between">
-
       <section>
         <nav>
           <ul className="topUl">

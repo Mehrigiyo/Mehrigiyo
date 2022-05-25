@@ -35,3 +35,10 @@
     background-color: #555;
     color: white;
   }
+
+  .hero-image__bgTree{
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    transform: rotateY(180deg);
+  }
