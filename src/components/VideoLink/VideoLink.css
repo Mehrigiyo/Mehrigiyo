@@ -1,0 +1,22 @@
+.VideoLink a {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    /* grey */
+    color: #B0B7C3;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 14px;
+    align-items: center;
+}
+
+.VideoLink a img {
+    padding: 13px 15.5px 13px 15.5px;
+    border-radius: 50%;
+    background: #B0B7C3;
+    text-align: center;
+    margin-right: 14px;
+}

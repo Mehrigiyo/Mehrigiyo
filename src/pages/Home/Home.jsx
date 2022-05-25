@@ -8,9 +8,14 @@ import {
   postPosts,
   updatePostsById,
 } from "../../store/reducers/posts/action";
+import ServiceBlog from "../Home/_component/Service_blog/Service_blog";
 import Modal from "../../components/Modal/Modal";
 import Hero from "../../components/Hero/Hero";
 import NewsComponent from "../../components/NewsComponent/NewsComponent";
+import ConsultDoctor from "./_component/Consult_doctor/Consult_doctor";
+import WelcomeOrganic from "./_component/WelcomeOrganic/WelcomeOrganic";
+import OnlineHelp from "./_component/OnlineHelp/OnlineHelp";
+import Reklama from "../../components/Reklama/Reklama";
 
 const Home = () => {
   const { data, loading, error } = useSelector((state) => state.userReducer);
@@ -35,9 +40,11 @@ const Home = () => {
     e.target[0].value = "";
     e.target[1].value = "";
     dispatch(postPosts(JSON.stringify(value)));
-    toast("Here is your toast.",{style:{
-      color:'red'
-    }});
+    toast("Here is your toast.", {
+      style: {
+        color: 'red'
+      }
+    });
   };
 
   const handleVisibleEdit = (data) => {
@@ -61,11 +68,17 @@ const Home = () => {
     setUpdateModal(false);
   };
 
-  
+
   return (
     <>
       <Hero />
-      <Row className="globalContainer">
+      <ServiceBlog />
+      <ConsultDoctor />
+      <WelcomeOrganic />
+      <OnlineHelp />
+      {/* maxsulot ruyxatlari degani blog bor */}
+      <Reklama />
+      {/* <Row className="globalContainer">
         <form onSubmit={(e) => handleSubmit(e)}>
           <input name="title" onChange={(e) => handleChange(e)} type="text" />
           <input name="body" onChange={(e) => handleChange(e)} type="text" />
@@ -105,9 +118,9 @@ const Home = () => {
           hello
         </Modal>
         <button onClick={() => setCreateModal(true)}> create Modal</button>
-      </Row>
-      <Toaster />
-      <NewsComponent />
+      </Row> */}
+      {/* <Toaster /> */}
+      {/* <NewsComponent /> */}
     </>
   );
 };

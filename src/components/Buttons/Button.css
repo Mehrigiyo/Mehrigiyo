@@ -1,0 +1,24 @@
+    .ButtonIcon a {
+        background: rgba(83, 177, 117, 0.1);
+        border-radius: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #181725;
+        width: 260px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    .ButtonIcon a:hover {
+        color: unset;
+    }
+    
+    .ButtonIcon a img {
+        margin-left: 20px;
+    }
