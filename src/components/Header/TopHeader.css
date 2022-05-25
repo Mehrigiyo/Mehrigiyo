@@ -21,7 +21,7 @@
     gap: 26px;
     display: flex;
     padding: 10px;
-    
+    margin-bottom: 0;
 }
 .section{
     display: flex;

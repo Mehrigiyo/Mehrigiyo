@@ -5,6 +5,7 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import NewsComponent from "../../components/NewsComponent/NewsComponent";
 import MehrigiyoPlus from "./_components/MehrigiyoPlus/MehrigiyoPlus";
+import Questions from "./_components/Questions/Questions";
 
 const Home = () => {
  
@@ -13,7 +14,9 @@ const Home = () => {
     <>
       <Hero />
       
+
       <MehrigiyoPlus/>
+      <Questions/>
       {/* <NewsComponent /> */}
     </>
   );
