@@ -1,0 +1,32 @@
+    .breadcrumb-item a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+        /* Labels/Light/Quarternary */
+        color: #505050;
+    }
+    
+    .breadcrumb-item a:hover {
+        color: #505050;
+    }
+    
+    .breadcrumb-item.active {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #53B175 !important;
+    }
+    
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: left;
+        padding-right: 21px;
+        color: #6c757d;
+        content: var(--bs-breadcrumb-divider, "/");
+    }
+    
+    .breadcrumb {
+        align-items: end;
+    }

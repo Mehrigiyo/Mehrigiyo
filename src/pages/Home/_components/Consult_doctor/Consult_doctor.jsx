@@ -3,6 +3,7 @@ import './Consult_doctor.css';
 import { data } from './Const';
 import { Row, Col, Container } from 'react-bootstrap';
 import Button from '../../../../components/Buttons/Button';
+import ConsultDoctorBackImg from "../../../../images/Group 2535107.png"
 
 const ConsultDoctor = () => {
     return (
@@ -34,7 +35,7 @@ const ConsultDoctor = () => {
                 </Row>
             </Container>
             <div className="positon_picture_tree">
-                <img src="./image/Group 2535107.png" alt="picture" />
+                <img src={ConsultDoctorBackImg} alt="picture" />
             </div>
             <div className='consutl_doctor_button'>
                 <Button>Batafsil</Button>

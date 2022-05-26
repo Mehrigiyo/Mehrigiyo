@@ -2,7 +2,8 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './OnlineHelp.css';
 import Button from '../../../../components/Buttons/Button';
-
+import OnlineRightImage from '../../../../images/image.png';
+import BackTreeImg from "../../../../images/Group 2535107.png";
 
 const OnlineHelp = () => {
     return (
@@ -25,13 +26,13 @@ const OnlineHelp = () => {
                     </Col>
                     <Col lg={7}>
                         <div className="OnlineHelp_right">
-                            <img src="./image/image.png" alt="image" />
+                            <img src={OnlineRightImage} alt="image" />
                         </div>
                     </Col>
                 </Row>
             </Container>
             <div className="OnlineHelp_position">
-                <img src="./image/Group 2535107.png" alt="" />
+                <img src={BackTreeImg} alt="" />
             </div>
         </div>
     );

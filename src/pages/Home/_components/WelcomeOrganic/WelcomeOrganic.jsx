@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './WelcomeOrganik.css';
-import Buttons from '../../../../components/Buttons/Button'
+import Button from '../../../../components/Buttons/Button'
 import VideoLink from '../../../../components/VideoLink/VideoLink';
+import WelocomOrganicLogos from "../../../../images/organic logos 1.png"
+
 
 const WelcomeOrganic = () => {
     return (
@@ -24,10 +26,10 @@ const WelcomeOrganic = () => {
                                         <p>1992-yildan buyon shifokorlar, oʻsimlikshunoslar, sharq tabobati izdoshlari, fermer va texnologlardan iborat “MEHRIGIYO” professional jamoasi Fargʻona vodiysi va oʻz plantatsiyalarida yetishtirib, zamonaviy farmatsevtika sanoati yutuqlari va qadimiy taʼlimot tajribasini muvaffaqiyatli oʻzida mujassamlashtirib kelmoqda. shifobaxsh choy, asal, moy, sirop, holva va boshqalar ishlab chiqaradi.</p>
                                     </div>
                                     <div className="wecome_organic_image">
-                                        <img src="./image/organic logos 1.png" alt="picture" />
+                                        <img src={WelocomOrganicLogos} alt="picture" />
                                     </div>
                                     <div className="wecome_organic_link d-flex">
-                                        <Buttons className="btn">Onlayn uchrashuv belgilash</Buttons>
+                                        <Button className="btn">Onlayn uchrashuv belgilash</Button>
                                         <VideoLink/>
                                     </div>
                                 </div>

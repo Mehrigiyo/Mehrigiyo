@@ -1,23 +1,22 @@
 export const data = [{
-        img: "./image/truck.svg",
+        img: "../truck.svg",
         title: "Yetkazib berish bepul",
         text: "100 000 so'mdan ortiq buyurtma berganingizda"
 
     },
     {
-        img: "./image/wallet.svg",
+        img: "../images/wallet.svg",
         title: "Onlayn yordam",
         text: "Ish vaqti: 08:00 - 18:00"
     },
     {
-        img: "./image/percentage.svg",
+        img: "../images/percentage.svg",
         title: "Doimiy chegirmalar",
         text: "Ular allaqachon ishlamoqda"
     },
     {
-        img: "./image/headphones.svg",
+        img: "../../images/headphones.svg",
         title: "Tez to'lov",
         text: "100% xavfsiz to'lov",
     },
-
 ]

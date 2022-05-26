@@ -1,6 +1,6 @@
 import React from "react";
 import green from "../../images/Group.png";
-import GreenButton from "../Button/GreenButton";
+// import GreenButton from "../Button/GreenButton";
 import heroimg from "../../images/hero-img.png";
 import "./Hero.css";
 export default function Hero() {

@@ -11,7 +11,7 @@ import ServiceBlog from "./_components/Service_blog/Service_blog";
 import Reklama from "../../components/Reklama/Reklama";
 
 import DownloadMobile from "../../components/DownloadMobile/DownloadMobile";
-
+import Partners from "../../components/Partners/Partners";
 const Home = () => {
   return (
     <>
@@ -20,11 +20,12 @@ const Home = () => {
       <ConsultDoctor />
       <WelcomeOrganic />
       <OnlineHelp />
-      <Questions />
       <Reklama />
+      <DownloadMobile />
       <MehrigiyoPlus />
       <NewsComponent />
-      <DownloadMobile />
+      <Questions />
+      <Partners/>
     </>
   );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import './VideoLink.css';
+import VideoIcon from "../../images/Polygon Play.svg"
 const VideoLink = () => {
     return (
         <div className='VideoLink'>
-            <a href="#"><img src="./image/Polygon Play.svg" alt="videoIcon" />Videoni ko’rish</a>
+            <a href="#"><img src={VideoIcon} alt="videoIcon" />Videoni ko’rish</a>
         </div>
     );
 }

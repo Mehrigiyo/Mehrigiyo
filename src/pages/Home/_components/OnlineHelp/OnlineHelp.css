@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-bottom: 100px;
 }
 
 .OnlineHelp_left_name h1 {
@@ -36,6 +37,6 @@
 
 .OnlineHelp_position img {
     position: absolute;
-    left: -120px;
+    left: -170px;
     top: -30px;
 }

@@ -1,0 +1,34 @@
+.partners_itm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners::after {
+    content: "";
+    display: block;
+    max-width: 1000px;
+    height: 1px;
+    margin: 40px auto 0;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.partners::before {
+    content: "";
+    display: block;
+    max-width: 1000px;
+    height: 1px;
+    margin: 0 auto 40px;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.partners_itm img {
+    object-fit: contain;
+}
+
+.partners {
+    align-items: center;
+    position: relative;
+}

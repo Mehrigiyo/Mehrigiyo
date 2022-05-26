@@ -1,13 +1,17 @@
 import React from 'react';
 import { Col, Container, Row, Form, InputGroup } from 'react-bootstrap';
 import './DownloadMobile.css';
+import DownloadImage from "../../images/apple.svg";
+import DownloadImage1 from "../../images/Object.svg";
+import DownloadImage2 from "../../images/Group 2535058.png";
+
 
 const DownloadMobile = () => {
     return (
         <div className='DownloadMobile globalContainer'>
             <Container fluid>
                 <Row>
-                    <Col lg={6}>
+                    <Col lg={6} style={{alignSelf:"center"}}>
                         <div className="DownloadMobile_left">
                             <div className="DownloadMobile_title">
                                 <h1>”Mehrigiyo” mobil ilovasini yuklab <span>Shifokorlardan BEPUL maslahat</span>  oling</h1>
@@ -22,7 +26,7 @@ const DownloadMobile = () => {
                             <div className="app_link">
                                 <div className="app_link_iphone">
                                     <a href="#">
-                                        <img src="./image/apple.svg" alt="apple" />
+                                        <img src={DownloadImage} alt="apple" />
                                         <div className='phone_name'>
                                             <span>Download on the</span>
                                             <p>App Store</p>
@@ -31,7 +35,7 @@ const DownloadMobile = () => {
                                 </div>
                                 <div className="app_link_iphone">
                                     <a href="#">
-                                        <img src="./image/Object.svg" alt="playmarket" />
+                                        <img src={DownloadImage1} alt="playmarket" />
                                         <div className='phone_name'>
                                             <span>Get it on</span>
                                             <p>Google Play</p>
@@ -43,7 +47,7 @@ const DownloadMobile = () => {
                     </Col>
                     <Col lg={6}>
                         <div className="DownloadMobile_right">
-                                <img src="./image/Group 2535058.png" alt="" />
+                                <img src={DownloadImage2} alt="" />
                         </div>
                     </Col>
                 </Row>

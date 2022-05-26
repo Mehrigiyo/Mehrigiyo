@@ -20,7 +20,7 @@ const BottomHeader = () => {
                 <NavLink to="/"> Bosh sahifa</NavLink>
               </li>
               <li className="topi">
-                <NavLink to="/restapi"> Onlayn shifokorlar</NavLink>
+                <NavLink to="/onlinedoctor"> Onlayn shifokorlar</NavLink>
               </li>
               <li className="topi">
                 <NavLink to="/product">Mahsulotlar</NavLink>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Reklama.css';
-
+import ReklomaImage1 from "../../images/home-1-blog-bg 1.png"
+import ReklomaImage2 from "../../images/Rectangle 366.png"
+import ReklamaImage3 from "../../images/Group 2535107.png"
 
 const Reklama = () => {
     return (
@@ -17,19 +19,19 @@ const Reklama = () => {
                                 <p>Farg‘ona vodiysi tabiati bergan bu xilma-xilliklarning barchasi noyob mahsulotlar yaratishga asos bo‘lmoqda.</p>
                             </div>
                             <div className="reklama_left_img">
-                                <img src="./image/home-1-blog-bg 1.png" alt="" />
+                                <img src={ReklomaImage1} alt="" />
                             </div>
                         </div>
                     </Col>
                     <Col lg={4}>
                         <div className="reklama_image">
-                            <img src="./image/Rectangle 366.png" alt="" />
+                            <img src={ReklomaImage2} alt="" />
                         </div>
                     </Col>
                 </Row>
             </Container>
             <div className="reklama_position_image">
-                <img src="./image/Group 2535107.png" alt="" />
+                <img src={ReklamaImage3} alt="" />
             </div>
         </div>
     );
