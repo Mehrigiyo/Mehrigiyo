@@ -94,7 +94,7 @@ function NewsComponent() {
               link.map((item, index)=>(
                 <>
                <h2>{item}</h2>
-                <Row key={item} className='news__slider'  >
+                <Row key={item} className='news__slider' >
                 <Slider {...settings}> 
                     {
                     data.map((data, index)=>( 

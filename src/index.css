@@ -1,45 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0 ;
-    box-sizing: border-box;
-    flex-direction: none;
-    list-style: none;
-    
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: none;
+  list-style: none;
 }
-html,
-body{
-    height: 100%;
-    overflow-x: hidden !important;
-    font-family: "Poppins";
+button {
+  outline: none;
+  border: none;
 }
-button{
-    outline: none;
-
-    border: none;
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
-
-.flex-between{
-    display: flex;
-    justify-content: space-between;
+.grid-center {
+  display: grid;
+  place-items: center;
 }
-.grid-center{
-    display: grid;
-    /* align-items: center; */
-    place-items:center;
+.globalContainer {
+  max-width: 1240px;
+  margin: 0 auto;
 }
-
-.globalContainer{
-    
-    margin: 0 auto;    
+a {
+  text-decoration: none !important;
 }
-
-a{
-    text-decoration: none !important;
+body {
+  overflow-x: hidden !important;
+  font-family: "Poppins";
+  background-color: #fafbfc;
 }
-
-ul{
-    margin-left: 0;
+ul {
+  margin-left: 0;
+}
+.bgGreenOpacity {
+  opacity: 0.1;
+}
+.globalContainer {
+  margin: 0 auto;
+  max-width: 1240px;
 }

@@ -1,0 +1,62 @@
+.welcome_organic {
+    position: relative;
+    height: 150vh;
+    align-items: center;
+    display: flex;
+}
+
+.back {
+    position: absolute;
+    background-image: url("../../../../images/Background\ Bubble.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 1028px;
+    width: 920px;
+    right: 0;
+    z-index: 99;
+}
+
+.welcome_organic_name h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* grey */
+    color: #B0B7C3;
+}
+
+.wecome_organic_title h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+    /* Labels/Light/Seconday */
+    color: #282828;
+}
+
+.wecome_organic_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* grey */
+    color: #B0B7C3;
+    margin-bottom: 41px;
+}
+
+.wecome_organic_image img {
+    object-fit: contain;
+    margin-bottom: 67.5px;
+}
+
+.welcome_organik_left {
+    padding-top: 100px;
+}
+
+.wecome_organic_link .btn {
+    margin-right: 20px;
+}

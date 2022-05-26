@@ -1,0 +1,41 @@
+.OnlineHelp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.OnlineHelp_left_name h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    /* Labels/Light/Seconday */
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.OnlineHelp_left_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* grey */
+    color: #B0B7C3;
+    margin-bottom: 40px;
+}
+
+.OnlineHelp_right img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.OnlineHelp_left {
+    align-self: center;
+}
+
+.OnlineHelp_position img {
+    position: absolute;
+    left: -120px;
+    top: -30px;
+}

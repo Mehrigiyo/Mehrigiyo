@@ -1,15 +1,18 @@
 .bottom-header {
   /* background-color:#BAE0C8; */
-  justify-content: space-between;
 }
 
 .bottom-headder-two {
+  width: 100%;
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navi {
   margin-right: 20px;
+  position: relative;
 }
 .topi > a {
   text-decoration: none;
@@ -20,14 +23,15 @@
   font-size: 16px;
   line-height: 18px;
 }
-.topi>a:hover{
-  color: black;
-  font-size: 18px;
-  
-}
+
 .threeIcon {
   display: flex;
   align-items: center;
   padding: 10px;
   margin-top: 10px;
+}
+.active{
+  color: black !important;
+  font-weight: 700 !important;
+  /* background-color: red; */
 }

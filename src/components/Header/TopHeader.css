@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
 .TopHeaderContainer{
-   
     background-color: #D6ECDF;    
 }
 
@@ -21,12 +20,11 @@
     gap: 26px;
     display: flex;
     padding: 10px;
-    
+    margin-bottom: 0;
 }
 .section{
     display: flex;
     gap: 40px;
-    padding: 10px;
     align-items: center;
 }
 .location{
@@ -47,7 +45,8 @@
 }
 .pismo{
     align-items: center;
-    margin-top: 10px;
+    margin-top: 14px;
+    display: flex;
 }
 
 
