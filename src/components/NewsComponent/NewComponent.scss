@@ -12,7 +12,7 @@
 }
 .news{
     position: relative;
-    
+    padding-bottom: 135px;
     &__tabs{
         display: flex;
         gap: 24px;
@@ -30,7 +30,7 @@
     }
 
     &__cards{
-        max-height: 600px;
+        // max-height: 600px;
         position: relative;
     }
    
@@ -55,7 +55,7 @@
 .slick-initialized {
     .slick-slide{
     // margin: 0 15px !important;
-    border: 2px red solid
+    // border: 2px red solid
 }
 }
 .slick-dots {

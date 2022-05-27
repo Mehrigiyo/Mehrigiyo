@@ -1,0 +1,59 @@
+.form {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 175px;
+  margin-top: 400px;
+}
+
+.form__bg {
+  background-image: url("../../images/bg-form3x.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -400px;
+  left: 0;
+  height: 900px;
+  width: 100%;
+  z-index: -3;
+}
+
+.form__body {
+  max-width: 466px;
+  margin: 0 auto;
+}
+
+.form__form label, .form__form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.form__form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* grey */
+  color: #B0B7C3;
+  margin-top: 24px;
+}
+
+.form__form input {
+  border-bottom: 1px solid rgba(177, 184, 196, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 13px;
+  color: #181725 !important;
+}
+
+.form__form .savol {
+  margin-top: 24px;
+}
+
+.form__form button {
+  margin-top: 24px;
+}
+/*# sourceMappingURL=Form.css.map */

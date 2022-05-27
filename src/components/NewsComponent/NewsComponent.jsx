@@ -6,7 +6,7 @@ import Card from  '../Card/Card'
 import {data} from './Const'
 
 
-import './NewComponent.css'
+import './NewComponent.scss'
 
 
 function NewsComponent() {

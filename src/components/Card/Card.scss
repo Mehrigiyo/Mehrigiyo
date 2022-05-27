@@ -8,6 +8,14 @@
     overflow: hidden;
     background: #fff;
     padding: 0 !important;
+
+    &__img{
+        overflow: hidden;
+      position: relative;
+      img{
+          
+      }
+    }
 }
 
 .myCard__body{

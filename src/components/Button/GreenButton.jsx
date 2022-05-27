@@ -1,4 +1,4 @@
-import './GreenButton.css'
+import './GreenButton.scss'
 
 import React from 'react'
 
