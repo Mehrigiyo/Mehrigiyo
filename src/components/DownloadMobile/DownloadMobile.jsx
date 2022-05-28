@@ -1,17 +1,20 @@
 import React from 'react';
-import { Col, Container, Row, Form, InputGroup } from 'react-bootstrap';
+import { Col, Container, Row, Form } from 'react-bootstrap';
 import './DownloadMobile.css';
-import DownloadImage from "../../images/apple.svg";
 import DownloadImage1 from "../../images/Object.svg";
 import DownloadImage2 from "../../images/Group 2535058.png";
+import DownloadImage from "../../images/apple.svg";
 
 
-const DownloadMobile = () => {
+
+const DownloadMobile = (data) => {
+    
+
     return (
         <div className='DownloadMobile globalContainer'>
             <Container fluid>
                 <Row>
-                    <Col lg={6} style={{alignSelf:"center"}}>
+                    <Col lg={6} style={{ alignSelf: "center" }}>
                         <div className="DownloadMobile_left">
                             <div className="DownloadMobile_title">
                                 <h1>”Mehrigiyo” mobil ilovasini yuklab <span>Shifokorlardan BEPUL maslahat</span>  oling</h1>
@@ -21,7 +24,6 @@ const DownloadMobile = () => {
                             </div>
                             <Form>
                                 <Form.Label type="text">Ilovani yuklab olish uchun havolani oling</Form.Label>
-                                <InputGroup className="phone-input" type="text" Placeholder="Telefon raqamingizni kiriting"/>
                             </Form>
                             <div className="app_link">
                                 <div className="app_link_iphone">
@@ -47,7 +49,7 @@ const DownloadMobile = () => {
                     </Col>
                     <Col lg={6}>
                         <div className="DownloadMobile_right">
-                                <img src={DownloadImage2} alt="" />
+                            <img src={DownloadImage2} alt="" />
                         </div>
                     </Col>
                 </Row>

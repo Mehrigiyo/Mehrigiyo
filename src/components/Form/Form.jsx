@@ -5,6 +5,7 @@ import { Col, Row } from 'react-bootstrap'
 import './Form.scss'
 import Button from '../Buttons/Button'
 import img from '../../images/form-img.png'
+import IconVideo from "../../icons/goIcon.svg"
 function Form() {
   return (
     <>
@@ -32,7 +33,7 @@ function Form() {
 
                                 <input className='savol' type="text" placeholder='Sizning savolingiz' />
 
-                                <Button>Xabar yuborish</Button>
+                                <Button src={IconVideo}>Xabar yuborish</Button>
                             </form>
                         </div>
                     </Col>
