@@ -12,6 +12,8 @@ import Reklama from "../../components/Reklama/Reklama";
 
 import DownloadMobile from "../../components/DownloadMobile/DownloadMobile";
 import Form from "../../components/Form/Form";
+import Partners from "../../components/Partners/Partners";
+import ProductMenu from "./_components/ProductMenu/ProductMenu";
 
 const Home = () => {
   return (
@@ -21,12 +23,14 @@ const Home = () => {
       <ConsultDoctor />
       <WelcomeOrganic />
       <OnlineHelp />
+      <ProductMenu/>
       <Reklama />
+      <DownloadMobile />
       <NewsComponent />
       <MehrigiyoPlus />
       <Questions />
       <Form />
-      <DownloadMobile />
+      <Partners/>
     </>
   );
 };

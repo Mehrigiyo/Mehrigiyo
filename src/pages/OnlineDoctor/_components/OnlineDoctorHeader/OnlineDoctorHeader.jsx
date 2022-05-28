@@ -9,7 +9,6 @@ import VideoLink from "../../../../components/VideoLink/VideoLink"
 import OnlineDowctorImage from "../../../../images/Group 2535185.png"
 import FreDoctorTree from "../../../../images/Group 2535107.png"
 
-
 function OnlineDoctorHeader() {
   return (
     <div className='OnlineDoctorHeader globalContainer'>
