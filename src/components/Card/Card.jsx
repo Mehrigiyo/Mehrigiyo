@@ -4,6 +4,7 @@ import React from 'react'
 import {Card as BootstrapCard} from 'react-bootstrap'
  import Mehrigiyo from '../../icons/mehrigiyo.jpg'
 import arrowIcons from '../../icons/Arrow001.svg'
+// import src from '../../icons/play.svg'
 
 import './Card.scss'
 
@@ -15,9 +16,16 @@ export const Card = ({data}) => {
     <>
       {/* <section className='bg'> */}
       <BootstrapCard  className='myCard'>
+<<<<<<< HEAD
            <div className="myCard__img">
            <BootstrapCard.Img variant="top" src={Mehrigiyo} />
            </div>
+=======
+            <div className="myCard__img">
+            <BootstrapCard.Img  variant="top" src={Mehrigiyo} />
+            {/* <img  src={src} alt="play" /> */}
+            </div>
+>>>>>>> 73e8117e2c30ab50917fb37d341761461e449f82
             <BootstrapCard.Body>
               <div className="myCard__body">
 

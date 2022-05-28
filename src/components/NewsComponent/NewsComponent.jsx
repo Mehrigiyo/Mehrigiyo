@@ -68,8 +68,13 @@ function NewsComponent() {
   };
   return (
     <>
+<<<<<<< HEAD
 
     <div className="newsSections">
+=======
+    
+    <section className='newsSections'>
+>>>>>>> 73e8117e2c30ab50917fb37d341761461e449f82
     <div className="globalContainer">
       <h1>So'nggi yangiliklar</h1>
       <ul className='news__tabs'>
@@ -112,8 +117,13 @@ function NewsComponent() {
             }
 
       </div>
+<<<<<<< HEAD
     </div>
     </div>
+=======
+      </div>
+    </section>
+>>>>>>> 73e8117e2c30ab50917fb37d341761461e449f82
 
     
     </>
