@@ -1,4 +1,8 @@
 
+.newsSections{
+    background: #E5E5E5 !important;
+
+}
 
 .card__perent{
   
@@ -36,10 +40,10 @@
    
     &__slider{
         // position: absolute;
-        width: 1300px;
+        width: 1360px;
         display: flex;
         gap: 30px;
-        padding-bottom: 100px;
+             padding-bottom: 100px;
          
     }
                 
@@ -61,8 +65,8 @@
 .slick-dots {
     li {
         button:before{
-        width: 10px;
-        height: 10px;
+        width: 40px  !important;
+        height: 40px !important;
         color: #53B175 !important;
     }
 }
