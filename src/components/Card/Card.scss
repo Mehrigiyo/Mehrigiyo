@@ -8,38 +8,49 @@
     overflow: hidden;
     background: #fff;
     padding: 0 !important;
+    border: none !important;
 
     &__img{
-        overflow: hidden;
+      overflow: hidden ;
       position: relative;
+      height: 250px ;
       img{
-          
-      }
+
+           transform: scale(1.03) !important;
+        }
+        &:first-child {
+            height: 100%;
+            transition: transform 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__body{
+        padding: 20px 8px 32px 8px;
+    }
+    &__h4{
+        font-size: 18px ;
+        line-height: 27px;
+       
+        font-style: normal;
+        margin: 10px 0; 
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    
+        /* grey */
+    
+    color: #B0B7C3;
     }
 }
 
-.myCard__body{
-    padding: 20px 8px 32px 8px;
-}
 
-.myCard__h4{
-    font-size: 18px ;
-    line-height: 27px;
-   
-    font-style: normal;
-    margin: 10px 0; 
-}
-.myCard__text{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-
-    /* grey */
-
-color: #B0B7C3;
-}
 .myCard-hesh, .myCard__link {
     font-family: 'Poppins';
     font-style: normal;

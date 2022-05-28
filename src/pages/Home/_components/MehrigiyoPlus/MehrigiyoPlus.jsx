@@ -10,7 +10,7 @@ import GreenButton from '../../../../components/Button/GreenButton'
 function MehrigiyoPlus() {
   return (
     <>
-       <section>
+       <section className='mehrigiyo-plus'>
            <div className="globalContainer">
                <div className="M-plus  border">
                    <Row className='row'>

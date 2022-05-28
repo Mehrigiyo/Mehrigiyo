@@ -15,15 +15,34 @@
   left: 0;
   height: 900px;
   width: 100%;
-  z-index: -3;
+  z-index: -4;
 }
 
 .form__body {
-  max-width: 466px;
+  max-width: 366px;
   margin: 0 auto;
 }
 
+.form__body span {
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  /* Backgrounds/Action/Second */
+  color: #53B175;
+}
+
+.form__body h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 125%;
+  /* or 37px */
+  /* Labels/Light/Primary */
+  color: #000000;
+  margin: 7px 0 40px;
+}
+
 .form__form label, .form__form input {
+  display: block;
   width: 100%;
   border: none;
   outline: none;
@@ -49,11 +68,12 @@
   color: #181725 !important;
 }
 
-.form__form .savol {
-  margin-top: 24px;
+.form__form input:focus {
+  border-bottom: 1px solid #53B175;
 }
 
-.form__form button {
+.form__form .savol {
   margin-top: 24px;
+  margin-bottom: 33px;
 }
 /*# sourceMappingURL=Form.css.map */

@@ -69,6 +69,7 @@ function NewsComponent() {
   return (
     <>
 
+    <div className="newsSections">
     <div className="globalContainer">
       <h1>So'nggi yangiliklar</h1>
       <ul className='news__tabs'>
@@ -111,6 +112,7 @@ function NewsComponent() {
             }
 
       </div>
+    </div>
     </div>
 
     

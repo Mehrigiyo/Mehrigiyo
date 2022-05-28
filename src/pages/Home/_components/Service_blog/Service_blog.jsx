@@ -2,6 +2,7 @@ import './Service_blog.css';
 import React from 'react';
 import {Row, Col, Container} from "react-bootstrap";
 import { data } from './Const';
+import src from '../../../../images/truck.svg'
 
 const ServiceBlog = () => {
     return (
