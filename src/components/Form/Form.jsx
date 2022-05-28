@@ -41,7 +41,7 @@ function Form() {
             </div>
 
             <div className="form__bg">
-                <img src="" alt="" />
+                
             </div>
       </section>
     </>
