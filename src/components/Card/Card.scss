@@ -6,22 +6,14 @@
     background: #fff;
     padding: 0 !important;
     border: none !important;
-<<<<<<< HEAD
-
-    &__img{
-      overflow: hidden ;
-=======
     background: #FFFFFF;
     box-shadow: 0px 25px 50px 5px #F6F7FF !important;
 
     &__img{
     //   overflow: hidden;
->>>>>>> 73e8117e2c30ab50917fb37d341761461e449f82
       position: relative;
       height: 250px ;
       img{
-<<<<<<< HEAD
-=======
         transition: transform .3s;
         &:first-child{
            &:hover{
@@ -43,7 +35,6 @@
         //         z-index: -3;
         //     }
         // }
->>>>>>> 73e8117e2c30ab50917fb37d341761461e449f82
 
            transform: scale(1.03) !important;
         }
