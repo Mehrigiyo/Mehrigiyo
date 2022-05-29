@@ -2,6 +2,10 @@ import React from "react";
 import green from "../../images/Group.png";
 // import GreenButton from "../Button/GreenButton";
 import heroimg from "../../images/hero-img.png";
+import admin from "../../images/admin.svg";
+import quart from "../../images/quart.svg";
+import phone from "../../images/phone.svg";
+import whatsap from "../../images/whatsap.svg";
 import "./Hero.css";
 export default function Hero() {
   return (
@@ -23,7 +27,7 @@ export default function Hero() {
         </div>
       </div>
       <img src={green} className={"bgGreenOpacity hero-image__bgTree"} />
-      <div className="hero-bgImage" >
+      <div className="hero-bgImage">
         <img
           src={heroimg}
           alt=""
@@ -31,8 +35,44 @@ export default function Hero() {
           height={524}
           className=" globalContainer"
         />
-        <div className="hero-gg">companent qanaqadr</div>
+        <div className="hero-gg">
+          <div className="papper">
+            <h4 className="papperOne">
+              <img src={admin} alt="" />
+              Consultant
+            </h4>
+            <p className="papperTwo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              ullamcorper in et amet.
+            </p>
+          </div>
+        </div>
+        <div className="hero-ggTwo">
+          <div className="papper">
+            <h4 className="papperOne">
+              <img src={quart} alt="" />
+              Consultant
+            </h4>
+            <p className="papperTwo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              ullamcorper in et amet.
+            </p>
+          </div>
+        </div>
+       
       </div>
+      <div className="notifacation">
+          <div className="callInfo">
+            <a href="#"> <img src={phone} alt="" /></a>
+           
+          </div>
+          <div className="MassageInfo">
+            <a href="#">
+            <img src={whatsap} alt="" />
+            </a>
+           
+          </div>
+        </div>
     </>
   );
 }

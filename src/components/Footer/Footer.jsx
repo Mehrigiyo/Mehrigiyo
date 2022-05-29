@@ -2,6 +2,9 @@ import React from 'react'
 import logo from "../../icons/Logo.svg"
 import "./Footer.css"
 import home from "../../icons/home.svg"
+import google from "../../images/google.svg"
+import app from "../../images/app.svg"
+import {BsInstagram} from "react-icons/bs"
 
 const Footer = () => {
   return (
@@ -16,6 +19,10 @@ const Footer = () => {
             <li className='rightFirst'>Bu sog'liq va hayot sifatini yaxshilash uchun mahsulotlar</li>
             <li className='right'>Ish vaqti: Har kuni 8:00 dan 18:00 gacha</li>
           </ul>
+       <ul>
+         <li><a href="">
+         <BsInstagram/></a></li>
+       </ul>
         </div>
         <div className='foterThree'>
           <h3 className='htext'>Huquqiy</h3>
@@ -27,6 +34,10 @@ const Footer = () => {
         </div>
         <div className='foterFour'>
         <h3 className='htext'>Ilovani yuklab olish</h3>
+        <div  className='playmarket'>
+          <img src={google} alt="" />
+          <img src={app} alt="" />
+        </div>
         </div>
         </div>
         <div className='footertop '>
