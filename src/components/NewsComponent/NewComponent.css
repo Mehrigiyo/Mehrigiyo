@@ -1,0 +1,60 @@
+.card__perent {
+  width: 100vw;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.news {
+  position: relative;
+  padding-bottom: 135px;
+}
+
+.news__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  margin: 21px 0 60px 0;
+  padding-left: 0 !important;
+}
+
+.news__tabs > li > a {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #B0B7C3;
+}
+
+.news__tabs > li > a.active {
+  color: #53B175;
+}
+
+.news__cards {
+  position: relative;
+}
+
+.news__slider {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.slick-list {
+  margin-bottom: 40px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  color: #53B175 !important;
+}
+/*# sourceMappingURL=NewComponent.css.map */
