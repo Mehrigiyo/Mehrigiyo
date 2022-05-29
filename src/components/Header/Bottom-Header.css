@@ -8,9 +8,12 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
+
 .navi {
+  margin-left: 53px;
+  margin-right: auto !important;
   margin-right: 20px;
   position: relative;
 }

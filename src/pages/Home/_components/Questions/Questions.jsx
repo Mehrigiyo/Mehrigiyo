@@ -5,6 +5,7 @@ import './Questions.css'
 
 import React from 'react'
 import { Accordion, Col, Row } from 'react-bootstrap'
+import Button from '../../../../components/Buttons/Button'
 
 export default function Questions() {
   return (
@@ -22,7 +23,7 @@ export default function Questions() {
                         biz bilan bog'laning
 
                        </p>
-                       <button>Batafsil</button>
+                       <Button>Batafsil</Button>
                    </Col>
                    <Col xs={8} className="questions__accordion" >
                        
