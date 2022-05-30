@@ -27,7 +27,7 @@ class DownloadMobile extends React.Component {
                             <form className='form_menu'>
                                 <div className="form_control">
                                     <span>+998</span>
-                                    <InputMask {...this.props} mask="99 999 99 99" maskChar="_" />
+                                    <InputMask {...this.props} mask="99 999 99 99" maskChar="_"  placeholder='Telefon raqamingizni kiriting'/>
                                     {/* <input type="text" placeholder='Telefon raqamingizni kiriting' required /> */}
                                 </div>
                                 <Button className='btn'>SMS yuboring</Button>
