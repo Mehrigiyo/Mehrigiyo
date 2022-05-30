@@ -16,6 +16,11 @@ function OnlineDoctor() {
             <DownloadMobile/>
             <Reklama/>
             <Partners/>
+
+
+
+
+            
         </div>
     )
 }

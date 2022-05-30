@@ -60,7 +60,7 @@ function ProductMenu() {
                             </div>
                         ))}
                     </div>
-
+                    
                     <Slider {...settings}>
                             {
                                 tabSlider === 0 ? newArrays : newArrays[tabSlider]
