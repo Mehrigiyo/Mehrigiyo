@@ -9,14 +9,17 @@ import TopDoctors from './_components/TopDoctors/TopDoctors';
 
 function OnlineDoctor() {
     return (
-        <div className='OnlineDoctor globalContainer'>
+        <>
+       
+         <div className='OnlineDoctor globalContainer'>
             <OnlineDoctorHeader/>
             <OnlineHelp/>
             <TopDoctors />
             <DownloadMobile/>
             <Reklama/>
             <Partners/>
-        </div>
+         </div> 
+        </>
     )
 }
 

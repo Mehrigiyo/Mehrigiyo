@@ -4,8 +4,8 @@ import './DoctorCard.scss'
 
 import imgs from '../../../../images/Bitmap001.jpg'
 import img2 from '../../../../icons/Vector001.svg'
-function DoctorCard({data}) {
-  console.log(data);
+function DoctorCard({data , onclick}) {
+  const {handelVisible} = onclick
   const {img, text, name} = data ||  {
     img: imgs,
     name: 'S. Gavhar',
@@ -13,7 +13,7 @@ function DoctorCard({data}) {
 }
   return (
     <>
-        <div className="doctorCard">
+        <div className="doctorCard" onclick={handelVisible}>
             <div className="doctorCard__img">
                 <img src={img} alt="img" />
                 <button className='doctorCard__img__button'>TOP</button>
