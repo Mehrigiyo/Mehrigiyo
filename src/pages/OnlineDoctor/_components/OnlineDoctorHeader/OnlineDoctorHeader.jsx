@@ -1,7 +1,7 @@
 import React from 'react'
 import Breadcrum from '../../../../components/Breadcrum/Breadcrum'
 import CloseIcon from "../../../../icons/top_Icon.svg"
-import LeftIcon from "../../../../icons/Close_Icon.svg"
+import LeftIcon from "../../../../images/Close_Icon.svg"
 import "./OnlineDoctorHeader.css";
 import { Col, Container, Row } from 'react-bootstrap';
 import Button from '../../../../components/Buttons/Button';

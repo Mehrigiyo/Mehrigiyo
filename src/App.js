@@ -5,8 +5,7 @@ import Home from "./pages/Home/Home";
 import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 
 function App() {
-    return ( <
-        Layout >
+    return ( < Layout >
         <
         Routes >
         <

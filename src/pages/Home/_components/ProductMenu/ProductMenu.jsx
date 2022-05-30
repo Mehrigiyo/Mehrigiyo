@@ -54,12 +54,13 @@ function ProductMenu() {
                     <div className='tab_menu_item'>
                         {TabContentBtn.map((item, i) => (
                             <div className='tab_menu_item_title'>
-                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={() => HandleTabSlider(i)}>
+                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={(i) => HandleTabSlider(i)}>
                                     {item}
                                 </a>
                             </div>
                         ))}
                     </div>
+
                     <Slider {...settings}>
                             {
                                 tabSlider === 0 ? newArrays : newArrays[tabSlider]
