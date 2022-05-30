@@ -128,3 +128,7 @@ ul {
     display: grid;
     gap: 16px ;
 }
+.localSet{
+  display: flex;
+  gap: 34px;
+}

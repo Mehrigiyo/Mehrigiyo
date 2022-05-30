@@ -1,27 +1,18 @@
 import React from 'react'
 import Breadcrum from '../../../../components/Breadcrum/Breadcrum'
-import CloseIcon from "../../../../icons/top_Icon.svg"
-import LeftIcon from "../../../../icons/Close_Icon.svg"
-import "./OnlineDoctorHeader.css";
+import organic2 from "../../../../icons/organic2.svg"
+import organic from "../../../../icons/organic.svg"
+import organic3 from "../../../../icons/organic3.svg"
+import organic4 from "../../../../icons/organic4.svg"
+import "./AboutHeader.scss";
 import { Col, Container, Row } from 'react-bootstrap';
-import Button from '../../../../components/Buttons/Button';
 import VideoLink from "../../../../components/VideoLink/VideoLink"
-import OnlineDowctorImage from "../../../../images/Group 2535185.png"
 import FreDoctorTree from "../../../../images/Group 2535107.png"
 
-function OnlineDoctorHeader() {
+function AboutHeader() {
   return (
     <div className='OnlineDoctorHeader globalContainer'>
-        <div className="top_onlinedoctorheader d-flex">
-            <div className="left_top d-flex">
-              <a href="#"><img src={LeftIcon} /></a>
-                <p>Bepul shifokor maslahat olish uchun avval mutaxassislikni tanlab va o’zizga ma’qul kelgan shifokorni tanlang </p>
-            </div>
-            <div className="right_top">
-                <a href="#"><img src={CloseIcon} /></a>
-            </div>
-        </div>
-        <Breadcrum>Onlayn shifokorlar</Breadcrum>
+        <Breadcrum>Biz haqimizda</Breadcrum>
         <div className="freedoctor_advice">
             <Container style={{maxWidth: 960}}>
                   <Row>
@@ -31,7 +22,7 @@ function OnlineDoctorHeader() {
                                     <h1>Bepul shifokor maslahatini oling</h1>
                                     <p>Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>
                                     <div className='left_freedoctor_advice_link'>
-                                        <Button>Bepul maslahat olish </Button>
+                                        
                                         <VideoLink/>
                                     </div>
                                 </div>
@@ -39,7 +30,10 @@ function OnlineDoctorHeader() {
                     </Col> 
                     <Col lg={5}>
                           <div className="right_freedoctor_advice">
-                                <img src={OnlineDowctorImage} alt="onlineDoctor" />
+                                <img src={organic} alt="onlineDoctor" />
+                                <img src={organic2} alt="onlineDoctor" />
+                                <img src={organic3} alt="onlineDoctor" />
+                                <img src={organic4} alt="onlineDoctor" />
                           </div>
                     </Col>  
                   </Row>
@@ -52,4 +46,4 @@ function OnlineDoctorHeader() {
   )
 }
 
-export default OnlineDoctorHeader
+export default AboutHeader
