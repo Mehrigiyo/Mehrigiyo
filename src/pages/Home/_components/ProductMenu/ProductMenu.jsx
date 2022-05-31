@@ -4,6 +4,7 @@ import './ProductMenu.scss';
 import { BsSearch, BsChevronDown } from 'react-icons/bs';
 import {Dropdown } from 'react-bootstrap';
 import Slider from "react-slick";
+import Button from '../../../../components/Buttons/Button';
 
 
 function ProductMenu() {
@@ -52,9 +53,10 @@ function ProductMenu() {
                 <div className="tab_menu">
                     <div className='tab_menu_item'>
                         {TabContentBtn.map((item, i) => (
-                            <div className='tab_menu_item_title' onClick={() => HandleTabSlider(i)}>
-
-                                {item}
+                            <div className='tab_menu_item_title'>
+                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={() => HandleTabSlider(i)}>
+                                    {item}
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -63,6 +65,7 @@ function ProductMenu() {
                                 tabSlider === 0 ? newArrays : newArrays[tabSlider]
                             }
                     </Slider>
+                    <Button>Barcha mahsulotlarni ko’rish</Button>
                 </div>
             </div>
         </div>

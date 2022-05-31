@@ -29,7 +29,7 @@ function Form() {
                                 <label htmlFor="email">Elektron pochta (ixtiyoriy)</label>
                                 <input type="text" id='email' placeholder='email' />
                                 <label htmlFor="tel">Telefon raqam</label>
-                                <input type="text" id='tel' placeholder='+998 94 681 |' />
+                                <input type="text" id='tel' placeholder='+998 94 681 99 94' />
 
                                 <input className='savol' type="text" placeholder='Sizning savolingiz' />
 
