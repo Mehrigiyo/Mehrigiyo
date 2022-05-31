@@ -2,22 +2,24 @@ import React, { useState } from 'react'
 import './ProductMenu.scss';
 // import SerchIcon from "../../../../images/Search icon.svg"; 
 import { BsSearch, BsChevronDown } from 'react-icons/bs';
-import {Dropdown } from 'react-bootstrap';
+import { Dropdown, Col, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import Button from '../../../../components/Buttons/Button';
-
+import ProductCard from '../../../../components/ProductCard/ProductCard';
+import { TabData } from "./TabData";
 
 function ProductMenu() {
     const [tabSlider, setTabSlider] = useState(0);
 
-    const TabData = [1, 2, 3, 4, 5, 6]
 
     const TabContentBtn = ['Hammasi', 'Choy', 'Yog’lar', 'Ziravorlar', 'Asal', 'Tabletkalar']
 
     const HandleTabSlider = (index) => setTabSlider(index)
 
     const newArrays = TabData.map(item => (
-        <li>{item}</li>
+        <Col lg={3}>
+        <ProductCard title={'sa'} data={item}/>
+        </Col>
     ))
 
     const settings = {
@@ -26,7 +28,7 @@ function ProductMenu() {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 3
-      };
+    };
 
 
     return (
@@ -40,7 +42,7 @@ function ProductMenu() {
                         </div>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic">
-                                narx bo'yicha <BsChevronDown/>
+                                narx bo'yicha <BsChevronDown />
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -54,18 +56,23 @@ function ProductMenu() {
                     <div className='tab_menu_item'>
                         {TabContentBtn.map((item, i) => (
                             <div className='tab_menu_item_title'>
-                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={(i) => HandleTabSlider(i)}>
+                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={() => HandleTabSlider(i)}>
                                     {item}
                                 </a>
                             </div>
                         ))}
                     </div>
-                    
-                    <Slider {...settings}>
+                    <Row>
+                        <Slider {...settings}>
+
                             {
+
                                 tabSlider === 0 ? newArrays : newArrays[tabSlider]
                             }
-                    </Slider>
+
+
+                        </Slider>
+                    </Row>
                     <Button>Barcha mahsulotlarni ko’rish</Button>
                 </div>
             </div>
