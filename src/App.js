@@ -6,6 +6,7 @@ import Help from "./pages/Help/Help";
 import Home from "./pages/Home/Home";
 import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 import Product from "./pages/Product/Product";
+import About from "./pages/About/About";
 
 function App() {
     return ( <
@@ -27,12 +28,16 @@ function App() {
         Route path = "/help"
         element = { < Help / > }
         />  <
+        Route path = "/aboute"
+        element = { < About / > }
+        />  <
         Route path = "/news"
         element = { < NewsComponent / > }
         /> < /
         Routes > <
         /Layout> < /
         Context >
+
     )
 }
 

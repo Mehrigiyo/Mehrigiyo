@@ -61,4 +61,30 @@
 .product_menu__title .product_drop .dropdown-toggle::after {
   display: none;
 }
+
+.tab_menu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab_menu_item .tab_menu_item_title a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #B0B7C3;
+  margin-right: 24px;
+}
+
+.tab_menu_item .tab_menu_item_title a.active {
+  color: #53B175;
+}
+
+.propductMenu {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 /*# sourceMappingURL=ProductMenu.css.map */
