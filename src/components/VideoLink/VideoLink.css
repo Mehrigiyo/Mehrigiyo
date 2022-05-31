@@ -20,3 +20,7 @@
     text-align: center;
     margin-right: 14px;
 }
+
+.VideoLink a:hover {
+    color: #53B175;
+}

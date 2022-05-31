@@ -8,7 +8,7 @@ import arrowIcons from '../../icons/Arrow001.svg'
 
 import './Card.scss'
 
-export const Card = ({data}) => {
+ const Card = ({data}) => {
   const {title, img, deckriptoin, hashTag, date} = data
   
 
