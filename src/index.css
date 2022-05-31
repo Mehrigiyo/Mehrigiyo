@@ -25,10 +25,14 @@ button {
 a {
   text-decoration: none !important;
 }
+html, body{
+  height: 100%;
+}
 body {
   overflow-x: hidden !important;
   font-family: "Poppins";
-  background-color: #fafbfc;
+  background: #FAFBFC !important;
+
 }
 ul {
   margin-left: 0;

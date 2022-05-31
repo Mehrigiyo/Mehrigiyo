@@ -7,13 +7,10 @@ import background from '../../../../images/Group.png';
    
 import './TopDoctors.scss'
 import Modal from '../../../../components/Modal/Modal';
-import { Store } from '../../../../Context/Context';
+
 function TopDoctors() {
 
-  const {
-    modalVisible, 
-    handelVisible 
-} = Store()
+ 
   return (
     <>
     <section className='topDoctors'>
@@ -29,7 +26,7 @@ function TopDoctors() {
                 {
                     data.map((item)=>(
                       <Col xs={2}>
-                          <DoctorCard onclick={handelVisible} />
+                          <DoctorCard  />
                       </Col>
                     ))
                 }

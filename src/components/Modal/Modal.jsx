@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Store } from '../../Context/Context'
 import GreenButton from '../Button/GreenButton'
-
+import close from '../../icons/Union.svg'
 import './Modal.scss'
 function Modal({children}) {
    const {
@@ -14,13 +14,22 @@ function Modal({children}) {
     <>
     {
       modalVisible &&
-    <section className="myModal">
-      
+      <>
+       <section className="myModal">
+      <div className="myModal__reletive">
+        <div className="myModal__close" onClick={handelVisible}>
+          <img src={close} alt="img" />
+        </div>
+      <GreenButton > Appointment</GreenButton>
+
       {children}
-      <GreenButton> Appointment</GreenButton>
+      </div>
+      
 
       
-    </section>
+      </section>
+      <div className="myModal__exit" onClick={handelVisible}></div>
+      </>
     }
     
     </>
