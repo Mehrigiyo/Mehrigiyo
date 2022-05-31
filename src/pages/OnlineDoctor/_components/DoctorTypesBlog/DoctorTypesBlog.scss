@@ -1,0 +1,46 @@
+.DoctorTypesBlog__Card {
+    margin-top: 30px;
+}
+
+.DoctorTypesBlog__title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    /* Labels/Light/Primary */
+    color: #000000;
+}
+
+.DoctorTypesBlog__title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B0B7C3;
+    margin-bottom: 0;
+}
+
+.DoctorTypesBlog__Card .DoctorTypeCard {
+    margin-bottom: 30px;
+}
+
+.DoctorTypesBlog__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DoctorTypesBlog {
+    padding-bottom: 150px;
+    padding-top: 150px;
+    position: relative;
+    z-index: 99;
+    .back_tree img {
+        position: absolute;
+        bottom: -20px;
+        right: -60px;
+        opacity: 0.15;
+        object-fit: contain;
+        transform: rotateY(180deg) !important;
+        z-index: -1;
+    }
+}
