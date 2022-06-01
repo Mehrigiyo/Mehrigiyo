@@ -4,6 +4,7 @@ import Breadcrum from '../../../../components/Breadcrum/Breadcrum';
 import tree from "../../../../images/Group.png"
 import FreDoctorTree from "../../../../images/Group 2535107.png"
 import "./AskQuestion.scss";
+import Accordion from '../../../../components/Accordion/Accordion'
 
 
 function AskQuestion() {
@@ -21,7 +22,13 @@ function AskQuestion() {
                 <div className="askquestion_rightBack">
                     <img src={tree} alt="" />
                 </div>
-            </Container>
+        </Container>
+        <div className="accordion_blog">
+            <Accordion/>
+        </div>
+        
+
+
     </div>
   )
 }

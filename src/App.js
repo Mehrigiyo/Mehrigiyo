@@ -8,6 +8,7 @@ import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 import Product from "./pages/Product/Product";
 import About from "./pages/About/About";
 import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
+import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 
 function App() {
     return ( <
@@ -34,6 +35,9 @@ function App() {
         />  <
         Route path = "/askquestion"
         element = { < AskQuestion / > }
+        /> <
+        Route path = "/doctorslist"
+        element = { < DoctorsList / > }
         />  <
         Route path = "/news"
         element = { < NewsComponent / > }
