@@ -6,7 +6,7 @@ import HelpMap from "./_components/HelpMap/HelpMap";
 function Help() {
 
   return (
-    <div className='help_page globalContainer'>
+    <div className='help_page'>
         <HelpHeader/>
         <Form/>
         <HelpMap/>

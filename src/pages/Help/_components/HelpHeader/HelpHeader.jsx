@@ -9,7 +9,7 @@ import FreDoctorTree from "../../../../images/Group 2535107.png"
 function HelpHeader() {
     return (
 
-        <div className='help_header'>
+        <div className='help_header globalContainer'>
             <Container style={{ maxWidth: 960 }}>
                 <Breadcrum>Yordam</Breadcrum>
                 <div className="help_header_title">

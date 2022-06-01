@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 import Product from "./pages/Product/Product";
 import About from "./pages/About/About";
+import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 
 function App() {
     return ( <
@@ -30,6 +31,9 @@ function App() {
         />  <
         Route path = "/aboute"
         element = { < About / > }
+        />  <
+        Route path = "/askquestion"
+        element = { < AskQuestion / > }
         />  <
         Route path = "/news"
         element = { < NewsComponent / > }
