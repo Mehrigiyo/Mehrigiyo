@@ -8,7 +8,6 @@ function Context({children}) {
     function handelVisible(){
         setModalVisible(prev => !prev)
         
-        console.log(modalVisible);
     }
 
 
