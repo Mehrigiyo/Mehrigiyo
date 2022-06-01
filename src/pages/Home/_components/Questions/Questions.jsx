@@ -1,6 +1,6 @@
 
 
-import './Questions.css'
+import './Questions.scss'
 
 import React from 'react'
 import {  Col, Row } from 'react-bootstrap'

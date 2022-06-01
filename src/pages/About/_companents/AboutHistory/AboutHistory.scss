@@ -1,14 +1,11 @@
 .history {
   max-width: 1440px;
   margin-left: 100px;
-  
 
   &__top {
     position: relative;
     z-index: 10;
-  
 
-    
     ul {
       margin-left: 130px;
       display: flex;
@@ -35,16 +32,41 @@
     display: flex;
     &__left {
       margin-top: -150px;
-      img{
-          margin-top: -30px;
+      img {
+        margin-top: -30px;
       }
     }
 
     &__right {
       margin-top: 20px;
+
+      &__text {
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: grey;
+          margin-bottom: 50px;
+        }
+        h3 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
+        h5 {
+          font-family: "Poppins";
+          font-style: italic;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #505050;
+        }
+      }
     }
   }
-}
-.bgHistory{
-    
 }

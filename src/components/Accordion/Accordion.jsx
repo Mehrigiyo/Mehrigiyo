@@ -1,7 +1,7 @@
 import {data } from './Const'
 import { Accordion as BootstrapAccordion } from 'react-bootstrap';
 import React from 'react'
-console.log(data);
+import './Accordion.scss'
 
 function Accordion( ) {
   return (

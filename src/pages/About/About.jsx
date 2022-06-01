@@ -4,6 +4,8 @@ import AboutThree from './_companents/AboutThree/AboutThree';
 import Partners from '../../components/Partners/Partners';
 import Reklama from '../../components/Reklama/Reklama';
 import AboutHistory from './_companents/AboutHistory/AboutHistory';
+import Now from './_companents/Now/Now';
+
 
 
 
@@ -15,8 +17,10 @@ const About = () => {
             <AboutHeader/>
             <AboutHistory/>
             <AboutThree/>
+            <Now/>
             <Reklama/>
             <Partners/>
+            
         {/* </div> */}
         </>
     );

@@ -46,10 +46,9 @@ ul {
 }
 
 .globalContainer {
-    margin: 0 auto;
-    max-width: 1240px;
+  margin: 0 auto;
+  max-width: 1240px;
 }
-
-.flex {
-    display: flex;
+.flex{
+  display: flex;
 }

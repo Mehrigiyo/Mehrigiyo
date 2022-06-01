@@ -24,17 +24,17 @@ const BottomHeader = () => {
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/doctorslist">Nevropatolog</NavLink>
-                    <NavLink to="/doctorslist">Genetika</NavLink>
-                    <NavLink to="/doctorslist">Stomatologiya</NavLink>
-                    <NavLink to="/doctorslist">Jarrohlik</NavLink>
-                    <NavLink to="/doctorslist">Hammasi +</NavLink>
+                    <NavLink to="/">Genetika</NavLink>
+                    <NavLink to="/">Stomatologiya</NavLink>
+                    <NavLink to="/">Jarrohlik</NavLink>
+                    <NavLink to="/">Hammasi +</NavLink>
                   </li>
                 </ul>
               </li>
               <li className="topi">
                 <NavLink to="/product">Mahsulotlar</NavLink>
                 <ul className="drop_menu">
-                  <li className="drop_link">
+                  <li className="drop_link">  
                     <NavLink to="/choy">Choy</NavLink>
                     <NavLink to="/yoglar">Yog’lar</NavLink>
                     <NavLink to="/ziravor">Ziravorlar</NavLink>

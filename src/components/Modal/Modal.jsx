@@ -4,7 +4,7 @@ import { Store } from '../../Context/Context'
 import GreenButton from '../Button/GreenButton'
 import close from '../../icons/Union.svg'
 import './Modal.scss'
-function Modal({children}) {
+function Modal({children, name, image}) {
    const {
     modalVisible, 
     handelVisible 
@@ -17,12 +17,22 @@ function Modal({children}) {
       <>
        <section className="myModal">
       <div className="myModal__reletive">
+        <div className="myModal_item">
+        <div className="myModal_title">
+          <h1>{name}</h1>
+        </div>
+        <div className="myModal_image">
+          <img src={image} alt="" />
+        </div>
+          
+          
+        </div>
         <div className="myModal__close" onClick={handelVisible}>
           <img src={close} alt="img" />
         </div>
-      <GreenButton > Appointment</GreenButton>
+      {/* <GreenButton > Appointment</GreenButton> */}
 
-      {children}
+      {/* {children} */}
       </div>
       
 
