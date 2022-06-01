@@ -1,10 +1,10 @@
-import {data} from './Const'
 
 
 import './Questions.css'
 
 import React from 'react'
-import { Accordion, Col, Row } from 'react-bootstrap'
+import {  Col, Row } from 'react-bootstrap'
+import Accordion from '../../../../components/Accordion/Accordion'
 import Button from '../../../../components/Buttons/Button'
 
 export default function Questions() {
@@ -26,18 +26,7 @@ export default function Questions() {
                        <Button>Batafsil</Button>
                    </Col>
                    <Col xs={8} className="questions__accordion" >
-                       
-
-                       <Accordion>
-                           {
-                               data.map(({title, text}, index)=>( 
-                                   <Accordion.Item key={index} eventKey={`${index}`}>
-                                       <Accordion.Header><span>{`0${++index}  `}</span> {` ` + title}</Accordion.Header>
-                                       <Accordion.Body>{text}</Accordion.Body>
-                                   </Accordion.Item>
-                               ))
-                           }
-                       </Accordion>
+                               <Accordion />
                    </Col>
                </Row>
             </div>
