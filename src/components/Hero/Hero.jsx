@@ -11,8 +11,8 @@ export default function Hero() {
   return (
     <>
       {/* <div className='hero-image'></div> */}
-      <div class="hero-image">
-        <div class="hero-text">
+      <div className="hero-image">
+        <div className="hero-text">
           <h1 style={{ fontSize: 44 }}>Bepul shifokor maslahat kerakmi?</h1>
           <p>
             24/7 video maslahat. Shaxsiy maslahat + Audio qo'ng'iroq Faqat mobil

@@ -6,16 +6,25 @@ import Home from "./pages/Home/Home";
 import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 
 function App() {
-    return ( 
-     <Context>
-        <Layout >
-            <Routes >
-                    <Route path = "/" element = { <Home /> }/>
-                    < Route path = "/onlinedoctor"element = { <OnlineDoctor /> }/> 
-                    <Route path = "/news"element = { < NewsComponent /> } />
-            </Routes >
-        </Layout>
-     </Context>
+    return ( <
+        Context >
+        <
+        Layout >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Home / > }
+        /> <
+        Route path = "/onlinedoctor"
+        element = { < OnlineDoctor / > }
+        />  <
+        Route path = "/news"
+        element = { < NewsComponent / > }
+        /> <
+        /Routes > <
+        /Layout> <
+        /Context>
     )
 }
 
