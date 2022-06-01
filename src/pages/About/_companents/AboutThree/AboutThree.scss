@@ -1,0 +1,26 @@
+.welcome_organic{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 1000px;
+}
+.aboutFon{
+    max-width: 1440px;
+    width: 100%;
+    left: 0;
+    top:0 ;
+    position: relative;
+    min-height: 800px;
+    position: absolute;
+    background-image: url("../../../../icons/twofon.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 0;
+    
+}
+.fullFoto{
+    background-color: transparent;
+    img{
+        width: 100%;
+    }
+}

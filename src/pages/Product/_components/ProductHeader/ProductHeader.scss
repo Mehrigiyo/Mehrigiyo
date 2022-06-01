@@ -1,0 +1,13 @@
+.product_header {
+    padding: 100px 0;
+    position: relative;
+    .rightProductBack img {
+        position: absolute;
+        right: -40px;
+        bottom: -180px;
+        opacity: 0.15;
+        object-fit: contain;
+        transform: rotateY(180deg) !important;
+        z-index: -1;
+    }
+}
