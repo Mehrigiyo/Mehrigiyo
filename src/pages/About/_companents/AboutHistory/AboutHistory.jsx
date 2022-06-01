@@ -10,10 +10,10 @@ function AboutHistory() {
         <div className="history__top globalContainer">
           <ul>
             <li>
-              <a href="#Kelib chiqishi">Kelib chiqishi</a>
+              <a href="#origin">Kelib chiqishi</a>
             </li>
             <li>
-              <a href="#Tarixi">Tarixi</a>
+              <a href="#Hozirda">Tarixi</a>
             </li>
             <li>
               <a href="#Hozirda">Hozirda</a>

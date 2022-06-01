@@ -1,0 +1,46 @@
+.itemPage{
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 600px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid;
+    &__reletive{
+
+        .green-btn{
+            position: absolute;
+            right: 50px;
+            bottom: 40px;
+        }
+    }
+
+    &__close{
+        width: 40px;
+        height: 40px;
+        background: #F0F0F0;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        
+    }
+
+    &__bg-left{
+        position: absolute;
+        top: 44px;
+        left: 0;
+    }
+    img{
+        z-index: -1;
+    }
+    &__bg-rigth{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.1;
+        transform: rotateY(180deg);
+    }
+}

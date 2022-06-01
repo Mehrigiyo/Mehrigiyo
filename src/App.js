@@ -2,9 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import NewsComponent from "./components/NewsComponent/NewsComponent";
 import Context from "./Context/Context";
+import Help from "./pages/Help/Help";
 import Home from "./pages/Home/Home";
 import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
-import About from "./pages/About/About"
+import Product from "./pages/Product/Product";
+import About from "./pages/About/About";
+import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 
 function App() {
     return ( 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bottom-Header.css";
+import "./Bottom-Header.scss";
 import { NavLink } from "react-router-dom";
 import logo from "../../icons/Logo.svg";
 import doctor from "../../icons/doktor-icon.svg";
@@ -21,21 +21,54 @@ const BottomHeader = () => {
               </li>
               <li className="topi">
                 <NavLink to="/onlinedoctor"> Onlayn shifokorlar</NavLink>
+                <ul className="drop_menu">
+                  <li className="drop_link">
+                    <NavLink to="/nevro">Nevropatolog</NavLink>
+                    <NavLink to="/gen">Genetika</NavLink>
+                    <NavLink to="/sita">Stomatologiya</NavLink>
+                    <NavLink to="/jarroh">Jarrohlik</NavLink>
+                    <NavLink to="/alldoctor">Hammasi +</NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="topi">
                 <NavLink to="/product">Mahsulotlar</NavLink>
+                <ul className="drop_menu">
+                  <li className="drop_link">  
+                    <NavLink to="/choy">Choy</NavLink>
+                    <NavLink to="/yoglar">Yog’lar</NavLink>
+                    <NavLink to="/ziravor">Ziravorlar</NavLink>
+                    <NavLink to="/asal">Asal</NavLink>
+                    <NavLink to="/tabletka">Tabletkalar</NavLink>
+                    <NavLink to="/allproduct">Hammasi +</NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="topi">
                 <NavLink to="/aboute">Biz haqimizda</NavLink>
               </li>
               <li className="topi">
                 <NavLink to="/news">Yangiliklar</NavLink>
+                <ul className="drop_menu">
+                  <li className="drop_link">
+                    <NavLink to="/news">Yangiliklar</NavLink>
+                    <NavLink to="/tohealth">Salomatlik sari</NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="topi">
                 <NavLink to="/help">Yordam</NavLink>
+                <ul className="drop_menu">
+                  <li className="drop_link">
+                    <NavLink to="/help">Yordam</NavLink>
+                    <NavLink to="/askquestion">Ko’p so’raladigan savollar</NavLink>
+                  </li>
+                </ul>
               </li>
             </ul>
+
           </nav>
+
           <div className="threeIcon">
             <div className="iconca">
               <img src={doctor} alt="" />

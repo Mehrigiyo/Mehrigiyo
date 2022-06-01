@@ -6,13 +6,16 @@ function Context({children}) {
     const [modalVisible, setModalVisible] = useState(false)
 
     function handelVisible(){
-      setModalVisible(prev => !prev)
+        setModalVisible(prev => !prev)
+        
+        console.log(modalVisible);
     }
 
 
     const store = {
         modalVisible, 
-        handelVisible 
+        handelVisible ,
+        setModalVisible,
     }
     return (
         <ContextProvider.Provider value={store}>
