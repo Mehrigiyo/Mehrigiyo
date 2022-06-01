@@ -5,6 +5,9 @@ import home from "../../icons/home.svg"
 import google from "../../images/google.svg"
 import app from "../../images/app.svg"
 import {BsInstagram} from "react-icons/bs"
+import {BsFacebook} from "react-icons/bs"
+import {BsTelegram} from "react-icons/bs"
+import {BsYoutube} from "react-icons/bs"
 
 const Footer = () => {
   return (
@@ -19,9 +22,15 @@ const Footer = () => {
             <li className='rightFirst'>Bu sog'liq va hayot sifatini yaxshilash uchun mahsulotlar</li>
             <li className='right'>Ish vaqti: Har kuni 8:00 dan 18:00 gacha</li>
           </ul>
-       <ul>
+       <ul className='localSet'>
          <li><a href="">
          <BsInstagram/></a></li>
+         <li><a href="">
+         <BsFacebook/></a></li>
+         <li><a href="">
+         <BsTelegram/></a></li>
+         <li><a href="">
+         <BsYoutube/></a></li>
        </ul>
         </div>
         <div className='foterThree'>
