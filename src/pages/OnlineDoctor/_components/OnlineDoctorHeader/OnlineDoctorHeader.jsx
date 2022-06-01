@@ -21,7 +21,7 @@ function OnlineDoctorHeader() {
                 <a href="#"><img src={CloseIcon} /></a>
             </div>
         </div>
-        <Breadcrum/>
+        <Breadcrum>Onlayn shifokorlar</Breadcrum>
         <div className="freedoctor_advice">
             <Container style={{maxWidth: 960}}>
                   <Row>
