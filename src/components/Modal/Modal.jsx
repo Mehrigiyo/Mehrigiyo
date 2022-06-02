@@ -7,7 +7,8 @@ import './Modal.scss'
 function Modal({children}) {
    const {
     modalVisible, 
-    handelVisible 
+    handelVisible ,
+    ModalData
 }  = Store()
   
   return (
@@ -15,7 +16,8 @@ function Modal({children}) {
     {
       modalVisible &&
       <>
-       <section className="myModal">
+       <section className="myModal"> 
+       <img src={ModalData.img} alt="img" />
       <div className="myModal__reletive">
         <div className="myModal__close" onClick={handelVisible}>
           <img src={close} alt="img" />

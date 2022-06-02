@@ -1,4 +1,4 @@
-import './MehrigiyoPlus.css'
+import './MehrigiyoPlus.scss'
 import src from '../../../../images/doktors.png'
 
 

@@ -9,6 +9,7 @@ function DoctorCard({data , onclick}) {
   const {
     modalVisible, 
     handelVisible,
+    setModalData,
     setModalVisible
     
 } = Store()
@@ -28,7 +29,7 @@ function DoctorCard({data , onclick}) {
             <div className="doctorCard__body">
              <h5>{name}</h5>
              <span>{text}</span>
-             <button className='doctorCard__button' onClick={()=>{setModalVisible(prev=> !prev)}}>Appointment</button>
+             <button className='doctorCard__button' onClick={()=>{ handelVisible(data)}}>Appointment</button>
             </div>
         </div>
      </>
