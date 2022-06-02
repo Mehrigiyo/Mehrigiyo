@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import Button from '../../../../components/Buttons/Button';
 import ProductCard from '../../../../components/ProductCard/ProductCard';
 import { TabData } from "./TabData";
+import { NavLink } from 'react-router-dom';
 
 function ProductMenu() {
     const [tabSlider, setTabSlider] = useState(0);
@@ -18,7 +19,9 @@ function ProductMenu() {
 
     const newArrays = TabData.map(item => (
         <Col lg={3}>
-        <ProductCard title={'sa'} data={item}/>
+            <NavLink to="/productabout">
+                <ProductCard title={'sa'} data={item}/>
+            </NavLink>
         </Col>
     ))
 
@@ -27,7 +30,10 @@ function ProductMenu() {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 3
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true
     };
 
 

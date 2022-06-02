@@ -1,5 +1,6 @@
 import React from 'react'
 import './BuyProduct.scss';
+import { NavLink } from 'react-router-dom';
 import buy1 from "../../../../images/Group 2535220-1.svg";
 import buy2 from "../../../../images/Group 2535220-2.svg";
 import buy3 from "../../../../images/Group 2535220-3.svg";
@@ -26,6 +27,7 @@ function BuyProduct() {
             </div>
             <Row>
                 <Col lg={2}>
+                    <NavLink to="/productlist">
                     <div className="buy_product__card">
                         <div className="buy_product__card_title">
                             <p>Sharbatlar</p>
@@ -34,6 +36,7 @@ function BuyProduct() {
                             <img src={buy1} alt="card_img" />
                         </div>
                     </div>
+                    </NavLink>
                 </Col>
                 <Col lg={2}>
                     <div className="buy_product__card">

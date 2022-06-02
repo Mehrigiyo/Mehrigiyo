@@ -35,7 +35,7 @@ const BottomHeader = () => {
                 <NavLink to="/product">Mahsulotlar</NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">  
-                    <NavLink to="/choy">Choy</NavLink>
+                    <NavLink to="/productlist">Choy</NavLink>
                     <NavLink to="/yoglar">Yog’lar</NavLink>
                     <NavLink to="/ziravor">Ziravorlar</NavLink>
                     <NavLink to="/asal">Asal</NavLink>
