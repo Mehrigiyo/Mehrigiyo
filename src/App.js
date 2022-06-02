@@ -8,19 +8,45 @@ import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
 import Product from "./pages/Product/Product";
 import About from "./pages/About/About";
 import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
+import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 
 function App() {
-    return ( 
-     <Context>
-        <Layout >
-            <Routes >
-                    <Route path = "/" element = { <Home /> }/>
-                    < Route path = "/onlinedoctor"element = { <OnlineDoctor /> }/> 
-                    <Route path = "/news"element = { < NewsComponent /> } />
-                    <Route path = "/aboute"  element = { < About/> }/>
-            </Routes >
-        </Layout>
-     </Context>
+    return ( <
+        Context >
+        <
+        Layout >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Home / > }
+        /> <
+        Route path = "/onlinedoctor"
+        element = { < OnlineDoctor / > }
+        /> <
+        Route path = "/product"
+        element = { < Product / > }
+        />  <
+        Route path = "/help"
+        element = { < Help / > }
+        />  <
+        Route path = "/aboute"
+        element = { < About / > }
+        />  <
+        Route path = "/askquestion"
+        element = { < AskQuestion / > }
+        /> <
+        Route path = "/doctorslist"
+        element = { < DoctorsList / > }
+        />  <
+        Route path = "/news"
+        element = { < NewsComponent / > }
+        /> < /
+        Routes > <
+        /Layout> < /
+        Context >
+
+
     )
 }
 

@@ -1,0 +1,107 @@
+.doctor_list_title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.doctor_list_tab {
+    ul {
+        display: flex;
+        margin-left: 0;
+        list-style: none;
+        li {
+            span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+            }
+            a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #B0B7C3;
+                &.active {
+                    text-decoration-line: underline !important;
+                    color: #53B175 !important;
+                }
+                &:hover {
+                    color: #53B175;
+                }
+            }
+            margin-right: 20px;
+        }
+    }
+}
+
+.doctor_list {
+    padding-bottom: 50px;
+    .doctor_list_category {
+        padding: 20px 12px 26px 20px;
+        width: 280px;
+        height: 464px;
+        /* Backgrounds/Light/Primary */
+        background: #FFFFFF;
+        box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+        border-radius: 15px;
+        .category_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                margin-bottom: 0;
+            }
+        }
+        .category_filter a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            text-decoration-line: underline;
+            text-transform: capitalize;
+            color: #B0B7C3;
+            img {
+                margin-right: 5px;
+            }
+        }
+        .category_list {
+            .form_link {
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-decoration-line: underline;
+                    text-transform: capitalize;
+                    color: #53B175;
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+                form {
+                    .form-check {
+                        .form-check-input:checked {
+                            background-color: #53B175;
+                            border-color: #53B175;
+                        }
+                        .form-check-input:focus {
+                            border-color: #53B175;
+                            outline: 0;
+                            box-shadow: unset !important;
+                        }
+                        .form-check-label {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

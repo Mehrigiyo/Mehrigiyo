@@ -22,7 +22,7 @@ function OnlineDoctor() {
             <Reklama/>
             <Partners/>
             <ItemPage >
-                <DoctoInfo />
+            <DoctoInfo />
             </ItemPage>
          </div> 
         </>

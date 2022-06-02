@@ -23,11 +23,11 @@ const BottomHeader = () => {
                 <NavLink to="/onlinedoctor"> Onlayn shifokorlar</NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
-                    <NavLink to="/nevro">Nevropatolog</NavLink>
-                    <NavLink to="/gen">Genetika</NavLink>
-                    <NavLink to="/sita">Stomatologiya</NavLink>
-                    <NavLink to="/jarroh">Jarrohlik</NavLink>
-                    <NavLink to="/alldoctor">Hammasi +</NavLink>
+                    <NavLink to="/doctorslist">Nevropatolog</NavLink>
+                    <NavLink to="/">Genetika</NavLink>
+                    <NavLink to="/">Stomatologiya</NavLink>
+                    <NavLink to="/">Jarrohlik</NavLink>
+                    <NavLink to="/">Hammasi +</NavLink>
                   </li>
                 </ul>
               </li>

@@ -1,8 +1,10 @@
 import React from 'react'
 import './DoctorTypeCard.scss';
 import Remember from "../../images/Close_Icon.svg"
-
+import { NavLink } from 'react-router-dom';
+import { Store } from '../../Context/Context';
 const  DoctorTypeCard = ({children,image, icon, number}) =>{
+    const {handelVisible} = Store()
   return (
     <div className='DoctorTypeCard'>
         <div className="DoctorTypeCard_image">
@@ -15,7 +17,7 @@ const  DoctorTypeCard = ({children,image, icon, number}) =>{
             <p>{number} shifokor</p>
         </div>
         <div className="DoctorTypeCard_icon">
-            <a href="#"><img src={icon} /></a>
+            <a href="#" onClick={handelVisible}><img src={icon} /></a>
         </div>
     </div>
   )
