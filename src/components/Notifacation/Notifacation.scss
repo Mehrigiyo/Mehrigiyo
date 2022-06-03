@@ -1,0 +1,14 @@
+.notifacation {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    z-index: 9999;
+  }
+  .notifacation .callInfo {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .notifacation .callInfo img{
+    object-fit: contain;
+  }

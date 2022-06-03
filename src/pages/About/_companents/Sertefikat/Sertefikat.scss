@@ -1,0 +1,25 @@
+.sertificat {
+    padding-bottom: 40px;
+  &__serRow {
+    &__serCol {
+      &__ride {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 41px;
+        color: #53b175;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      &__rider {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #b0b7c3;
+      }
+    }
+  }
+}
