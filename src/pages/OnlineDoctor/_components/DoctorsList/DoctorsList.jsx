@@ -60,7 +60,7 @@ function DoctorsList() {
                 </Form>
                 <Form>
                   <Form.Group className="mb-3" controlId="formBasicCheckbox1">
-                    <Form.Check type="checkbox" label="Nevropatolog" />
+                    <Form.Check type="checkbox" isActive isInvalid label="Nevropatolog" />
                   </Form.Group>
                 </Form>
                 <Form>

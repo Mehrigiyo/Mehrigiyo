@@ -11,6 +11,8 @@ import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
+import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
+import LoveMedice from "./pages/LoveMedice/LoveMedice";
 
 function App() {
     return ( <
@@ -46,6 +48,12 @@ function App() {
         />  <
         Route path = "/productabout"
         element = { < ProductAbout / > }
+        />  <
+        Route path = "/lovedoctors"
+        element = { < LoveDoctor / > }
+        />  <
+        Route path = "/lovemedice"
+        element = { < LoveMedice / > }
         />  <
         Route path = "/news"
         element = { < NewsComponent / > }

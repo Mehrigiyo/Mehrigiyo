@@ -9,6 +9,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import Button from '../../../../components/Buttons/Button';
 import ConsultDoctorBackImg from "../../../../images/Group 2535107.png"
 import DoctorTypeCard from '../../../../components/DoctorTypeCard/DoctorTypeCard';
+import { NavLink} from 'react-router-dom';
 
 const ConsultDoctor = () => {
     return (
@@ -38,8 +39,10 @@ const ConsultDoctor = () => {
                         )
                     } */}
                     <Col lg={3}>
-                        <DoctorTypeCard image={brainIcon} children={"Nefrolog"} number={"2 029"}>
-                        </DoctorTypeCard>
+                        <NavLink to="/doctorslist">
+                            <DoctorTypeCard image={brainIcon} children={"Nefrolog"} number={"2 029"}>
+                            </DoctorTypeCard>
+                        </NavLink>
                     </Col>
                     <Col lg={3}>
                         <DoctorTypeCard image={DnaIcon} children={"Genetika"} number={"1,870"}>
