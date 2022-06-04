@@ -5,7 +5,8 @@ import './DoctorCard.scss'
 import imgs from '../../../../images/Bitmap001.jpg'
 import img2 from '../../../../icons/Vector001.svg'
 import {Store} from '../../../../Context/Context'
-function DoctorCard({data , onclick}) {
+import { Link } from 'react-router-dom'
+function DoctorCard({data}) {
   const {
     modalVisible, 
     handelVisible,
@@ -13,11 +14,13 @@ function DoctorCard({data , onclick}) {
     setModalVisible
     
 } = Store()
-  const {img, text, name} = data ||  {
+  const {img,id, text, name} = data ||  {
+    id: 1000,
     img: imgs,
-    name: 'S. Gavhar',
+    name: 'S. Gavhar f`',
     text: '⭐️ 4.5 (135 reviews)'
 }
+// console.log(props.data);
   return (
     <>
         <div className="doctorCard" >
@@ -29,7 +32,9 @@ function DoctorCard({data , onclick}) {
             <div className="doctorCard__body">
              <h5>{name}</h5>
              <span>{text}</span>
-             <button className='doctorCard__button' onClick={()=>{ handelVisible(data)}}>Appointment</button>
+             <Link to={`/onlinedoctor/${id}` }>
+                <button className='doctorCard__button' >Appointment</button>
+             </Link>
             </div>
         </div>
      </>

@@ -21,9 +21,9 @@ function OnlineDoctor() {
             <DownloadMobile/>
             <Reklama/>
             <Partners/>
-            <ItemPage >
-            <DoctoInfo />
-            </ItemPage>
+            
+               
+           
          </div> 
         </>
     )

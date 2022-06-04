@@ -5,7 +5,6 @@
     position: relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 1px solid;
     &__reletive{
 
         .green-btn{
@@ -31,13 +30,13 @@
     &__bg-left{
         position: absolute;
         top: 44px;
+        z-index: -1;
         left: 0;
     }
-    img{
-        z-index: -1;
-    }
+    
     &__bg-rigth{
         position: absolute;
+
         bottom: 0;
         right: 0;
         opacity: 0.1;

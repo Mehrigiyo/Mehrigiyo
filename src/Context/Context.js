@@ -23,7 +23,7 @@ function Context({children}) {
     }
     return (
         <ContextProvider.Provider value={store}>
-            {children}
+         {children}
         </ContextProvider.Provider>
     )
     
