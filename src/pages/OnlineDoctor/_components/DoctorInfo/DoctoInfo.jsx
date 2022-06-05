@@ -10,16 +10,16 @@ import ItemPage from '../../../../components/ItemPage/ItemPage'
 
 function DoctoInfo() {
     const {id} = useParams()
-    console.log(id);
+    // console.log(id);
     // const index = data.map()
 
   return (
     <>
-    <ItemPage>
+    <ItemPage pageId={id}>
 
    
      <div>
-     <h1>{id}</h1>
+     
         <div className="doctorInfo">
             <Row >
                 <Col lg={3} className="" >
@@ -27,7 +27,7 @@ function DoctoInfo() {
                 </Col>
                 <Col lg={7} className=''>
                     <div className="doctorInfo__item">
-                        <h3 className='doctorInfo__name'>Gavhar Sobirova</h3>
+                        <h3 className='doctorInfo__name'>Gavhar Sobirova {id}</h3>
                     </div>
                     <div className="doctorInfo__item">
                         <Row>

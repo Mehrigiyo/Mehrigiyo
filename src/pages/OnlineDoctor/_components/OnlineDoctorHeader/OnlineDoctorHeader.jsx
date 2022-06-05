@@ -8,6 +8,7 @@ import Button from '../../../../components/Buttons/Button';
 import VideoLink from "../../../../components/VideoLink/VideoLink"
 import OnlineDowctorImage from "../../../../images/Group 2535185.png"
 import FreDoctorTree from "../../../../images/Group 2535107.png"
+import Notifacation from '../../../../components/Notifacation/Notifacation';
 
 function OnlineDoctorHeader() {
   return (
@@ -47,6 +48,7 @@ function OnlineDoctorHeader() {
             <div className="freeDoctorBack">
                 <img src={FreDoctorTree} alt="" />
             </div>
+            <Notifacation/>
         </div>
     </div>
   )

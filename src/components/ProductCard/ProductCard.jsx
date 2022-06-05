@@ -3,10 +3,15 @@ import { Col, Row } from 'react-bootstrap';
 import "./ProductCard.scss";
 import {BsChevronRight, BsSuitHeart} from "react-icons/bs";
 import SliderImage1 from "../../icons/slider_img1.png";
+import ProductCount from '../ProductCount/ProductCount';
 
 const ProductCard = ({img=SliderImage1, name, title, sale, price, data}) => {
 
-    
+    const [btn, setBtn] =useState(0)
+
+    function HandleBtn() {
+        setBtn (next => !next)
+    }
 
 
     // const [heart, setHeart] = useState(0)
@@ -30,7 +35,12 @@ const ProductCard = ({img=SliderImage1, name, title, sale, price, data}) => {
                                     <span>{price}</span>
                                 </div>
                                 <div className="product_card_item__add_btn">
-                                    <a href="#">+</a>
+                                    <a href="#" onClick={HandleBtn}>
+                                        {
+                                            '+'
+                                        }
+                                        </a>
+
                                 </div>
                             </div>
                             <div className="product_card_all_vies">

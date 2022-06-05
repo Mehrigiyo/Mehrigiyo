@@ -1,0 +1,48 @@
+.counter {
+    display: flex;
+    .btn_count {
+        background-color: unset;
+        border: none;
+        color: #B3B3B3;
+        font-size: 32px;
+        cursor: pointer;
+        &:hover {
+            background-color: unset;
+            color: #53B175;
+        }
+        margin:20px;
+        &:last-child {
+            color: #53B175;
+        }
+    }
+    align-items:center;
+    .counter_name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #181725;
+        border: 1px solid #E2E2E2;
+        border-radius: 17px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.product_count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .price_name p {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        letter-spacing: 0.1px;
+        color: #53B175;
+    }
+}

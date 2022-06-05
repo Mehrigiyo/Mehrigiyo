@@ -1,11 +1,11 @@
-.doctor_list_title h1 {
+.product_list_title h1 {
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
 }
 
-.doctor_list_tab {
+.product_list_tab {
     ul {
         display: flex;
         margin-left: 0;
@@ -35,9 +35,9 @@
     }
 }
 
-.doctor_list {
+.product_list {
     height: 200vh;
-    .doctor_list_category {
+    .product_list_category {
         padding: 20px 12px 26px 20px;
         width: 280px;
         height: 464px;
@@ -104,7 +104,7 @@
             }
         }
     }
-    .doctorlist_back_tree img {
+    .product_back_tree img {
         position: absolute;
         right: -30px;
         bottom: 0px;

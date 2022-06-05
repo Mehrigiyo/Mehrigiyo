@@ -19,7 +19,7 @@ function AboutHistory() {
               <a href="#Hozirda">Hozirda</a>
             </li>
             <li>
-              <a href="#Yutuqlar">Yutuqlar va sertifikatlar</a>
+              <a href="#serti">Yutuqlar va sertifikatlar</a>
             </li>
           </ul>
         </div>

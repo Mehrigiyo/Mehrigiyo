@@ -5,6 +5,7 @@ import orange from "../../../../icons/orange.svg";
 import hozirda from "../../../../icons/hozirda1.png";
 import hozirda2 from "../../../../icons/hozirda2.png";
 import { Row, Col } from "react-bootstrap";
+import list from "../../../../icons/Group.png";
 
 function Now() {
   return (
@@ -96,16 +97,45 @@ function Now() {
         </Row>
       </div>
       <div className="product__info">
-      <div className="product__info__treated">
-        <h5 className="product__info__treated__hfive">
-          Kompaniya turli kasalliklarni tiklash uchun tizimli yondashuvdan
-          foydalanadi, bu 3 bosqichdan iborat:
-        </h5>
+        <div className="product__info__treated">
+          <h5 className="product__info__treated__hfive">
+            Kompaniya turli kasalliklarni tiklash uchun tizimli yondashuvdan
+            foydalanadi, bu 3 bosqichdan iborat:
+          </h5>
+        </div>
+        <div className="product__info__dowload">
+          <div className="product__info__dowload__square">
+            <h4 className="product__info__dowload__square__hfour">1</h4>
+            <h6 className="product__info__dowload__square__textP">Очищение</h6>
+          </div>
+          <div className="product__info__dowload__square">
+            <h4 className="product__info__dowload__square__hfour">2</h4>
+            <h6 className="product__info__dowload__square__textP">
+              Восполнение
+            </h6>
+          </div>
+          <div className="product__info__dowload__square">
+            <h4 className="product__info__dowload__square__hfour">3</h4>
+            <h6 className="product__info__dowload__square__textP">
+              Восстановление или поддержание
+            </h6>
+          </div>
+        </div>
       </div>
-      <div className="product__info__dowload"></div>
-      <div className="product__info__dowload__square"></div>
-      <div className="product__info__dowload__square"></div>
-      <div className="product__info__dowload__square"></div>
+      <div className="product__center">
+        
+        <div className="product__center__Taxt">
+          <div className="product__center__Taxt__fotoOne">
+            <img src={list} alt=""  style={{opacity: '0.1'}}/>
+          </div>
+          <div className="product__center__Taxt__fotoTwo">
+            <img src={list} alt="" style={{opacity: '0.1'}} />
+          </div>
+          <h6 className="product__center__title">
+          “Mehrigiyo” shifobaxsh mahsulotlari kasalliklarning oldini oladi hamda
+          uzoq, sog‘lom va to‘kin hayot manbai bo‘lib xizmat qiladi.
+        </h6>
+        </div>
       </div>
     </div>
   );

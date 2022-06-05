@@ -4,8 +4,7 @@ import green from "../../images/Group.png";
 import heroimg from "../../images/hero-img.png";
 import admin from "../../images/admin.svg";
 import quart from "../../images/quart.svg";
-import phone from "../../images/phone.svg";
-import whatsap from "../../images/whatsap.svg";
+import Notifacation from "../Notifacation/Notifacation";
 import "./Hero.css";
 export default function Hero() {
   return (
@@ -62,18 +61,7 @@ export default function Hero() {
        
       </div>
       
-      <div className="notifacation">
-          <div className="callInfo">
-            <a href="#"> <img src={phone} alt="" /></a>
-           
-          </div>
-          <div className="MassageInfo">
-            <a href="#">
-            <img src={whatsap} alt="" />
-            </a>
-           
-          </div>
-        </div>
+      <Notifacation/>
     </>
   );
 }
