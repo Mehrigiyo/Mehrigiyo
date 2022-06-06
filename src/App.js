@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import NewsComponent from "./components/NewsComponent/NewsComponent";
+import News from "./pages/News/New";
 import Context from "./Context/Context";
 import Help from "./pages/Help/Help";
 import Home from "./pages/Home/Home";
@@ -11,6 +11,8 @@ import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
+import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
+import FullCard from "./pages/News/_components/FullCard/FullCard";
 
 function App() {
     return ( <
@@ -48,11 +50,18 @@ function App() {
         element = { < ProductAbout / > }
         />  <
         Route path = "/news"
-        element = { < NewsComponent / > }
-        /> < /
-        Routes > <
-        /Layout> < /
-        Context >
+        element = { < News / > }
+        /> 
+        <
+        Route path = "/tohealth"
+        element = { < ToHealth / > }
+        />
+        <
+        Route path = "/fullcard"
+        element = { < FullCard / > }
+        /></Routes> 
+        </Layout> 
+        </Context>
 
 
     )

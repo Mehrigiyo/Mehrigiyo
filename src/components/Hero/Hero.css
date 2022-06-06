@@ -46,7 +46,8 @@
   color: #fff;
 }
 .hero-bgImage {
-  margin-top: -550px !important;
+
+  margin-top: -450px !important;
   z-index: 50;
   position: relative;
   display: flex;

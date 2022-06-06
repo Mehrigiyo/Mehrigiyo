@@ -1,7 +1,7 @@
 // Reimboyev Shuhrat
 
 import React from 'react'
-import {Card as BootstrapCard} from 'react-bootstrap'
+import {Card as BootstrapCard, NavLink} from 'react-bootstrap'
  import Mehrigiyo from '../../icons/mehrigiyo.jpg'
 import arrowIcons from '../../icons/Arrow001.svg'
 // import src from '../../icons/play.svg'

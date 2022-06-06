@@ -1,0 +1,109 @@
+.fullCard {
+  &__fullCardHead {
+    width: 867px;
+    height: 90px;
+    left: 291px;
+    top: 275px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    margin-bottom: 120px;
+    padding-left: 150px;
+  }
+  &__fullRow {
+    &__fullColOne {
+      &__ColOneText {
+        margin-top: 40px;
+        &__colHfour {
+          width: 949px;
+          height: 30px;
+          left: 1px;
+          top: 721px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000;
+        }
+        &__colPiyText {
+          width: 950px;
+          height: 358px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: justify;
+          color: #000000;
+        }
+      }
+    }
+    &__fullColTwo {
+      padding-left: 50px !important;
+      &__fullColSpan {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        gap: 13px;
+
+        &__fullcolIcon {
+          box-sizing: border-box;
+          width: 20px;
+          height: 4px;
+          left: 1008px;
+          top: 9px;
+          background: #53b175;
+          border-radius: 10px;
+        }
+        &__fullCardICon {
+          left: calc(50% - 141px / 2 + 491.5px);
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: #282828;
+          margin-bottom: 0px !important;
+        }
+      }
+      &__fullMassage {
+        padding: 18px 12px 21px 16px;
+        box-sizing: border-box;
+        background: rgba(176, 183, 195, 0.14);
+        border-radius: 10px;
+        margin-top: 12px;
+        &__fullMassagTop {
+          display: flex;
+         align-items: baseline;
+         gap: 7px;
+         
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: justify;
+            color: #757b87;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          }
+        }
+        &__fullMassagButtom {
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

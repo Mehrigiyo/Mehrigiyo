@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=IBM+Plex+Serif&family=Nunito:ital,wght@0,200;0,300;1,200&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+
+.NewCompony {
+  padding-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  &__componyTop {
+    &__componyRowTop {
+      background: #ffffff;
+      box-shadow: 0px 25px 50px 5px #f6f7ff;
+      border-radius: 25px;
+      &__rowTopRight {
+        img {
+          margin-left: -40px;
+          margin-top: 30px;
+        }
+      }
+      &__rowTopLeft {
+        &__lefththree {
+          width: 540px;
+          height: 123px;
+          left: 772px;
+          top: 486px;
+          font-family: "IBM Plex Serif";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 42px;
+          color: #2a2a2a;
+          padding-top: 80px;
+        }
+        &__leftT {
+          width: 500px;
+          height: 75px;
+          left: 772px;
+          top: 629px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 165%;
+          color: #2a2a2a;
+          opacity: 0.4;
+          padding-top: 120px;
+        }
+        &__leftBut {
+          padding-top: 160px;
+        }
+      }
+    }
+  }
+  &__componyButtom {
+    padding-top: 50px;
+    &__buttomSlad {
+      
+      &__sladComponent {
+        background: #ffffff;
+        box-shadow: 0px 25px 50px #f6f7ff;
+        border-radius: 20px;
+        display: flex !important;
+        align-items: center;
+
+        &__sladCompFoto {
+        }
+        &__sladCompText {
+          &__sladText {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+            width: 369px;
+            height: 54px;
+            left: 315px;
+            top: 37px;
+          }
+          &__sladPiText {
+            width: 369px;
+            height: 63px;
+            left: 315px;
+            top: 104px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #b0b7c3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide .slick-active{
+  width: auto !important;
+  margin-right: 30px;
+}
