@@ -11,29 +11,59 @@ import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
-import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctoInfo";
-import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
+import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
+import LoveMedice from "./pages/LoveMedice/LoveMedice";
+
 function App() {
-  return (
-    <Context>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />{" "}
-          <Route path="/onlinedoctor" element={<OnlineDoctor />} />{" "}
-          <Route path="/product" element={<Product />} />{" "}
-          <Route path="/help" element={<Help />} />{" "}
-          <Route path="/aboute" element={<About />} />{" "}
-          <Route path="/askquestion" element={<AskQuestion />} />{" "}
-          <Route path="/doctorslist" element={<DoctorsList />} />{" "}
-          <Route path="/productlist" element={<Productlist />} />{" "}
-          <Route path="/productabout" element={<ProductAbout />} />{" "}
-          <Route path="/news" element={<NewsComponent />} />{" "}
-          <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />
-          <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />
-        </Routes>{" "}
-      </Layout>{" "}
-    </Context>
-  );
+    return ( <
+        Context >
+        <
+        Layout >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Home / > }
+        /> <
+        Route path = "/onlinedoctor"
+        element = { < OnlineDoctor / > }
+        /> <
+        Route path = "/product"
+        element = { < Product / > }
+        />  <
+        Route path = "/help"
+        element = { < Help / > }
+        />  <
+        Route path = "/aboute"
+        element = { < About / > }
+        />  <
+        Route path = "/askquestion"
+        element = { < AskQuestion / > }
+        /> <
+        Route path = "/doctorslist"
+        element = { < DoctorsList / > }
+        />  <
+        Route path = "/productlist"
+        element = { < Productlist / > }
+        />  <
+        Route path = "/productabout"
+        element = { < ProductAbout / > }
+        />  <
+        Route path = "/lovedoctors"
+        element = { < LoveDoctor / > }
+        />  <
+        Route path = "/lovemedice"
+        element = { < LoveMedice / > }
+        />  <
+        Route path = "/news"
+        element = { < NewsComponent / > }
+        /> < /
+        Routes > <
+        /Layout> < /
+        Context >
+
+
+    )
 }
 
 export default App;

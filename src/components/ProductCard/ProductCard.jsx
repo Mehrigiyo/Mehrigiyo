@@ -5,7 +5,7 @@ import {BsChevronRight, BsSuitHeart} from "react-icons/bs";
 import SliderImage1 from "../../icons/slider_img1.png";
 import ProductCount from '../ProductCount/ProductCount';
 
-const ProductCard = ({img=SliderImage1, name, title, sale, price, data}) => {
+const ProductCard = ({data}) => {
 
     const [btn, setBtn] =useState(0)
 
@@ -20,19 +20,19 @@ const ProductCard = ({img=SliderImage1, name, title, sale, price, data}) => {
         <div className='product_card'>
                         <div className="product_card_item">
                             <div className="product_card_item__img">
-                                <img src={img} alt="card_img" />
+                                <img src={data.img} alt="card_img" />
                                 <a href="#"><BsSuitHeart/></a>
                             </div>
                             <div className="product_card_item__title">
-                                <h4>{name}</h4>
+                                <h4>{data.name}</h4>
                             </div>
                             <div className="product_card_item__text">
-                                <p>{title}</p>
+                                <p>{data.title}</p>
                             </div>
                             <div className="product_card_item_btn">
                                 <div className="product_card_item__sale">
-                                    <del>{sale}</del>
-                                    <span>{price}</span>
+                                    <del>{data.sale}</del>
+                                    <span>{data.price}</span>
                                 </div>
                                 <div className="product_card_item__add_btn">
                                     <a href="#" onClick={HandleBtn}>
