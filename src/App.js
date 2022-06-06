@@ -14,7 +14,6 @@ import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
 import LoveMedice from "./pages/LoveMedice/LoveMedice";
 import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctoInfo";
 import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
-import News from "./pages/News/News";
 function App() {
   return (
     <Context>
@@ -29,7 +28,6 @@ function App() {
           <Route path="/doctorslist" element={<DoctorsList />} />{" "}
           <Route path="/productlist" element={<Productlist />} />{" "}
           <Route path="/productabout" element={<ProductAbout />} />{" "}
-          <Route path="/news" element={<News />} />{" "}
           <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />
           <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />
           <Route path = "/lovedoctors" element = { < LoveDoctor /> }/>
