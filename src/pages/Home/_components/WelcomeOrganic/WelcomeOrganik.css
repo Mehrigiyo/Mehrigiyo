@@ -60,3 +60,7 @@
 .wecome_organic_link .btn {
     margin-right: 20px;
 }
+
+.wecome_organic_link {
+    align-items: center;
+}

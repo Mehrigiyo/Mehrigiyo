@@ -8,6 +8,7 @@ import Cart from "../../icons/Cart.svg";
 import Activedoctor from  "../../icons/avticeDoctor.svg"
 import AcitiveLove from "../../icons/activeLove.svg";
 import { Nav } from "react-bootstrap";
+import { DownSvg } from "../IconSvg/IconSvg";
 
 const BottomHeader = () => {
   const [activeDoctor, setActiveDoctor] = useState(true);
@@ -32,7 +33,7 @@ const BottomHeader = () => {
                 <NavLink to="/"> Bosh sahifa</NavLink>
               </li>
               <li className="topi">
-                <NavLink to="/onlinedoctor"> Onlayn shifokorlar</NavLink>
+                <NavLink to="/onlinedoctor"> Onlayn shifokorlar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/doctorslist">Nevropatolog</NavLink>
@@ -44,7 +45,7 @@ const BottomHeader = () => {
                 </ul>
               </li>
               <li className="topi">
-                <NavLink to="/product">Mahsulotlar</NavLink>
+                <NavLink to="/product">Mahsulotlar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/productlist">Choy</NavLink>
@@ -60,7 +61,7 @@ const BottomHeader = () => {
                 <NavLink to="/aboute">Biz haqimizda</NavLink>
               </li>
               <li className="topi">
-                <NavLink to="/news">Yangiliklar</NavLink>
+                <NavLink to="/news">Yangiliklar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/news">Yangiliklar</NavLink>
@@ -69,7 +70,7 @@ const BottomHeader = () => {
                 </ul>
               </li>
               <li className="topi">
-                <NavLink to="/help">Yordam</NavLink>
+                <NavLink to="/help">Yordam <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/help">Yordam</NavLink>

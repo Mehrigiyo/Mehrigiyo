@@ -2,7 +2,11 @@
     margin-right: 16px;
     border-radius: 10px;
     background: #E1F0E8;
-    padding: 24px;
+    min-width: 70px !important;
+    height: 70px !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .service_image img {
@@ -52,4 +56,5 @@
     line-height: 21px;
     color: #1D1D1F;
     opacity: 0.75;
+    margin-bottom: 0;
 }
