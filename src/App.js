@@ -12,7 +12,7 @@ import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
 import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
 import LoveMedice from "./pages/LoveMedice/LoveMedice";
-import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctoInfo";
+import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctorInfo";
 import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
 function App() {
   return (

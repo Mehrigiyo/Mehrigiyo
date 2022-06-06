@@ -8,7 +8,7 @@ import './DoctorInfo.scss'
 import { useParams } from 'react-router-dom'
 import ItemPage from '../../../../components/ItemPage/ItemPage'
 
-function DoctoInfo() {
+function DoctorInfo() {
     const {id} = useParams()
     // console.log(id);
     // const index = data.map()
@@ -56,4 +56,4 @@ function DoctoInfo() {
   )
 }
 
-export default DoctoInfo
+export default DoctorInfo
