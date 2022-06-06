@@ -63,34 +63,89 @@
       }
     }
   }
-  &__info{
-  &__treated {
-    display: flex;
-    justify-content: center;
-    &__hfive {
-      bottom: 34.33%;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 45px;
-      width: 650px;
-      text-align: center;
+  &__info {
+    &__treated {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 60px;
+      &__hfive {
+        bottom: 34.33%;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+        width: 650px;
+        text-align: center;
+      }
     }
-    
-  }
-  &__dowload{
-    
-  &__square {
-    width: 320px;
-    height: 150px;
-    left: 660px;
-    top: 0px;
+    &__dowload {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      &__square {
+        width: 320px;
+        height: 150px;
+        left: 660px;
+        top: 0px;
+        background: #ffffff;
+        box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+        border-radius: 15px;
 
-    background: #ffffff;
-    box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
-    border-radius: 15px;
+        &__hfour {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 100px;
+          line-height: 147px;
+          text-align: center;
+          font-feature-settings: "salt" on, "liga" off;
+          color: #69cb3a;
+          opacity: 0.3;
+          width: 171px;
+        }
+        &__textP {
+          font-family: "Nunito";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          text-align: center;
+          font-feature-settings: "salt" on, "liga" off;
+          color: #29da6a;
+          margin-top: -70px;
+        }
+      }
+    }
   }
-}
-}
+  &__center {
+
+    &__Taxt {
+      justify-content: center;
+      display: flex;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      position: relative;
+
+      &__fotoOne {
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        margin-right: -40px;
+      }
+
+      &__fotoTwo {
+      }
+      .product__center__title {
+        position: absolute;
+        bottom: 40%;
+        font-family: "Nunito";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+        font-feature-settings: "salt" on, "liga" off;
+        color: #53b175;
+        width: 800px;
+      }
+    }
+  }
 }
