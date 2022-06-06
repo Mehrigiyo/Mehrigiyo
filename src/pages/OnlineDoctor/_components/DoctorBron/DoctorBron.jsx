@@ -16,7 +16,7 @@ function DoctorBron() {
          {/* <div>DoctorBron <h1>{id}</h1></div> */}
 
          <section className='DoctorBron border'>
-
+            <div>bron</div>
          </section>
       </ItemPage>
       </>
