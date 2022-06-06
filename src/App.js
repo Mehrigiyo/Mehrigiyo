@@ -4,7 +4,7 @@ import News from "./pages/News/New";
 import Context from "./Context/Context";
 import Help from "./pages/Help/Help";
 import Home from "./pages/Home/Home";
-import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor"
+import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor";
 import Product from "./pages/Product/Product";
 import About from "./pages/About/About";
 import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
@@ -67,4 +67,4 @@ function App() {
     )
 }
 
-export default App;
+export default App

@@ -1,13 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Bottom-Header.scss";
 import { NavLink } from "react-router-dom";
 import logo from "../../icons/Logo.svg";
 import doctor from "../../icons/doktor-icon.svg";
-import heart from "../../icons/heart.svg";
+import heart from "../../icons/heartbg.png";
 import Cart from "../../icons/Cart.svg";
+import Activedoctor from  "../../icons/avticeDoctor.svg"
+import AcitiveLove from "../../icons/activeLove.svg";
+import { Nav } from "react-bootstrap";
 
 
 const BottomHeader = () => {
+  const [activeDoctor, setActiveDoctor] = useState(true);
+  const [activeMedice, setActiveMedice] = useState(true)
+
+  const HandleActiveImage = ()=>{
+    setActiveDoctor(next => !next)
+  }
+  const HandleActiveImage1 = ()=>{
+    setActiveMedice(next => !next)
+  }
   return (
     <div className="bottom-header  ">
       <div className="globalContainer flex-between">
@@ -37,7 +49,7 @@ const BottomHeader = () => {
               <li className="topi">
                 <NavLink to="/product">Mahsulotlar</NavLink>
                 <ul className="drop_menu">
-                  <li className="drop_link">  
+                  <li className="drop_link">
                     <NavLink to="/productlist">Choy</NavLink>
                     <NavLink to="/yoglar">Yog’lar</NavLink>
                     <NavLink to="/ziravor">Ziravorlar</NavLink>
@@ -74,13 +86,28 @@ const BottomHeader = () => {
 
           <div className="threeIcon">
             <div className="iconca">
-              <img src={doctor} alt="" />
+              <NavLink to="/lovedoctors">
+                {activeDoctor
+                  ?
+                    <img onClick={HandleActiveImage} src={doctor} alt="" />
+                  :
+                    <img onClick={HandleActiveImage}  src={Activedoctor} alt="" />
+                }
+              </NavLink>
             </div>
             <div className="iconca">
-              <img src={heart} alt="" />
+              <NavLink to="/lovemedice">
+                { activeMedice ?
+                  <img onClick={HandleActiveImage1} src={heart} alt="" />
+                  :
+                  <img onClick={HandleActiveImage1} src={AcitiveLove} alt="" />
+                }
+              </NavLink>
             </div>
             <div className="iconca">
-              <img src={Cart} alt="" />
+              <NavLink to="/shop">
+                <img src={Cart} alt="" />
+              </NavLink>
             </div>
           </div>
         </section>

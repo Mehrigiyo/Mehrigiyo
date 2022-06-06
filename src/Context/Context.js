@@ -4,21 +4,26 @@ import { createContext, useContext, useState } from "react"
  export const Store = ()=> useContext(ContextProvider)
 function Context({children}) {
     const [modalVisible, setModalVisible] = useState(false)
-
-    function handelVisible(){
+    const [ModalData , setModalData] = useState({})
+ 
+    function handelVisible(data){
+        console.log(data);
         setModalVisible(prev => !prev)
+        setModalData(data)
+        console.log('modal');
         
     }
 
 
     const store = {
         modalVisible, 
+        ModalData,
         handelVisible ,
         setModalVisible,
     }
     return (
         <ContextProvider.Provider value={store}>
-            {children}
+         {children}
         </ContextProvider.Provider>
     )
     

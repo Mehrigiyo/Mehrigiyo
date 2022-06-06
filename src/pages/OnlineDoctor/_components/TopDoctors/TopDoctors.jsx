@@ -26,7 +26,7 @@ function TopDoctors() {
                 {
                     data.map((item)=>(
                       <Col xs={2}>
-                          <DoctorCard  />
+                          <DoctorCard data={item} />
                       </Col>
                     ))
                 }

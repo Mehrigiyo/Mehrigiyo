@@ -10,7 +10,7 @@
     font-weight: 500 !important;
     font-size: 20px !important;
     line-height: 24px !important;
-    background-color: #FAFBFC !important;
+    background-color: transparent !important;
     /* Dark blue */
     color: #282938 !important;
     
@@ -28,6 +28,7 @@
 }
 .accordion-button:not(.collapsed){
     color: #282938 !important;
+    background-color: transparent !important;  
     box-shadow: none !important;
 }
 .accordion-button:focus{
