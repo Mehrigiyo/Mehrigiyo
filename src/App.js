@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import NewsComponent from "./components/NewsComponent/NewsComponent";
 import Context from "./Context/Context";
 import Help from "./pages/Help/Help";
 import Home from "./pages/Home/Home";
@@ -11,8 +10,11 @@ import AskQuestion from "./pages/Help/_components/AskQuestions/AskQuestion";
 import DoctorsList from "./pages/OnlineDoctor/_components/DoctorsList/DoctorsList";
 import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
+import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
+import LoveMedice from "./pages/LoveMedice/LoveMedice";
 import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctoInfo";
 import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
+import News from "./pages/News/News";
 function App() {
   return (
     <Context>
@@ -27,13 +29,15 @@ function App() {
           <Route path="/doctorslist" element={<DoctorsList />} />{" "}
           <Route path="/productlist" element={<Productlist />} />{" "}
           <Route path="/productabout" element={<ProductAbout />} />{" "}
-          <Route path="/news" element={<NewsComponent />} />{" "}
+          <Route path="/news" element={<News />} />{" "}
           <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />
           <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />
+          <Route path = "/lovedoctors" element = { < LoveDoctor /> }/>
+          <Route path = "/lovemedice" element = { < LoveMedice /> }/> 
         </Routes>{" "}
       </Layout>{" "}
     </Context>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,11 +1,12 @@
 import React from 'react'
 
-function New() {
+function News() {
   return (
     <div>
+      
         
     </div>
   )
 }
 
-export default New
+export default News
