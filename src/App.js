@@ -17,6 +17,8 @@ import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
 import News from "./pages/News/News";
 import FullCard from "./pages/News/_components/FullCard/FullCard";
 import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
+import ShopMenu from "./pages/ShopMenu/ShopMenu";
+import ShopBox from "./pages/ShopBox/ShopBox";
 
 function App() {
     return ( <
@@ -71,12 +73,18 @@ function App() {
         Route path = "/tohealth"
         element = { < ToHealth / > }
         /> <
+        Route path = "/shopmenu"
+        element = { < ShopMenu / > }
+        /> <
+        Route path = "/shopbox"
+        element = { < ShopBox / > }
+        /> <
         Route path = "/fullcard"
         element = { < FullCard / > }
-        /> <
-        /Routes>{" "} <
-        /Layout>{" "} <
-        /Context>
+        /> < /
+        Routes > { " " } <
+        /Layout>{" "} < /
+        Context >
     );
 }
 

@@ -5,6 +5,7 @@ import Button from "../../components/Buttons/Button";
 import ShopImages from "../../images/productImage.svg"
 import ProductCount from "../../components/ProductCount/ProductCount";
 import RemoveProduct from "../../images/remove.svg";
+import Buttons from "../../components/Button/GreenButton";
 import './ShopMenu.scss';
 function ShopMenu() {
   return (
@@ -70,6 +71,30 @@ function ShopMenu() {
             </Col>
             <Col lg={3}>
                 <div className="shopping_result">
+                    <div className="result_text">
+                        <div className="result_pro">
+                           <h6> Mahsulotlar ()</h6>
+                           <p>{}</p>
+                        </div>
+                        <div className="result_sale">
+                            <h6>Chegirma</h6>
+                            <p>{0}</p>
+                        </div>
+                        <div className="result_delivery">
+                            <h6>Yetkazib berish</h6>
+                            <p>15 000</p>
+                        </div>
+                        <div className="result_all_price">
+                            <h4>Umumiy</h4>
+                            <h4>{}</h4>
+                        </div>
+                    </div>
+                    <div className="result_price_go">
+                        <Buttons>To’lovga o’tish</Buttons>
+                    </div>
+                    <div className="result_price_out">
+                        <Buttons>Menyuga qaytish</Buttons>
+                    </div>
                 </div>
             </Col>
         </Row>
