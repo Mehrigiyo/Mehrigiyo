@@ -7,18 +7,23 @@ import heart from "../../icons/heartbg.png";
 import Cart from "../../icons/Cart.svg";
 import Activedoctor from  "../../icons/avticeDoctor.svg"
 import AcitiveLove from "../../icons/activeLove.svg";
-import { Nav } from "react-bootstrap";
+import { DownSvg } from "../IconSvg/IconSvg";
+import ActiveShop from '../../images/active_shop.svg'
 
 
 const BottomHeader = () => {
   const [activeDoctor, setActiveDoctor] = useState(true);
   const [activeMedice, setActiveMedice] = useState(true)
+  const [activeShop, setActiveShop] = useState(true)
 
   const HandleActiveImage = ()=>{
     setActiveDoctor(next => !next)
   }
   const HandleActiveImage1 = ()=>{
     setActiveMedice(next => !next)
+  }
+  const HandleActiveImage2 = ()=>{
+    setActiveShop(next => !next)
   }
   return (
     <div className="bottom-header  ">
@@ -35,7 +40,7 @@ const BottomHeader = () => {
                 <NavLink to="/"> Bosh sahifa</NavLink>
               </li>
               <li className="topi">
-                <NavLink to="/onlinedoctor"> Onlayn shifokorlar</NavLink>
+                <NavLink to="/onlinedoctor"> Onlayn shifokorlar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/doctorslist">Nevropatolog</NavLink>
@@ -47,7 +52,7 @@ const BottomHeader = () => {
                 </ul>
               </li>
               <li className="topi">
-                <NavLink to="/product">Mahsulotlar</NavLink>
+                <NavLink to="/product">Mahsulotlar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/productlist">Choy</NavLink>
@@ -63,7 +68,7 @@ const BottomHeader = () => {
                 <NavLink to="/aboute">Biz haqimizda</NavLink>
               </li>
               <li className="topi">
-                <NavLink to="/news">Yangiliklar</NavLink>
+                <NavLink to="/news">Yangiliklar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/news">Yangiliklar</NavLink>
@@ -72,7 +77,7 @@ const BottomHeader = () => {
                 </ul>
               </li>
               <li className="topi">
-                <NavLink to="/help">Yordam</NavLink>
+                <NavLink to="/help">Yordam <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/help">Yordam</NavLink>
@@ -105,8 +110,12 @@ const BottomHeader = () => {
               </NavLink>
             </div>
             <div className="iconca">
-              <NavLink to="/shop">
-                <img src={Cart} alt="" />
+              <NavLink to="/shopbox">
+              { activeShop ?
+                  <img onClick={HandleActiveImage2} src={Cart} alt="" />
+                  :
+                  <img onClick={HandleActiveImage2} src={ActiveShop} alt="" />
+                }
               </NavLink>
             </div>
           </div>

@@ -20,3 +20,7 @@
     .ButtonIcon a img {
         margin-left: 20px;
     }
+    
+    .ButtonIcon {
+        z-index: 9999;
+    }

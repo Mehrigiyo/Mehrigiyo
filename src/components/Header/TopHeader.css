@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
-.TopHeaderContainer{
-    background-color: #D6ECDF;    
+.TopHeaderContainer {
+    background-color: #D6ECDF;
 }
 
-.topLi > a{
+.topLi>a {
     text-decoration: none;
     color: #505050;
     font-family: 'Poppins';
@@ -11,23 +11,28 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-  
 }
-.topLi > a:hover{
+
+.topLi>a:hover {
     color: #63B882;
 }
-.topUl{
+
+.topUl {
     gap: 26px;
     display: flex;
     padding: 10px;
     margin-bottom: 0;
 }
-.section{
+
+.section {
     display: flex;
-    gap: 40px;
+    gap: 16px;
     align-items: center;
+    justify-content: space-between;
 }
-.location{
+
+.location_flag a {
+    position: relative;
     display: flex;
     gap: 15px;
     font-family: 'Poppins';
@@ -37,16 +42,63 @@
     line-height: 21px;
     color: #000000;
     align-items: center;
-
 }
-.stek{
+
+.stek {
     opacity: 0.5;
     align-items: center;
 }
-.pismo{
+
+.pismo {
     align-items: center;
-    margin-top: 14px;
     display: flex;
 }
 
+.location_flag a::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: rgba(176, 183, 195, 0.4);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -16px;
+}
 
+.location_country a {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.location_log a {
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.location_country a::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: rgba(176, 183, 195, 0.4);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -16px;
+}

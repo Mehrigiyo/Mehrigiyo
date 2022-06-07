@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Form } from 'react-bootstrap'
+import { Row, Col, Form , Breadcrumb} from 'react-bootstrap'
 import CloseIcon from "../../../../icons/top_Icon.svg"
 import LeftIcon from "../../../../images/Close_Icon.svg"
 import Breadcrum from '../../../../components/Breadcrum/Breadcrum'
@@ -34,9 +34,12 @@ function DoctorsList() {
           <a href="#"><img src={CloseIcon} /></a>
         </div>
       </div>
-      <Breadcrum width={1240} name={"Onlayn shifokorlar"} url={"/onlinedoctor"}>
-        Shifokorlar
-        </Breadcrum>
+      <Breadcrum width={1240}>
+        <Breadcrumb.Item href="/onlinedoctor">
+          Onlayn shifokorlar
+        </Breadcrumb.Item>
+        / Shifokorlar
+      </Breadcrum>
       <Row>
         <Col lg={3}>
           <div className="doctor_list_title">
@@ -134,7 +137,7 @@ function DoctorsList() {
         </Col>
       </Row>
       <div className="doctorlist_back_tree">
-              <img src={tree} alt="" />
+        <img src={tree} alt="" />
       </div>
     </div>
   )

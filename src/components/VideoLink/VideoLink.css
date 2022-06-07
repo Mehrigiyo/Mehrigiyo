@@ -24,3 +24,7 @@
 .VideoLink a:hover {
     color: #53B175;
 }
+
+.VideoLink {
+    z-index: 9999;
+}

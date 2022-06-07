@@ -1,6 +1,6 @@
 import React from 'react'
 import Breadcrum from '../../../../components/Breadcrum/Breadcrum'
-import { Row, Col, Form } from 'react-bootstrap'
+import { Row, Col, Form,Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
 import filter from "../../../../images/filter.svg"
 import Down from "../../../../icons/down.svg";
 import tree from "../../../../images/Group.png"
@@ -19,7 +19,12 @@ function Productlist() {
   }
   return (
     <div className='product_list globalContainer'>
-        <Breadcrum width={1240} name={"Mahsulotlar"} url={"/product"}>Mahsulotlar</Breadcrum>
+        <Breadcrum width={1240}>
+          <BreadcrumbItem href="/product">
+              Mahsulotlar 
+          </BreadcrumbItem>
+         / Mahsulotlar
+        </Breadcrum>
         <Row>
         <Col lg={3}>
           <div className="product_list_title">

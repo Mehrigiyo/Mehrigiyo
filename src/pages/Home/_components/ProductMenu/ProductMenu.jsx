@@ -6,10 +6,47 @@ import { Dropdown, Col, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import Button from '../../../../components/Buttons/Button';
 import ProductCard from '../../../../components/ProductCard/ProductCard';
-import { TabData } from "./TabData";
 import { NavLink } from 'react-router-dom';
+import SliderImage1 from "../../../../icons/slider_img1.png";
+import SliderImage2 from "../../../../icons/slider_img2.png";
+import SliderImage3 from "../../../../icons/slider_img3.png";
+import SliderImage4 from "../../../../icons/slider_img4.png";
 
 function ProductMenu() {
+    const TabData = [{
+        img: SliderImage1,
+        name: 'ROHAT Yog\ `i №2',
+        title: "Mavjud",
+        sale: "17,190, uzs",
+        price: "16 000 uzs",
+    },
+    {
+        img: SliderImage2,
+        name: 'Rohat Sirop',
+        title: "Erkaklar kuchi",
+        sale: "200,190, uzs",
+        price: "150 000 uzs",
+    }, {
+        img: SliderImage3,
+        name: 'Organic Bananas',
+        title: "7pcs, Price",
+        sale: "17,190, uzs",
+        price: "16 000 uzs",
+    }, {
+        img: SliderImage4,
+        name: 'ROHAT Yog\ `i №2',
+        title: "Mavjud",
+        sale: "17,190, uzs",
+        price: "150 000 uzs",
+    }, 
+    {
+        img: SliderImage1,
+        name: 'ROHAT Yog\ `i №2',
+        title: "Mavjud",
+        sale: "17,190, uzs",
+        price: "150 000 uzs",
+    }, 
+]
     const [tabSlider, setTabSlider] = useState(0);
 
 
@@ -61,22 +98,20 @@ function ProductMenu() {
                 <div className="tab_menu">
                     <div className='tab_menu_item'>
                         {TabContentBtn.map((item, i) => (
-                            <div className='tab_menu_item_title'>
-                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={() => HandleTabSlider(i)}>
+                            <li key={i} className='tab_menu_item_title' onClick={() => HandleTabSlider(i)}>
+                                <a className={ i === tabSlider ? "active": ''} >
                                     {item}
                                 </a>
-                            </div>
+                            </li>
                         ))}
                     </div>
                     <Row>
                         <Slider {...settings}>
 
                             {
-
-                                tabSlider === 0 ? newArrays : newArrays[tabSlider]
+                                newArrays
+                                // tabSlider === 0 ? newArrays : newArrays[tabSlider]
                             }
-
-
                         </Slider>
                     </Row>
                     <Button>Barcha mahsulotlarni ko’rish</Button>
