@@ -15,56 +15,26 @@ import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
 import FullCard from "./pages/News/_components/FullCard/FullCard";
 
 function App() {
-    return ( <
-        Context >
-        <
-        Layout >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < Home / > }
-        /> <
-        Route path = "/onlinedoctor"
-        element = { < OnlineDoctor / > }
-        /> <
-        Route path = "/product"
-        element = { < Product / > }
-        />  <
-        Route path = "/help"
-        element = { < Help / > }
-        />  <
-        Route path = "/aboute"
-        element = { < About / > }
-        />  <
-        Route path = "/askquestion"
-        element = { < AskQuestion / > }
-        /> <
-        Route path = "/doctorslist"
-        element = { < DoctorsList / > }
-        />  <
-        Route path = "/productlist"
-        element = { < Productlist / > }
-        />  <
-        Route path = "/productabout"
-        element = { < ProductAbout / > }
-        />  <
-        Route path = "/news"
-        element = { < News / > }
-        /> 
-        <
-        Route path = "/tohealth"
-        element = { < ToHealth / > }
-        />
-        <
-        Route path = "/fullcard"
-        element = { < FullCard / > }
-        /></Routes> 
-        </Layout> 
-        </Context>
-
-
-    )
+  return (
+    <Context>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />{" "}
+          <Route path="/onlinedoctor" element={<OnlineDoctor />} />{" "}
+          <Route path="/product" element={<Product />} />{" "}
+          <Route path="/help" element={<Help />} />{" "}
+          <Route path="/aboute" element={<About />} />{" "}
+          <Route path="/askquestion" element={<AskQuestion />} />{" "}
+          <Route path="/doctorslist" element={<DoctorsList />} />{" "}
+          <Route path="/productlist" element={<Productlist />} />{" "}
+          <Route path="/productabout" element={<ProductAbout />} />{" "}
+          <Route path="/news" element={<News />} />
+          <Route path="/tohealth" element={<ToHealth />} />
+          <Route path="/fullcard" element={<FullCard />} />
+        </Routes>
+      </Layout>
+    </Context>
+  );
 }
 
-export default App
+export default App;
