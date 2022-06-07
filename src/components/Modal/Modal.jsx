@@ -4,46 +4,37 @@ import { Store } from '../../Context/Context'
 import GreenButton from '../Button/GreenButton'
 import close from '../../icons/Union.svg'
 import './Modal.scss'
-function Modal({children, name, image}) {
-   const {
-    modalVisible, 
-    handelVisible ,
+function Modal({ children, name, image, btn = false }) {
+  const {
+    modalVisible,
+    handelVisible,
     ModalData
-}  = Store()
-  
+  } = Store()
+
   return (
     <>
-    {
-      modalVisible &&
-      <>
-       <section className="myModal"> 
-       <img src={ModalData.img} alt="img" />
-      <div className="myModal__reletive">
-        <div className="myModal_item">
-        <div className="myModal_title">
-          <h1>{name}</h1>
-        </div>
-        <div className="myModal_image">
-          <img src={image} alt="" />
-        </div>
-          
-          
-        </div>
-        <div className="myModal__close" onClick={handelVisible}>
-          <img src={close} alt="img" />
-        </div>
-      {/* <GreenButton > Appointment</GreenButton> */}
+      {
+        modalVisible &&
+        <>
+          <section className="myModal">
+            {
+              btn && <div className="myModal__reletive">
+                <div className="myModal__close" onClick={handelVisible}>
+                  <img src={close} alt="img" />
+                </div>
+              </div>
+            }
+            <div className="myModal_item">
+              {children}
+            </div>
 
-      {/* {children} */}
-      </div>
-      
 
-      
-      </section>
-      <div className="myModal__exit" onClick={handelVisible}></div>
-      </>
-    }
-    
+
+          </section>
+          <div className="myModal__exit" onClick={handelVisible}></div>
+        </>
+      }
+
     </>
   )
 }

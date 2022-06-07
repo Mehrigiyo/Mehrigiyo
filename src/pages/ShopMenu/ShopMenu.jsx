@@ -7,7 +7,14 @@ import ProductCount from "../../components/ProductCount/ProductCount";
 import RemoveProduct from "../../images/remove.svg";
 import Buttons from "../../components/Button/GreenButton";
 import './ShopMenu.scss';
+import { Store } from '../../Context/Context';
+import Modal from '../../components/Modal/Modal';
 function ShopMenu() {
+
+    const {handelVisible} = Store()
+
+
+
   return (
     <div className='shop_menu globalContainer'>
         <Breadcrum name={"Savatcha"} width={1240}>Savatcha</Breadcrum>
@@ -89,7 +96,7 @@ function ShopMenu() {
                             <h4>{}</h4>
                         </div>
                     </div>
-                    <div className="result_price_go">
+                    <div className="result_price_go" onClick={handelVisible}>
                         <Buttons>To’lovga o’tish</Buttons>
                     </div>
                     <div className="result_price_out">

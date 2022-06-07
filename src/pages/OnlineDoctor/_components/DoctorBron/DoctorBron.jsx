@@ -3,23 +3,32 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import img from '../../../../images/hand01.png'
 import ItemPage from '../../../../components/ItemPage/ItemPage'
-
-
 import './DoctorBron.scss'
 import { Col, Row } from 'react-bootstrap'
-import Date from './_components/Date'
+import Day from './_components/Day'
+import Modal from '../../../../components/Modal/Modal'
+import { Store } from '../../../../Context/Context'
 
 
 function DoctorBron() {
     const {id} = useParams()
-    const g = [3,4, 3,2 ,3 ,4, 3,4 ,33,3]
+    const g = []
+    const { handelVisible } = Store()
+    Date.prototype.addDays = function(days) {
+      let date = new Date(this.valueOf());
+      date.setDate(date.getDate() + days);
+      return date;
+  }
+  
+  let newDate = new Date();
+  
+  for (let i = 0; i < 14; i++) {
+    let h = newDate.addDays(i)
+      g.push(h)
+  }
+
+  
     
-  
-  
-    // for (let i = 0; i < 12; i++) {
-      // g.push(new Date)
-      
-    // }
   return (
       <>
       <ItemPage>
@@ -38,8 +47,8 @@ function DoctorBron() {
               <Row >
                 {
                   g.map((item, index)=>(
-                    <Col key={index}>
-                    <Date day={++index} />
+                    <Col onClick={handelVisible} key={index}>
+                      <Day day={item.getDate()} weekDay={item.getDay()}  className={'days ' + (index == 0 ? 'active': '')} />
                     </Col>
                   ))
 
@@ -47,6 +56,10 @@ function DoctorBron() {
                
               </Row>
             </div>
+            <Modal>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquam sint perferendis dolore eaque, natus aspernatur magnam ullam quos consectetur nihil blanditiis mollitia aperiam vel, debitis qui libero sequi numquam asperiores ipsam! Molestias alias esse incidunt, ex voluptatem inventore accusamus.
+              om
+              </Modal>
             <div className="DoctorBron__item"></div>
          </section>
       </ItemPage>

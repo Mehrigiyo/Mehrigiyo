@@ -1,31 +1,24 @@
-
-
-.myModal{
-
+.myModal {
     // max-width: 1440px;
-    background: red;
+    background-color: #fff;
     position: fixed;
-    z-index: 100;
+    padding: 10px;
+    z-index: 9999;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-radius: 20px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    min-height: 70vh;
-    width: 1240px;
-    
-    &__reletive{
-        position: relative;
-        width: 100%;
-        min-height: 70vh;
-        .green-btn{
-            position: absolute;
-            right: 50px;
-            bottom: 40px;
-        }
+    max-height: 70vh;
+    min-height: 30vh;
+    min-width: 300px;
+    &__reletive {
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    &__close{
+    &__close {
         width: 40px;
         height: 40px;
         background: #F0F0F0;
@@ -33,14 +26,9 @@
         place-items: center;
         border-radius: 50%;
         position: absolute;
-        top: 40px;
-        right: 50px;
+        right: 30px;
     }
- 
-    
-
-
-    &__exit{
+    &__exit {
         width: 100vw;
         height: 100vh;
         background-color: #000;
@@ -49,6 +37,5 @@
         position: fixed;
         top: 0;
         left: 0;
-        
     }
 }
