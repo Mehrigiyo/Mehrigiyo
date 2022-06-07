@@ -19,65 +19,30 @@ import FullCard from "./pages/News/_components/FullCard/FullCard";
 import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
 
 function App() {
-    return ( <
-        Context >
-        <
-        Layout >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < Home / > }
-        />{" "} <
-        Route path = "/onlinedoctor"
-        element = { < OnlineDoctor / > }
-        />{" "} <
-        Route path = "/product"
-        element = { < Product / > }
-        />{" "} <
-        Route path = "/help"
-        element = { < Help / > }
-        />{" "} <
-        Route path = "/aboute"
-        element = { < About / > }
-        />{" "} <
-        Route path = "/askquestion"
-        element = { < AskQuestion / > }
-        />{" "} <
-        Route path = "/doctorslist"
-        element = { < DoctorsList / > }
-        />{" "} <
-        Route path = "/productlist"
-        element = { < Productlist / > }
-        />{" "} <
-        Route path = "/productabout"
-        element = { < ProductAbout / > }
-        />{" "} <
-        Route path = "/news"
-        element = { < News / > }
-        />{" "} <
-        Route path = "/onlinedoctor/:id"
-        element = { < DoctorInfo / > }
-        /> <
-        Route path = "/onlinedoctor/doctors/:id"
-        element = { < DoctorBron / > }
-        /> <
-        Route path = "/lovedoctors"
-        element = { < LoveDoctor / > }
-        /> <
-        Route path = "/lovemedice"
-        element = { < LoveMedice / > }
-        /> <
-        Route path = "/tohealth"
-        element = { < ToHealth / > }
-        /> <
-        Route path = "/fullcard"
-        element = { < FullCard / > }
-        /> <
-        /Routes>{" "} <
-        /Layout>{" "} <
-        /Context>
-    );
+  return (
+    <Context>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/onlinedoctor" element={<OnlineDoctor />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/aboute" element={<About />} />
+          <Route path="/askquestion" element={<AskQuestion />} />
+          <Route path="/doctorslist" element={<DoctorsList />} />
+          <Route path="/productlist" element={<Productlist />} />
+          <Route path="/productabout" element={<ProductAbout />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />
+          <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />
+          <Route path="/lovedoctors" element={<LoveDoctor />} />
+          <Route path="/lovemedice" element={<LoveMedice />} />
+          <Route path="/tohealth" element={<ToHealth />} />
+          <Route path="/fullcard" element={<FullCard />} />
+        </Routes>
+      </Layout>
+    </Context>
+  );
 }
 
 export default App;

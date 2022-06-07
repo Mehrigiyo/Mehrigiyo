@@ -1,47 +1,31 @@
-
-import React, { useState } from 'react'
-import { Store } from '../../Context/Context'
-import GreenButton from '../Button/GreenButton'
-import close from '../../icons/Union.svg'
-import './Modal.scss'
-function Modal({children, name, image, btn=false}) {
-   const {
-    modalVisible, 
-    handelVisible ,
-    ModalData
-}  = Store()
-  
+import React, { useState } from "react";
+import { Store } from "../../Context/Context";
+import GreenButton from "../Button/GreenButton";
+import close from "../../icons/Union.svg";
+import "./Modal.scss";
+function Modal({ children, boolen, set }) {
   return (
     <>
-    {
-      modalVisible &&
       <>
-       <section className="myModal"> 
-        {
-          btn &&   <div className="myModal__reletive">
-          <div className="myModal__close" onClick={handelVisible}>
-            <img src={close} alt="img" />
-        </div>
-        </div>
-        }
-            <div className="myModal_item">
-              {children}
+        <section className="myModal">
+          <div className="myModal__reletive">
+            <div
+              className="myModal__close"
+              hidden={boolen}
+              onClick={() => set(false)}
+            >
+              <img src={close} alt="img" />
             </div>
-       
-     
-      
-      </section>
-      <div className="myModal__exit" onClick={handelVisible}></div>
+            <div className="myModal_item">{children}</div>
+          </div>
+        </section>
+        <div className="myModal__exit"></div>
       </>
-    }
-    
     </>
-  )
+  );
 }
 
-export default Modal
-
-
+export default Modal;
 
 // const Modal = ({ children, visible, setVisible }) => {
 //   const styledModal = {

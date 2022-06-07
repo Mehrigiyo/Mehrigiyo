@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TopHeader.css";
 import { Link, NavLink } from "react-router-dom";
 import flag from "../../icons/UzbFlag.svg";
-import locate from "../../icons/Location.svg"
-import Adde from "../../icons/Add-User.svg"
+import locate from "../../icons/Location.svg";
+import Adde from "../../icons/Add-User.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
+import Modal from "../Modal/Modal";
+import { Store } from "../../Context/Context";
+import Login from "../Modal/_components/Login/Login";
 const TopHeader = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="TopHeaderContainer ">
       <div className="globalContainer flex-between">
@@ -22,10 +27,14 @@ const TopHeader = () => {
                 <Link to="/"> Yetkazib berish va to'lash</Link>
               </li>
               <li className="topLi">
-                <Link to="/" style={{ color: "#AB7A19" }}>Aksiya</Link>
+                <Link to="/" style={{ color: "#AB7A19" }}>
+                  Aksiya
+                </Link>
               </li>
               <li className="topLi">
-                <Link to="/news" style={{ color: "#53B175" }}>Yangi</Link>
+                <Link to="/news" style={{ color: "#53B175" }}>
+                  Yangi
+                </Link>
               </li>
             </ul>
           </nav>
@@ -38,14 +47,18 @@ const TopHeader = () => {
             </a>
           </div>
           <div className="location_country">
-            <a href="#" className="pismo">Toshkent shahar
+            <a href="#" className="pismo">
+              Toshkent shahar
               <img src={locate} alt="" />
             </a>
           </div>
           <div className="location_log">
-            <a href="#" className="pismo">Kirish <img src={Adde} alt="" /></a>
+            <a className="pismo" onClick={() => setOpen(!open)}>
+              Kirish <img src={Adde} alt="" />
+            </a>
           </div>
         </section>
+        {open && <Modal children={<Login />} set={setOpen} />}
       </div>
     </header>
   );
