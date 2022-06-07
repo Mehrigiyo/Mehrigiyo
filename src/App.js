@@ -13,9 +13,10 @@ import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout"
 import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
 import LoveMedice from "./pages/LoveMedice/LoveMedice";
 import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctorInfo";
-
 import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
 import News from "./pages/News/News";
+import FullCard from "./pages/News/_components/FullCard/FullCard";
+import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
 function App() {
   return (
     <Context>
@@ -33,12 +34,14 @@ function App() {
           <Route path="/news" element={<News />} />{" "}
           <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />
           <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />
-          <Route path = "/lovedoctors" element = { < LoveDoctor /> }/>
-          <Route path = "/lovemedice" element = { < LoveMedice /> }/> 
+          <Route path="/lovedoctors" element={<LoveDoctor />} />
+          <Route path="/lovemedice" element={<LoveMedice />} />
+          <Route path="/tohealth" element={<ToHealth />} />
+          <Route path="/fullcard" element={<FullCard />} />
         </Routes>{" "}
       </Layout>{" "}
     </Context>
-  )
+  );
 }
 
-export default App
+export default App;
