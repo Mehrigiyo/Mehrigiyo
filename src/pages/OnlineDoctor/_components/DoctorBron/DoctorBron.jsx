@@ -12,20 +12,14 @@ import Date from './_components/Date'
 
 function DoctorBron() {
     const {id} = useParams()
-    const g = []
-    Date.prototype.addDays = function(days) {
-      let date = new Date(this.valueOf());
-      date.setDate(date.getDate() + days);
-      return date;
-  }
+    const g = [3,4, 3,2 ,3 ,4, 3,4 ,33,3]
+    
   
-  let date = new Date();
   
-  // console.log(date.addDays(5));
-    for (let i = 0; i < 12; i++) {
-      g.push(i)
+    // for (let i = 0; i < 12; i++) {
+      // g.push(new Date)
       
-    }
+    // }
   return (
       <>
       <ItemPage>
