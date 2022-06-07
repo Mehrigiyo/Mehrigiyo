@@ -1,10 +1,13 @@
 
 
 import React from 'react'
-
-function Date() {
+import './Date.scss'
+function Date({day}) {
   return (
-    <div>Date</div>
+    <div className={'days ' + (day == 1 ? 'active': '')}>
+      <h5>Today</h5>
+      <span>{day}</span>
+    </div>
   )
 }
 
