@@ -29,11 +29,12 @@
         align-items: center;
         justify-content: center;
     }
+    margin-right: 79px;
 }
 
 .product_count {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     justify-content: space-between;
     .price_name p {
         font-weight: 700;
@@ -44,5 +45,6 @@
         text-align: right;
         letter-spacing: 0.1px;
         color: #53B175;
+        margin-bottom: 0;
     }
 }

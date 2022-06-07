@@ -13,6 +13,14 @@ import Productlist from "./pages/Product/_components/Productlist/Productlist";
 import ProductAbout from "./pages/Product/_components/ProductAbout/ProductAbout";
 import LoveDoctor from "./pages/LoveDoctors/LoveDoctors";
 import LoveMedice from "./pages/LoveMedice/LoveMedice";
+import DoctorInfo from "./pages/OnlineDoctor/_components/DoctorInfo/DoctorInfo";
+import DoctorBron from "./pages/OnlineDoctor/_components/DoctorBron/DoctorBron";
+import ShopBox from "./pages/ShopBox/ShopBox";
+import ShopMenu from "./pages/ShopMenu/ShopMenu";
+
+
+
+
 
 function App() {
     return ( <
@@ -57,6 +65,18 @@ function App() {
         />  <
         Route path = "/news"
         element = { < NewsComponent / > }
+        />  <
+        Route path = "/shopbox"
+        element = { < ShopBox / > }
+        />  <
+        Route path = "/shopmenu"
+        element = { < ShopMenu / > }
+        />  <
+        Route path = "/onlinedoctor/:id"
+        element = { < DoctorInfo / > }
+        /> <
+        Route path = "/onlinedoctor/doctors/:id"
+        element = { < DoctorBron / > }
         /> < /
         Routes > <
         /Layout> < /

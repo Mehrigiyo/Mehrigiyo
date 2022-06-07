@@ -7,18 +7,22 @@ import heart from "../../icons/heartbg.png";
 import Cart from "../../icons/Cart.svg";
 import Activedoctor from  "../../icons/avticeDoctor.svg"
 import AcitiveLove from "../../icons/activeLove.svg";
-import { Nav } from "react-bootstrap";
 import { DownSvg } from "../IconSvg/IconSvg";
+import ActiveShop from '../../images/active_shop.svg'
 
 const BottomHeader = () => {
   const [activeDoctor, setActiveDoctor] = useState(true);
   const [activeMedice, setActiveMedice] = useState(true)
+  const [activeShop, setActiveShop] = useState(true)
 
   const HandleActiveImage = ()=>{
     setActiveDoctor(next => !next)
   }
   const HandleActiveImage1 = ()=>{
     setActiveMedice(next => !next)
+  }
+  const HandleActiveImage2 = ()=>{
+    setActiveShop(next => !next)
   }
   return (
     <div className="bottom-header  ">
@@ -103,8 +107,12 @@ const BottomHeader = () => {
               </NavLink>
             </div>
             <div className="iconca">
-              <NavLink to="/shop">
-                <img src={Cart} alt="" />
+              <NavLink to="/shopbox">
+              { activeShop ?
+                  <img onClick={HandleActiveImage2} src={Cart} alt="" />
+                  :
+                  <img onClick={HandleActiveImage2} src={ActiveShop} alt="" />
+                }
               </NavLink>
             </div>
           </div>

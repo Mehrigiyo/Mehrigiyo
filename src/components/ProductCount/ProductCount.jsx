@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import {Button} from 'react-bootstrap';
 import './ProductCount.scss';
-function ProductCount() {
+function ProductCount({children}) {
     const [counter, setCounter] = useState(1);
 
     const Increase = () => {
@@ -26,6 +26,7 @@ function ProductCount() {
             </span>
         </div>
         <div className="price_name">
+            {children}
             <p>
                 {   counter > 0 &&
                     counter * 16000

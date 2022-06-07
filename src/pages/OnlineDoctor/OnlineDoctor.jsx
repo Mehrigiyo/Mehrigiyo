@@ -7,7 +7,7 @@ import OnlineHelp from '../Home/_components/OnlineHelp/OnlineHelp';
 import DoctorTypesBlog from './_components/DoctorTypesBlog/DoctorTypesBlog';
 import OnlineDoctorHeader from './_components/OnlineDoctorHeader/OnlineDoctorHeader';
 import TopDoctors from './_components/TopDoctors/TopDoctors';
-import DoctoInfo from './_components/DoctorInfo/DoctoInfo';
+import DoctoInfo from './_components/DoctorInfo/DoctorInfo';
 
 function OnlineDoctor() {
     return (
