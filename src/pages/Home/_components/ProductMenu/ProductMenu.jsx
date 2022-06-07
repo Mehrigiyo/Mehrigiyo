@@ -98,22 +98,20 @@ function ProductMenu() {
                 <div className="tab_menu">
                     <div className='tab_menu_item'>
                         {TabContentBtn.map((item, i) => (
-                            <div className='tab_menu_item_title'>
-                                <a href="#" className={tabSlider == 0 ? "active" : ""} onClick={() => HandleTabSlider(i)}>
+                            <li key={i} className='tab_menu_item_title' onClick={() => HandleTabSlider(i)}>
+                                <a className={ i === tabSlider ? "active": ''} >
                                     {item}
                                 </a>
-                            </div>
+                            </li>
                         ))}
                     </div>
                     <Row>
                         <Slider {...settings}>
 
                             {
-
-                                tabSlider === 0 ? newArrays : newArrays[tabSlider]
+                                newArrays
+                                // tabSlider === 0 ? newArrays : newArrays[tabSlider]
                             }
-
-
                         </Slider>
                     </Row>
                     <Button>Barcha mahsulotlarni ko’rish</Button>

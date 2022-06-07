@@ -54,10 +54,12 @@
         line-height: 27px;
         color: #B0B7C3;
         margin-right: 24px;
+        cursor: pointer;
         &.active {
             color: #53B175;
         }
     }
+    margin-bottom: 30px;
 }
 
 .propductMenu {

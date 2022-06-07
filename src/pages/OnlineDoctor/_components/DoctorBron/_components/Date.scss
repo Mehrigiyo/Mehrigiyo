@@ -1,0 +1,32 @@
+.days{
+    width: 62px;
+    height: 72px;
+    border: 1px solid;
+    color: #222222;
+    background: #FFFFFF;
+    border: 1px solid #DEE1E6;
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 11px;
+    h5{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+    }
+
+    span{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+     
+}
+
+.days.active{
+    color: #fff;
+    background: #53B175;
+
+
+}

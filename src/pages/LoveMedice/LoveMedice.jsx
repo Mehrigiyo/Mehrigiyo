@@ -8,7 +8,7 @@ function LoveMedice() {
 
     <div className='love_medice'>
 
-      <LoveDoctors title={"Sevimli dorilar"} br_name={"Saqlangan dorilar"}>
+      <LoveDoctors title={"Sevimli dorilar"} name={"/ Saqlangan dorilar"}>
         <div className="empty_card">
           <img src={filedowload} alt="" />
           <h3>Saqlangan dorilar bo’sh!</h3>

@@ -30,3 +30,8 @@
     .breadcrumb {
         align-items: end;
     }
+    
+    .breadcrumb-item {
+        display: flex;
+        padding-right: .5rem;
+    }

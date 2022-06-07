@@ -10,6 +10,7 @@ import AcitiveLove from "../../icons/activeLove.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
 import ActiveShop from '../../images/active_shop.svg'
 
+
 const BottomHeader = () => {
   const [activeDoctor, setActiveDoctor] = useState(true);
   const [activeMedice, setActiveMedice] = useState(true)
@@ -29,7 +30,9 @@ const BottomHeader = () => {
       <div className="globalContainer flex-between">
         <section className="bottom-headder-two">
           <div>
+            <NavLink to="/">
             <img src={logo} alt=" logo" />
+            </NavLink>
           </div>
           <nav className="navi">
             <ul className="topUl">
@@ -44,7 +47,7 @@ const BottomHeader = () => {
                     <NavLink to="/">Genetika</NavLink>
                     <NavLink to="/">Stomatologiya</NavLink>
                     <NavLink to="/">Jarrohlik</NavLink>
-                    <NavLink to="/">Hammasi +</NavLink>
+                    <NavLink to="/tohealth">Hammasi +</NavLink>
                   </li>
                 </ul>
               </li>

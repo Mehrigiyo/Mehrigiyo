@@ -3,12 +3,18 @@ import Breadcrum from '../../components/Breadcrum/Breadcrum';
 import './LoveDoctors.scss';
 import tree from "../../images/Group.png"
 import Notification from "../../components/Notifacation/Notifacation";
+import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
 
-function LoveDoctors({title="Saqlangan shifokorlar", br_name='Saqlangan shifokorlar', children}) {
+function LoveDoctors({title="Saqlangan shifokorlar", name="/ Saqlangan shifokorlar", children}) {
   return (
     <div className='love_doctor'>
       <div className="love_doctors_item globalContainer">
-          <Breadcrum width={1400} name={br_name}>{br_name}</Breadcrum>
+          <Breadcrum width={1400}>
+            <BreadcrumbItem href="lovedoctors">
+                {title}
+            </BreadcrumbItem>
+            {name}
+          </Breadcrum>
           <div className="love_doctors_item_title">
             <h1>{title}</h1>
           </div>

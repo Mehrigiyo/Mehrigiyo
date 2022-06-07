@@ -4,10 +4,10 @@ import RightIcon from "../../images/Button-icon.svg";
 
 
 
-const Button = ({children, src=RightIcon, href="/"}) => {
+const Button = ({children, src=RightIcon , href="#"}) => {
     return (
         <div className='ButtonIcon'>
-            <a href={href} >{children} <img src={src} alt="icon" /></a>
+            <a href={href}>{children} <img src={src} alt="icon" /></a>
         </div>
     );
 }
