@@ -4,7 +4,7 @@ import { Store } from '../../Context/Context'
 import GreenButton from '../Button/GreenButton'
 import close from '../../icons/Union.svg'
 import './Modal.scss'
-function Modal({children, name, image}) {
+function Modal({children, name, image, btn=false}) {
    const {
     modalVisible, 
     handelVisible ,
@@ -17,11 +17,13 @@ function Modal({children, name, image}) {
       modalVisible &&
       <>
        <section className="myModal"> 
-          <div className="myModal__reletive">
-            <div className="myModal__close" onClick={handelVisible}>
-              <img src={close} alt="img" />
-          </div>
-          </div>
+        {
+          btn &&   <div className="myModal__reletive">
+          <div className="myModal__close" onClick={handelVisible}>
+            <img src={close} alt="img" />
+        </div>
+        </div>
+        }
             <div className="myModal_item">
               {children}
             </div>
