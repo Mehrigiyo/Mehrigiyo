@@ -8,18 +8,17 @@ import ItemPage from '../../../../components/ItemPage/ItemPage'
 import './DoctorBron.scss'
 import { Col, Row } from 'react-bootstrap'
 import Date from './_components/Date'
+import Modal from '../../../../components/Modal/Modal'
+import { Store } from '../../../../Context/Context'
 
 
 function DoctorBron() {
     const {id} = useParams()
     const g = [3,4, 3,2 ,3 ,4, 3,4 ,33,3]
     
+    const { handelVisible } = Store()
   
-  
-    // for (let i = 0; i < 12; i++) {
-      // g.push(new Date)
-      
-    // }
+    
   return (
       <>
       <ItemPage>
@@ -38,7 +37,7 @@ function DoctorBron() {
               <Row >
                 {
                   g.map((item, index)=>(
-                    <Col key={index}>
+                    <Col onClick={handelVisible} key={index}>
                     <Date day={++index} />
                     </Col>
                   ))
@@ -47,6 +46,9 @@ function DoctorBron() {
                
               </Row>
             </div>
+            <Modal>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquam sint perferendis dolore eaque, natus aspernatur magnam ullam quos consectetur nihil blanditiis mollitia aperiam vel, debitis qui libero sequi numquam asperiores ipsam! Molestias alias esse incidunt, ex voluptatem inventore accusamus.
+              om</Modal>
             <div className="DoctorBron__item"></div>
          </section>
       </ItemPage>

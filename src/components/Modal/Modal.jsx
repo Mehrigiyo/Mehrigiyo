@@ -17,27 +17,16 @@ function Modal({children, name, image}) {
       modalVisible &&
       <>
        <section className="myModal"> 
-       <img src={ModalData.img} alt="img" />
-      <div className="myModal__reletive">
-        <div className="myModal_item">
-        <div className="myModal_title">
-          <h1>{name}</h1>
-        </div>
-        <div className="myModal_image">
-          <img src={image} alt="" />
-        </div>
-          
-          
-        </div>
-        <div className="myModal__close" onClick={handelVisible}>
-          <img src={close} alt="img" />
-        </div>
-      {/* <GreenButton > Appointment</GreenButton> */}
-
-      {/* {children} */}
-      </div>
-      
-
+          <div className="myModal__reletive">
+            <div className="myModal__close" onClick={handelVisible}>
+              <img src={close} alt="img" />
+          </div>
+          </div>
+            <div className="myModal_item">
+              {children}
+            </div>
+       
+     
       
       </section>
       <div className="myModal__exit" onClick={handelVisible}></div>
