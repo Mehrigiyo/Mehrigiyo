@@ -1,7 +1,10 @@
 import React from "react";
-import "./TopHeader.css";
-import { Link, NavLink } from "react-router-dom";
+import "./TopHeader.scss";
+import { Link , NavLink} from "react-router-dom";
 import flag from "../../icons/UzbFlag.svg";
+import ruFlag from "../../icons/ru_flag.svg";
+import uzFlag from "../../icons/uz_flag.svg";
+import engFlag from "../../icons/eng_flag.svg";
 import locate from "../../icons/Location.svg"
 import Adde from "../../icons/Add-User.svg"
 import { DownSvg } from "../IconSvg/IconSvg";
@@ -35,6 +38,13 @@ const TopHeader = () => {
             <a href="#">
               <img src={flag} alt="" />
               <DownSvg />
+              <ul className="drop_menu">
+                <li className="drop_link">
+                  <NavLink to="/uz"><img src={uzFlag} alt="" /> O’zbekcha</NavLink>
+                  <NavLink to="/ru"><img src={ruFlag} alt="" /> Русский</NavLink>
+                  <NavLink to="/eng"><img src={engFlag} alt="" /> English</NavLink>
+                </li>
+              </ul>
             </a>
           </div>
           <div className="location_country">
