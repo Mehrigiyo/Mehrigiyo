@@ -53,7 +53,7 @@ const TopHeader = () => {
             </a>
           </div>
           <div className="location_log">
-            <a className="pismo" onClick={() => setOpen(!open)}>
+            <a className="pismo" onClick={() => setOpen(true)}>
               Kirish <img src={Adde} alt="" />
             </a>
           </div>

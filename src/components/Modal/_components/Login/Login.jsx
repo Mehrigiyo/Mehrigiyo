@@ -1,25 +1,41 @@
 import React from "react";
-import "./Login.scss"
+import { useState } from "react";
+import GreenButton from "../../../Button/GreenButton";
+import "./Login.scss";
 const Login = () => {
+  const [num, setNum] = useState(1);
   return (
     <div className="loginWrapper">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ea
-      labore atque sed id cupiditate voluptate perferendis, aperiam eaque,
-      placeat dolore dolor modi molestias facilis sapiente natus? Qui atque
-      tenetur porro animi suscipit modi officia beatae nam fugit, libero
-      reiciendis dignissimos labore ea. Laboriosam neque quibusdam quidem libero
-      sapiente et numquam aspernatur quasi exercitationem, itaque enim animi
-      magnam dignissimos laudantium, totam tempora dolores blanditiis assumenda,
-      in perferendis error quod. Quas vero repudiandae ipsa earum totam
-      explicabo quae. Error voluptates quae facilis vero officiis. Distinctio
-      voluptatem fugiat reprehenderit maxime aliquam provident omnis sunt iusto
-      similique, voluptatum enim illo, esse minus veritatis debitis, quia
-      repellendus iste quidem totam sint. Rem consectetur voluptas quasi a
-      doloremque eaque placeat ipsam, eius temporibus provident sapiente in
-      vitae? Aspernatur, accusantium corporis ex nobis deserunt porro veritatis
-      fuga? Molestiae soluta ad magni sequi culpa cumque saepe rerum quia, dolor
-      dolores rem porro facilis odit maxime! Suscipit, culpa fugiat. Quas
-      v
+      <div className="loginWrapper__box">
+        <ul className={num === 1 ? "active" : "technalogy__spam" } onClick={() => setNum(1)}>
+          <li className="technalogy__spam__in">
+            <p>Kirish</p>
+          </li>
+        </ul>
+        <ul className={num === 2 ? "active2" : "technalogy__spam1"} onClick={() => setNum(2)}>
+          <li className="technalogy__spam__in1">
+            <p>Ro’yxatdan o’tish </p>
+          </li>
+        </ul>
+      </div>
+      <div className="title">
+        {num === 1 ? (
+          <div className="box flex">
+            <div className=" box__text">
+              <h2>LAUNCH VEHICLE</h2>A launch ve
+            </div>
+          </div>
+        ) : num === 2 ? (
+          <div className="box flex">
+            <div className=" box__text">
+              <h2>SPACEPORT </h2>A 
+            </div>
+          </div>
+        ) : null}
+      </div>
+      <GreenButton> 
+      Ro’yxatdan o’tish
+      </GreenButton>
     </div>
   );
 };

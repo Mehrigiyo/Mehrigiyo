@@ -38,7 +38,8 @@ function TopDoctors() {
       </div>
     </section>
     
-    <Modal>smodal</Modal>
+    {/* <Modal>smodal</Modal> */}
+
     </>
   )
 }
