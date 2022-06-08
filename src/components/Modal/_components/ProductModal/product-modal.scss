@@ -1,0 +1,119 @@
+.product_modal {
+    padding: 30px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 30px 5px rgba(51, 51, 51, 0.1);
+    border-radius: 25px;
+    &__title {
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: #181725;
+            text-align: center;
+        }
+        margin-bottom: 10px;
+    }
+    .from_control {
+        position: relative;
+    }
+    &__form {
+        &__label {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #212121;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        &__input {
+            margin-top: 13px;
+            width: 100% !important;
+            min-height: 50px;
+            background: rgba(107, 119, 154, 0.06);
+            border-radius: 13px;
+            padding: 13px 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #C3C3C3;
+            position: relative !important;
+            &__img {
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+            }
+        }
+        display:block;
+        &__btn {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #212121;
+            padding: 13px 20px 13px 56px;
+            width: 100%;
+            min-height: 50px;
+            position: relative;
+            &:hover {
+                background: rgba(45, 168, 62, 0.1);
+                border-radius: 13px;
+            }
+            &.active {
+                background: rgba(45, 168, 62, 0.1);
+                border-radius: 13px;
+            }
+            &__img {
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+            }
+            &__imgx {
+                position: absolute;
+                bottom: 15px;
+                left: 20px;
+            }
+            background-color: transparent;
+            margin-bottom: 20px;
+            margin-top: 13px;
+        }
+        &__form_btns {
+            position: relative;
+        }
+        &__btnx {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #212121;
+            padding: 13px 20px 13px 56px;
+            width: 100%;
+            min-height: 50px;
+            position: relative;
+            background: rgba(107, 119, 154, 0.06);
+            border-radius: 13px;
+            margin-bottom: 40px;
+            &:hover {
+                background: rgba(45, 168, 62, 0.1);
+                border-radius: 13px;
+            }
+        }
+    }
+    min-width:446px;
+    min-height:563px;
+    .form_log {
+        display: flex;
+        justify-content: space-between;
+        .form_btns__logout {
+            .green-btn {
+                background: rgba(176, 183, 195, 0.2);
+                margin-right: 20px;
+                color: #181725;
+            }
+        }
+    }
+}
