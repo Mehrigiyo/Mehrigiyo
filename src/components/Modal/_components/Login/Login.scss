@@ -1,5 +1,6 @@
 .loginWrapper {
   padding: 86px;
+
   &__box {
     display: flex;
     background-color: #f8f8f8;
@@ -33,19 +34,19 @@
         font-weight: 700;
       }
     }
-    .active2{
-        background-color: #fff;
-        margin-top: 15px;
-        width: 186px;
-        height: 35px;
-        border-radius: 25px;
-        text-align: center;
-        padding-top: 5px;
-        p {
-          color: #53b175;
-          font-weight: 700;
-        }
+    .active2 {
+      background-color: #fff;
+      margin-top: 15px;
+      width: 186px;
+      height: 35px;
+      border-radius: 25px;
+      text-align: center;
+      padding-top: 5px;
+      p {
+        color: #53b175;
+        font-weight: 700;
       }
+    }
     .technalogy__spam1 {
       margin-top: 15px;
       text-align: center;
@@ -57,6 +58,99 @@
       p {
         color: #b0b7c3;
       }
+    }
+    &__boxButton {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-top: 88px;
+    }
+  }
+}
+.form__forn {
+  .flag {
+    position: relative;
+    bottom: 38px;
+    right: 10px;
+  }
+  .number {
+    padding-left: 40px;
+  }
+  min-width: 360px;
+  label,
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #b0b7c3;
+    margin-top: 34px;
+  }
+  input {
+    border-bottom: 1px solid rgba(177, 184, 196, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 13px;
+    color: #181725 !important;
+    &:focus {
+      border-bottom: 1px solid #53b175;
+    }
+  }
+}
+.reg {
+  // display: flex;
+  // justify-content: center;
+  .box__text {
+    text-align: center;
+    .box_img {
+      padding-top: 50px;
+      .img1 {
+        background-color: #ebebeb;
+        border-radius: 50%;
+        padding: 20px;
+        width: 84px;
+        height: 84px;
+      }
+      .img2 {
+        position: relative;
+        top: 30px;
+        right: 30px;
+      }
+    }
+    p {
+      padding-top: 16px;
+    }
+  }
+}
+.loginWrapper__box__boxButton2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.boxButtonText {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  p {
+    width: 350px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #7c7c7c;
+    span{
+        color: #53b175;
     }
   }
 }
