@@ -42,6 +42,62 @@
     line-height: 21px;
     color: #000000;
     align-items: center;
+    &:hover {
+        .drop_menu {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+    }
+    .drop_menu {
+        position: absolute;
+        visibility: hidden;
+        transition: all 0.1s ease-in;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(113, 124, 140, 0.3);
+        border-radius: 8px;
+        display: block;
+        min-width: 271px;
+        min-height: 115px;
+        left: 0;
+        top: 40px;
+        z-index: 9999;
+        &::before {
+            position: absolute;
+            top: -29px;
+            left: 0px;
+            display: block;
+            content: url("../../images/Polygon\ 5.svg");
+            width: 10px;
+        }
+        .drop_link a {
+            display: block;
+            width: 100%;
+            padding: 14px 0 13px 30px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #282828;
+            clear: both;
+            &.active {
+                color: #53B175 !important;
+                background: #E5FCED;
+            }
+            &:nth-child(2) {
+                margin-top: 8px;
+            }
+            &:hover {
+                color: #53B175 !important;
+                background: #E5FCED;
+            }
+            align-items: center;
+            img {
+                margin-right: 12px;
+            }
+        }
+        padding-top: 8px;
+        opacity: 1;
+    }
 }
 
 .stek {
