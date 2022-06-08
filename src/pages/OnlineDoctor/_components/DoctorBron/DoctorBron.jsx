@@ -22,7 +22,7 @@ function DoctorBron() {
   
   let newDate = new Date();
   
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 12; i++) {
     let h = newDate.addDays(i)
       g.push(h)
   }
@@ -35,7 +35,7 @@ function DoctorBron() {
 
          {/* <div>DoctorBron <h1>{id}</h1></div> */}
 
-         <section className='DoctorBron border'>
+         <section className='DoctorBron '>
             <div className="DoctorBron__item d-flex justify-content-between ">
               <div className="DoctorBron__title">
                 <h4>Maslahat kunni bron qiling</h4>
@@ -44,10 +44,11 @@ function DoctorBron() {
               <img src={img} alt="img" />
             </div>
             <div className="DoctorBron__item">
+              <div>Yanvar, 2022 yil <span><img src="" alt="img" /></span></div>
               <Row >
                 {
                   g.map((item, index)=>(
-                    <Col onClick={handelVisible} key={index}>
+                    <Col key={index}>
                       <Day day={item.getDate()} weekDay={item.getDay()}  className={'days ' + (index == 0 ? 'active': '')} />
                     </Col>
                   ))
@@ -56,11 +57,17 @@ function DoctorBron() {
                
               </Row>
             </div>
-            <Modal>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquam sint perferendis dolore eaque, natus aspernatur magnam ullam quos consectetur nihil blanditiis mollitia aperiam vel, debitis qui libero sequi numquam asperiores ipsam! Molestias alias esse incidunt, ex voluptatem inventore accusamus.
-              om
-              </Modal>
-            <div className="DoctorBron__item"></div>
+         
+            <div className="DoctorBron__item">
+               <Row>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+               </Row>
+            </div>
          </section>
       </ItemPage>
       </>
