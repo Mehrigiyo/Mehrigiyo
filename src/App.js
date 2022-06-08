@@ -21,7 +21,8 @@ import ShopMenu from "./pages/ShopMenu/ShopMenu";
 import ShopBox from "./pages/ShopBox/ShopBox";
 
 function App() {
-    return ( <
+    return ( 
+        <
         Context >
         <
         Layout >

@@ -4,9 +4,35 @@ import GreenButton from "../../../Button/GreenButton";
 import uzFlag from "../../../../icons/uz_flag.svg";
 import reg1 from "../../../../images/registrationBg.png";
 import reg2 from "../../../../images/registrationBg2.png";
+import { useSelector, useDispatch } from "react-redux";
+import { regestrationPost } from "../../../../store/reducers/regestration/action";
+
 import "./Login.scss";
 const Login = () => {
   const [num, setNum] = useState(1);
+  const [value, setValue] = useState({})
+  const { loading, access , data, error} = useSelector(state => state.regestrationReducer)
+
+
+  console.log(data);
+  const onChange = (e) => {
+    setValue(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }))
+  }
+
+  const dispatch = useDispatch()
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    dispatch(regestrationPost(value))
+    if (data.status !== 'fail') {
+      setNum(1)
+    }
+  }
+
+
   return (
     <div className="loginWrapper">
       <div className="loginWrapper__box">
@@ -31,7 +57,7 @@ const Login = () => {
         {num === 1 ? (
           <div className="box flex">
             <div className=" box__text">
-              <form className="form__forn" action="#">
+              <form className="form__forn" >
                 <label htmlFor="fullNUmber">Telefon raqam</label>
                 <input
                   className="number"
@@ -42,10 +68,10 @@ const Login = () => {
 
                 <label htmlFor="email">Parol</label>
                 <input type="text" id="email" placeholder="**********" />
-              </form>
               <div className="loginWrapper__box__boxButton">
                 <GreenButton>Tizimga kirish</GreenButton>
               </div>
+              </form>
             </div>
           </div>
         ) : num === 2 ? (
@@ -57,30 +83,60 @@ const Login = () => {
               </div>
               <p>Fotosurat yuklang (optinal)</p>
             </div>
-            <form className="form__forn" action="#">
+            <form className="form__forn" onSubmit={(e) => onSubmit(e)} >
+              <label htmlFor="number">raqami (optinal)</label>
+              <input
+                className="numbar"
+                type="number"
+                // placeholder="familiya"
+                name="username"
+                required
+                onChange={(e) => onChange(e)}
+              />
+              <label htmlFor="text">familiya (optinal)</label>
               <input
                 className="numbar"
                 type="text"
-                placeholder="Foydalanuvchi nomi"
+                // placeholder="familiya"
+                name="first_name"
+                required
+                onChange={(e) => onChange(e)}
+
+              />
+              <label htmlFor="text">ism (optinal)</label>
+              <input
+                className="numbar"
+                type="text"
+                // placeholder="ism"
+                name="last_name"
+                required
+                onChange={(e) => onChange(e)}
+
               />
               <label htmlFor="email">Elektron pochta (optinal)</label>
               <input
                 type="text"
-                id="email"
-                placeholder="AripovXojiakbar@gmail.com"
+
+                placeholder="AripovpasswordXojiakbar@gmail.com"
               />
               <label htmlFor="email">Parolni o’ylab toping</label>
-              <input type="text" id="email" placeholder="************" />
+              <input
+                type="text"
+                name="password"
+                placeholder="************"
+                required
+                onChange={(e) => onChange(e)}
+              />
+              <div className="loginWrapper__box__boxButton2">
+                <GreenButton>Ro’yxatdan o’tish</GreenButton>
+              </div>
             </form>
             <div className="boxButtonText">
-            <p>“Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
+              <p>“Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
                 <span> Foydalanish shartlarini qabul qilgan xisoblanasiz</span>
-            </p>
-            
+              </p>
             </div>
-            <div className="loginWrapper__box__boxButton2">
-              <GreenButton>Ro’yxatdan o’tish</GreenButton>
-            </div>
+
           </div>
         ) : null}
       </div>
