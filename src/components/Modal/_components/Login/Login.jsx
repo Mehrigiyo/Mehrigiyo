@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { regestrationPost } from "../../../../store/reducers/regestration/action";
 
 import "./Login.scss";
+import Verification from "../Verification/Verification";
 const Login = () => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});
