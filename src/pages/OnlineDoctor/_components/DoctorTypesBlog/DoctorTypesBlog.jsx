@@ -17,8 +17,19 @@ import SportIcon from "../../../../images/spots 1.svg";
 import StomachIcon from "../../../../images/stomach 1.svg";
 import tree from "../../../../images/Group.png";
 import DoctorTypeCard from "../../../../components/DoctorTypeCard/DoctorTypeCard";
-
+import { useSelector } from "react-redux";
 function DoctorTypesBlog() {
+
+    const { data } = useSelector(state => state.getTypeDoctors)
+    console.log(data, "bu data ")
+
+    const nameApi = (e) =>{
+        const sortName = data.map((item) => item.name)
+        const sortFilter =  sortName.filter((item)=> item === e)
+        return sortFilter.length
+      } 
+
+    const apiurl =  `http://207.154.244.140:8000/`
     return (
         <div className='DoctorTypesBlog globalContainer'>
             <div className="DoctorTypesBlog__title">
@@ -27,12 +38,17 @@ function DoctorTypesBlog() {
             </div>
             <div className="DoctorTypesBlog__Card">
                 <Row style={{ marginTop: 30 }}>
-                    <Col lg={2}>
-                        <NavLink to="/doctorslist">
-                            <DoctorTypeCard image={brainIcon} children={"Nefrolog"} number={"2 029"} icon={Remember}></DoctorTypeCard>
-                        </NavLink>
-                    </Col>
-                    <Col lg={2}>
+                    {
+                        data.filter((_, index) => index < 12).map((item) => (
+                            <Col lg={2}>
+                                <NavLink to="/doctorslist">
+                                    <DoctorTypeCard image={apiurl + item.image} children={item.name} number={nameApi} icon={Remember}></DoctorTypeCard>
+                                </NavLink>
+                            </Col>
+                        ))
+                    }
+
+                    {/* <Col lg={2}>
                         <DoctorTypeCard image={DnaIcon} children={"Ginekolog"} number={"1,870"} icon={Remember}></DoctorTypeCard>
                     </Col>
                     <Col lg={2}>
@@ -64,7 +80,7 @@ function DoctorTypesBlog() {
                     </Col>
                     <Col lg={2}>
                         <DoctorTypeCard image={StomachIcon} children={"Pediatr"} number={"23"} icon={Remember}></DoctorTypeCard>
-                    </Col>
+                    </Col> */}
                 </Row>
             </div>
             <div className="back_tree">
