@@ -1,14 +1,24 @@
 //  Reimboyev Shuhrat
 import { Row, Col, Carousel, CarouselItem } from "react-bootstrap";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Card from "../Card/Card";
 import { data } from "./Const";
 
 import "./NewComponent.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { NewsGetData } from "../../store/reducers/news/action";
 
 function NewsComponent() {
   const [count, setCount] = useState(0);
+  const   {data=[], loading, error} = useSelector(state => state.newsDataReduser)
+  // { loading, access , data, error} 
+console.log(loading);
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(NewsGetData())
+  },[])
 
   let link = [
     "Hammasi",
@@ -77,10 +87,8 @@ function NewsComponent() {
           <h1>So'nggi yangiliklar</h1>
           <ul className="news__tabs">
             {link.map((item, index) => (
-              <li key={index} onClick={() => setCount(index)}>
-                <a href="#" className={index === count ? "active" : ""}>
+              <li key={index} className={index === count ? "active" : ""} onClick={() => setCount(index)}>
                   {item}
-                </a>
               </li>
             ))}
           </ul>
@@ -91,22 +99,27 @@ function NewsComponent() {
               <div></div>
             </ul>
 
-            {
+            {/* {
               link.map((item, index) => (
+              ))[count]
+            } */}
+            {
+              loading?
+              'loading':
                 <>
-                  <h2>{item}</h2>
-                  <Row key={item} className="news__slider">
+                  {/* <h2>{item}</h2> */}
+                  <Row  className="news__slider">
                     <Slider {...settings}>
-                      {data.map((data, index) => (
+                      { 
+                      
+                     data.map((data, index) => (
                         <Col className="" key={index} xs={3}>
                           <Card data={data} />
                         </Col>
                       ))}
                     </Slider>
                   </Row>
-                </>
-              ))[count]
-            }
+                </>}
           </div>
         </div>
       </section>
