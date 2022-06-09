@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GreenButton from '../../../Button/GreenButton';
 import modalicon3 from '../../../../icons/modalicon3.svg';
 import modalicon1 from '../../../../icons/modalicon1.svg';
@@ -7,11 +7,19 @@ import modalicon4 from '../../../../icons/modalicon 4.svg';
 import Ellipse from "../../../../icons/Ellipse 750-1.svg";
 import Ellipse1 from "../../../../icons/Ellipse 750.svg";
 import './product-modal.scss';
-import { NavLink } from 'react-router-dom';
-function ProductModal({set}) {
+import SuccessModal from '../SuccessModal/SuccessModal';
+import Modal from "../../Modal";
+function ProductModal({click}) {
 
+  const [success, setSuccess] = useState(true)
+  // function handlesuccesModal(i) {
+  //   setSuccess(true)
+  //     i.preventDefault 
+  // }
   return (
-    <div className='product_modal'>
+    <>
+    {success?
+      <div className='product_modal'>
       <div className="product_modal__title">
         <h1>Buyurtma</h1>
       </div>
@@ -47,19 +55,23 @@ function ProductModal({set}) {
             </button>
           </div>
           <div className="form_log">
-            <div className="form_btns__logout" onClick={() => set(false)}>
+            <div className="form_btns__logout" onClick={()=> click(false)}>
                   <GreenButton>Chiqish</GreenButton>
             </div>
-            <div className="form_btns__login">
-              <GreenButton>To’lov qilish</GreenButton>
+            <div className="form_btns__login" onClick={()=> setSuccess(false)}>
+                  <GreenButton>To’lov qilish</GreenButton>
             </div>
           </div>
 
         </form>
-
       </div>
-
     </div>
+    :
+    <SuccessModal/>
+    
+    }
+    </>
+    
   )
 }
 

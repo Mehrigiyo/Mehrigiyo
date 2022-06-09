@@ -1,0 +1,43 @@
+.success_modal {
+    padding: 54px 40px 40px;
+    .success_modal__img {
+        margin: 0 auto;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+    }
+    .succes_modal_title {
+        h1 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            color: #181725;
+            margin-top: 50px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+            color: #7C7C7C;
+            margin-top: 12px;
+        }
+        margin-bottom: 64px;
+        text-align: center;
+    }
+    .succes_btns__logout .green-btn {
+        background: rgba(176, 183, 195, 0.2);
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181725;
+        margin-right: 20px;
+    }
+    .succes_log {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

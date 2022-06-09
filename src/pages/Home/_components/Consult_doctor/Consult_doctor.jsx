@@ -35,6 +35,7 @@ const ConsultDoctor = () => {
                 <Row >
                     {
                         data.filter(( _, index)=> index < 4).map((item) => (
+                            
                             <Col lg={3}>
                                 <div className="consult_doctor_item">
                                     <div className="consult_doctor_image">
@@ -73,7 +74,7 @@ const ConsultDoctor = () => {
                 <img src={ConsultDoctorBackImg} alt="picture" />
             </div>
             <div className='consutl_doctor_button'>
-                <Button>Batafsil</Button>
+                <Button href={"/onlinedoctor/#doctortype"}>Batafsil</Button>
             </div>
         </div>
     );
