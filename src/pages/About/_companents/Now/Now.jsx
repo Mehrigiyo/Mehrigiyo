@@ -6,8 +6,12 @@ import hozirda from "../../../../icons/hozirda1.png";
 import hozirda2 from "../../../../icons/hozirda2.png";
 import { Row, Col } from "react-bootstrap";
 import list from "../../../../icons/Group.png";
+import { useSelector } from "react-redux";
 
 function Now() {
+  const { data } = useSelector((state) => state.productType);
+  console.log(data, "bu data product type");
+const API = "http://207.154.244.140:8000"
   return (
     <div className="product  globalContainer" id="Hozirda">
       <h3>Hozirda</h3>
@@ -25,17 +29,11 @@ function Now() {
       <div className="product__fructis">
         <h4>Bizning mahsulotlar turkumlari</h4>
         <div className=" product__fructis__asartiment ">
-          <NowCard icon={orange} text={"Sharbatlar"}></NowCard>
-          <NowCard icon={orange} text={"Choy"}></NowCard>
-          <NowCard icon={orange} text={"Yog’"}></NowCard>
-          <NowCard icon={orange} text={"Ziravorlar"}></NowCard>
-          <NowCard icon={orange} text={"Asal"}></NowCard>
-          <NowCard icon={orange} text={"Sovun"}></NowCard>
-          <NowCard icon={orange} text={"Tabletkalar"}></NowCard>
-          <NowCard icon={orange} text={"Lolipoplar"}></NowCard>
-          <NowCard icon={orange} text={"Non"}></NowCard>
-          <NowCard icon={orange} text={"Halva"}></NowCard>
-          <NowCard icon={orange} text={"Sprey"}></NowCard>
+          {data.map((item)=>(
+          <NowCard icon={API + item.image} text={item.name}></NowCard>
+        ))
+        }
+          
         </div>
       </div>
       <div className="product__gardin ">

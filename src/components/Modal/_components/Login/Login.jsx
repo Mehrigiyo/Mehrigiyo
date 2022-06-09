@@ -8,30 +8,31 @@ import { useSelector, useDispatch } from "react-redux";
 import { regestrationPost } from "../../../../store/reducers/regestration/action";
 
 import "./Login.scss";
+import Verification from "../Verification/Verification";
 const Login = () => {
   const [num, setNum] = useState(1);
-  const [value, setValue] = useState({})
-  const { loading, access , data, error} = useSelector(state => state.regestrationReducer)
-
+  const [value, setValue] = useState({});
+  const { loading, access, data, error } = useSelector(
+    (state) => state.regestrationReducer
+  );
 
   console.log(data);
   const onChange = (e) => {
-    setValue(prev => ({
+    setValue((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
-    }))
-  }
+      [e.target.name]: e.target.value,
+    }));
+  };
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const onSubmit = (e) => {
-    e.preventDefault()
-    dispatch(regestrationPost(value))
-    if (data.status !== 'fail') {
-      setNum(1)
+    e.preventDefault();
+    dispatch(regestrationPost(value));
+    if (data.status !== "fail") {
+      setNum(1);
     }
-  }
-
+  };
 
   return (
     <div className="loginWrapper">
@@ -57,7 +58,7 @@ const Login = () => {
         {num === 1 ? (
           <div className="box flex">
             <div className=" box__text">
-              <form className="form__forn" >
+              <form className="form__forn">
                 <label htmlFor="fullNUmber">Telefon raqam</label>
                 <input
                   className="number"
@@ -68,9 +69,9 @@ const Login = () => {
 
                 <label htmlFor="email">Parol</label>
                 <input type="text" id="email" placeholder="**********" />
-              <div className="loginWrapper__box__boxButton">
-                <GreenButton>Tizimga kirish</GreenButton>
-              </div>
+                <div className="loginWrapper__box__boxButton">
+                  <GreenButton>Tizimga kirish</GreenButton>
+                </div>
               </form>
             </div>
           </div>
@@ -83,7 +84,7 @@ const Login = () => {
               </div>
               <p>Fotosurat yuklang (optinal)</p>
             </div>
-            <form className="form__forn" onSubmit={(e) => onSubmit(e)} >
+            <form className="form__forn" onSubmit={(e) => onSubmit(e)}>
               <label htmlFor="number">raqami (optinal)</label>
               <input
                 className="numbar"
@@ -101,7 +102,6 @@ const Login = () => {
                 name="first_name"
                 required
                 onChange={(e) => onChange(e)}
-
               />
               <label htmlFor="text">ism (optinal)</label>
               <input
@@ -111,12 +111,10 @@ const Login = () => {
                 name="last_name"
                 required
                 onChange={(e) => onChange(e)}
-
               />
               <label htmlFor="email">Elektron pochta (optinal)</label>
               <input
                 type="text"
-
                 placeholder="AripovpasswordXojiakbar@gmail.com"
               />
               <label htmlFor="email">Parolni o’ylab toping</label>
@@ -127,16 +125,19 @@ const Login = () => {
                 required
                 onChange={(e) => onChange(e)}
               />
+              <div className="boxButtonText">
+                <p>
+                  “Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
+                  <span>
+                    {" "}
+                    Foydalanish shartlarini qabul qilgan xisoblanasiz
+                  </span>
+                </p>
+              </div>
               <div className="loginWrapper__box__boxButton2">
                 <GreenButton>Ro’yxatdan o’tish</GreenButton>
               </div>
             </form>
-            <div className="boxButtonText">
-              <p>“Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
-                <span> Foydalanish shartlarini qabul qilgan xisoblanasiz</span>
-              </p>
-            </div>
-
           </div>
         ) : null}
       </div>
