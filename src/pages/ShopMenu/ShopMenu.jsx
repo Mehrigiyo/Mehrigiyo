@@ -79,7 +79,7 @@ function ShopMenu() {
                     </Col>
                 </Row>
             ))}
-            { open && <Modal children={<ProductModal/>} boolen={true}/> }
+            { open && <Modal children={<ProductModal click={setOpen}/>} boolen={true}/> }
         </div>
     )
 }
