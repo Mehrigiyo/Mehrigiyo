@@ -6,7 +6,6 @@ import locate from "../../icons/Location.svg";
 import Adde from "../../icons/Add-User.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
 import Modal from "../Modal/Modal";
-import { Store } from "../../Context/Context";
 import Login from "../Modal/_components/Login/Login";
 import ruFlag from "../../icons/ru_flag.svg";
 import uzFlag from "../../icons/uz_flag.svg";
@@ -44,7 +43,7 @@ const TopHeader = () => {
         </section>
         <section className="section">
           <div className="location_flag">
-            <a href="#">
+            <div href="#">
               <img src={flag} alt="" />
               <DownSvg />
               <ul className="drop_menu">
@@ -54,18 +53,18 @@ const TopHeader = () => {
                   <NavLink to="/eng"><img src={engFlag} alt="" /> English</NavLink>
                 </li>
               </ul>
-            </a>
+            </div>
           </div>
           <div className="location_country">
-            <a href="#" className="pismo">
+            <div href="#" className="pismo">
               Toshkent shahar
               <img src={locate} alt="" />
-            </a>
+            </div>
           </div>
           <div className="location_log">
-            <a className="pismo" onClick={() => setOpen(true)}>
+            <div className="pismo" onClick={() => setOpen(true)}>
               Kirish <img src={Adde} alt="" />
-            </a>
+            </div>
           </div>
         </section>
         {open && <Modal children={<Login />} set={setOpen} />}

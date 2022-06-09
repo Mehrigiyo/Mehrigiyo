@@ -8,6 +8,77 @@ import { Row, Col } from "react-bootstrap";
 import list from "../../../../icons/Group.png";
 
 function Now() {
+  const array = [
+    {
+      title: `Sharbatlar`,
+      img: orange,
+      
+    },
+    {
+      title: `Choy`,
+      img: orange
+    },
+    {
+      title: `Yog’`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    },
+    {
+      title: `Ziravorlar`,
+      img: orange
+    }
+  ]
   return (
     <div className="product  globalContainer" id="Hozirda">
       <h3>Hozirda</h3>
@@ -25,17 +96,11 @@ function Now() {
       <div className="product__fructis">
         <h4>Bizning mahsulotlar turkumlari</h4>
         <div className=" product__fructis__asartiment ">
-          <NowCard icon={orange} text={"Sharbatlar"}></NowCard>
-          <NowCard icon={orange} text={"Choy"}></NowCard>
-          <NowCard icon={orange} text={"Yog’"}></NowCard>
-          <NowCard icon={orange} text={"Ziravorlar"}></NowCard>
-          <NowCard icon={orange} text={"Asal"}></NowCard>
-          <NowCard icon={orange} text={"Sovun"}></NowCard>
-          <NowCard icon={orange} text={"Tabletkalar"}></NowCard>
-          <NowCard icon={orange} text={"Lolipoplar"}></NowCard>
-          <NowCard icon={orange} text={"Non"}></NowCard>
-          <NowCard icon={orange} text={"Halva"}></NowCard>
-          <NowCard icon={orange} text={"Sprey"}></NowCard>
+          {array.map((item, index)=>(
+          <NowCard icon={item.img} text={item.title}></NowCard>
+        ))
+        }
+          
         </div>
       </div>
       <div className="product__gardin ">
