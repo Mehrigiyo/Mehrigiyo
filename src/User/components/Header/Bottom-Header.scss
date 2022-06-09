@@ -1,0 +1,152 @@
+.bottom-headder-two {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.navi {
+    margin-left: 53px;
+    margin-right: auto !important;
+    margin-right: 20px;
+    position: relative;
+}
+
+.topi {
+    position: relative;
+}
+
+.topi>a {
+    text-decoration: none;
+    color: #505050;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    &:hover {
+        color: #53B175;
+        .drop_menu {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+        svg {
+            opacity: 1 !important;
+        }
+    }
+    &.active ::after {
+        position: absolute;
+        width: 20px;
+        content: "";
+        display: block;
+        height: 2px;
+        color: #000;
+        background-color: #000;
+    }
+}
+
+// .topi_help a {
+//     text-decoration: none;
+//     color: #505050;
+//     font-family: "Poppins";
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 18px;
+//     position: relative;
+//     &:hover {
+//         color: #53B175;
+//         .drop_menu {
+//             visibility: visible;
+//             opacity: 1;
+//             display: block;
+//         }
+//     }
+// }
+.threeIcon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.topi>a.active {
+    color: black !important;
+    font-weight: 700 !important;
+    svg {
+        opacity: 1;
+    }
+    &::after {
+        position: absolute;
+        width: 20px;
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: #53B175;
+        justify-content: center;
+        left: 40%;
+        top: 30px;
+    }
+    /* background-color: red; */
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.drop_menu {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.1s ease-in;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(113, 124, 140, 0.3);
+    border-radius: 8px;
+    display: block;
+    min-width: 271px;
+    min-height: 115px;
+    right: 0;
+    top: 50px;
+    z-index: 9999;
+    &::before {
+        position: absolute;
+        top: -29px;
+        right: 80px;
+        display: block;
+        content: url("../../../images/Polygon\ 5.svg");
+        width: 10px;
+    }
+    .drop_link a {
+        display: block;
+        width: 100%;
+        padding: 14px 0 13px 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #282828;
+        clear: both;
+        &.active {
+            color: #53B175 !important;
+            background: #E5FCED;
+        }
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+        &:hover {
+            color: #53B175 !important;
+            background: #E5FCED;
+        }
+    }
+    padding-top: 8px;
+    opacity: 1;
+}
