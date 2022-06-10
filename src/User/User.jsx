@@ -18,7 +18,6 @@ import FullCard from "./pages/News/_components/FullCard/FullCard";
 import ToHealth from "./pages/News/_components/ToHealth/ToHealth";
 import ShopMenu from "./pages/ShopMenu/ShopMenu";
 import ShopBox from "./pages/ShopBox/ShopBox";
-
 function User() {
   return (
     <>
@@ -45,7 +44,7 @@ function User() {
           <Route path="/fullcard" element={<FullCard />} />{" "}
           <Route path="/shopmenu" element={<ShopMenu />} />{" "}
           <Route path="/shopbox" element={<ShopBox />} />{" "}
-        </Routes>{" "}
+         </Routes>
        </Layout>
         </>
   )
