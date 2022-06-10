@@ -23,9 +23,6 @@ function User() {
   return (
     <>
     <Layout >
-
-   
-    
         <Routes>
           <Route path="/" element={<Home />} />{" "}
           <Route path="/onlinedoctor" element={<OnlineDoctor />} />{" "}
