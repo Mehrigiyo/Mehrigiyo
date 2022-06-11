@@ -1,0 +1,51 @@
+.loginWrapper {
+    padding: 86px;
+  
+    &__box {
+      display: flex;
+      background-color: #f8f8f8;
+      border-radius: 25px;
+      padding: 0 12px;
+      width: 340px;
+      height: 45px;
+      align-items: center;
+      .technalogy__spam {
+        margin-top: 15px;
+        width: 145px;
+        height: 35px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+        p {
+          color: #b0b7c3;
+        }
+      }
+      .active {
+        background-color: #fff;
+        margin-top: 15px;
+        width: 145px;
+        height: 35px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 5px;
+        p {
+          color: #53b175;
+          font-weight: 700;
+        }
+      }
+      .active2 {
+        background-color: #fff;
+        margin-top: 15px;
+        width: 186px;
+        height: 35px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 5px;
+        p {
+          color: #53b175;
+          font-weight: 700;
+        }
+    }
+    }
+}
