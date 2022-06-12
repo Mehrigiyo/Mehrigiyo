@@ -50,9 +50,9 @@ const BottomHeader = () => {
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/doctorslist">Nevropatolog</NavLink>
-                    <NavLink to="/">Genetika</NavLink>
-                    <NavLink to="/">Stomatologiya</NavLink>
-                    <NavLink to="/">Jarrohlik</NavLink>
+                    <NavLink to="/genetika">Genetika</NavLink>
+                    <NavLink to="/stom">Stomatologiya</NavLink>
+                    <NavLink to="/jarroh">Jarrohlik</NavLink>
                     <NavLink to="/tohealth">Hammasi +</NavLink>
                   </li>
                 </ul>

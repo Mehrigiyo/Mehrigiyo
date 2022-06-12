@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminTitle from '../../components/AdminTitle/AdminTitle'
 
 function Orders() {
   return (
-    <div>Orders</div>
+    <div>
+      <AdminTitle>Orders</AdminTitle>
+    </div>
   )
 }
 

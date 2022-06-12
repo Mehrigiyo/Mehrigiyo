@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminTitle from '../../components/AdminTitle/AdminTitle'
 
 function Consultation() {
   return (
-    <div>Consultation</div>
+    <div>
+        <AdminTitle>Consultation</AdminTitle>
+    </div>
   )
 }
 

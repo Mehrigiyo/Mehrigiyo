@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminTitle from '../../components/AdminTitle/AdminTitle'
 
 function Managementpanel() {
   return (
-    <div>Managementpanel</div>
+    <div className='managment_panel'>
+        <AdminTitle/>
+    </div>
   )
 }
 

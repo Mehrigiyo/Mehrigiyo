@@ -1,5 +1,5 @@
 .sidebar {
-    max-width: 274px;
+    min-width: 274px;
     min-height: 809px;
     background: #FFFFFF;
     box-shadow: 0px 10px 50px 5px rgba(51, 51, 51, 0.1);
@@ -46,33 +46,32 @@
             padding-left: 0;
             margin-bottom: 0;
             display: block;
-            &__title {
+            &__title a {
                 display: flex;
                 padding: 8px 0px 7px 10px;
-                width: 100%;
                 align-items: center;
-                a {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 28px;
-                    color: #505050;
-                }
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #505050;
                 img {
                     object-fit: contain;
                     margin-right: 14px;
                 }
-                margin-bottom: 16px;
-                .active {
-                    background-color: #53B175;
-                    opacity: 1;
+                &.active {
+                    background-color: #D6ECDF;
                     border-radius: 13px;
                 }
+                &:hover {
+                    background-color: #D6ECDF;
+                    border-radius: 13px;
+                }
+                margin-bottom: 16px;
             }
         }
         margin-bottom: 200px;
     }
-    position:relative;
-    margin-top: 30px;
     .sidebar_menu_logout {
         a {
             display: flex;
@@ -97,5 +96,11 @@
         }
         padding:100px 0px 34px 37px;
     }
-    margin-bottom: 70px;
+    position: relative;
+    margin:30px 32px 146px -18px;
+}
+
+.sidebar_menu_list_item__title>a.active {
+    background-color: #D6ECDF;
+    border-radius: 13px;
 }
