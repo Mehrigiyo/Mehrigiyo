@@ -1,4 +1,4 @@
-import React from 'react'
+import './Managementpanel.scss'
 
 function Managementpanel() {
   return (
