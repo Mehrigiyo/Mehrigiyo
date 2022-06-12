@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=IBM+Plex+Serif&family=Nunito:ital,wght@0,200;0,300;1,200&family=Philosopher:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,600;1,400&display=swap");
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  padding-bottom: 25px;
+  &__adminText {
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: #282828;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #b0b7c3;
+    }
+  }
+  &__search {
+    &__searchInput {
+        position: relative;
+      input {
+          position: relative;
+        box-sizing: border-box;
+        background: rgba(236, 238, 242, 0.5);
+        border-radius: 100px;
+        padding-left: 25px;
+      }
+    }
+    &__lupa{
+        position: absolute;
+        top: 0;
+        padding-top: 208px;
+        padding-left: 5px;
+
+    }
+  }
+}

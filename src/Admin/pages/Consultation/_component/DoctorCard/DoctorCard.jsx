@@ -1,10 +1,20 @@
-import React from 'react'
-import "./DoctorCard.scss"
+import React from "react";
+import "./DoctorCard.scss";
 
-function DoctorCard() {
+function DoctorCard({ photo, name, job }) {
   return (
-    <div>DoctorCard</div>
-  )
+    <div className="doctorCall">
+      <div className="doctorCall__doctorphoto">
+        <img src={photo} alt="photo" />
+      </div>
+      <div className="doctorCall__doctorName">
+        <div>
+          <h4>{name}</h4>
+          <span>{job}</span>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default DoctorCard
+export default DoctorCard;

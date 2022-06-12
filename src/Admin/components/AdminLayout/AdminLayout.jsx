@@ -6,9 +6,9 @@ const AdminLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="flex">
+      <div className="d-flex">
         <Sidebar />
-        {children}
+        <main>{children}</main>
       </div>
     </>
   );
