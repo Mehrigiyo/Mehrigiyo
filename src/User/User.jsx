@@ -23,7 +23,7 @@ import Admin from "../Admin/Admin";
 function User() {
   return (
     <>
-    <Layout >
+      <Layout >
         <Routes>
           <Route path="/" element={<Home />} />{" "}
           <Route path="/onlinedoctor" element={<OnlineDoctor />} />{" "}
@@ -42,10 +42,11 @@ function User() {
           <Route path="/tohealth" element={<ToHealth />} />{" "}
           <Route path="/fullcard" element={<FullCard />} />{" "}
           <Route path="/shopmenu" element={<ShopMenu />} />{" "}
-          <Route path="/shopbox" element={<ShopBox />} />{" "} 
+          <Route path="/shopbox" element={<ShopBox />} />{" "}
         </Routes>{" "}
-       </Layout>
-        </>
+
+      </Layout>
+    </>
   )
 }
 
