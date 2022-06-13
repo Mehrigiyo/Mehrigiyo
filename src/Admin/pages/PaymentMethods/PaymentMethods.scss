@@ -1,0 +1,11 @@
+.payment_method {
+    position: relative;
+    .payment_bg {
+        img {
+            position: absolute;
+            right: -40px;
+            top: 630px;
+            object-fit: contain;
+        }
+    }
+}

@@ -42,6 +42,7 @@
     line-height: 21px;
     color: #000000;
     align-items: center;
+    cursor: pointer;
     &:hover {
         .drop_menu {
             visibility: visible;
@@ -110,7 +111,7 @@
     display: flex;
 }
 
-.location_flag a::after {
+.location_flag div::after {
     content: "";
     width: 1px;
     height: 20px;
@@ -121,7 +122,7 @@
     right: -16px;
 }
 
-.location_country a {
+.location_country div {
     position: relative;
     display: flex;
     gap: 15px;
@@ -133,9 +134,10 @@
     color: #000000;
     align-items: center;
     margin-left: 16px;
+    cursor: pointer;
 }
 
-.location_log a {
+.location_log div {
     display: flex;
     gap: 15px;
     font-family: 'Poppins';
@@ -146,9 +148,10 @@
     color: #000000;
     align-items: center;
     margin-left: 16px;
+    cursor: pointer;
 }
 
-.location_country a::after {
+.location_country div::after {
     content: "";
     width: 1px;
     height: 20px;

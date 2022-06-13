@@ -56,7 +56,7 @@ const TopHeader = () => {
             </div>
           </div>
           <div className="location_country">
-            <div href="#" className="pismo">
+            <div>
               Toshkent shahar
               <img src={locate} alt="" />
             </div>

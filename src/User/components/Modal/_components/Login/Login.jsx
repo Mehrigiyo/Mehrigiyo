@@ -6,6 +6,7 @@ import reg1 from "../../../../../images/registrationBg.png";
 import reg2 from "../../../../../images/registrationBg2.png";
 import { useSelector, useDispatch } from "react-redux";
 import { regestrationPost } from "../../../../../store/reducers/regestration/action";
+import { loginPost } from "../../../../../store/reducers/loginPost/action";
 
 import "./Login.scss";
 import Verification from "../Verification/Verification";
@@ -24,6 +25,7 @@ const Login = () => {
     }));
   };
 
+  console.log(value)
   const dispatch = useDispatch();
 
   const onSubmit = (e) => {
@@ -33,6 +35,16 @@ const Login = () => {
       setNum(1);
     }
   };
+
+  const onSubmit2 = (e) => {
+    e.preventDefault();
+    dispatch(loginPost(value));
+    if(data.status !== "fail"){
+      window.location.reload(false)
+    }
+  }
+
+  
 
   return (
     <div className="loginWrapper">
@@ -58,17 +70,24 @@ const Login = () => {
         {num === 1 ? (
           <div className="box flex">
             <div className=" box__text">
-              <form className="form__forn">
+              <form className="form__forn" onSubmit2={(e) => onSubmit2(e)}>
                 <label htmlFor="fullNUmber">Telefon raqam</label>
                 <input
                   className="number"
                   type="text"
+                  name="username"
                   placeholder="+998977075828"
+                  onChange={(e) => onChange(e)}
+                  required
                 />
                 <img className="flag" src={uzFlag} alt="flag" />
 
                 <label htmlFor="email">Parol</label>
-                <input type="text" id="email" placeholder="**********" />
+                <input type="text" id="email" placeholder="**********"
+                name="password"
+                onChange={(e) => onChange(e)}
+                required
+                 />
                 <div className="loginWrapper__box__boxButton">
                   <GreenButton>Tizimga kirish</GreenButton>
                 </div>

@@ -1,0 +1,11 @@
+.delivery_address {
+    position: relative;
+    .delivery_bg {
+        img {
+            position: absolute;
+            right: -40px;
+            top: 600px;
+            object-fit: contain;
+        }
+    }
+}
