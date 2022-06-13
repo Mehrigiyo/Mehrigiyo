@@ -4,7 +4,7 @@ import { useState } from "react"
 const useFetch = (url, options) => {
     const [status, setStatus] = useState({
         loading: false,
-        data: undefined,
+        data: {},
         error: null
     })
 

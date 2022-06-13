@@ -7,9 +7,10 @@ import reg2 from "../../../../../images/registrationBg2.png";
 import { useSelector, useDispatch } from "react-redux";
 import { regestrationPost } from "../../../../../store/reducers/regestration/action";
 import { loginPost } from "../../../../../store/reducers/loginPost/action";
-
+import useFetch from "../../../../../Admin/hooks/useFetch";
 import "./Login.scss";
 import Verification from "../Verification/Verification";
+import useInput from "../../../../../Admin/hooks/useInput";
 const Login = () => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});
@@ -44,8 +45,11 @@ const Login = () => {
     }
   }
 
-  
+  const Password = useInput('', true)
 
+
+
+  
   return (
     <div className="loginWrapper">
       <div className="loginWrapper__box">
@@ -76,7 +80,7 @@ const Login = () => {
                   className="number"
                   type="text"
                   name="username"
-                  placeholder="+998977075828"
+                  placeholder="998977075828"
                   onChange={(e) => onChange(e)}
                   required
                 />
@@ -141,9 +145,9 @@ const Login = () => {
                 type="text"
                 name="password"
                 placeholder="************"
-                required
-                onChange={(e) => onChange(e)}
+                {...Password}
               />
+              {Password.error && <span style={{ color: 'red' }}>{Password.error}</span>}
               <div className="boxButtonText">
                 <p>
                   “Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
