@@ -6,8 +6,10 @@ const AdminLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
-      <Sidebar/>
+      <div className="d-flex globalContainer">
+        <Sidebar />
+        <main className="w-100">{children}</main>
+      </div>
     </>
   );
 };

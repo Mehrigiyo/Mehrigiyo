@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminTitle from '../../components/AdminTitle/AdminTitle'
 
 function Notifications() {
   return (
-    <div>Notifications</div>
+    <div>
+      <AdminTitle>Notifications</AdminTitle>
+    </div>
   )
 }
 

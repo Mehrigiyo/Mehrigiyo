@@ -1,0 +1,89 @@
+.AdminDoctorCard{
+    max-width: 380px;
+    height: 300px;
+    background: linear-gradient(274.36deg, #53B175 0.52%, #53B175 21.68%, #63CB89 96.53%), rgba(83, 177, 117, 0.2);
+    box-shadow: 0px 25px 50px rgba(83, 177, 117, 0.3);
+    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    &__bg{
+        position: absolute;
+        z-index: 2;
+        top:0;
+        right: 0;
+
+    }
+    &__body{
+        z-index: 3;
+        background-color: transparent;
+        position: relative;
+    }
+    &__about__img{
+        overflow: hidden;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 14px;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+
+        }
+    }
+    &__about__item{
+        h5{
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 !important;
+        }
+        p{
+            font-size: 14px;
+            line-height: 21px;
+            margin:2px 0 !important;
+        }
+        span{
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 18px;}
+    }
+
+    &__kasb{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        opacity: 0.7;
+    }
+    &__type{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__from{
+        max-width: 322px;
+        margin-top: 14px;
+        input{
+            width: 100%;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 30px;
+            font-weight: 400;
+            padding-left: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height, or 150% */
+
+            display: flex;
+            align-items: center;
+
+            /* grey */
+
+            color: #B0B7C3;
+
+        }
+    }
+}

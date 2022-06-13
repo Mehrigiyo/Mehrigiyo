@@ -9,6 +9,8 @@ import Activedoctor from  "../../../icons/avticeDoctor.svg"
 import AcitiveLove from "../../../icons/activeLove.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
 import ActiveShop from '../../../images/active_shop.svg'
+import { useDispatch } from "react-redux";
+import { actionChangeRouter } from "../../../store/ChangeRouter/action";
 
 
 const BottomHeader = () => {
@@ -25,6 +27,10 @@ const BottomHeader = () => {
   const HandleActiveImage2 = ()=>{
     setActiveShop(next => !next)
   }
+  const dispatch = useDispatch();
+  const changeRouter = ()=>{
+    dispatch(actionChangeRouter("user"))
+  }
   return (
     <div className="bottom-header  ">
       <div className="globalContainer flex-between">
@@ -37,16 +43,16 @@ const BottomHeader = () => {
           <nav className="navi">
             <ul className="topUl">
               <li className="topi">
-                <NavLink to="/"> Bosh sahifa</NavLink>
+                <NavLink to="/" onClick={changeRouter}> Bosh sahifa</NavLink>
               </li>
               <li className="topi">
                 <NavLink to="/onlinedoctor"> Onlayn shifokorlar <DownSvg/></NavLink>
                 <ul className="drop_menu">
                   <li className="drop_link">
                     <NavLink to="/doctorslist">Nevropatolog</NavLink>
-                    <NavLink to="/">Genetika</NavLink>
-                    <NavLink to="/">Stomatologiya</NavLink>
-                    <NavLink to="/">Jarrohlik</NavLink>
+                    <NavLink to="/genetika">Genetika</NavLink>
+                    <NavLink to="/stom">Stomatologiya</NavLink>
+                    <NavLink to="/jarroh">Jarrohlik</NavLink>
                     <NavLink to="/tohealth">Hammasi +</NavLink>
                   </li>
                 </ul>

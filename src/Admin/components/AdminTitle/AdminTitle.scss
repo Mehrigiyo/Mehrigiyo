@@ -1,0 +1,55 @@
+.admin_title {
+    margin-top: 72px;
+    &__name {
+        h1 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #282828;
+            margin-bottom: 0;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #B0B7C3;
+        }
+    }
+    display:flex;
+    justify-content:space-between;
+    &__search {
+        form {
+            input {
+                background: rgba(236, 238, 242, 0.5);
+                border-radius: 100px;
+                position: relative;
+                padding: 9px 37px;
+                max-height: 34px;
+                min-width: 142px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: left;
+                color: #B0B7C3;
+            }
+            img {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+            }
+            position: relative;
+        }
+    }
+    position: relative;
+}
+
+.back-tree {
+    img {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        object-fit: contain;
+        z-index: -1;
+    }
+}
