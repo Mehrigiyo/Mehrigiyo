@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -46,15 +47,53 @@ ul {
 }
 
 .globalContainer {
-  margin: 0 auto;
-  max-width: 1240px;
+    margin: 0 auto;
+    max-width: 1240px;
 }
-.flex{
-  display: flex;
+
+.flex {
+    display: flex;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 
+}
+
+@keyframes themeLight {
+    0% {
+        background-color: rgb(33, 27, 27);
+    }
+
+    100% {
+        background-color: antiquewhite;
+    }
+}
+
+@keyframes themeBlack {
+    0% {
+
+        background-color: antiquewhite;
+    }
+
+    100% {
+        background-color: rgb(33, 27, 27);
+
+    }
+}
+
+.light {
+    animation: themeLight 0.1s ease-in;
+    background-color: antiquewhite;
+}
+
+.black {
+    animation: themeBlack 0.1s ease-in;
+    background-color: rgb(33, 27, 27);
 }
