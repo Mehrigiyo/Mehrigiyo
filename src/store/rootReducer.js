@@ -5,6 +5,7 @@ import { newsDataReduser } from "./reducers/get/news/reducer";
 import { getTypeDoctors } from "./reducers/get/typesDoctor/reducer";
 import { productType } from "./reducers/get/productType/reducer";
 import {changeRouter} from "./ChangeRouter/reducer";
+import { SpectalistDoctorDataReduser } from "./reducers/get/SpecialistDoctors/reducer";
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
     getTypeDoctors,
     getTypeDoctors,
     productType,
-    changeRouter
+    changeRouter,
+    SpectalistDoctorDataReduser
 });

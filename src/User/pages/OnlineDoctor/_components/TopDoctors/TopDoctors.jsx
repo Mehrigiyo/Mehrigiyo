@@ -2,15 +2,23 @@
 import { Col, Row } from 'react-bootstrap'
 import Button from '../../../../components/Buttons/Button'
 import DoctorCard from '../DoctorCard/DoctorCard' 
-import {data} from './Const'
+import {data as f} from './Const'
 import background from '../../../../../images/Group.png';
    
 import './TopDoctors.scss'
-import Modal from '../../../../components/Modal/Modal';
+import { useSelector, useDispatch } from 'react-redux';
+import { SpscialistDoctorsGetData } from '../../../../../store/reducers/get/SpecialistDoctors/action';
+import { useEffect } from 'react';
 
 function TopDoctors() {
+const {data=[], loading, error} = useSelector(state=> state.SpectalistDoctorDataReduser)
+const dispatch = useDispatch()
 
- 
+useEffect(()=>{
+  console.log('Ishladi');
+  dispatch(SpscialistDoctorsGetData())
+},[])
+ console.log(data);
   return (
     <>
     <section className='topDoctors'>
@@ -24,7 +32,7 @@ function TopDoctors() {
 
             <Row>
                 {
-                    data.map((item)=>(
+                    f.map((item)=>(
                       <Col xs={2}>
                           <DoctorCard data={item} />
                       </Col>
