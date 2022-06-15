@@ -9,36 +9,47 @@ import DeliveryAddress from './pages/DeliveryAddress/DeliveryAddress';
 import PaymentMethods from './pages/PaymentMethods/PaymentMethods';
 import Notifications from './pages/Notifications/Notifications';
 import Settings from './pages/Settings/Settings';
-import useInput from './hooks/useInput'
-import useForm from './hooks/useForm'
+// import useInput from './hooks/useInput'
+// import useForm from './hooks/useForm'
+import useFetch from "./hooks/useFetch";
+// import useTheme from "./hooks/useTheme";
 
 function Admin() {
-  const lastName = useInput('akmalov', true)
-  const firstName = useInput('akmal', true)
+  // const lastName = useInput('akmalov', true)
+  // const firstName = useInput('akmal', true)
 
-  const [value, { ...register }] = useForm({
-    lastName: '',
-    firstName: '',
-    secondName: '',
-    phone_number: '',
-    password: ''
-  })
+  // const [value, { ...register }] = useForm({
+  //   lastName: '',
+  //   firstName: '',
+  //   secondName: '',
+  //   phone_number: '',
+  //   password: ''
+  // })
 
-  console.log(value);
+  // console.log(value);
+  // const { loading, error, data, fetchData } = useFetch('http://jsonplaceholder.typicode.com/users')
 
+  // const { theme, toggleTheme } = useTheme()
+
+  // console.log(theme);
 
   // const obj = {
   //   lastName: lastName.value,
   //   firstName: firstName.value
   // }
   // console.log(obj);
+
+  // if (loading) return <h1>...loading</h1>
+  // if (error) return <h1>{error.message}</h1>
   return (
+
+    // <div className={theme}></div>
+
     <div>
+      {/* <button onClick={toggleTheme}>Change Theme C</button> */}
       <AdminLayout>
 
-        <div>
-
-
+        {/* <div>
           <input
             style={{ width: '200px', backgroundColor: 'lightgray' }}
             type="text"
@@ -79,8 +90,10 @@ function Admin() {
             style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
             value={value.password}
             type="password" name="password" {...register} />
-        </div>
+        </div> */}
 
+
+        {/* {JSON.stringify(data)} */}
 
 
         <Routes>
