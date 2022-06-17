@@ -12,15 +12,14 @@ import NavIcon7 from "../../../icons/navIcon7.svg"
 import logaoutIcon from "../../../icons/logout.svg"
 import { Link } from 'react-router-dom';
 // import {getCurrentUser} from '../../../store/reducers/userme';
-import useFetch from '../../hooks/useFetch';
+// import useFetch from '../../hooks/useFetch';
 function Sidebar() {
 
- const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
- if (getusermeloading) return <h1>...loading</h1>
- if (getusermeerror) return <h1>{getusermeerror.message}</h1>
- {JSON.stringify(getusermedata)}
+//  const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
+//  if (getusermeloading) return <h1>...loading</h1>
+//  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
+//  {JSON.stringify(getusermedata)}
 
- console.log(getusermedata.username)
 
   return (
     <>
@@ -30,8 +29,8 @@ function Sidebar() {
             <img src={AdminCircleImg} alt="circle-img" />
           </div>
           <div className="sidebar_header__title">
-            <h1>{getusermedata?.username}</h1>
-            <p>{getusermedata.last_name}</p>
+            <h1>''</h1>
+            <p>asasa</p>
           </div>
           <div className="sidebar_header_edit">
             <a href="#"><img src={edit} alt="" /></a>

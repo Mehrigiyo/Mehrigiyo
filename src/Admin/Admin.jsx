@@ -11,7 +11,7 @@ import Notifications from './pages/Notifications/Notifications';
 import Settings from './pages/Settings/Settings';
 // import useInput from './hooks/useInput'
 // import useForm from './hooks/useForm'
-import useFetch from "./hooks/useFetch";
+// import useFetch from "./hooks/useFetch";
 // import useTheme from "./hooks/useTheme";
 
 function Admin() {

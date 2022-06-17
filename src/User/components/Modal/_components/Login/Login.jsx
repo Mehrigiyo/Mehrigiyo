@@ -7,16 +7,28 @@ import reg2 from "../../../../../images/registrationBg2.png";
 import { useSelector, useDispatch } from "react-redux";
 import { regestrationPost } from "../../../../../store/reducers/regestration/action";
 import { loginPost } from "../../../../../store/reducers/loginPost/action";
-import useFetch from "../../../../../Admin/hooks/useFetch";
+// import useFetch from "../../../../../Admin/hooks/useFetch";
 import "./Login.scss";
-import Verification from "../Verification/Verification";
+// import Verification from "../Verification/Verification";
 import useInput from "../../../../../Admin/hooks/useInput";
+// import { setCurrentUser, setToken } from "../../../../../store/reducers/userme";
+// import apiRoot from "../../../../../store/apiRoot";
+import { userGet } from "../../../../../store/reducers/get/userme/action";
 const Login = () => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});
   const { loading, access, data, error } = useSelector(
     (state) => state.regestrationReducer
   );
+  const { logindate } = useSelector(
+    (state) => state.loginReducer
+  );
+
+
+  const { userData }  = useSelector(
+    (state)=> state.usermeReducer
+  )
+  console.log(logindate, "logindata")
 
   console.log(data);
   const onChange = (e) => {
@@ -38,18 +50,20 @@ const Login = () => {
   };
 
   const onSubmit2 = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     dispatch(loginPost(value));
-    if(data.status !== "fail"){
-      window.location.reload(false)
+    if (logindate.status !== "fail") {
+      dispatch(userGet())
+      console.log(userData, "userdata")
     }
+
   }
 
   const Password = useInput('', true)
 
 
 
-  
+
   return (
     <div className="loginWrapper">
       <div className="loginWrapper__box">
@@ -74,7 +88,7 @@ const Login = () => {
         {num === 1 ? (
           <div className="box flex">
             <div className=" box__text">
-              <form className="form__forn" onSubmit2={(e) => onSubmit2(e)}>
+              <form className="form__forn" onClick={(e)=>onSubmit2(e)} >
                 <label htmlFor="fullNUmber">Telefon raqam</label>
                 <input
                   className="number"
@@ -88,12 +102,12 @@ const Login = () => {
 
                 <label htmlFor="email">Parol</label>
                 <input type="text" id="email" placeholder="**********"
-                name="password"
-                onChange={(e) => onChange(e)}
-                required
-                 />
+                  name="password"
+                  onChange={(e) => onChange(e)}
+                  required
+                />
                 <div className="loginWrapper__box__boxButton">
-                  <GreenButton>Tizimga kirish</GreenButton>
+                  <GreenButton >Tizimga kirish</GreenButton>
                 </div>
               </form>
             </div>

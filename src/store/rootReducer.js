@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import userReducer from "./reducers/posts/reducer";
-import {regestrationReducer} from "./reducers/regestration/reducer";
+import { regestrationReducer } from "./reducers/regestration/reducer";
 import { newsDataReduser } from "./reducers/get/news/reducer";
 import { getTypeDoctors } from "./reducers/get/typesDoctor/reducer";
 import { productType } from "./reducers/get/productType/reducer";
-import {changeRouter} from "./ChangeRouter/reducer";
+import { changeRouter } from "./ChangeRouter/reducer";
+import { loginReducer } from './reducers/loginPost/reducer'
+import { usermeReducer } from './reducers/get/userme/reducer';
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -12,5 +14,7 @@ export default combineReducers({
     getTypeDoctors,
     getTypeDoctors,
     productType,
-    changeRouter
+    changeRouter,
+    loginReducer,
+    usermeReducer
 });

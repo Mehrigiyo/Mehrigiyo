@@ -7,19 +7,15 @@ const apiRoot = axios.create({
 apiRoot.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");
 
-    console.log(token, 'interceptors get token')
-    if (config.url.includes("user/me")) {
-        return config
+    console.log('interceptor ishlavoti')
 
+    if (config.url.includes("specialist/types")) {
+        return config
     }
     if (config.headers !== undefined) {
         config.headers["Authorization"] = `Bearer ${token}`;
     }
-
-
-
     return config
-
 })
 
 
