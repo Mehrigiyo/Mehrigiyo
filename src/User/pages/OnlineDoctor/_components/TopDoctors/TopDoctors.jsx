@@ -7,8 +7,10 @@ import background from '../../../../../images/Group.png';
    
 import './TopDoctors.scss'
 import Modal from '../../../../components/Modal/Modal';
+import { useSelector } from 'react-redux';
 
 function TopDoctors() {
+ const {doctorsData} = useSelector(state => state.getDoctors);
 
  
   return (
@@ -24,7 +26,7 @@ function TopDoctors() {
 
             <Row>
                 {
-                    data.map((item)=>(
+                    doctorsData.map((item)=>(
                       <Col xs={2}>
                           <DoctorCard data={item} />
                       </Col>
