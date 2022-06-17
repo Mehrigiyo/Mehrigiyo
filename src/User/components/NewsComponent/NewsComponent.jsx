@@ -11,8 +11,9 @@ import { NewsGetData } from "../../../store/reducers/get/news/action";
 
 function NewsComponent() {
   const [count, setCount] = useState(0);
-  const   {data=[], loading, error} = useSelector(state => state.newsDataReduser)
+  const   {data,  loading, error} = useSelector(state => state.newsDataReduser)
   // { loading, access , data, error} 
+  console.log(data);
   const dispatch = useDispatch()
 
   useEffect(()=>{

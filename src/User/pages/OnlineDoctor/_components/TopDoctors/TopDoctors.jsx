@@ -6,14 +6,65 @@ import {data as f} from './Const'
 import background from '../../../../../images/Group.png';
    
 import './TopDoctors.scss'
-import Modal from '../../../../components/Modal/Modal';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import Slider from 'react-slick';
 
 function TopDoctors() {
  const {doctorsData} = useSelector(state => state.getDoctors);
 
 
+ let settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 6,
+  slidesToScroll: 4,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5.5,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      },
+    },
+  ],
+};
 
   return (
     <>
@@ -25,8 +76,10 @@ function TopDoctors() {
             <Button>Batafsil</Button>
         </div>
         <div className="topDoctors__body">
-
+  
             <Row>
+              
+              <Slider {...settings}>
                 {
                     doctorsData.map((item)=>(
                       <Col xs={2}>
@@ -34,6 +87,7 @@ function TopDoctors() {
                       </Col>
                     ))
                 }
+                </Slider>
             </Row>
         </div>
          <div className="topDoctors__bg">

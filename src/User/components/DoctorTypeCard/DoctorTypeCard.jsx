@@ -12,7 +12,7 @@ const  DoctorTypeCard = ({children,image, icon, number}) =>{
             <h6>{children}</h6>
         </div>
         <div className="DoctorTypeCard_text">
-            <p>{number} shifokor</p>
+            <p>{number} </p>
         </div>
         <div className="DoctorTypeCard_icon">
             <a href="#" ><img src={icon} /></a>

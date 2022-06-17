@@ -6,10 +6,25 @@ import DoctorTypeCard from '../../../../components/DoctorTypeCard/DoctorTypeCard
 import img from '../../../../../images/itemPageImg.png'
 import './DoctorInfo.scss'
 import { useParams } from 'react-router-dom'
+import Remember from "../../../../../images/Close_Icon.svg"
 import ItemPage from '../../../../components/ItemPage/ItemPage'
-
+import { useSelector } from 'react-redux';
 function DoctorInfo() {
+    const Api="http://207.154.244.140:8000"
+
     const {id} = useParams()
+    const {doctorsData} = useSelector(state => state.getDoctors);
+    let data = ()=>{
+     for(let i = 0; i < doctorsData.length; i++) {
+        const element = doctorsData[i];
+        if(element?.id == id) {
+            return element
+        
+     }
+    }
+}
+    const {image, full_name, description_uz,experience, type_doctor}  = data()
+   console.log(data());
     // console.log(id);
     // const index = data.map()
 
@@ -23,29 +38,36 @@ function DoctorInfo() {
         <div className="doctorInfo">
             <Row >
                 <Col lg={3} className="" >
-                    <img className='doctorInfo__img' src={img} alt="img" />
+                    <img className='doctorInfo__img' src={Api + image } alt="img" />
                 </Col>
                 <Col lg={7} className=''>
                     <div className="doctorInfo__item">
-                        <h3 className='doctorInfo__name'>Gavhar Sobirova {id}</h3>
+                        <h3 className='doctorInfo__name'>{full_name} {id}</h3>
                     </div>
                     <div className="doctorInfo__item">
                         <Row>
                             <Col lg={4}>
-                                 <DoctorTypeCard />
+                                 <div className="DoctorTypeCard DoctorTypeCard__sharh">
+                                    <p>Sharhlar</p>
+                                    <span>233+</span>
+                                 </div>
                              </Col>
                              <Col lg={4}>
-                                 <DoctorTypeCard />
+                             <div className="DoctorTypeCard DoctorTypeCard__experience">
+                                    <p >Tajriba</p>
+                                    <span>{experience}</span>
+                             </div>
+                            
                              </Col>
                              <Col lg={4}>
-                                 <DoctorTypeCard />
+                                 <DoctorTypeCard image={Api + type_doctor.image }  children={type_doctor.name} icon={Remember} />
                              </Col>
                         </Row>
                     </div>
                     <div className="doctorInfo__item">
 
                         <h5>About Doctor</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra donec turpis integer ipsum, et enim orci amet.</p>
+                        <p>{description_uz}</p>
                     </div>
                 </Col>
             </Row>
