@@ -29,7 +29,7 @@ function MyAccount() {
                 {/* <label htmlFor="userName">Foydalanuvchi nomi</label>
                 <input type="text" /> */}
 
-                <button className='MyAccount__btn' onClick={handelEdit}>Edit</button>
+                <button className='MyAccount__btn' >Edit</button>
             </form>
         </div>
      </div>

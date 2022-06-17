@@ -6,19 +6,15 @@ import {data as f} from './Const'
 import background from '../../../../../images/Group.png';
    
 import './TopDoctors.scss'
-import { useSelector, useDispatch } from 'react-redux';
-import { SpscialistDoctorsGetData } from '../../../../../store/reducers/get/SpecialistDoctors/action';
+import Modal from '../../../../components/Modal/Modal';
+import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
 function TopDoctors() {
-const {data=[], loading, error} = useSelector(state=> state.SpectalistDoctorDataReduser)
-const dispatch = useDispatch()
+ const {doctorsData} = useSelector(state => state.getDoctors);
 
-useEffect(()=>{
-  console.log('Ishladi');
-  dispatch(SpscialistDoctorsGetData())
-},[])
- console.log(data);
+
+
   return (
     <>
     <section className='topDoctors'>
@@ -32,7 +28,7 @@ useEffect(()=>{
 
             <Row>
                 {
-                    f.map((item)=>(
+                    doctorsData.map((item)=>(
                       <Col xs={2}>
                           <DoctorCard data={item} />
                       </Col>

@@ -9,13 +9,15 @@ import TopDoctors from './_components/TopDoctors/TopDoctors';
 import {useDispatch} from 'react-redux'
 import apiRoot from '../../../store/apiRoot';
 import {getTypes} from "../../../store/reducers/get/typesDoctor/action";
+import { actionGetDoctors } from '../../../store/reducers/get/TopDoctor/action';
 
 function OnlineDoctor() {
     const dispatch = useDispatch()
 
     useEffect(()=> {
         apiRoot.get('specialist/types/')
-        .then((res)=> dispatch(getTypes(res?.data?.data)))
+        .then((res)=> dispatch(getTypes(res?.data?.data)));
+        dispatch(actionGetDoctors())
     },[])
 
 
