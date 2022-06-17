@@ -4,14 +4,14 @@ import useForm from '../../../../hooks/useForm';
 import './MyAccount.scss'
 function MyAccount() {
 //    const [] = useForm()
-    // const handelEdit= (e)=>{
-    //     e.preventDefault();
-    //     console.log(e);
+    const handelEdit= (e)=>{
+        e.preventDefault();
+        console.log(e);
         
-    // }
+    }
   return (
     <>
-     <div className='MyAccount border '>
+     <div className='MyAccount  '>
         <div className='d-grid grid-center'>
             <h3 className='MyAccount__title'>My account</h3>
         </div>

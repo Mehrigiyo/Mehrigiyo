@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import DownloadMobile from '../../components/DownloadMobile/DownloadMobile';
-import ItemPage from '../../components/ItemPage/ItemPage';
 import Partners from '../../components/Partners/Partners';
 import Reklama from '../../components/Reklama/Reklama';
 import OnlineHelp from '../Home/_components/OnlineHelp/OnlineHelp';

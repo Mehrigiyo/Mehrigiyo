@@ -6,10 +6,8 @@ import {SPECIALIST_DOCTORS_GET_DATA} from './api'
 
 export const SpscialistDoctorsGetData =  () => async (dispatch) => {
     await dispatch({ type: SPECIALIST_DOCTORS_LOADING });
-    console.log('ishladi action');
     try {
-        const { data } = await SPECIALIST_DOCTORS_GET_DATA();
-        
+        const data = await SPECIALIST_DOCTORS_GET_DATA();
         console.log(data);
         await dispatch({ type: SPECIALIST_DOCTORS_SUCCESS, payload: data.data });
     } catch (error) {
