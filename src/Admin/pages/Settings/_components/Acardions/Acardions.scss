@@ -1,0 +1,40 @@
+.Acardions{
+    border: 1px solid rgba(226, 226, 226, 0.4);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+    border-radius: 13px;
+    padding: 16px 15px;
+    max-width: 370px;
+
+
+    &__img{
+        width: 30px;
+        height: 30px;
+        background: rgba(176, 183, 195, .2);
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto 0 24px;
+    }
+
+    &__icons{
+        span{
+            margin-right: 10px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+            
+            text-align: right;
+            
+            /* Labels/Dark/Quarternary */
+            
+            color: #C3C3C3;}
+    }
+    
+}

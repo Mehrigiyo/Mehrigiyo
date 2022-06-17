@@ -12,7 +12,8 @@ import uzFlag from "../../../icons/uz_flag.svg";
 import engFlag from "../../../icons/eng_flag.svg";
 const TopHeader = () => {
   const [open, setOpen] = useState(false);
-
+  const user = localStorage.getItem('user')
+  const userObj = JSON.parse(user)
   return (
     <header className="TopHeaderContainer ">
       <div className="globalContainer flex-between">
@@ -61,11 +62,19 @@ const TopHeader = () => {
               <img src={locate} alt="" />
             </div>
           </div>
-          <div className="location_log">
-            <div className="pismo" onClick={() => setOpen(true)}>
-              Kirish <img src={Adde} alt="" />
+          { user === null ?
+            <div className="location_log">
+              <div className="pismo" onClick={() => setOpen(true)}>
+                Kirish <img src={Adde} alt="" />
+              </div>
             </div>
-          </div>
+            :
+            <div className="d-block">
+            {
+              userObj.first_name +
+              userObj.last_name
+            }
+            </div>}
         </section>
         {open && <Modal children={<Login />} set={setOpen} />}
       </div>
