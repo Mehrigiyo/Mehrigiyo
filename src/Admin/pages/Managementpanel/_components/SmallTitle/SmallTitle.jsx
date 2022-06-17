@@ -1,9 +1,9 @@
 import './SmallTitle.scss'
 
-function SmallTitle() {
+function SmallTitle({title='Kelgusi jadval'}) {
   return (
     <div className='SmallTitle d-flex justify-content-between'>
-         <h4>Kelgusi jadval</h4>
+         <h4>{title}</h4>
          <a href="#">
             Hammasi
          </a>
