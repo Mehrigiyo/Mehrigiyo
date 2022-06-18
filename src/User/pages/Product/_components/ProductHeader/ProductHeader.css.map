@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,OAAO;EAChB,QAAQ,EAAE,QAAQ;CAUrB;;AAZD,AAGI,eAHW,CAGX,iBAAiB,CAAC,GAAG,CAAC;EAClB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,eAAe,CAAC,UAAU;EACrC,OAAO,EAAE,EAAE;CACd",
+    "sources": [
+        "ProductHeader.scss"
+    ],
+    "names": [],
+    "file": "ProductHeader.css"
+}

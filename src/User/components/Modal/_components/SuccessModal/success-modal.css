@@ -1,0 +1,61 @@
+.success_modal {
+  padding: 54px 40px 40px;
+}
+
+.success_modal .success_modal__img {
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.success_modal .succes_modal_title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.success_modal .succes_modal_title h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #181725;
+  margin-top: 50px;
+}
+
+.success_modal .succes_modal_title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #7C7C7C;
+  margin-top: 12px;
+}
+
+.success_modal .succes_btns__logout .green-btn {
+  background: rgba(176, 183, 195, 0.2);
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181725;
+  margin-right: 20px;
+}
+
+.success_modal .succes_log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=success-modal.css.map */

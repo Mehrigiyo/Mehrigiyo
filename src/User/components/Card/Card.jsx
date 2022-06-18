@@ -9,7 +9,7 @@ import arrowIcons from '../../../icons/Arrow001.svg'
 import './Card.scss'
 
  const Card = ({data}) => {
-  const {title, img, deckriptoin, hashTag, date} = data
+  // const {title, img, deckriptoin, hashTag, date} = data
   const {id, created_at, description,  description_en,description_ru, description_uz,hashtag,image, name,name_uz} = data
   const sana = new Date(created_at)
 

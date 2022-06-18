@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+.TopHeaderContainer {
+  background-color: #D6ECDF;
+}
+
+.topLi > a {
+  text-decoration: none;
+  color: #505050;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.topLi > a:hover {
+  color: #63B882;
+}
+
+.topUl {
+  gap: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.location_flag div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.location_flag div:hover .drop_menu {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.location_flag div .drop_menu {
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 30px rgba(113, 124, 140, 0.3);
+          box-shadow: 0px 10px 30px rgba(113, 124, 140, 0.3);
+  border-radius: 8px;
+  display: block;
+  min-width: 271px;
+  min-height: 115px;
+  left: 0;
+  top: 40px;
+  z-index: 9999;
+  padding-top: 8px;
+  opacity: 1;
+}
+
+.location_flag div .drop_menu::before {
+  position: absolute;
+  top: -29px;
+  left: 0px;
+  display: block;
+  content: url("../../../images/Polygon 5.svg");
+  width: 10px;
+}
+
+.location_flag div .drop_menu .drop_link a {
+  display: block;
+  width: 100%;
+  padding: 14px 0 13px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #282828;
+  clear: both;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location_flag div .drop_menu .drop_link a.active {
+  color: #53B175 !important;
+  background: #E5FCED;
+}
+
+.location_flag div .drop_menu .drop_link a:nth-child(2) {
+  margin-top: 8px;
+}
+
+.location_flag div .drop_menu .drop_link a:hover {
+  color: #53B175 !important;
+  background: #E5FCED;
+}
+
+.location_flag div .drop_menu .drop_link a img {
+  margin-right: 12px;
+}
+
+.stek {
+  opacity: 0.5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pismo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location_flag div::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: rgba(176, 183, 195, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: -16px;
+}
+
+.location_country div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.location_log div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.location_country div::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: rgba(176, 183, 195, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: -16px;
+}
+/*# sourceMappingURL=TopHeader.css.map */

@@ -1,0 +1,21 @@
+.notifacation {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  z-index: 9999;
+}
+
+.notifacation .callInfo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notifacation .callInfo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=Notifacation.css.map */

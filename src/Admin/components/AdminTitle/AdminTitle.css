@@ -1,0 +1,60 @@
+.admin_title {
+  margin-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.admin_title__name h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282828;
+  margin-bottom: 0;
+}
+
+.admin_title__name p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B0B7C3;
+}
+
+.admin_title__search form {
+  position: relative;
+}
+
+.admin_title__search form input {
+  background: rgba(236, 238, 242, 0.5);
+  border-radius: 100px;
+  position: relative;
+  padding: 9px 10px 9px 37px;
+  max-height: 34px;
+  min-width: 142px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #B0B7C3;
+}
+
+.admin_title__search form img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.back-tree img {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
+/*# sourceMappingURL=AdminTitle.css.map */

@@ -1,0 +1,19 @@
+.SmallTitle {
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+.SmallTitle h4 {
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #181725;
+}
+
+.SmallTitle a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  color: #747688;
+}
+/*# sourceMappingURL=SmallTitle.css.map */

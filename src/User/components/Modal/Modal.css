@@ -1,0 +1,46 @@
+.myModal {
+  position: fixed;
+  z-index: 9999;
+  border-radius: 25px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.myModal__reletive {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0px 25px 50px 5px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 25px 50px 5px rgba(51, 51, 51, 0.1);
+}
+
+.myModal__close {
+  width: 40px;
+  height: 40px;
+  background: #f0f0f0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 20px;
+}
+
+.myModal__exit {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.1;
+  z-index: 98;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,158 @@
+.product_modal {
+  padding: 30px 40px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 25px 30px 5px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 25px 30px 5px rgba(51, 51, 51, 0.1);
+  border-radius: 25px;
+  min-width: 446px;
+  min-height: 563px;
+}
+
+.product_modal__title {
+  margin-bottom: 10px;
+}
+
+.product_modal__title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #181725;
+  text-align: center;
+}
+
+.product_modal .from_control {
+  position: relative;
+}
+
+.product_modal__form {
+  display: block;
+}
+
+.product_modal__form__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.product_modal__form__input {
+  margin-top: 13px;
+  width: 100% !important;
+  min-height: 50px;
+  background: rgba(107, 119, 154, 0.06);
+  border-radius: 13px;
+  padding: 13px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C3C3C3;
+  position: relative !important;
+}
+
+.product_modal__form__input__img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.product_modal__form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  padding: 13px 20px 13px 56px;
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 20px;
+  margin-top: 13px;
+}
+
+.product_modal__form__btn:hover {
+  background: rgba(45, 168, 62, 0.1);
+  border-radius: 13px;
+}
+
+.product_modal__form__btn.active {
+  background: rgba(45, 168, 62, 0.1);
+  border-radius: 13px;
+}
+
+.product_modal__form__btn__img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.product_modal__form__btn__imgx {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.product_modal__form__btn .ellipse_icon {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.product_modal__form__form_btns {
+  position: relative;
+}
+
+.product_modal__form__btnx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  padding: 13px 20px 13px 56px;
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+  background: rgba(107, 119, 154, 0.06);
+  border-radius: 13px;
+  margin-bottom: 40px;
+}
+
+.product_modal__form__btnx:hover {
+  background: rgba(45, 168, 62, 0.1);
+  border-radius: 13px;
+}
+
+.product_modal .form_log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product_modal .form_log .form_btns__logout .green-btn {
+  background: rgba(176, 183, 195, 0.2);
+  margin-right: 20px;
+  color: #181725;
+}
+/*# sourceMappingURL=product-modal.css.map */

@@ -1,0 +1,127 @@
+.fullCard__fullCardHead {
+  width: 867px;
+  height: 90px;
+  left: 291px;
+  top: 275px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 120px;
+  padding-left: 150px;
+}
+
+.fullCard__fullRow__fullColOne__ColOneText {
+  margin-top: 40px;
+}
+
+.fullCard__fullRow__fullColOne__ColOneText__colHfour {
+  width: 949px;
+  height: 30px;
+  left: 1px;
+  top: 721px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.fullCard__fullRow__fullColOne__ColOneText__colPiyText {
+  width: 950px;
+  height: 358px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  color: #000000;
+}
+
+.fullCard__fullRow__fullColTwo {
+  padding-left: 50px !important;
+}
+
+.fullCard__fullRow__fullColTwo__fullColSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.fullCard__fullRow__fullColTwo__fullColSpan__fullcolIcon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20px;
+  height: 4px;
+  left: 1008px;
+  top: 9px;
+  background: #53b175;
+  border-radius: 10px;
+}
+
+.fullCard__fullRow__fullColTwo__fullColSpan__fullCardICon {
+  left: calc(50% - 141px / 2 + 491.5px);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #282828;
+  margin-bottom: 0px !important;
+}
+
+.fullCard__fullRow__fullColTwo__fullMassage {
+  padding: 18px 12px 21px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(176, 183, 195, 0.14);
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.fullCard__fullRow__fullColTwo__fullMassage__fullMassagTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 7px;
+}
+
+.fullCard__fullRow__fullColTwo__fullMassage__fullMassagTop p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+  color: #757b87;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.fullCard__fullRow__fullColTwo__fullMassage__fullMassagButtom p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/*# sourceMappingURL=FullCard.css.map */

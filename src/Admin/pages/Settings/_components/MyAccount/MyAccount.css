@@ -1,0 +1,55 @@
+.MyAccount {
+  width: 536px;
+  color: #505050;
+}
+
+.MyAccount__title {
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #181725;
+}
+
+.MyAccount__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 30px;
+  border: 2px solid #53B175;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  border-radius: 100px;
+}
+
+.MyAccount__img img {
+  width: 100%;
+}
+
+.MyAccount__body label {
+  width: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C3C3C3;
+  margin-top: 35px;
+  margin-bottom: 6px;
+}
+
+.MyAccount__body input {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.MyAccount__btn {
+  width: 100%;
+  background: rgba(176, 183, 195, 0.2);
+  border-radius: 50px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 50px 0;
+  color: #B0B7C3;
+  font-size: 16px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=MyAccount.css.map */

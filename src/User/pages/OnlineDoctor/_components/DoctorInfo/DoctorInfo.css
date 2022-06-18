@@ -1,0 +1,81 @@
+.doctorInfo {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.doctorInfo__img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.doctorInfo__name {
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+  /* Labels/Light/Primary */
+  color: #000000;
+}
+
+.doctorInfo__item {
+  max-width: 565px;
+}
+
+.doctorInfo__item:nth-child(2) {
+  margin: 30px 0;
+}
+
+.doctorInfo__item:nth-child(3) {
+  background: rgba(107, 119, 154, 0.06);
+  border-radius: 15px;
+  padding: 16px 0 20px 23px;
+}
+
+.doctorInfo__item:nth-child(3) h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #222222;
+}
+
+.doctorInfo__item:nth-child(3) p {
+  max-width: 430px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  color: rgba(34, 34, 34, 0.6);
+}
+
+.doctorInfo .DoctorTypeCard {
+  min-height: 90px;
+}
+
+.doctorInfo .DoctorTypeCard h6 {
+  margin: 0 !important;
+}
+
+.doctorInfo .DoctorTypeCard p {
+  margin-bottom: 0 !important;
+}
+
+.DoctorTypeCard__sharh span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  /* identical to box height */
+  color: #FFC86D;
+}
+
+.DoctorTypeCard__experience span {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  display: inline-block;
+  text-align: center;
+  /* identical to box height */
+  /* Backgrounds/Action/Second */
+  color: #53B175;
+}
+/*# sourceMappingURL=DoctorInfo.css.map */

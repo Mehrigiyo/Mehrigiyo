@@ -1,6 +1,6 @@
 import {data} from '../TopDoctors/Const'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import DoctorTypeCard from '../../../../components/DoctorTypeCard/DoctorTypeCard'
 import img from '../../../../../images/itemPageImg.png'
@@ -8,10 +8,21 @@ import './DoctorInfo.scss'
 import { useParams } from 'react-router-dom'
 import Remember from "../../../../../images/Close_Icon.svg"
 import ItemPage from '../../../../components/ItemPage/ItemPage'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { actionDoctorByID } from '../../../../../store/reducers/get/DoctorsById/action'
 function DoctorInfo() {
     const Api="http://207.154.244.140:8000"
-
+    // getDoctorByID
+    // useSelector
+    const   {data:f,  loading, error} = useSelector(state => state.getDoctorByID)
+    console.log(f);
+    // actionDoctorByID
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(actionDoctorByID(1))
+    },[])
+    // useDispatch
+    // useEffect
     const {id} = useParams()
     const {doctorsData} = useSelector(state => state.getDoctors);
     let data = ()=>{
@@ -24,7 +35,6 @@ function DoctorInfo() {
     }
 }
     const {image, full_name, description_uz,experience, type_doctor}  = data()
-   console.log(data());
     // console.log(id);
     // const index = data.map()
 

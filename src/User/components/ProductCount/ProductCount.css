@@ -1,0 +1,76 @@
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 79px;
+}
+
+.counter .btn_count {
+  background-color: unset;
+  border: none;
+  color: #B3B3B3;
+  font-size: 32px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.counter .btn_count:hover {
+  background-color: unset;
+  color: #53B175;
+}
+
+.counter .btn_count:last-child {
+  color: #53B175;
+}
+
+.counter .counter_name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #181725;
+  border: 1px solid #E2E2E2;
+  border-radius: 17px;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product_count .price_name p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  letter-spacing: 0.1px;
+  color: #53B175;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=ProductCount.css.map */

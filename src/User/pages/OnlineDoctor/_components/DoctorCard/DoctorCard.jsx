@@ -8,13 +8,18 @@ import { Link } from 'react-router-dom'
 function DoctorCard({data}) {
 const Api="http://207.154.244.140:8000"
 
+  
+  const saveDoctor = ()=>{
+    return data.id
+  }
+
   return (
     <>
         <div className="doctorCard" >
             <div className="doctorCard__img">
                 <img className='doctorCard__img__first' src={Api+data.image} alt="img" />
                 <button className='doctorCard__img__button'>TOP</button>
-                <img className='doctorCard__img__icon' src={img2} alt="img" />
+                <img onClick={saveDoctor} className='doctorCard__img__icon' src={img2} alt="img" />
             </div>
             <div className="doctorCard__body">
              <h5>{data.full_name.split(" ")[0][0]+"."+data.full_name.split(" ")[1] }</h5>

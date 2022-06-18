@@ -1,0 +1,23 @@
+.clockButton {
+  width: 216px;
+  height: 50px;
+  background: rgba(83, 177, 117, 0.1);
+  border-radius: 16px;
+  padding: 0 16px 0 21px;
+}
+
+.clockButton div {
+  font-size: 12px;
+  line-height: 18px;
+  gap: 6px;
+}
+
+.clockButton span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: right;
+  color: #E64C3C;
+}
+/*# sourceMappingURL=ClockButton.css.map */

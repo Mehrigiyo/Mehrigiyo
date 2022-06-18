@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AACG,uBADO,CACP,GAAG,CAAC;EACA,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "Consultation.scss"
+    ],
+    "names": [],
+    "file": "Consultation.css"
+}

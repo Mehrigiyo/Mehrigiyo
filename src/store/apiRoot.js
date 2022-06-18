@@ -13,10 +13,11 @@ apiRoot.interceptors.request.use((config) => {
   if (config.url.includes("specialist/types/")) {
     return config;
   }
+  
   if (config.url.includes("specialist/doctors/")) {
     return config;
   }
-
+ 
   if (config.headers !== undefined) {
     config.headers["Authorization"] = `Bearer ${token}`;
   }

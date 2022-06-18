@@ -1,0 +1,58 @@
+.accordion-item {
+  border: none !important;
+  border-bottom: 2px solid #ECECF1 !important;
+  background-color: unset !important;
+}
+
+.accordion-button {
+  padding: 25px 0 !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  background-color: transparent !important;
+  /* Dark blue */
+  color: #282938 !important;
+}
+
+.accordion-button span {
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Backgrounds/Action/Second */
+  color: #53B175;
+  margin-right: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #282938 !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("../../../icons/+.svg") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../../../icons/+.svg") !important;
+  -webkit-transform: rotate(-45deg) !important;
+          transform: rotate(-45deg) !important;
+}
+
+.accordion-body {
+  padding: 1rem 44px !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* grey */
+  color: #B0B7C3;
+}
+/*# sourceMappingURL=Accordion.css.map */

@@ -1,0 +1,12 @@
+.payment_method {
+  position: relative;
+}
+
+.payment_method .payment_bg img {
+  position: absolute;
+  right: -40px;
+  top: 630px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=PaymentMethods.css.map */

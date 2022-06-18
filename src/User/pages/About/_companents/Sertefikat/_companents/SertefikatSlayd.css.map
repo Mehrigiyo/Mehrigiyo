@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUO,AAAD,iDAAU,CAAC;EACT,WAAW,EAAE,SAAS;EACtB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,OAAO;CACd",
+    "sources": [
+        "SertefikatSlayd.scss"
+    ],
+    "names": [],
+    "file": "SertefikatSlayd.css"
+}

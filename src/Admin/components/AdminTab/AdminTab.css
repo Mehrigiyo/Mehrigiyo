@@ -1,0 +1,62 @@
+.loginWrapper {
+  padding: 86px;
+}
+
+.loginWrapper__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  padding: 0 12px;
+  width: 340px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginWrapper__box .technalogy__spam {
+  margin-top: 15px;
+  width: 145px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.loginWrapper__box .technalogy__spam p {
+  color: #b0b7c3;
+}
+
+.loginWrapper__box .active {
+  background-color: #fff;
+  margin-top: 15px;
+  width: 145px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loginWrapper__box .active p {
+  color: #53b175;
+  font-weight: 700;
+}
+
+.loginWrapper__box .active2 {
+  background-color: #fff;
+  margin-top: 15px;
+  width: 186px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loginWrapper__box .active2 p {
+  color: #53b175;
+  font-weight: 700;
+}
+/*# sourceMappingURL=AdminTab.css.map */

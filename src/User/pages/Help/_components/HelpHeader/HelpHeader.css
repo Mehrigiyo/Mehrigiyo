@@ -1,0 +1,31 @@
+.help_header {
+  padding-top: 100px;
+}
+
+.help_header .help_header_title h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.help_header .help_header_rightBack img {
+  position: absolute;
+  right: -40px;
+  bottom: 0px;
+  opacity: 0.15;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotateY(180deg) !important;
+          transform: rotateY(180deg) !important;
+  z-index: -1;
+}
+
+.help_header .help_header_leftBack img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  left: -105px;
+  top: 150px;
+}
+/*# sourceMappingURL=HelpHeader.css.map */

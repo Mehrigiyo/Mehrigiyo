@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;600&family=Bellefair&family=Nunito:ital,wght@0,200;0,300;1,200&family=Philosopher:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+.product h3 {
+  color: #53b175;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.product p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b0b7c3;
+}
+
+.product span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b0b7c3;
+}
+
+.product__fructis {
+  margin-top: 30px;
+}
+
+.product__fructis h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.product__fructis__asartiment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  gap: 15px;
+}
+
+.product__gardin__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__gardin__row P {
+  text-align: justify;
+}
+
+.product__gardin__row__coool img {
+  margin-left: -80px;
+}
+
+.product__gardin__row__coool p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.product__info__treated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+
+.product__info__treated__hfive {
+  bottom: 34.33%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  width: 650px;
+  text-align: center;
+}
+
+.product__info__dowload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+.product__info__dowload__square {
+  width: 320px;
+  height: 150px;
+  left: 660px;
+  top: 0px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+          box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+  border-radius: 15px;
+}
+
+.product__info__dowload__square__hfour {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 147px;
+  text-align: center;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: #69cb3a;
+  opacity: 0.3;
+  width: 171px;
+}
+
+.product__info__dowload__square__textP {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: #29da6a;
+  margin-top: -70px;
+}
+
+.product__center__Taxt {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.product__center__Taxt__fotoOne {
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-right: -40px;
+}
+
+.product__center__Taxt .product__center__title {
+  position: absolute;
+  bottom: 40%;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: #53b175;
+  width: 800px;
+}
+/*# sourceMappingURL=Now.css.map */

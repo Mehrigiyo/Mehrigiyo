@@ -1,0 +1,51 @@
+.shop_box .empty_card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.shop_box .empty_card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.shop_box .empty_card h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #B0B7C3;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.shop_box .empty_card .circle_num {
+  position: absolute;
+  bottom: 110px;
+  left: 54%;
+  background: #53B175;
+  -webkit-box-shadow: 0px 2px 8px rgba(86, 105, 255, 0.15);
+          box-shadow: 0px 2px 8px rgba(86, 105, 255, 0.15);
+  font-weight: 600;
+  font-size: 17.6px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 5.4px 11.7px 3.8px 11.5px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=ShopBox.css.map */

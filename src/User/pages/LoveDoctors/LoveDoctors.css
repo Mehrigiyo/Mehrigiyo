@@ -1,0 +1,39 @@
+.love_doctor {
+  position: relative;
+  height: 100vh;
+}
+
+.love_doctor .love_doctor_bg {
+  background-image: url("../../../images/activeBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: -12%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.love_doctor .love_doctor_bg .love_doctors_item {
+  position: relative;
+  margin-top: 100px;
+}
+
+.love_doctor .love_doctor_bg .love_doctors_item .love_doctors_item_title h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+
+.love_doctor .love_doctor_bgtree img {
+  position: absolute;
+  bottom: 130px;
+  right: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 0.15;
+}
+/*# sourceMappingURL=LoveDoctors.css.map */

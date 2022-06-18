@@ -1,0 +1,69 @@
+.product_reklama {
+  padding: 150px 0;
+  position: relative;
+}
+
+.product_reklama_card {
+  background: linear-gradient(274.36deg, #53B175 0.52%, #53B175 21.68%, #63CB89 96.53%), #53B175;
+  -webkit-box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1), 0px 15px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1), 0px 15px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-image: url("../../../../../images/background- 22 1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_reklama .product_reklama_image img {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.product_reklama .product_reklama_text {
+  position: absolute;
+  text-align: left;
+  left: 40%;
+  top: 40%;
+}
+
+.product_reklama .product_reklama_text span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.product_reklama .product_reklama_text h4 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.product_reklama .product_reklama_text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.product_reklama .Product_back_tree img {
+  position: absolute;
+  right: -40px;
+  bottom: -50px;
+  opacity: 0.15;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotateY(180deg) !important;
+          transform: rotateY(180deg) !important;
+  z-index: -1;
+}
+/*# sourceMappingURL=ProductReklama.css.map */

@@ -1,0 +1,49 @@
+.DoctorTypeCard {
+  position: relative;
+  display: block;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+          box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+  border-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 17px 0 15px;
+  width: 186px;
+}
+
+.DoctorTypeCard .DoctorTypeCard_item h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  /* Labels/Light/Primary */
+  color: #000000;
+  margin-bottom: 6px;
+  margin-top: 7px;
+}
+
+.DoctorTypeCard .DoctorTypeCard_text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #6B779A;
+}
+
+.DoctorTypeCard .DoctorTypeCard_icon a img {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.DoctorTypeCard .DoctorTypeCard_icon a img:hover {
+  color: #53B175;
+}
+
+.DoctorTypeCard .DoctorTypeCard_icon a img:hover {
+  color: #53B175;
+}
+/*# sourceMappingURL=DoctorTypeCard.css.map */

@@ -9,6 +9,7 @@ import { product } from "./reducers/get/Product/reducer";
 import { getDoctors } from "./reducers/get/TopDoctor/reducer";
 import { loginReducer } from './reducers/loginPost/reducer'
 import { usermeReducer } from './reducers/get/userme/reducer';
+import { getDoctorByID } from "./reducers/get/DoctorsById/reduser";
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -20,5 +21,6 @@ export default combineReducers({
     product,
     getDoctors,
     loginReducer,
-    usermeReducer
+    usermeReducer,
+    getDoctorByID
 });

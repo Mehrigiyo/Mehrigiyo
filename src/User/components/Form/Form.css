@@ -7,12 +7,12 @@
 }
 
 .form__bg {
-  background-image: url("../../images/bg-form3x.png");
+  background-image: url("../../../images/bg-form3x.png");
   background-size: 90%;
   background-repeat: no-repeat;
   position: absolute;
   top: -400px;
-  left: 0;
+  left: -80px;
   height: 900px;
   width: 100%;
   z-index: -4;
@@ -41,7 +41,8 @@
   margin: 7px 0 40px;
 }
 
-.form__form label, .form__form input {
+.form__form label,
+.form__form input {
   display: block;
   width: 100%;
   border: none;

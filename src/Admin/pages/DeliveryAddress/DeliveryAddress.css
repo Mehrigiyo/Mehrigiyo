@@ -1,0 +1,12 @@
+.delivery_address {
+  position: relative;
+}
+
+.delivery_address .delivery_bg img {
+  position: absolute;
+  right: -40px;
+  top: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=DeliveryAddress.css.map */

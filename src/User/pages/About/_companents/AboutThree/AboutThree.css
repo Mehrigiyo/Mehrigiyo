@@ -1,0 +1,64 @@
+.welcome_organic {
+  position: relative;
+  max-width: 1440px;
+  margin: -120px auto;
+  height: 1000px;
+}
+
+.aboutFon {
+  max-width: 1440px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  min-height: 800px;
+  position: absolute;
+  background-image: url("../../../../../icons/twofon.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+}
+
+.fullFoto {
+  background-color: transparent;
+}
+
+.fullFoto img {
+  width: 100%;
+}
+
+.about_wins .about_card_img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about_wins .about_card_text {
+  display: block;
+}
+
+.about_wins .about_card_text span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+}
+
+.about_wins .about_card_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: #b0b7c3;
+}
+
+.winner30 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+/*# sourceMappingURL=AboutThree.css.map */

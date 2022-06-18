@@ -69,6 +69,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .tab_menu_item .tab_menu_item_title a {
@@ -77,6 +78,7 @@
   line-height: 27px;
   color: #B0B7C3;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 .tab_menu_item .tab_menu_item_title a.active {
