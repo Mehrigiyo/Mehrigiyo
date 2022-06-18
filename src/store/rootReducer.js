@@ -10,6 +10,7 @@ import { getDoctors } from "./reducers/get/TopDoctor/reducer";
 import { loginReducer } from './reducers/loginPost/reducer'
 import { usermeReducer } from './reducers/get/userme/reducer';
 import { getDoctorByID } from "./reducers/get/DoctorsById/reduser";
+import { dataUserMe } from "./reducers/put/UserMePut/reduser";
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -22,5 +23,6 @@ export default combineReducers({
     getDoctors,
     loginReducer,
     usermeReducer,
-    getDoctorByID
+    getDoctorByID,
+    dataUserMe
 });

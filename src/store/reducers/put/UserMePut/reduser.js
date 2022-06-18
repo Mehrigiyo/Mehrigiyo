@@ -1,26 +1,26 @@
-import { GET_USERME_LOADING, GET_USERME_SUCCESS, GET_USERME_ERROR } from './types';
+import { PUT_USER_ME_LOADING, PUT_USER_ME_SUCCESS, PUT_USER_ME_ERROR } from './types';
 
 
 
 const initialState = {
-    userData: {},
+    logindate: {},
     access: false,
     error: false,
     loading: false,
-    logindate:{}
 }
 
 
 
-export const usermeReducer = (state = initialState, { type, payload }) => {
+export const dataUserMe = (state = initialState, { type, payload }) => {
     switch (type) {
-        case GET_USERME_LOADING:
+        case PUT_USER_ME_LOADING:
             return {...state, loading: true }
-        case GET_USERME_SUCCESS:
+        case PUT_USER_ME_SUCCESS:
             return {...state, loading: false, access: true, logindate: payload }
-        case GET_USERME_ERROR:
+        case PUT_USER_ME_ERROR:
             return {...state, loading: false, access: false, logindate: payload }
         default:
             return state
+
     }
 }
