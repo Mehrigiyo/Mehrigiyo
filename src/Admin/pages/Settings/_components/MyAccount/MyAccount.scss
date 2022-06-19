@@ -1,6 +1,7 @@
 .MyAccount{
     width: 536px;
     color: #505050;
+    padding-top: 63px ;
     &__title{
         font-size: 22px;
         line-height: 33px;
@@ -23,8 +24,24 @@
 
     &__body{
         max-width: 360px;
-        margin: 0 auto;
+        margin: 30px auto 0;
         
+        .imageSave{
+
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px !important;
+            div{
+                margin: 0 auto;
+            }
+            margin: 0 auto;
+            p{
+                display: none;
+            }
+            #imageSave{
+               display: none;
+            } 
+        }
         label{
             width: 100%;
             font-size: 14px;
@@ -61,6 +78,23 @@
     .password{
         display: block;
       }
+      .imageSave{
+
+        div{
+            margin: 0 auto;
+        }
+        p{
+            display: block;
+            font-size: 12px;
+            margin-top: 16px;
+            margin-bottom: 0 !important;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            color: #505050;
+        }
+         
+    }
       label{
 
         &:focus-within{
