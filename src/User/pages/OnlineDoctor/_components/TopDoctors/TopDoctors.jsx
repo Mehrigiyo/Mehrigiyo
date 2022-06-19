@@ -6,12 +6,14 @@ import {data as f} from './Const'
 import background from '../../../../../images/Group.png';
    
 import './TopDoctors.scss'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Slider from 'react-slick';
+import { getFavoritDoctors } from '../../../../../store/reducers/get/FavoritDoctorGet/action';
 
 function TopDoctors() {
  const {doctorsData} = useSelector(state => state.getDoctors);
+ const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
 
 
  let settings = {
@@ -65,7 +67,13 @@ function TopDoctors() {
     },
   ],
 };
-
+  const addedFav = (id) =>{
+    return favoriteDoc.filter(a=>a.id === id).length > 0
+  }
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getFavoritDoctors());
+  },[])
   return (
     <>
     <section className='topDoctors'>
@@ -83,7 +91,7 @@ function TopDoctors() {
                 {
                     doctorsData.map((item)=>(
                       <Col xs={2}>
-                          <DoctorCard data={item} />
+                          <DoctorCard data={item} addedFav={addedFav} />
                       </Col>
                     ))
                 }

@@ -6,7 +6,7 @@ import './ShopBox.scss';
 function ShopBox() {
   return (
     <div className='shop_box'>
-        <LoveDoctors title={"Savatcha"} br_name={"Savatcha"}>
+        
         <div className="empty_card">
           <img src={filedowload} alt="" />
           <h3>Savatcha bo’sh!</h3>
@@ -15,7 +15,6 @@ function ShopBox() {
             0
           </div>
         </div>
-      </LoveDoctors>
     </div>
   )
 }

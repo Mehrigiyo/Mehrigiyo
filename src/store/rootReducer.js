@@ -10,6 +10,9 @@ import { getDoctors } from "./reducers/get/TopDoctor/reducer";
 import { loginReducer } from './reducers/loginPost/reducer'
 import { usermeReducer } from './reducers/get/userme/reducer';
 import { getDoctorByID } from "./reducers/get/DoctorsById/reduser";
+import { favoriteDoc } from "./reducers/post/FavoritDoctorPost/reducer";
+import{ favoritDoctors} from "./reducers/get/FavoritDoctorGet/reducer"
+import {favoritDocDelete} from "./reducers/delete/FavoriteDoctorDelet/reducer" 
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -22,5 +25,9 @@ export default combineReducers({
     getDoctors,
     loginReducer,
     usermeReducer,
-    getDoctorByID
+    getDoctorByID,
+    favoriteDoc,
+    favoritDoctors,
+    favoritDocDelete
+
 });
