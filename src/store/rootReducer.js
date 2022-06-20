@@ -18,7 +18,6 @@ export default combineReducers({
     regestrationReducer,
     newsDataReduser,
     getTypeDoctors,
-    getTypeDoctors,
     productType,
     changeRouter,
     product,
