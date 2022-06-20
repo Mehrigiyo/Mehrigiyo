@@ -11,6 +11,7 @@ import NavIcon6 from "../../../icons/navIcon6.svg"
 import NavIcon7 from "../../../icons/navIcon7.svg"
 import logaoutIcon from "../../../icons/logout.svg"
 import { Link } from 'react-router-dom';
+import { logout } from '../../../store/reducers/userme';
 // import {getCurrentUser} from '../../../store/reducers/userme';
 // import useFetch from '../../hooks/useFetch';
 function Sidebar() {
@@ -21,7 +22,6 @@ function Sidebar() {
   //  if (getusermeloading) return <h1>...loading</h1>
   //  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
   //  {JSON.stringify(getusermedata)}
-
 
   return (
     <>
@@ -105,7 +105,7 @@ function Sidebar() {
             </ul>
           </nav>
         </div>
-        <div className="sidebar_menu_logout">
+        <div className="sidebar_menu_logout" onClick={()=> logout()}>
           <a href="#">
             <img src={logaoutIcon} alt="" />
             Log Out
