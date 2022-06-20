@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { userGet } from '../../../../../store/reducers/get/userme/action';
 import { putUser } from '../../../../../store/reducers/put/UserMePut/action';
 function MyAccount() {
-    const { userData, logindate}  = useSelector((state)=> state.usermeReducer)
+    const { userData, logindate={}}  = useSelector((state)=> state.usermeReducer)
     console.log(logindate);
     const dispatch = useDispatch();
      useEffect(()=>{
@@ -16,9 +16,9 @@ function MyAccount() {
     const {data} = logindate
     console.log(data);
    
-    const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)
-     console.log(h);
-     console.log(k);
+    // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)
+    //  console.log(h);
+    //  console.log(k);
 
 
 

@@ -5,13 +5,12 @@ import { useSelector } from "react-redux";
 
 function App() {
   const { routerData } = useSelector((state) => state.changeRouter);
+  const token =  !!localStorage.getItem('token')
   return (
-    <>
-      {routerData === "user" ? (
-        <User />
-      ) : routerData === "admin" ? (
-        <Admin />
-      ) : null}
+    <>    
+      {
+        token ? <Admin /> : <User />
+      }
     </>
   );
 }
