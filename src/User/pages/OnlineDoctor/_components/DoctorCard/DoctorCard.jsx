@@ -45,7 +45,7 @@ function DoctorCard({ data,addedFav }) {
           </span>
         </div>
         <div className="doctorCard__body">
-          <h5>
+          <h5 className="mt-2">
             {data.full_name.split(" ")[0][0] +
               "." +
               data.full_name.split(" ")[1]}
