@@ -8,7 +8,7 @@ import { userGet } from '../../../../../store/reducers/get/userme/action';
 import { putUser } from '../../../../../store/reducers/put/UserMePut/action';
 function MyAccount() {
     const { userData, logindate}  = useSelector((state)=> state.usermeReducer)
- console.log(logindate);
+    console.log(logindate);
     const dispatch = useDispatch();
      useEffect(()=>{
         dispatch(userGet())
