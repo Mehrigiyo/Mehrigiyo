@@ -69,11 +69,13 @@ const TopHeader = () => {
               </div>
             </div>
             :
-            <div className="d-block">
-            {
-              userObj.first_name +
-              userObj.last_name
-            }
+            <div className="d-block ml-1 login">
+                <p className="mb-0">
+                  {
+                    userObj.first_name + "." + 
+                    userObj.last_name.split(" ")[0][0]
+                  }
+              </p>
             </div>}
         </section>
         {open && <Modal children={<Login />} set={setOpen} />}

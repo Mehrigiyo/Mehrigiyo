@@ -14,28 +14,56 @@ import { Link } from 'react-router-dom';
 // import {getCurrentUser} from '../../../store/reducers/userme';
 // import useFetch from '../../hooks/useFetch';
 function Sidebar() {
+  const user = localStorage.getItem('user')
+  const userObj = JSON.parse(user)
 
-//  const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
-//  if (getusermeloading) return <h1>...loading</h1>
-//  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
-//  {JSON.stringify(getusermedata)}
+  //  const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
+  //  if (getusermeloading) return <h1>...loading</h1>
+  //  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
+  //  {JSON.stringify(getusermedata)}
 
 
   return (
     <>
       <div className='sidebar'>
-        <div className="sidebar_header">
-          <div className="sidebar_header__img">
-            <img src={AdminCircleImg} alt="circle-img" />
+
+        {user === null ?
+          <div className="sidebar_header">
+            <div className="sidebar_header__img">
+              <img src={AdminCircleImg} alt="circle-img" />
+            </div>
+            <div className="sidebar_header__title">
+              <h1>null</h1>
+              <p>null</p>
+            </div>
+            <div className="sidebar_header_edit">
+              <a href="#"><img src={edit} alt="" /></a>
+            </div>
           </div>
-          <div className="sidebar_header__title">
-            <h1>''</h1>
-            <p>asasa</p>
+          :
+          <div className="sidebar_header">
+            <div className="sidebar_header__img">
+              <img src={userObj.image} alt="user" />
+            </div>
+            <div className="sidebar_header__title">
+              <h1>
+              {
+                userObj.first_name
+              }
+              </h1>
+              <p>
+              {
+                userObj.last_name
+              }
+              </p>
+            </div>
+            <div className="sidebar_header_edit">
+              <a href="#"><img src={edit} alt="" /></a>
+            </div>
           </div>
-          <div className="sidebar_header_edit">
-            <a href="#"><img src={edit} alt="" /></a>
-          </div>
-        </div>
+        }
+
+
         <div className="sidebar_menu">
           <nav className='sidebar_menu_list'>
             <ul className='sidebar_menu_list_item'>
