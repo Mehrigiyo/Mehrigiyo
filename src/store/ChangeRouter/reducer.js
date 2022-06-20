@@ -1,7 +1,7 @@
 import { CHANGE_ROUTER } from "./type";
 
 const initialState = {
-    routerData: "admin",
+    routerData: "user",
 };
 
 export const changeRouter = (state = initialState, { type, payload }) => {
