@@ -7,13 +7,19 @@ import { useEffect } from 'react';
 import { userGet } from '../../../../../store/reducers/get/userme/action';
 import { putUser } from '../../../../../store/reducers/put/UserMePut/action';
 function MyAccount() {
+
+    const user = localStorage.getItem('user')
+    const userObj = JSON.parse(user)
+
+
+
     const { userData, logindate={}}  = useSelector((state)=> state.usermeReducer)
     console.log(logindate);
     const dispatch = useDispatch();
      useEffect(()=>{
         dispatch(userGet())
      },[])
-    const {data} = logindate
+    const data = userObj
     console.log(data);
    
     // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)

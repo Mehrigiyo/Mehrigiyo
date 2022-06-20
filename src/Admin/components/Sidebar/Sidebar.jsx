@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AdminCircleImg from '../../../icons/admin_bg.svg'
 import edit from '../../../icons/editIcon.svg'
 import './Sidebar.scss';
@@ -12,12 +12,14 @@ import NavIcon7 from "../../../icons/navIcon7.svg"
 import logaoutIcon from "../../../icons/logout.svg"
 import { Link } from 'react-router-dom';
 import { logout } from '../../../store/reducers/userme';
+import Modal from '../../../User/components/Modal/Modal';
+import MyAccount from '../../pages/Settings/_components/MyAccount/MyAccount';
 // import {getCurrentUser} from '../../../store/reducers/userme';
 // import useFetch from '../../hooks/useFetch';
 function Sidebar() {
   const user = localStorage.getItem('user')
   const userObj = JSON.parse(user)
-
+  const [open, setOpen] = useState(false)
   //  const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
   //  if (getusermeloading) return <h1>...loading</h1>
   //  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
@@ -47,22 +49,28 @@ function Sidebar() {
             </div>
             <div className="sidebar_header__title">
               <h1>
-              {
-                userObj.first_name
-              }
+                {
+                  userObj.first_name
+                }
               </h1>
               <p>
-              {
-                userObj.last_name
-              }
+                {
+                  userObj.last_name
+                }
               </p>
             </div>
+
             <div className="sidebar_header_edit">
-              <a href="#"><img src={edit} alt="" /></a>
+              <a href="#" onClick={() => setOpen(true)}><img src={edit} alt="" /></a>
             </div>
           </div>
         }
-
+        {
+          open &&
+          <Modal boolen={false} set={setOpen} >
+            <MyAccount />
+          </Modal>
+        }
 
         <div className="sidebar_menu">
           <nav className='sidebar_menu_list'>
@@ -105,8 +113,8 @@ function Sidebar() {
             </ul>
           </nav>
         </div>
-        <div className="sidebar_menu_logout" onClick={()=> logout()}>
-          <a href="#">
+        <div className="sidebar_menu_logout" >
+          <a href="#" onClick={() => logout()}>
             <img src={logaoutIcon} alt="" />
             Log Out
           </a>
