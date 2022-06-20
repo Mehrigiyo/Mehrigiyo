@@ -29,7 +29,7 @@ function DoctorCard({ data,addedFav }) {
   return (
     <>
       <div className="doctorCard">
-        <div className="doctorCard__img">
+        <div className="doctorCard__imm ">
           <img
             className="doctorCard__img__first"
             src={Api + data.image}
