@@ -23,7 +23,8 @@ function NewCompony() {
     },
   ];
   return (
-    <div className="NewCompony globalContainer">
+   <>
+     <div className="NewCompony globalContainer">
       <div className="NewCompony__componyTop">
         <Row className="NewCompony__componyTop__componyRowTop ">
           {array.map((item, index) => (
@@ -138,6 +139,7 @@ function NewCompony() {
           </Slider>
         </div>
       </div>
+   </>
   );
 }
 

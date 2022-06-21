@@ -1,18 +1,15 @@
 import { combineReducers } from "redux";
 import userReducer from "./reducers/posts/reducer";
-import { regestrationReducer } from "./reducers/regestration/reducer";
-import { newsDataReduser } from "./reducers/get/news/reducer";
+import { regestrationReducer } from "./reducers/user/regestration/reducer";
+import { newsDataReduser } from "./reducers/news/reducer";
 import { getTypeDoctors } from "./reducers/get/typesDoctor/reducer";
-import { productType } from "./reducers/get/productType/reducer";
+import { productType } from "./reducers/Shop/productType/reducer";
 import {changeRouter} from "./ChangeRouter/reducer";
-import { product } from "./reducers/get/Product/reducer";
-import { getDoctors } from "./reducers/get/TopDoctor/reducer";
+import { product } from "./reducers/Shop/Product/reducer";
+import { dataDoctorsReduser } from "./reducers/Specialist/specialistDoctors/reducer";
 import { loginReducer } from './reducers/loginPost/reducer'
-import { usermeReducer } from './reducers/get/userme/reducer';
-import { getDoctorByID } from "./reducers/get/DoctorsById/reduser";
-import { favoriteDoc } from "./reducers/post/FavoritDoctorPost/reducer";
-import{ favoritDoctors} from "./reducers/get/FavoritDoctorGet/reducer"
-import {favoritDocDelete} from "./reducers/delete/FavoriteDoctorDelet/reducer" 
+import { usermeReducer } from './reducers/user/userMe/reduser';
+import { favoritDoctors } from "./reducers/user/FavoritDoctor/reducer";
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -21,12 +18,9 @@ export default combineReducers({
     productType,
     changeRouter,
     product,
-    getDoctors,
+    dataDoctorsReduser,
     loginReducer,
     usermeReducer,
-    getDoctorByID,
-    favoriteDoc,
-    favoritDoctors,
-    favoritDocDelete
-
+    favoritDoctors
+    
 });

@@ -5,7 +5,7 @@ import uzFlag from "../../../../../icons/uz_flag.svg";
 import reg1 from "../../../../../images/registrationBg.png";
 import reg2 from "../../../../../images/registrationBg2.png";
 import { useSelector, useDispatch } from "react-redux";
-import { regestrationPost } from "../../../../../store/reducers/regestration/action";
+import { regestrationPost } from "../../../../../store/reducers/user/regestration/action";
 import { loginPost } from "../../../../../store/reducers/loginPost/action";
 // import useFetch from "../../../../../Admin/hooks/useFetch";
 import "./Login.scss";
@@ -13,7 +13,7 @@ import "./Login.scss";
 import useInput from "../../../../../Admin/hooks/useInput";
 // import { setCurrentUser, setToken } from "../../../../../store/reducers/userme";
 // import apiRoot from "../../../../../store/apiRoot";
-import { userGet } from "../../../../../store/reducers/get/userme/action";
+import { userGet } from "../../../../../store/reducers/user/userMe/action";
 const Login = () => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});

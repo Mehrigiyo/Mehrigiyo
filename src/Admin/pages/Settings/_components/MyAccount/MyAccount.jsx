@@ -4,8 +4,8 @@ import useForm from '../../../../hooks/useForm';
 import { useSelector,useDispatch } from 'react-redux'
 import './MyAccount.scss'
 import { useEffect } from 'react';
-import { userGet } from '../../../../../store/reducers/get/userme/action';
-import { putUser } from '../../../../../store/reducers/put/UserMePut/action';
+import { userGet } from '../../../../../store/reducers/user/userMe/action';
+import { putUser } from '../../../../../store/reducers/user/userMe/action';
 function MyAccount() {
 
     const user = localStorage.getItem('user')

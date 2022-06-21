@@ -9,10 +9,11 @@ import './TopDoctors.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Slider from 'react-slick';
-import { getFavoritDoctors } from '../../../../../store/reducers/get/FavoritDoctorGet/action';
+import { getFavoritDoctors } from '../../../../../store/reducers/user/FavoritDoctor/action';
 
 function TopDoctors() {
- const {doctorsData} = useSelector(state => state.getDoctors);
+
+ const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
  const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
 
 
@@ -67,6 +68,7 @@ function TopDoctors() {
     },
   ],
 };
+console.log(favoriteDoc);
   const addedFav = (id) =>{
     return favoriteDoc.filter(a=>a.id === id).length > 0
   }

@@ -4,15 +4,11 @@ import "./LoveDoctors.scss";
 import tree from "../../../images/Group.png";
 import Notification from "../../components/Notifacation/Notifacation";
 import { Breadcrumb, BreadcrumbItem, Col } from "react-bootstrap";
-import { getFavoritDoctors } from "../../../store/reducers/get/FavoritDoctorGet/action";
+import { getFavoritDoctors } from "../../../store/reducers/user/FavoritDoctor/action";
 import { useDispatch, useSelector } from "react-redux";
 import DoctorCard from "../OnlineDoctor/_components/DoctorCard/DoctorCard";
 
-function LoveDoctors({
-  title = "Saqlangan shifokorlar",
-  name = "/ Saqlangan shifokorlar",
-  children,
-}) {
+function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shifokorlar",children}) {
   const dispatch = useDispatch();
   const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
   useEffect(() => {

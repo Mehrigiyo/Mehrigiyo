@@ -7,7 +7,7 @@ import { data } from "./Const";
 
 import "./NewComponent.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { NewsGetData } from "../../../store/reducers/get/news/action";
+import { NewsGetData } from "../../../store/reducers/news/action";
 
 function NewsComponent() {
   const [count, setCount] = useState(0);

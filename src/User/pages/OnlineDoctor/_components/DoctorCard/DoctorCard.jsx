@@ -1,29 +1,28 @@
-import Button from "../../../../components/Buttons/Button";
+// import Button from "../../../../components/Buttons/Button";
 import "./DoctorCard.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
 import { MdOutlineBookmarkAdded } from "react-icons/md";
 
-import imgs from "../../../../../images/Bitmap001.jpg";
-import img2 from "../../../../../icons/Vector001.svg";
+// import imgs from "../../../../../images/Bitmap001.jpg";
+// import img2 from "../../../../../icons/Vector001.svg";
 import { Link } from "react-router-dom";
-import { postFavoriteDoc } from "../../../../../store/reducers/post/FavoritDoctorPost/action";
-import { useDispatch } from "react-redux";
-import { getFavoritDoctors } from "../../../../../store/reducers/get/FavoritDoctorGet/action";
-import { favoritDoctorDel } from "../../../../../store/reducers/delete/FavoriteDoctorDelet/action";
+import { postFavoriteDoc , favoritDoctorDel , getFavoritDoctors} from "../../../../../store/reducers/user/FavoritDoctor/action";
+import { useDispatch, useSelector } from "react-redux";
 function DoctorCard({ data,addedFav }) {
   const Api = "http://207.154.244.140:8000";
 
   const dispatch = useDispatch();
-
-  const saveDoctor = (id) => {
+  const {loading} = useSelector(state=> state.favoritDoctors)
+  // console.log("loading " + loading);
+  const saveDoctor = async (id) => {
     console.log(id, "bu bosilgan id");
-    dispatch(postFavoriteDoc(id));
-    dispatch(getFavoritDoctors());
+    await dispatch(postFavoriteDoc(id));
+    await dispatch(getFavoritDoctors());
   };
 
-  const deleteDoctor = (id) => {
-    dispatch(favoritDoctorDel(id));
-    dispatch(getFavoritDoctors());
+  const deleteDoctor = async(id) => {
+   await dispatch(favoritDoctorDel(id));
+   await dispatch(getFavoritDoctors());
   };
 
   return (
@@ -37,7 +36,9 @@ function DoctorCard({ data,addedFav }) {
           />
           <button className="doctorCard__img__button">TOP</button>
           <span className="doctorCard__img__icon">
-            {!addedFav(data.id) ? (
+          
+            { +loading === +data.id ? <span className="doctorCard__img__loading"></span> :
+            !addedFav(data.id) ? (
               <MdOutlineBookmarkAdd onClick={() => saveDoctor(data.id)} />
             ) : (
               <MdOutlineBookmarkAdded onClick={()=> deleteDoctor(data.id)} color="green"/>

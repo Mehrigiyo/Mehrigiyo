@@ -9,22 +9,22 @@ import { useParams } from 'react-router-dom'
 import Remember from "../../../../../images/Close_Icon.svg"
 import ItemPage from '../../../../components/ItemPage/ItemPage'
 import { useDispatch, useSelector } from 'react-redux';
-import { actionDoctorByID } from '../../../../../store/reducers/get/DoctorsById/action'
+import { actionDoctorByID } from '../../../../../store/reducers/Specialist/specialistDoctors/action'
 function DoctorInfo() {
     const Api="http://207.154.244.140:8000"
     // getDoctorByID
     // useSelector
-    const   {data:f,  loading, error} = useSelector(state => state.getDoctorByID)
-    console.log(f);
-    // actionDoctorByID
-    const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(actionDoctorByID(1))
     },[])
+    const   f = useSelector(state => state.dataDoctorsReduser)
+    console.log(f);
+    // actionDoctorByID
+    const dispatch = useDispatch()
     // useDispatch
     // useEffect
     const {id} = useParams()
-    const {doctorsData} = useSelector(state => state.getDoctors);
+    const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
     let data = ()=>{
      for(let i = 0; i < doctorsData.length; i++) {
         const element = doctorsData[i];

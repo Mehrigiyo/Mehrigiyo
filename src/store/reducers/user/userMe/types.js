@@ -1,0 +1,10 @@
+//  User Me GET 
+export const GET_USERME_LOADING = `GET_USERME_LOADING `;
+export const GET_USERME_SUCCESS = `GET_USERME_SUCCESS`;
+export const GET_USERME_ERROR = `GET_USERME_ERROR`;
+
+
+// User Me Put 
+export const PUT_USER_ME_LOADING = `PUT_USER_ME_LOADING `;
+export const PUT_USER_ME_SUCCESS = `PUT_USER_ME_SUCCESS`;
+export const PUT_USER_ME_ERROR = `PUT_USER_ME_ERROR`;

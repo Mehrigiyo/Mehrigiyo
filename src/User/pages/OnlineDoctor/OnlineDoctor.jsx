@@ -9,7 +9,7 @@ import TopDoctors from './_components/TopDoctors/TopDoctors';
 import {useDispatch} from 'react-redux'
 import apiRoot from '../../../store/apiRoot';
 import {getTypes} from "../../../store/reducers/get/typesDoctor/action";
-import { actionGetDoctors } from '../../../store/reducers/get/TopDoctor/action';
+import { actionGetDoctors } from '../../../store/reducers/Specialist/specialistDoctors/action';
 
 function OnlineDoctor() {
     const dispatch = useDispatch()

@@ -11,7 +11,7 @@ function App() {
       {
         routerData === "user" ? ( <
           User / >
-      ) : routerData === "admin" ? ( <
+      ) : routerData === "adim" ? ( <
           Admin / >
       ) : null
       }

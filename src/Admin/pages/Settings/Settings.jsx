@@ -6,7 +6,6 @@ import Acardions from './_components/Acardions/Acardions'
 import MyAccount from './_components/MyAccount/MyAccount'
 import Planeta from './_components/SVG/Planeta'
 import Shotka from './_components/SVG/Shotka'
-import TopDoctors from '../../../User/pages/OnlineDoctor/_components/TopDoctors/TopDoctors'
 function Settings() {
   const [open, setOpen] = useState(false)
 

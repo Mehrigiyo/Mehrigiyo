@@ -7,13 +7,11 @@ import AboutHistory from "./_companents/AboutHistory/AboutHistory";
 import Now from "./_companents/Now/Now";
 import Sertefikat from "./_companents/Sertefikat/Sertefikat";
 import HistoryTab from "./_companents/HistoryTab/HistoryTab";
-import { Productget } from "../../../store/reducers/get/productType/api";
 import { useDispatch, useSelector } from "react-redux";
-import { getTypes } from "../../../store/reducers/get/productType/action";
+import { getTypes} from '../../../store/reducers/Shop/productType/action'
 
 const About = () => {
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     dispatch(getTypes());
