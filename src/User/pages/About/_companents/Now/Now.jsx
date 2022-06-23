@@ -6,11 +6,16 @@ import hozirda from "../../../../../icons/hozirda1.png";
 import hozirda2 from "../../../../../icons/hozirda2.png";
 import { Row, Col } from "react-bootstrap";
 import list from "../../../../../icons/Group.png";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import {getTypes} from '../../../../../store/reducers/Shop/productType/action'
+ 
 function Now() {
-  const { data } = useSelector((state) => state.productType);
-  console.log(data, "bu data product type");
+  const { data, error } = useSelector((state) => state.productType);
+  const dispacht = useDispatch()
+  useEffect(()=>{
+    dispacht(getTypes())
+  }, [])
 const API = "http://207.154.244.140:8000"
   return (
     <div className="product  globalContainer" id="Hozirda">
@@ -29,8 +34,8 @@ const API = "http://207.154.244.140:8000"
       <div className="product__fructis">
         <h4>Bizning mahsulotlar turkumlari</h4>
         <div className=" product__fructis__asartiment ">
-          {data.map((item)=>(
-          <NowCard icon={API + item.image} text={item.name}></NowCard>
+          {data.map((item,index)=>(
+          <NowCard key={index} icon={API + item.image} text={item.name}></NowCard>
         ))
         }
           

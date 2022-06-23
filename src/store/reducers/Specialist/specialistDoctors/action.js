@@ -8,7 +8,6 @@ export const actionGetDoctors = () => async (dispatch) => {
   await dispatch({ type: GET_TOPDOCTOR_LOADING });
   try {
     const { data } = await productget();
-    console.log(data,"doctorsData");
     await dispatch({ type: GET_TOPDOCTOR_SUCCESS, payload: data?.data });
   } catch (error) {
     dispatch({ type: GET_TOPDOCTOR_ERROR, payload: error });
@@ -20,7 +19,6 @@ export const actionDoctorByID = (id) => async (dispatch) => {
   await dispatch({ type:GET_DOCTORBYID_LOADING });
   try {
     const { data } = await DoctorByID(id);
-    console.log(data,"doctorData");
     await dispatch({ type:GET_DOCTORBYID_SUCCESS, payload: data?.data });
   } catch (error) {
     dispatch({ type:GET_DOCTORBYID_ERROR, payload: error });

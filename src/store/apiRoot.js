@@ -3,17 +3,24 @@ import axios from "axios";
 const apiRoot = axios.create({
   baseURL: `http://207.154.244.140:8000/api/`,
 });
+
 apiRoot.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
 
     console.log('interceptor ishlavoti')
-
 
   if (config.url.includes("specialist/types/")) {
     return config;
   }
   
   if (config.url.includes("specialist/doctors/")) {
+    return config;
+  }
+  if (config.url.includes("news/")) {
+    return config;
+  }
+
+  if (config.url.includes("shop/types/")) {
     return config;
   }
  

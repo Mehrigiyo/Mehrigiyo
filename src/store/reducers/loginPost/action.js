@@ -6,7 +6,6 @@ export const loginPost = (object) => async(dispatch) => {
     await dispatch({ type: POST_LOGIN_LOADING });
     try {
         const { data } = await post(object);
-        console.log(data, "bu login data");
         setToken(data.access)
         await dispatch({ type: POST_LOGIN_SUCCESS, payload: data });
 

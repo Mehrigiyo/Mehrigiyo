@@ -13,6 +13,7 @@ export const productType = (state = initialState, { type, payload }) => {
         case PRODUCT_TYPE_LOADING:
             return {...state, loading: true }
         case PRODUCT_TYPE_SUCCESS:
+
             return {...state, data: payload , loading: false}
         case PRODUCT_TYPE_ERROR:
                 return {...state, loading: false,  error: payload }

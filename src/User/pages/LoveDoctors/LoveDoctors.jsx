@@ -36,8 +36,8 @@ function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shif
       <Notification />
 
       <div className="favoriteDoc globalContainer ">
-        {favoriteDoc.map((item) => (
-          <DoctorCard data={item} addedFav={addedFav} />
+        {favoriteDoc.map((item, i) => (
+          <DoctorCard key={i} data={item} addedFav={addedFav} />
         ))}
       </div>
     </div>

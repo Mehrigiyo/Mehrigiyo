@@ -18,7 +18,6 @@ function DoctorInfo() {
         dispatch(actionDoctorByID(1))
     },[])
     const   f = useSelector(state => state.dataDoctorsReduser)
-    console.log(f);
     // actionDoctorByID
     const dispatch = useDispatch()
     // useDispatch
@@ -35,7 +34,6 @@ function DoctorInfo() {
     }
 }
     const {image, full_name, description_uz,experience, type_doctor}  = data()
-    // console.log(id);
     // const index = data.map()
 
   return (

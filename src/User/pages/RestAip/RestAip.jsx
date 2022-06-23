@@ -47,7 +47,6 @@
 //     const handleUpdate = (e) => {
 //       e.preventDefault();
 //       dispatch(updatePostsById(value.id, JSON.stringify(value)));
-//       console.log(value);
 //       setUpdateModal(false);
 //     };
   

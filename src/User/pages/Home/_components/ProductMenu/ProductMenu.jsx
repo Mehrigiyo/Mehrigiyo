@@ -54,8 +54,8 @@ function ProductMenu() {
 
     const HandleTabSlider = (index) => setTabSlider(index)
 
-    const newArrays = TabData.map(item => (
-        <Col lg={3}>
+    const newArrays = TabData.map((item, index) => (
+        <Col key={index} lg={3}>
             <NavLink to="/productabout">
                 <ProductCard data={item}/>
             </NavLink>

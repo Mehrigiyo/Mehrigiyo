@@ -7,7 +7,6 @@ export const NewsGetData =  () => async (dispatch) => {
     try {
         const { data } = await newsGet();
         
-        console.log(data);
         await dispatch({ type: NEWS_SUCCESS, payload: data.data });
     } catch (error) {
         dispatch({ type: NEWS_ERROR, payload: error });

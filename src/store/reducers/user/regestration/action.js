@@ -5,10 +5,9 @@ export const regestrationPost = (object) => async (dispatch) => {
     await dispatch({ type: REGESTRATION_LOADING });
     try {
         const { data } = await post(object);
-        console.log(data);
         await dispatch({ type: REGESTRATION_SUCCESS, payload: data });
     } catch (error) {
-        dispatch({ type: REGESTRATION_ERROR, payload: error });
+        dispatch({ type: REGESTRATION_ERROR, payload: 'eror' });
     }
 }
 

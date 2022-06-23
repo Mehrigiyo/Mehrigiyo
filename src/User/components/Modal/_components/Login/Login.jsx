@@ -28,9 +28,7 @@ const Login = () => {
   const { userData }  = useSelector(
     (state)=> state.usermeReducer
   )
-  console.log(logindate, "logindata")
 
-  console.log(data);
   const onChange = (e) => {
     setValue((prev) => ({
       ...prev,
@@ -38,7 +36,6 @@ const Login = () => {
     }));
   };
 
-  console.log(value)
   const dispatch = useDispatch();
 
   const onSubmit = (e) => {
@@ -54,7 +51,6 @@ const Login = () => {
     dispatch(loginPost(value));
     if (logindate.status !== "fail") {
       dispatch(userGet())
-      console.log(userData, "userdata")
     }
 
   }

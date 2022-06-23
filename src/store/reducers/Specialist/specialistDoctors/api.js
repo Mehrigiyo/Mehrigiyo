@@ -6,7 +6,4 @@ export const productget = () => apiRoot.get(`specialist/doctors/`)
 
 
 // specialist/doctors/  GET B
-export const DoctorByID = (id)=> apiRoot.get('specialist/doctors/' + 1 + "/").then(res=>console.log(res?.data))
-
-
-
+export const DoctorByID = (id)=> apiRoot.get('specialist/doctors/' + 1 + "/")

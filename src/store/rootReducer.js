@@ -10,6 +10,7 @@ import { dataDoctorsReduser } from "./reducers/Specialist/specialistDoctors/redu
 import { loginReducer } from './reducers/loginPost/reducer'
 import { usermeReducer } from './reducers/user/userMe/reduser';
 import { favoritDoctors } from "./reducers/user/FavoritDoctor/reducer";
+import {DataCommentByID} from './reducers/Comment/Doctor/reduser'
 export default combineReducers({
     userReducer,
     regestrationReducer,
@@ -21,6 +22,7 @@ export default combineReducers({
     dataDoctorsReduser,
     loginReducer,
     usermeReducer,
-    favoritDoctors
+    favoritDoctors,
+    DataCommentByID
     
 });

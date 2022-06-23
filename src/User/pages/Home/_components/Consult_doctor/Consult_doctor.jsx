@@ -14,8 +14,6 @@ import { useSelector } from "react-redux";
 const ConsultDoctor = () => {
 
     const { data } = useSelector(state => state.getTypeDoctors)
-  console.log(data, "bu data ")
-
   const nameApi = (e) =>{
     const sortName = data.map((item) => item.name)
     const sortFilter =  sortName.filter((item)=> item === e)
@@ -34,9 +32,9 @@ const ConsultDoctor = () => {
             <Container style={{ maxWidth: 960 }}>
                 <Row >
                     {
-                        data.filter(( _, index)=> index < 4).map((item) => (
+                        data.filter(( _, index)=> index < 4).map((item, index) => (
                             
-                            <Col lg={3}>
+                            <Col key={index} lg={3}>
                                 <div className="consult_doctor_item">
                                     <div className="consult_doctor_image">
                                         <img src={apiurl + item.image} alt="image" />

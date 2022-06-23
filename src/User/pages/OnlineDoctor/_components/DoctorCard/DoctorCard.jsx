@@ -13,9 +13,7 @@ function DoctorCard({ data,addedFav }) {
 
   const dispatch = useDispatch();
   const {loading} = useSelector(state=> state.favoritDoctors)
-  // console.log("loading " + loading);
   const saveDoctor = async (id) => {
-    console.log(id, "bu bosilgan id");
     await dispatch(postFavoriteDoc(id));
     await dispatch(getFavoritDoctors());
   };

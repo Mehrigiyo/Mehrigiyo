@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 function DoctorTypesBlog() {
 
     const { data } = useSelector(state => state.getTypeDoctors)
-    console.log(data, "bu data ")
 
     const nameApi = (e) =>{
         const sortName = data.map((item) => item.name)

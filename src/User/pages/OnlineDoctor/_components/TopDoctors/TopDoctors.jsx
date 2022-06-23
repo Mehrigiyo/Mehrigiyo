@@ -14,7 +14,7 @@ import { getFavoritDoctors } from '../../../../../store/reducers/user/FavoritDoc
 function TopDoctors() {
 
  const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
- const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
+ const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
 
  let settings = {
@@ -68,7 +68,6 @@ function TopDoctors() {
     },
   ],
 };
-console.log(favoriteDoc);
   const addedFav = (id) =>{
     return favoriteDoc.filter(a=>a.id === id).length > 0
   }
@@ -91,8 +90,8 @@ console.log(favoriteDoc);
               
               <Slider {...settings}>
                 {
-                    doctorsData.map((item)=>(
-                      <Col xs={2}>
+                    doctorsData.map((item, index)=>(
+                      <Col key={index} xs={2}>
                           <DoctorCard data={item} addedFav={addedFav} />
                       </Col>
                     ))

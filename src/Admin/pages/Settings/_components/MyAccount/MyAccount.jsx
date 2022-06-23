@@ -14,13 +14,11 @@ function MyAccount() {
 
 
     const { userData, logindate={}}  = useSelector((state)=> state.usermeReducer)
-    console.log(logindate);
     const dispatch = useDispatch();
      useEffect(()=>{
         dispatch(userGet())
      },[])
     const data = userObj
-    console.log(data);
    
     // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)
     //  console.log(h);
@@ -36,7 +34,6 @@ function MyAccount() {
         e.preventDefault()
        setIsActive(prev=> !prev)
         if(isActive){
-            console.log('dispatch(putUser(value))');
             dispatch(putUser(value))
         }
     }

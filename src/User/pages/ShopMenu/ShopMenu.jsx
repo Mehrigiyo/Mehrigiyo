@@ -24,8 +24,8 @@ function ShopMenu() {
     return (
         <div className='shop_menu globalContainer'>
             <Breadcrum name={"Savatcha"} width={1240}>Savatcha</Breadcrum>
-            {list.map((item) => (
-                <Row key={item}>
+            {list.map((item, i) => (
+                <Row key={i}>
                     <div className="shop_menu_title">
                         <h1>Savatchada {item.id} ta mahsulot bor</h1>
                         <Button href={"/shopmenu"}>Buyurtmalar tarixi</Button>

@@ -1,3 +1,3 @@
 import apiRoot from '../../apiRoot';
 
-export const newsGet = () => apiRoot.get(`/news`)
+export const newsGet = () => apiRoot.get(`news/`)

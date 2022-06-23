@@ -33,8 +33,8 @@ const ServiceBlog = () => {
             <Container fluid style={{ justifyContent: "center" }}>
                 <Row>
                     {
-                        data.map(({ img, title, text }) => (
-                            <Col lg={3}>
+                        data.map(({ img, title, text }, i) => (
+                            <Col key={i} lg={3}>
                                 <div className="service_blog_item">
                                     <div className="service_image">
                                         <img src={img} alt="service" />

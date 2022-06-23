@@ -14,7 +14,6 @@ import './Card.scss'
   const sana = new Date(created_at)
 
   const urlnews = "http://207.154.244.140:8000/"
-  // console.log(sana);
   return (
     <>
       {/* <section className='bg'> */}

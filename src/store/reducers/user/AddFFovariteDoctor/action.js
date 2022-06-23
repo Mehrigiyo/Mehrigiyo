@@ -1,6 +1,5 @@
 
 export const postFavoriteDoc = (id) => async (dispatch) => {
-    console.log('postFavoriteDoc ' +    id);
     await dispatch({ type:  FAVORITDOCTOR_TYPE_LOADING , payload: id});
     try {
       const { data } = await fovoritDoctorPost(id);
