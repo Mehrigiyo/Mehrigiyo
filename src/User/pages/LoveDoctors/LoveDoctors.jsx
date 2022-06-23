@@ -12,8 +12,11 @@ function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shif
   const dispatch = useDispatch();
   const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
   useEffect(() => {
-    dispatch(getFavoritDoctors());
-  }, []);
+      if(!!localStorage.getItem('token')){
+        console.log('token');
+       dispatch(getFavoritDoctors());
+    }
+    }, []);
   const addedFav = (id) => {
     return favoriteDoc.filter((a) => a.id === id).length > 0;
   };

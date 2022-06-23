@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./TopHeader.scss";
 import { Link, NavLink } from "react-router-dom";
 import flag from "../../../icons/UzbFlag.svg";
@@ -10,10 +10,23 @@ import Login from "../Modal/_components/Login/Login";
 import ruFlag from "../../../icons/ru_flag.svg";
 import uzFlag from "../../../icons/uz_flag.svg";
 import engFlag from "../../../icons/eng_flag.svg";
+import { useDispatch, useSelector } from "react-redux";
+import { userGet } from "../../../store/reducers/user/userMe/action";
 const TopHeader = () => {
   const [open, setOpen] = useState(false);
-  const user = localStorage.getItem('user')
-  const userObj = JSON.parse(user)
+  const {logindate , loading} = useSelector((state)=> state.usermeReducer)
+  const {access} = useSelector(state=>state.loginReducer)
+  const dispacht = useDispatch()
+  
+  useEffect(()=>{
+    if(!!localStorage.getItem('token')){
+      dispacht(userGet())
+    }
+  },[])
+  const getUser = localStorage.getItem('user')
+  const userObj = JSON.parse(getUser)
+  const [user , setUser] = useState(userObj)
+
   return (
     <header className="TopHeaderContainer ">
       <div className="globalContainer flex-between">
@@ -72,8 +85,8 @@ const TopHeader = () => {
             <div className="d-block ml-1 login">
                 <p className="mb-0">
                   {
-                    userObj.first_name + "." + 
-                    userObj.last_name.split(" ")[0][0]
+                    user.first_name + "." + 
+                    user.last_name.split(" ")[0][0]
                   }
               </p>
             </div>}

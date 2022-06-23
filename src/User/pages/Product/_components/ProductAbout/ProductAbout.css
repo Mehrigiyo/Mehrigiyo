@@ -40,6 +40,10 @@
   border-radius: 16px;
 }
 
+.product_about {
+  padding: 100px 0 300px;
+}
+
 .product_about .product_about_close {
   padding: 0px 0px 50px;
   display: -webkit-box;
@@ -134,9 +138,5 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.product_about {
-  padding: 100px 0 300px;
 }
 /*# sourceMappingURL=ProductAbout.css.map */

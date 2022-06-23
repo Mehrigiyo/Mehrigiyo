@@ -12,6 +12,9 @@ apiRoot.interceptors.request.use((config) => {
   if (config.url.includes("specialist/types/")) {
     return config;
   }
+  if (config.url.includes("user/registration/")) {
+    return config;
+  }
   
   if (config.url.includes("specialist/doctors/")) {
     return config;
@@ -24,6 +27,9 @@ apiRoot.interceptors.request.use((config) => {
     return config;
   }
  
+  if (config.url.includes("login/")) {
+    return config;
+  }
   if (config.headers !== undefined) {
     config.headers["Authorization"] = `Bearer ${token}`;
   }

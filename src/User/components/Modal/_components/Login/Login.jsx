@@ -14,21 +14,22 @@ import useInput from "../../../../../Admin/hooks/useInput";
 // import { setCurrentUser, setToken } from "../../../../../store/reducers/userme";
 // import apiRoot from "../../../../../store/apiRoot";
 import { userGet } from "../../../../../store/reducers/user/userMe/action";
+import { post } from "../../../../../store/reducers/user/regestration/api";
 const Login = () => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});
   const { loading, access, data, error } = useSelector(
     (state) => state.regestrationReducer
   );
-  const { logindate } = useSelector(
+  const { logindate , access:loginAccess} = useSelector(
     (state) => state.loginReducer
   );
-const regestrationReducer = useSelector(state => state.regestrationReducer)
   const { userData }  = useSelector(
     (state)=> state.usermeReducer
   )
-
-  console.log(userData);
+  const k= useSelector(
+    (state) => state.loginReducer
+  );
   const onChange = (e) => {
     setValue((prev) => ({
       ...prev,
@@ -40,19 +41,19 @@ const regestrationReducer = useSelector(state => state.regestrationReducer)
 
   const onSubmit = (e) => {
     e.preventDefault();
+    post(value)
     dispatch(regestrationPost(value));
     if (data.status !== "fail") {
       setNum(1);
     }
   };
-
+  
   const onSubmit2 = (e) => {
     e.preventDefault()
     dispatch(loginPost(value));
     if (logindate.status !== "fail") {
       dispatch(userGet())
     }
-
   }
 
   const Password = useInput('', true)

@@ -4,11 +4,12 @@
   border: 1px solid #E2E2E2;
   border-radius: 18px;
   padding: 16px;
+  position: relative;
 }
 
 .doctorCard__img {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .doctorCard__img__first {
@@ -27,14 +28,47 @@
   font-size: 10px;
   line-height: 18px;
   color: #FFFFFF;
-  bottom: -5px;
-  left: 25px;
+  top: 100px;
+  left: 40px;
 }
 
 .doctorCard__img__icon {
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 5px;
+  right: 10px;
+}
+
+.doctorCard__img__loading {
+  border: 3px solid transparent;
+  border-bottom-color: aqua;
+  width: 15px;
+  display: block;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-animation: loading .8s infinite ease;
+          animation: loading .8s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .doctorCard__body h5 {
