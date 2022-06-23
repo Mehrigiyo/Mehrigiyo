@@ -23,12 +23,12 @@ const Login = () => {
   const { logindate } = useSelector(
     (state) => state.loginReducer
   );
-
-
+const regestrationReducer = useSelector(state => state.regestrationReducer)
   const { userData }  = useSelector(
     (state)=> state.usermeReducer
   )
 
+  console.log(userData);
   const onChange = (e) => {
     setValue((prev) => ({
       ...prev,
