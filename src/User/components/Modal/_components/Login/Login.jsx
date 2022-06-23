@@ -15,15 +15,21 @@ import useInput from "../../../../../Admin/hooks/useInput";
 // import apiRoot from "../../../../../store/apiRoot";
 import { userGet } from "../../../../../store/reducers/user/userMe/action";
 import { post } from "../../../../../store/reducers/user/regestration/api";
-const Login = () => {
+const Login = ({set}) => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({});
   const { loading, access, data, error } = useSelector(
     (state) => state.regestrationReducer
   );
-  const { logindate , access:loginAccess} = useSelector(
+
+  const { logindate , access:loginAccess, loading:loginLoading} = useSelector(
     (state) => state.loginReducer
   );
+  console.log(loginLoading);
+  // console.log(loginAccess, logindate);
+  if(logindate?.refresh){
+    set(false)
+  }
   const { userData }  = useSelector(
     (state)=> state.usermeReducer
   )
@@ -38,7 +44,7 @@ const Login = () => {
   };
 
   const dispatch = useDispatch();
-
+  
   const onSubmit = (e) => {
     e.preventDefault();
     post(value)
@@ -50,6 +56,7 @@ const Login = () => {
   
   const onSubmit2 = (e) => {
     e.preventDefault()
+    console.log('login post',value);
     dispatch(loginPost(value));
     if (logindate.status !== "fail") {
       dispatch(userGet())
@@ -104,7 +111,10 @@ const Login = () => {
                   required
                 />
                 <div className="loginWrapper__box__boxButton">
-                  <GreenButton >Tizimga kirish</GreenButton>
+                
+                {
+                  loginLoading? "loading..." :   <GreenButton >Tizimga kirish</GreenButton>
+                }
                 </div>
               </form>
             </div>

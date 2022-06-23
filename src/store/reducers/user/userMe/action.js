@@ -11,7 +11,7 @@ export const userGet = () => async(dispatch) => {
     try {
         const { data } = await get();
         setCurrentUser(data.data)
-        await dispatch({ type: GET_USERME_SUCCESS, payload: data });
+        await dispatch({ type: GET_USERME_SUCCESS, payload: data?.data });
     } catch (error) {
         dispatch({ type: GET_USERME_ERROR, payload: error });
     }

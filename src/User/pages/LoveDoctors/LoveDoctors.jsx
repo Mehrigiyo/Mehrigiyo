@@ -13,8 +13,8 @@ function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shif
   const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
   useEffect(() => {
       if(!!localStorage.getItem('token')){
-        console.log('token');
-       dispatch(getFavoritDoctors());
+      console.log('token');
+      dispatch(getFavoritDoctors());
     }
     }, []);
   const addedFav = (id) => {

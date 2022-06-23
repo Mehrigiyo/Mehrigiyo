@@ -17,12 +17,12 @@ const TopHeader = () => {
   const {logindate , loading} = useSelector((state)=> state.usermeReducer)
   const {access} = useSelector(state=>state.loginReducer)
   const dispacht = useDispatch()
-  
+  console.log(logindate);
   useEffect(()=>{
     if(!!localStorage.getItem('token')){
       dispacht(userGet())
     }
-  },[])
+  },[open])
   const getUser = localStorage.getItem('user')
   const userObj = JSON.parse(getUser)
   const [user , setUser] = useState(userObj)
@@ -75,7 +75,7 @@ const TopHeader = () => {
               <img src={locate} alt="" />
             </div>
           </div>
-          { user === null ?
+          { !logindate?.id ?
             <div className="location_log">
               <div className="pismo" onClick={() => setOpen(true)}>
                 Kirish <img src={Adde} alt="" />
@@ -85,13 +85,13 @@ const TopHeader = () => {
             <div className="d-block ml-1 login">
                 <p className="mb-0">
                   {
-                    user.first_name + "." + 
-                    user.last_name.split(" ")[0][0]
+                    logindate?.first_name + "." + 
+                    logindate?.last_name.split(" ")[0][0]
                   }
               </p>
             </div>}
         </section>
-        {open && <Modal children={<Login />} set={setOpen} />}
+        {open && <Modal children={<Login set={setOpen} />} set={setOpen} />}
       </div>
     </header>
   );
