@@ -43,6 +43,7 @@ function User() {
           <Route path="/fullcard" element={<FullCard />} />{" "}
           <Route path="/shopmenu" element={<ShopMenu />} />{" "}
           <Route path="/shopbox" element={<ShopBox />} />{" "}
+          <Route path="/admin" element={<Admin />} />{" "}
         </Routes>{" "}
 
       </Layout>

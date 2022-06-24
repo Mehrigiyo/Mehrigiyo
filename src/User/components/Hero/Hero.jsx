@@ -4,6 +4,8 @@ import green from "../../../images/Group.png";
 import heroimg from "../../../images/hero-img.png";
 import admin from "../../../images/admin.svg";
 import quart from "../../../images/quart.svg";
+import gg from "../../../icons/gg.svg"
+import vector from "../../../icons/serch.svg"
 import Notifacation from "../Notifacation/Notifacation";
 import "./Hero.css";
 export default function Hero() {
@@ -29,7 +31,10 @@ export default function Hero() {
               className="hero-input"
               placeholder={"Nima izlayapsiz?"}
             />
-            <button className="hero-btn">Qidirish</button>
+            <button className="hero-btn"> <img src={vector} alt="" /> Qidirish</button>
+            <div className="inputPhoto">
+              <img src={gg} alt="" />
+            </div>
           </div>
          
         </div>
