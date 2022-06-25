@@ -4,6 +4,7 @@ import {  useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import useForm from "./Admin/hooks/useForm";
 import { userGet } from "./store/reducers/user/userMe/action";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [ active, setActive] = useState(!!localStorage.getItem('token'))
@@ -24,9 +25,10 @@ function App() {
  }, [logindate])
   return (
     <>    
-    {
+     <User />
+    {/* {
       active ? <Admin/>  : <User />
-    }
+    } */}
       {/* {
         routerData === "user" ? ( 
         <User / >

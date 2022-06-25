@@ -28,9 +28,9 @@ function DoctorTypesBlog() {
                     {
                         data.filter((_, index) => index < 12).map((item) => (
                             <Col lg={2}>
-                                <NavLink to="/doctorslist">
+                                {/* <NavLink to="doctorslist"> */}
                                     <DoctorTypeCard image={apiurl + item.image} children={item.name} number={nameApi} icon={Remember}></DoctorTypeCard>
-                                </NavLink>
+                                {/* </NavLink> */}
                             </Col>
                         ))
                     }

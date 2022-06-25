@@ -11,9 +11,10 @@ import DoctorCard from "../OnlineDoctor/_components/DoctorCard/DoctorCard";
 function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shifokorlar",children}) {
   const dispatch = useDispatch();
   const { favoriteDoc } = useSelector((state) => state.favoritDoctors);
+  const {access} = useSelector(state => state.usermeReducer)
+
   useEffect(() => {
-      if(!!localStorage.getItem('token')){
-      console.log('token');
+      if(access){
       dispatch(getFavoritDoctors());
     }
     }, []);

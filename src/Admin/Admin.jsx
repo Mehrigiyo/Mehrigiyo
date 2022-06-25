@@ -15,99 +15,22 @@ import User from "../User/User";
 // import useFetch from "./hooks/useFetch";
 // import useTheme from "./hooks/useTheme";
 
-function Admin() {
-  // const lastName = useInput('akmalov', true)
-  // const firstName = useInput('akmal', true)
-
-  // const [value, { ...register }] = useForm({
-  //   lastName: '',
-  //   firstName: '',
-  //   secondName: '',
-  //   phone_number: '',
-  //   password: ''
-  // })
-
-  // console.log(value);
-  // const { loading, error, data, fetchData } = useFetch('http://jsonplaceholder.typicode.com/users')
-
-  // const { theme, toggleTheme } = useTheme()
-
-  // console.log(theme);
-
-  // const obj = {
-  //   lastName: lastName.value,
-  //   firstName: firstName.value
-  // }
-  // console.log(obj);
-
-  // if (loading) return <h1>...loading</h1>
-  // if (error) return <h1>{error.message}</h1>
+function  Admin({children}) {
   return (
-
-    // <div className={theme}></div>
-
-    <div>
-      {/* <button onClick={toggleTheme}>Change Theme C</button> */}
-      <AdminLayout>
-
-        {/* <div>
-          <input
-            style={{ width: '200px', backgroundColor: 'lightgray' }}
-            type="text"
-            {...lastName}
-          />
-          {lastName.error && <span style={{ color: 'red' }}>{lastName.error}</span>}
-
-          <input
-            style={{ width: '200px', backgroundColor: 'lightgray' }}
-            type="text"
-            {...firstName}
-          />
-          {firstName.error && <span style={{ color: 'red' }}>{firstName.error}</span>}
-
-        </div>
-
-        <br />
-        <br />
-
-        <div >
-          <input
-            style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
-            value={value.lastName}
-            type="text" name="lastName"  {...register} />
-          <input
-            style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
-            value={value.firstName}
-            type="text" name="firstName" {...register} />
-          <input
-            style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
-            value={value.secondName}
-            type="text" name="secondName"  {...register} />
-          <input
-            style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
-            value={value.phone_number}
-            type="number" name="phone_number"  {...register} />
-          <input
-            style={{ width: '200px', margin: ' 10px', backgroundColor: 'lightgray' }}
-            value={value.password}
-            type="password" name="password" {...register} />
-        </div> */}
-
-
-        {/* {JSON.stringify(data)} */}
-
-
-        <Routes>
-          <Route path="/admin" element={<Managementpanel />} />{" "}
-          <Route path="/admin/consultation" element={<Consultation />} />{" "}
-          <Route path="/admin/orders" element={<Orders />} />{" "}
-          <Route path="/admin/deliveryaddress" element={<DeliveryAddress />} />{" "}
-          <Route path="/admin/paymentmethods" element={<PaymentMethods />} />{" "}
-          <Route path="/admin/notifications" element={<Notifications />} />{" "}
-          <Route path="/admin/settings" element={<Settings />} />{" "}
-        </Routes>
-      </AdminLayout>
-    </div>
+    <>
+      {/* <AdminLayout> */}
+        {children}
+        {/* <Routes> */}
+          {/* <Route path="/" element={<Managementpanel />} />{" "} */}
+          <Route path="consultation" element={<Consultation />} />{" "}
+          <Route path="orders" element={<Orders />} />{" "}
+          <Route path="deliveryaddress" element={<DeliveryAddress />} />{" "}
+          <Route path="paymentmethods" element={<PaymentMethods />} />{" "}
+          <Route path="notifications" element={<Notifications />} />{" "}
+          <Route path="settings" element={<Settings />} />{" "}
+        {/* </Routes> */}
+      {/* </AdminLayout> */}
+    </>
   );
 }
 

@@ -18,12 +18,7 @@ const TopHeader = () => {
 
   const {access} = useSelector(state=>state.loginReducer)
   const dispacht = useDispatch()
-  console.log(logindate);
-  useEffect(()=>{
-    if(!!localStorage.getItem('token')){
-      // dispacht(userGet())
-    }
-  },[open])
+  
   const getUser = localStorage.getItem('user')
   const userObj = JSON.parse(getUser)
   const [user , setUser] = useState(userObj)
@@ -85,10 +80,12 @@ const TopHeader = () => {
             :
             <div className="d-block ml-1 login">
                 <p className="mb-0">
-                  {
+                 <Link to='/admin' >
+                 {
                     logindate?.first_name + "." + 
                     logindate?.last_name.split(" ")[0][0]
                   }
+                 </Link>
               </p>
             </div>}
         </section>

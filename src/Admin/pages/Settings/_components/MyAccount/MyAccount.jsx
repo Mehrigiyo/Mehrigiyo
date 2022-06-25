@@ -33,7 +33,7 @@ function MyAccount() {
         setIsActive(prev=> !prev)
         if(isActive){
             await dispatch(putUser(value))
-            await dispatch(userGet())
+            // await dispatch(userGet())
         }
     }
 

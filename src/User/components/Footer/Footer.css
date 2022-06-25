@@ -150,3 +150,7 @@ ul {
     display: flex;
     gap: 34px;
 }
+.playmarket{
+    display: grid;
+    gap: 30px;
+}

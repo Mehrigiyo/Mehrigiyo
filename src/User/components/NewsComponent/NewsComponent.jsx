@@ -13,6 +13,7 @@ function NewsComponent() {
   const [count, setCount] = useState(0);
   const   {data,  loading, error} = useSelector(state => state.newsDataReduser)
   // { loading, access , data, error} 
+  // data[0]
   const dispatch = useDispatch()
   useEffect(()=>{
     dispatch(NewsGetData())

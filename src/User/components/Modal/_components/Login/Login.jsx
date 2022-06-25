@@ -53,7 +53,6 @@ const Login = ({set}) => {
   const onSubmit2 = async (e) => {
     e.preventDefault()
     await dispatch(loginPost(value));
-    await dispatch(userGet())
   }
 
   const Password = useInput('', true)

@@ -28,7 +28,6 @@ export const usermeReducer = (state = initialState, { type, payload }) => {
             case PUT_USER_ME_LOADING:
                 return {...state, loading: true }
             case PUT_USER_ME_SUCCESS:
-                console.log(payload);
                 return {...state, loading: false, access: true, logindate: payload}
             case PUT_USER_ME_ERROR:
                 return {...state, loading: false, access: false, logindate: payload }

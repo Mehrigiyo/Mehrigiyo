@@ -13,7 +13,8 @@ import { getFavoritDoctors } from '../../../../../store/reducers/user/FavoritDoc
 
 function TopDoctors() {
 
- const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
+ const {doctorsData, loading} = useSelector(state => state.dataDoctorsReduser);
+
  const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
  let settings = {
@@ -86,7 +87,7 @@ function TopDoctors() {
         <div className="topDoctors__body">
   
             <Row>
-              
+              {loading? <span className="doctorLisr__img__loading"></span>:
               <Slider {...settings}>
                 {
                     doctorsData.map((item, index)=>(
@@ -95,7 +96,9 @@ function TopDoctors() {
                       </Col>
                     ))
                 }
+  
                 </Slider>
+                }
             </Row>
         </div>
          <div className="topDoctors__bg">

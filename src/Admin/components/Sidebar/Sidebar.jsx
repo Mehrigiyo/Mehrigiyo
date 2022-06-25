@@ -76,37 +76,37 @@ function Sidebar() {
           <nav className='sidebar_menu_list'>
             <ul className='sidebar_menu_list_item'>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/">
+                <Link to="/admin">
                   <img src={NavIcon7} alt="nav_icon" />  Boshqaruv paneli
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/consultation">
+                <Link to="/admin/consultation">
                   <img src={NavIcon6} alt="nav_icon" />  Consultation
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/orders">
+                <Link to="/admin/orders">
                   <img src={NavIcon5} alt="nav_icon" />  Orders
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/deliveryaddress">
+                <Link to="/admin/deliveryaddress">
                   <img src={NavIcon2} alt="nav_icon" />  Delivery Address
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/paymentmethods">
+                <Link to="/admin/paymentmethods">
                   <img src={NavIcon3} alt="nav_icon" />  Payment methods
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/notifications">
+                <Link to="/admin/notifications">
                   <img src={NavIcon4} alt="nav_icon" />  Notifications
                 </Link>
               </li>
               <li className='sidebar_menu_list_item__title'>
-                <Link to="/settings">
+                <Link to="/admin/settings">
                   <img src={NavIcon1} alt="nav_icon" />  Settings
                 </Link>
               </li>

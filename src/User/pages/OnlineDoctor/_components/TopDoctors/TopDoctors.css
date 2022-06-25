@@ -25,4 +25,38 @@
   left: -100px;
   opacity: 0.05;
 }
+
+.doctorLisr__img__loading {
+  border: 3px solid transparent;
+  border-bottom-color: aqua;
+  width: 55px !important;
+  display: block;
+  height: 55px !important;
+  border-radius: 50%;
+  -webkit-animation: loading .8s infinite ease;
+          animation: loading .8s infinite ease;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=TopDoctors.css.map */
