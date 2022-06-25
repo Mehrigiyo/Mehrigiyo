@@ -16,7 +16,6 @@ function TopDoctors() {
  const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
  const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
-
  let settings = {
   dots: true,
   infinite: false,

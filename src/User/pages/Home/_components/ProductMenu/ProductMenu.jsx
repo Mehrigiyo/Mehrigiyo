@@ -114,7 +114,7 @@ function ProductMenu() {
                             }
                         </Slider>
                     </Row>
-                    <Button>Barcha mahsulotlarni ko’rish</Button>
+                    <Button style={{width: 320}}>Barcha mahsulotlarni ko’rish</Button>
                 </div>
             </div>
         </div>

@@ -20,7 +20,7 @@ const OnlineHelp = () => {
                                     va biz 60 soniya ichida eng yaxshi shifokorni tayinlaymiz.</p>
                             </div>
                             <div className="OnlineHelp_left_btn">
-                                <Button>Onlayn uchrashuv belgilash</Button>
+                                <Button style={{width: 306}}>Onlayn uchrashuv belgilash</Button>
                             </div>
                         </div>
                     </Col>

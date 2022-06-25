@@ -13,11 +13,9 @@ function MyAccount() {
 
 
 
-    const { userData, logindate={}}  = useSelector((state)=> state.usermeReducer)
+    const { userData, logindate}  = useSelector((state)=> state.usermeReducer)
     const dispatch = useDispatch();
-     useEffect(()=>{
-        dispatch(userGet())
-     },[])
+     
     const data = userObj
    
     // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)
@@ -30,11 +28,12 @@ function MyAccount() {
    const {onChange} = upDate
    const [isActive, setIsActive] = useState(false)
 
-    const handelEdit= (e)=>{
+    const handelEdit= async(e)=>{
         e.preventDefault()
-       setIsActive(prev=> !prev)
+        setIsActive(prev=> !prev)
         if(isActive){
-            dispatch(putUser(value))
+            await dispatch(putUser(value))
+            await dispatch(userGet())
         }
     }
 

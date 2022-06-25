@@ -37,9 +37,9 @@ function DoctorCard({ data,addedFav }) {
           
             { +loading === +data.id ? <span className="doctorCard__img__loading"></span> :
             !addedFav(data.id) ? (
-              <MdOutlineBookmarkAdd onClick={() => saveDoctor(data.id)} />
+              <MdOutlineBookmarkAdd  size={20} color="#A5A7B2" onClick={() => saveDoctor(data.id)} />
             ) : (
-              <MdOutlineBookmarkAdded onClick={()=> deleteDoctor(data.id)} color="green"/>
+              <MdOutlineBookmarkAdded onClick={()=> deleteDoctor(data.id)} size={20} color="green"/>
             )}
           </span>
         </div>

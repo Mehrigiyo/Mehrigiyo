@@ -26,7 +26,7 @@ function MehrigiyoPlus() {
                         oyiga 100 000 so’mdan boshlanadi
                        </h3>
                       
-                       <GreenButton>Aʼzo boʻlish</GreenButton>
+                       <GreenButton  >Aʼzo boʻlish</GreenButton>
                      </Col>
                    </Row>
                </div>

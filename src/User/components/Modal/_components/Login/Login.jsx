@@ -25,7 +25,6 @@ const Login = ({set}) => {
   const { logindate , access:loginAccess, loading:loginLoading} = useSelector(
     (state) => state.loginReducer
   );
-  console.log(loginLoading);
   // console.log(loginAccess, logindate);
   if(logindate?.refresh){
     set(false)
@@ -33,9 +32,7 @@ const Login = ({set}) => {
   const { userData }  = useSelector(
     (state)=> state.usermeReducer
   )
-  const k= useSelector(
-    (state) => state.loginReducer
-  );
+  
   const onChange = (e) => {
     setValue((prev) => ({
       ...prev,
@@ -45,22 +42,18 @@ const Login = ({set}) => {
 
   const dispatch = useDispatch();
   
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    post(value)
-    dispatch(regestrationPost(value));
-    if (data.status !== "fail") {
+    await dispatch(regestrationPost(value));
+     if (data.status !== "fail") {
       setNum(1);
     }
   };
   
-  const onSubmit2 = (e) => {
+  const onSubmit2 = async (e) => {
     e.preventDefault()
-    console.log('login post',value);
-    dispatch(loginPost(value));
-    if (logindate.status !== "fail") {
-      dispatch(userGet())
-    }
+    await dispatch(loginPost(value));
+    await dispatch(userGet())
   }
 
   const Password = useInput('', true)

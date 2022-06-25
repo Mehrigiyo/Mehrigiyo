@@ -24,7 +24,7 @@ export const putUser = (object) => async(dispatch) => {
     try {
         const { data } = await userMePut(object);
         // setToken(data.access)
-        await dispatch({ type: PUT_USER_ME_SUCCESS, payload: data });
+        await dispatch({ type: PUT_USER_ME_SUCCESS, payload: data?.data });
 
     } catch (error) {
         dispatch({ type: PUT_USER_ME_ERROR, payload: error });

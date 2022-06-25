@@ -33,7 +33,7 @@ function Form() {
 
                                 <input className='savol' type="text" placeholder='Sizning savolingiz' />
 
-                                <Button src={IconVideo}>Xabar yuborish</Button>
+                                <Button src={IconVideo} style={{width: 213}}>Xabar yuborish</Button>
                             </form>
                         </div>
                     </Col>

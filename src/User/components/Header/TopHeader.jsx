@@ -15,12 +15,13 @@ import { userGet } from "../../../store/reducers/user/userMe/action";
 const TopHeader = () => {
   const [open, setOpen] = useState(false);
   const {logindate , loading} = useSelector((state)=> state.usermeReducer)
+
   const {access} = useSelector(state=>state.loginReducer)
   const dispacht = useDispatch()
   console.log(logindate);
   useEffect(()=>{
     if(!!localStorage.getItem('token')){
-      dispacht(userGet())
+      // dispacht(userGet())
     }
   },[open])
   const getUser = localStorage.getItem('user')

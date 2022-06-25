@@ -9,6 +9,7 @@ import DeliveryAddress from './pages/DeliveryAddress/DeliveryAddress';
 import PaymentMethods from './pages/PaymentMethods/PaymentMethods';
 import Notifications from './pages/Notifications/Notifications';
 import Settings from './pages/Settings/Settings';
+import User from "../User/User";
 // import useInput from './hooks/useInput'
 // import useForm from './hooks/useForm'
 // import useFetch from "./hooks/useFetch";
@@ -97,13 +98,13 @@ function Admin() {
 
 
         <Routes>
-          <Route path="/" element={<Managementpanel />} />{" "}
-          <Route path="/consultation" element={<Consultation />} />{" "}
-          <Route path="/orders" element={<Orders />} />{" "}
-          <Route path="/deliveryaddress" element={<DeliveryAddress />} />{" "}
-          <Route path="/paymentmethods" element={<PaymentMethods />} />{" "}
-          <Route path="/notifications" element={<Notifications />} />{" "}
-          <Route path="/settings" element={<Settings />} />{" "}
+          <Route path="/admin" element={<Managementpanel />} />{" "}
+          <Route path="/admin/consultation" element={<Consultation />} />{" "}
+          <Route path="/admin/orders" element={<Orders />} />{" "}
+          <Route path="/admin/deliveryaddress" element={<DeliveryAddress />} />{" "}
+          <Route path="/admin/paymentmethods" element={<PaymentMethods />} />{" "}
+          <Route path="/admin/notifications" element={<Notifications />} />{" "}
+          <Route path="/admin/settings" element={<Settings />} />{" "}
         </Routes>
       </AdminLayout>
     </div>

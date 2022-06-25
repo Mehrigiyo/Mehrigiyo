@@ -22,11 +22,14 @@ export const usermeReducer = (state = initialState, { type, payload }) => {
             return {...state, loading: false, access: true, logindate: payload }
         case GET_USERME_ERROR:
             return {...state, loading: false, access: false, logindate: payload }
+        
         // User Me PUT
+
             case PUT_USER_ME_LOADING:
                 return {...state, loading: true }
             case PUT_USER_ME_SUCCESS:
-                return {...state, loading: false, access: true, logindate: payload }
+                console.log(payload);
+                return {...state, loading: false, access: true, logindate: payload}
             case PUT_USER_ME_ERROR:
                 return {...state, loading: false, access: false, logindate: payload }
         

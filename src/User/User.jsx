@@ -24,25 +24,25 @@ function User() {
   return (
     <>
       <Layout >
-        <Routes>
+          <Routes>
           <Route path="/" element={<Home />} />{" "}
-          <Route path="/onlinedoctor" element={<OnlineDoctor />} />{" "}
-          <Route path="/product" element={<Product />} />{" "}
-          <Route path="/help" element={<Help />} />{" "}
-          <Route path="/aboute" element={<About />} />{" "}
-          <Route path="/askquestion" element={<AskQuestion />} />{" "}
-          <Route path="/doctorslist" element={<DoctorsList />} />{" "}
-          <Route path="/productlist" element={<Productlist />} />{" "}
-          <Route path="/productabout" element={<ProductAbout />} />{" "}
-          <Route path="/news" element={<News />} />{" "}
-          <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />{" "}
-          <Route path="/onlinedoctor/doctors/:id" element={<DoctorBron />} />{" "}
-          <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
-          <Route path="/lovemedice" element={<LoveMedice />} />{" "}
-          <Route path="/tohealth" element={<ToHealth />} />{" "}
-          <Route path="/fullcard" element={<FullCard />} />{" "}
-          <Route path="/shopmenu" element={<ShopMenu />} />{" "}
-          <Route path="/shopbox" element={<ShopBox />} />{" "}
+          <Route path="/user/onlinedoctor" element={<OnlineDoctor />} />{" "}
+          <Route path="/user/product" element={<Product />} />{" "}
+          <Route path="/user/help" element={<Help />} />{" "}
+          <Route path="/user/aboute" element={<About />} />{" "}
+          <Route path="/user/askquestion" element={<AskQuestion />} />{" "}
+          <Route path="/user/doctorslist" element={<DoctorsList />} />{" "}
+          <Route path="/user/productlist" element={<Productlist />} />{" "}
+          <Route path="/user/productabout" element={<ProductAbout />} />{" "}
+          <Route path="/user/news" element={<News />} />{" "}
+          <Route path="/user/onlinedoctor/:id" element={<DoctorInfo />} />{" "}
+          <Route path="/user/onlinedoctor/doctors/:id" element={<DoctorBron />} />{" "}
+          <Route path="/user/lovedoctors" element={<LoveDoctor />} />{" "}
+          <Route path="/user/lovemedice" element={<LoveMedice />} />{" "}
+          <Route path="/user/tohealth" element={<ToHealth />} />{" "}
+          <Route path="/user/fullcard" element={<FullCard />} />{" "}
+          <Route path="/user/shopmenu" element={<ShopMenu />} />{" "}
+          <Route path="/user/shopbox" element={<ShopBox />} />{" "}
         </Routes>{" "}
 
       </Layout>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Row, Col, Form , Breadcrumb} from 'react-bootstrap'
 import CloseIcon from "../../../../../icons/top_Icon.svg"
 import LeftIcon from "../../../../../images/Close_Icon.svg"
@@ -8,16 +8,32 @@ import DoctorCard from '../DoctorCard/DoctorCard'
 import filter from "../../../../../images/filter.svg"
 import Down from "../../../../../icons/down.svg";
 import tree from "../../../../../images/Group.png"
+import { useDispatch, useSelector } from 'react-redux'
+import { actionGetDoctors } from '../../../../../store/reducers/Specialist/specialistDoctors/action'
+import { getFavoritDoctors } from '../../../../../store/reducers/user/FavoritDoctor/action'
 function DoctorsList() {
+  const {doctorsData , loading} = useSelector(state => state.dataDoctorsReduser);
+ const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
-  const newlist = ['']
-  for (let i = 0; i < 10; i++) {
-    newlist.push(
-      <Col lg={3} className="mb-3">
-        <DoctorCard />
-      </Col>
-    )
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(actionGetDoctors())
+  },[])
+  const addedFav = (id) =>{
+    return favoriteDoc.filter(a=>a.id === id).length > 0
   }
+  useEffect(()=>{
+    dispatch(getFavoritDoctors());
+  },[])
+  // const newlist = ['']
+  // for (let i = 0; i < 10; i++) {
+  //   newlist.push(
+  //     <Col lg={3} className="mb-3">
+  //       <DoctorCard />
+  //     </Col>
+  //   )
+  // }
 
 
 
@@ -128,8 +144,15 @@ function DoctorsList() {
             </ul>
             <div className="doctor_list_tab_item">
               <Row>
-                {
+                {/* {
                   newlist
+                } */}
+                 {loading? 'loading...':
+                    doctorsData.map((item, index)=>(
+                      <Col key={index} className='mb-3' xs={3}>
+                          <DoctorCard data={item} addedFav={addedFav} />
+                      </Col>
+                    ))
                 }
               </Row>
             </div>

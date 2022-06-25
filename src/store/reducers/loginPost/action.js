@@ -6,7 +6,7 @@ export const loginPost = (object) => async(dispatch) => {
     await dispatch({ type: POST_LOGIN_LOADING });
     try {
         const data = await post(object);
-        setToken(data?.data?.access)
+         if(data?.data?.access) setToken(data?.data?.access)
         await dispatch({ type: POST_LOGIN_SUCCESS, payload: data?.data });
 
     } catch (error) {

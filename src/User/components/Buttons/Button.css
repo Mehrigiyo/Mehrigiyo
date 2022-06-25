@@ -1,4 +1,4 @@
-    .ButtonIcon a {
+    .ButtonIcon  {
         background: rgba(83, 177, 117, 0.1);
         border-radius: 30px;
         font-style: normal;
@@ -8,7 +8,8 @@
         /* identical to box height */
         color: #181725;
         align-items: center;
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
         text-decoration: none;
         padding: 13px 20px;
     }

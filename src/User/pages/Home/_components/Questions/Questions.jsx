@@ -23,7 +23,7 @@ export default function Questions() {
                         biz bilan bog'laning
 
                        </p>
-                       <Button>Batafsil</Button>
+                       <Button style={{width: 200}}>Batafsil</Button>
                    </Col>
                    <Col xs={8} className="questions__accordion" >
                                <Accordion />

@@ -72,7 +72,7 @@ const ConsultDoctor = () => {
                 <img src={ConsultDoctorBackImg} alt="picture" />
             </div>
             <div className='consutl_doctor_button'>
-                <Button href={"/onlinedoctor/#doctortype"}>Batafsil</Button>
+                <Button style={{width: 260, fontWeight: 400, fontSize: 16}} href={"/onlinedoctor/#doctortype"}>Batafsil</Button>
             </div>
         </div>
     );

@@ -5,9 +5,24 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-height: 90vh;
+  max-height: 98vh;
   overflow-x: hidden;
   overflow-y: auto;
+   &::-webkit-scrollbar {
+    width: 15px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #53b175; 
+    border-radius: 10px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(83, 177, 117, .8); 
+  }
   // max-width: 536px;
   // max-height: 723px;
   &__reletive {
