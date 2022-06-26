@@ -15,7 +15,7 @@ function MyAccount() {
 
     const { userData, logindate}  = useSelector((state)=> state.usermeReducer)
     const dispatch = useDispatch();
-     
+     console.log(logindate);
     const data = userObj
    
     // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)
@@ -54,7 +54,7 @@ function MyAccount() {
                     </div>
 
                     <p>Fotosurat yuklang (optinal)</p>
-                   {isActive &&  <input id='imageSave' type="file"  accept="image/png, image/jpg, image/gif, image/jpeg" />}
+                   {isActive &&  <input id='imageSave' type="file" name='avatar'  accept="image/png, image/jpg, image/gif, image/jpeg" />}
                 </label>
                 <label  htmlFor="userName" >Foydalanuvchi nomi
                 <input  id='userName' type="text" name='last_name' onChange={isActive ? onChange : null}     value={value?.last_name } />

@@ -17,7 +17,18 @@ import { userGet } from "../../../../../store/reducers/user/userMe/action";
 import { post } from "../../../../../store/reducers/user/regestration/api";
 const Login = ({set}) => {
   const [num, setNum] = useState(1);
-  const [value, setValue] = useState({});
+  const [value, setValue] = useState({
+    username:null,
+    first_name:null,
+    last_name:null,
+    email:null,
+    avatar: null, 
+ }
+ );
+ const [loginValue, setLoginValue] = useState({
+  username:null,
+}
+);
   const { loading, access, data, error } = useSelector(
     (state) => state.regestrationReducer
   );
@@ -25,7 +36,6 @@ const Login = ({set}) => {
   const { logindate , access:loginAccess, loading:loginLoading} = useSelector(
     (state) => state.loginReducer
   );
-  // console.log(loginAccess, logindate);
   if(logindate?.refresh){
     set(false)
   }
@@ -38,6 +48,10 @@ const Login = ({set}) => {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+    setLoginValue((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }))
   };
 
   const dispatch = useDispatch();
@@ -45,14 +59,15 @@ const Login = ({set}) => {
   const onSubmit = async (e) => {
     e.preventDefault();
     await dispatch(regestrationPost(value));
-     if (data.status !== "fail") {
+     if (data?.refresh) {
       setNum(1);
     }
   };
   
   const onSubmit2 = async (e) => {
     e.preventDefault()
-    await dispatch(loginPost(value));
+
+    await dispatch(loginPost(loginValue));
   }
 
   const Password = useInput('', true)
@@ -71,7 +86,7 @@ const Login = ({set}) => {
             <p>Kirish</p>
           </li>
         </ul>
-        <ul
+        <ul 
           className={num === 2 ? "active2" : "technalogy__spam1"}
           onClick={() => setNum(2)}
         >
@@ -84,7 +99,7 @@ const Login = ({set}) => {
         {num === 1 ? (
           <div className="box flex">
             <div className=" box__text">
-              <form className="form__forn" onClick={(e)=>onSubmit2(e)} >
+              <form className="form__forn" onSubmit={(e)=>onSubmit2(e)} >
                 <label htmlFor="fullNUmber">Telefon raqam</label>
                 <input
                   className="number"
@@ -119,6 +134,7 @@ const Login = ({set}) => {
                 <img className="img2" src={reg2} alt="" />
               </div>
               <p>Fotosurat yuklang (optinal)</p>
+              {/* <input name="avatar" onChange={(e)=> onChange(e)} type="file" /> */}
             </div>
             <form className="form__forn" onSubmit={(e) => onSubmit(e)}>
               <label htmlFor="number">raqami (optinal)</label>
@@ -152,15 +168,19 @@ const Login = ({set}) => {
               <input
                 type="text"
                 placeholder="AripovpasswordXojiakbar@gmail.com"
+                name="email"
+                onChange={(e) => onChange(e)}
               />
               <label htmlFor="email">Parolni o’ylab toping</label>
               <input
                 type="text"
                 name="password"
                 placeholder="************"
-                {...Password}
+                required
+                onChange={(e) => onChange(e)}
+                // {...Password}
               />
-              {Password.error && <span style={{ color: 'red' }}>{Password.error}</span>}
+              {Password.error &&  <span style={{ color: 'red' }}>{Password.error}</span>}
               <div className="boxButtonText">
                 <p>
                   “Ro’yxatdan o’tish” tugmasini bosgan holda, Siz
@@ -171,7 +191,7 @@ const Login = ({set}) => {
                 </p>
               </div>
               <div className="loginWrapper__box__boxButton2">
-                <GreenButton>Ro’yxatdan o’tish</GreenButton>
+               {loading? "loading...." : <GreenButton >Ro’yxatdan o’tish</GreenButton>}
               </div>
             </form>
           </div>

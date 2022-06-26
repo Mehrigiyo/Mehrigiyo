@@ -34,7 +34,7 @@ import { userGet } from "../store/reducers/user/userMe/action";
 function User() {
   // console.log(<Admin />);
   const {access} = useSelector(state => state.usermeReducer)
-  console.log(access);
+  // console.log(access);
   const dispacht = useDispatch()
 
   useEffect(()=>{
@@ -61,7 +61,7 @@ function User() {
             <Route path="/lovemedice" element={<LoveMedice />} />{" "}
             <Route path="/tohealth" element={<ToHealth />} />{" "}
             <Route path="/fullcard" element={<FullCard />} />{" "}
-            <Route path="/shopmenu" element={<ShopMenu />} />{" "}
+            <Route path="/shopmenu m" element={<ShopMenu />} />{" "}
             <Route path="/shopbox" element={<ShopBox />} />{" "}
             <Route path="*" element={<h2>404 not found</h2>} />{" "}
          </Route>
