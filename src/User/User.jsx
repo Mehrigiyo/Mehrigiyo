@@ -30,7 +30,6 @@ import AdminLayout from "../Admin/components/AdminLayout/AdminLayout";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { userGet } from "../store/reducers/user/userMe/action";
-import { useSearchParams } from "react-router-dom";
 import SaveComponents from "./components/SaveComponents/SaveComponents";
 
 function User() {

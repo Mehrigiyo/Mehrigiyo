@@ -24,17 +24,16 @@ export default function Hero() {
             24/7 video maslahat. Shaxsiy maslahat + Audio qo'ng'iroq Faqat mobil
             ilovada
           </p>
-          <div className=" d-inline-block m-auto position-relative"> 
-
+          <div className="hero-input__div  m-auto position-relative align-items-center"> 
             <input
               type="text"
               className="hero-input"
               placeholder={"Nima izlayapsiz?"}
             />
-            <button className="hero-btn"> <img src={vector} alt="" /> Qidirish</button>
             <div className="inputPhoto">
               <img src={gg} alt="" />
             </div>
+            <button className="hero-btn d-flex align-items-center justify-content-evenly"> <img src={vector} alt="" /> Qidirish</button>
           </div>
          
         </div>
@@ -79,7 +78,6 @@ export default function Hero() {
       <img src={green} className={"bgGreenOpacity hero-image__bgTree"} />
       
       
-      <Notifacation/>
     </>
   );
 }

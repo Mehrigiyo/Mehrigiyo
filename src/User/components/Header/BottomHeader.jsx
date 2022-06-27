@@ -41,8 +41,12 @@ const BottomHeader = () => {
   const changeRouter = ()=>{
     dispatch(actionChangeRouter("user"))
   }
+
+
+  const {pahtname} = useLocation()
   return (
-    <div className="bottom-header  ">
+    
+    <div className="bottom-header  " style={pathname === '/' ? {backgroundColor: '#53b17566'} :null }>
       <div className="globalContainer flex-between">
         <section className="bottom-headder-two">
           <div>

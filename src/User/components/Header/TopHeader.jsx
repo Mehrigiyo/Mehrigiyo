@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./TopHeader.scss";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import flag from "../../../icons/UzbFlag.svg";
 import locate from "../../../icons/Location.svg";
 import Adde from "../../../icons/Add-User.svg";
@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { userGet } from "../../../store/reducers/user/userMe/action";
 const TopHeader = () => {
   const [open, setOpen] = useState(false);
+
   const {logindate , loading} = useSelector((state)=> state.usermeReducer)
 
   const {access} = useSelector(state=>state.loginReducer)
@@ -21,10 +22,10 @@ const TopHeader = () => {
   
   const getUser = localStorage.getItem('user')
   const userObj = JSON.parse(getUser)
-  const [user , setUser] = useState(userObj)
 
+  const {pathname}  = useLocation()
   return (
-    <header className="TopHeaderContainer ">
+    <header className="TopHeaderContainer " style={ pathname === '/' ? {backgroundColor: '#D6ECDF'} :  {backgroundColor:  'rgba(255, 255, 2555, .5)'}} >
       <div className="globalContainer flex-between">
         <section>
           <nav>

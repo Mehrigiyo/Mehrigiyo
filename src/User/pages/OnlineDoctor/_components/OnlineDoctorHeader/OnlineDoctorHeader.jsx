@@ -48,7 +48,6 @@ function OnlineDoctorHeader() {
             <div className="freeDoctorBack">
                 <img src={FreDoctorTree} alt="" />
             </div>
-            <Notifacation/>
         </div>
     </div>
   )

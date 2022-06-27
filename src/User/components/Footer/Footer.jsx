@@ -4,10 +4,11 @@ import "./Footer.css"
 import home from "../../../icons/home.svg"
 import google from "../../../images/google.svg"
 import app from "../../../images/app.svg"
-import {BsInstagram} from "react-icons/bs"
-import {BsFacebook} from "react-icons/bs"
-import {BsTelegram} from "react-icons/bs"
-import {BsYoutube} from "react-icons/bs"
+
+import Facebook from './SVG/Facebook'
+import Instagram from './SVG/Instagram'
+import Telegram from './SVG/Telegram'
+import YouTube from './SVG/Youtube'
 
 const Footer = () => {
   return (
@@ -18,19 +19,19 @@ const Footer = () => {
           <div className='one'>
         <div className='foterTwo'>
           <img src={logo} alt="" />
-          <ul>
-            <li className='rightFirst'>Bu sog'liq va hayot sifatini yaxshilash uchun mahsulotlar</li>
-            <li className='right'>Ish vaqti: Har kuni 8:00 dan 18:00 gacha</li>
+          <ul className='white_color' >
+            <li className='rightFirst white_color'>Bu sog'liq va hayot sifatini yaxshilash uchun mahsulotlar</li>
+            <li className='right white_color'>Ish vaqti: Har kuni 8:00 dan 18:00 gacha</li>
           </ul>
        <ul className='localSet'>
          <li><a href="">
-         <BsInstagram/></a></li>
+         <Facebook/></a></li>
          <li><a href="">
-         <BsFacebook/></a></li>
+         <Instagram/></a></li>
          <li><a href="">
-         <BsTelegram/></a></li>
+         <Telegram/></a></li>
          <li><a href="">
-         <BsYoutube/></a></li>
+         <YouTube/></a></li>
        </ul>
         </div>
         <div className='foterThree'>
@@ -49,15 +50,15 @@ const Footer = () => {
         </div>
         </div>
         </div>
-        <div className='footertop '>
+        <div className='footertop align-items-end '>
           <div className='net'>
             <div className='email'>
-              <p className='emailtext'>E-mail</p>
-              <p className='emailInfo'>info@mehrigiyo.uz</p>
+              <p className='text'>E-mail</p>
+              <p className='emailInfo mb-0'>info@mehrigiyo.uz</p>
             </div>
-            <div className='phone'>
-              <p className='phoneText'>Bizga qo'ng'iroq qiling</p>
-              <p className='phoneNumber'>+99898 125 31 03</p>
+            <div className='phone email'>
+              <p className='text'>Bizga qo'ng'iroq qiling</p>
+              <p className='phoneNumber mb-0'>+99898 125 31 03</p>
 
             </div>
           </div>

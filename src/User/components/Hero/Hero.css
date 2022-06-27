@@ -3,15 +3,14 @@
   background-size: 100% 80%;
   background-position: top;
   background-repeat: no-repeat;
-  position: relative;
-  top: -80px;
-  height: 130vh;
+  height: 130%;
   width: 100vw;
+  margin-bottom: 100px;
 }
 
 .hero{
   z-index: 1;
-   padding-top: 165px;
+   padding-top: 90px;
 }
 .hero-text {
   text-align: center;
@@ -42,26 +41,39 @@ text-align: center;
   transform: rotateY(180deg);
   width: 45%;
 }
-.hero-input {
-  width: 513px;
-  height: 44px;
-  padding: 0 10px;
+.hero-input__div {
+  width: 613px;
+  display: flex;
   padding-left: 22px !important;
   background: #ffffff;
   border: 1px solid #f1f4f7;
   border-radius: 100px;
+  padding-right: 13px;
+}
+.hero-input {
+  width: 80%;
+  background-color: #fff;
+  display: inline-block;
+  height: 44px;
+  padding: 0 10px;
+  
   outline: none;
-  margin: 0 auto;
-  position: relative;
+ 
 }
 .hero-btn {
   background: #53b175;
   border-radius: 100px;
-  position: relative;
-  right: 95px;
-  padding: 5px 10px;
+  width: 105px;
   font-size: 14px;
+  height: 30px;
   color: #fff;
+}
+.inputPhoto{
+ margin-right: 16px;
+}
+
+.hero-bgImage{
+  margin-top: 30px;
 }
 .hero-bgImage {
   position: relative;
@@ -133,14 +145,4 @@ text-align: center;
   object-fit: contain;
 }
 
-.inputPhoto{
-  position: absolute;
-}
-.inputPhoto img{
-  margin-top: -68px;
-  margin-left:  390px;
 
-}
-.hero-bgImage{
-  margin-top: 30px;
-}

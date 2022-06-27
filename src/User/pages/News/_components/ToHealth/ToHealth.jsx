@@ -34,7 +34,6 @@ function ToHealth() {
           ))}
         </ul>
       </Container>
-      <Notifacation/>
       <div className="news__cards">
         <ul>
        

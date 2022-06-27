@@ -12,15 +12,12 @@ ul {
     justify-content: space-between;
 }
 
+
 .rightFirst {
     width: 300px;
-    color: #9fa5b0;
     margin-bottom: 12px;
 }
 
-.right {
-    color: #9fa5b0;
-}
 
 .foterTwo {
     margin-top: 70px;
@@ -54,11 +51,13 @@ ul {
 .footertop {
     background-color: #282828;
     display: flex;
+    
 }
 
 .foterFoto {
     align-self: end;
     margin-left: auto;
+    
 }
 
 .Footer {
@@ -67,6 +66,7 @@ ul {
     justify-content: space-between;
     height: 80px;
 }
+
 
 .foterRight p {
     margin-bottom: 0;
@@ -92,26 +92,28 @@ ul {
 
 .net {
     width: 550px;
+    height: 95px;
     display: flex;
     gap: 107px;
     background-color: #427a56;
     /* border-radius:  20px; */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    padding-top: 21px;
 }
 
 .email {
     margin-left: 52px;
-    margin-top: 37px;
 }
 
-.emailtext {
+.text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #8e939c;
+    color:  rgba(255, 255, 255, .6)
+
 }
 
 .emailInfo {
@@ -125,16 +127,6 @@ ul {
 
 .phone {
     margin-left: 0;
-    margin-top: 37px;
-}
-
-.phoneText {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #8e939c;
 }
 
 .phoneNumber {
@@ -149,8 +141,22 @@ ul {
 .localSet {
     display: flex;
     gap: 34px;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    
+}
+.localSet a {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50% ;
 }
 .playmarket{
     display: grid;
     gap: 30px;
+}
+.white_color{
+    color: rgba(255, 255, 255, .8);
 }

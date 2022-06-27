@@ -10,7 +10,6 @@ function New() {
     <div>
       <Breadcrum name={"Yangiliklar"} url={"/news"}>Yangiliklar</Breadcrum>
       <NewCompony/>
-      <Notifacation/>
       <NewsComponent/>
       
     </div>

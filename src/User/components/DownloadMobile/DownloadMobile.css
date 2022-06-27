@@ -71,7 +71,9 @@
     color: #7C8087;
     text-decoration: none;
 }
-
+.form_item{
+    margin-top: 54px;
+}
 .form_item h6 {
     font-weight: 600;
     font-size: 16px;

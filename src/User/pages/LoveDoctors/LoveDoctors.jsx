@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Breadcrum from "../../components/Breadcrum/Breadcrum";
+// import Breadcrum from "../../components/Breadcrum/Breadcrum";
 import "./LoveDoctors.scss";
-import tree from "../../../images/Group.png";
+// import tree from "../../../images/Group.png";
 import { Breadcrumb, BreadcrumbItem, Col } from "react-bootstrap";
 import { getFavoritDoctors } from "../../../store/reducers/user/FavoritDoctor/action";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,7 +23,7 @@ function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shif
   };
   return (
     <SaveComponents>
-       {favoriteDoc.length > 0 ? 
+       {favoriteDoc?.length > 0 ? 
         <div className="favoriteDoc globalContainer ">
           {favoriteDoc.map((item, i) => (
             <DoctorCard key={i} data={item} addedFav={addedFav} />

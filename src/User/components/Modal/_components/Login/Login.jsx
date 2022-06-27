@@ -15,6 +15,7 @@ import useInput from "../../../../../Admin/hooks/useInput";
 // import apiRoot from "../../../../../store/apiRoot";
 import { userGet } from "../../../../../store/reducers/user/userMe/action";
 import { post } from "../../../../../store/reducers/user/regestration/api";
+import { useEffect } from "react";
 const Login = ({set}) => {
   const [num, setNum] = useState(1);
   const [value, setValue] = useState({
@@ -59,10 +60,14 @@ const Login = ({set}) => {
   const onSubmit = async (e) => {
     e.preventDefault();
     await dispatch(regestrationPost(value));
-     if (data?.refresh) {
-      setNum(1);
-    }
   };
+ 
+  useEffect(()=>{
+    if (data?.refresh) {
+      console.log('ishladi ');
+         setNum(1);
+    }
+  },[data])
   
   const onSubmit2 = async (e) => {
     e.preventDefault()
