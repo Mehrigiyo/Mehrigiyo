@@ -12,6 +12,7 @@ const initialState = {
 
 
 export const loginReducer = (state = initialState, { type, payload }) => {
+    console.log(type);
     switch (type) {
         case POST_LOGIN_LOADING:
             return {...state, loading: true }

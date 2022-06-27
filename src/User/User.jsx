@@ -34,9 +34,11 @@ import SaveComponents from "./components/SaveComponents/SaveComponents";
 
 function User() {
   const {access} = useSelector(state => state.usermeReducer)
+  const token = localStorage.getItem('token')
   const dispacht = useDispatch()
 
   useEffect(()=>{
+    console.log('getUser');
     dispacht(userGet())
   }, [])
   return (

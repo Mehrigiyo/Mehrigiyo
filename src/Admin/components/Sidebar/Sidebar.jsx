@@ -10,7 +10,7 @@ import NavIcon5 from "../../../icons/navIcon5.svg"
 import NavIcon6 from "../../../icons/navIcon6.svg"
 import NavIcon7 from "../../../icons/navIcon7.svg"
 import logaoutIcon from "../../../icons/logout.svg"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { logout } from '../../../store/reducers/userme';
 import Modal from '../../../User/components/Modal/Modal';
 import MyAccount from '../../pages/Settings/_components/MyAccount/MyAccount';
@@ -20,6 +20,8 @@ function Sidebar() {
   const user = localStorage.getItem('user')
   const userObj = JSON.parse(user)
   const [open, setOpen] = useState(false)
+
+  const navigete = useNavigate()
   //  const { loading:getusermeloading, error:getusermeerror, data:getusermedata, fetchData } = useFetch('http://207.154.244.140:8000/api/user/me')
   //  if (getusermeloading) return <h1>...loading</h1>
   //  if (getusermeerror) return <h1>{getusermeerror.message}</h1>
@@ -114,7 +116,10 @@ function Sidebar() {
           </nav>
         </div>
         <div className="sidebar_menu_logout" >
-          <a href="#" onClick={() => logout()}>
+          <a href="#" onClick={ async() => {
+            await logout()
+            await navigete('/')
+            }}>
             <img src={logaoutIcon} alt="" />
             Log Out
           </a>

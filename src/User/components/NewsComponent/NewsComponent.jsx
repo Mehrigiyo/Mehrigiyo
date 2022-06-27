@@ -3,7 +3,7 @@ import { Row, Col, Carousel, CarouselItem } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Card from "../Card/Card";
-import { data } from "./Const";
+import { data as  g} from "./Const";
 
 import "./NewComponent.scss";
 import { useDispatch, useSelector } from "react-redux";

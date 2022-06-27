@@ -1,0 +1,201 @@
+.loginWrapper {
+  padding: 86px;
+}
+
+.loginWrapper__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  padding: 0 12px;
+  width: 340px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginWrapper__box .technalogy__spam {
+  margin-top: 15px;
+  width: 145px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.loginWrapper__box .technalogy__spam p {
+  color: #b0b7c3;
+}
+
+.loginWrapper__box .active {
+  background-color: #fff;
+  margin-top: 15px;
+  width: 145px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loginWrapper__box .active p {
+  color: #53b175;
+  font-weight: 700;
+}
+
+.loginWrapper__box .active2 {
+  background-color: #fff;
+  margin-top: 15px;
+  width: 186px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loginWrapper__box .active2 p {
+  color: #53b175;
+  font-weight: 700;
+}
+
+.loginWrapper__box .technalogy__spam1 {
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+  left: 20px;
+  top: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.loginWrapper__box .technalogy__spam1 p {
+  color: #b0b7c3;
+}
+
+.loginWrapper__box__boxButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 88px;
+}
+
+.form__forn {
+  min-width: 360px;
+}
+
+.form__forn .flag {
+  position: relative;
+  bottom: 38px;
+  right: 10px;
+}
+
+.form__forn .number {
+  padding-left: 40px;
+}
+
+.form__forn label,
+.form__forn input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.form__forn label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b7c3;
+  margin-top: 34px;
+}
+
+.form__forn input {
+  border-bottom: 1px solid rgba(177, 184, 196, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 13px;
+  color: #181725 !important;
+}
+
+.form__forn input:focus {
+  border-bottom: 1px solid #53b175;
+}
+
+.reg .box__text {
+  text-align: center;
+}
+
+.reg .box__text .box_img {
+  padding-top: 50px;
+}
+
+.reg .box__text .box_img .img1 {
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 20px;
+  width: 84px;
+  height: 84px;
+}
+
+.reg .box__text .box_img .img2 {
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.reg .box__text p {
+  padding-top: 16px;
+}
+
+.loginWrapper__box__boxButton2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.boxButtonText {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.boxButtonText p {
+  width: 350px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #7c7c7c;
+}
+
+.boxButtonText p span {
+  color: #53b175;
+}
+/*# sourceMappingURL=Login.css.map */

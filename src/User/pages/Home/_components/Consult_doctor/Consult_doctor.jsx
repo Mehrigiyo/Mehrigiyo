@@ -8,6 +8,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import Button from '../../../../components/Buttons/Button';
 import ConsultDoctorBackImg from "../../../../../images/Group 2535107.png"
 import DoctorTypeCard from '../../../../components/DoctorTypeCard/DoctorTypeCard';
+import bg_rasm from '../../../../../images/Group.png'
 import { NavLink} from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -27,10 +28,10 @@ const ConsultDoctor = () => {
                 <h2>Har qanday sog'liq bilan bog'liq muammolar uchun <br />
                     <span>onlayn shifokorlarga</span>
                     murojaat qiling</h2>
-                <p>Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>
+                <p className='mb-0'>Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>
             </div>
             <Container style={{ maxWidth: 960 }}>
-                <Row >
+                <Row>
                     {
                         data.filter(( _, index)=> index < 4).map((item, index) => (
                             
@@ -72,8 +73,10 @@ const ConsultDoctor = () => {
                 <img src={ConsultDoctorBackImg} alt="picture" />
             </div>
             <div className='consutl_doctor_button'>
-                <Button style={{width: 260, fontWeight: 400, fontSize: 16}} href={"/onlinedoctor/#doctortype"}>Batafsil</Button>
+                <Button style={{width: 260, fontWeight: 400, fontSize: 16}} href={"/onlinedoctor/#doctortype"}>Bepul maslahat olish </Button>
             </div>
+
+            <img className='bg_rasm' src={bg_rasm} alt="" />
         </div>
     );
 }

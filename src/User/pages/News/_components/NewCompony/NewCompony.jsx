@@ -41,6 +41,7 @@ function NewCompony() {
             className="NewCompony__componyTop__componyRowTop__rowTopLeft"
             lg={6}
           >
+            <p  className="NewCompony__hashTag myCard-hesh">#Ziravorlar <span> 4 min oldin</span></p>
             <h3 className="NewCompony__componyTop__componyRowTop__rowTopLeft__lefththree">
               Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini
               taqdim etadi.
@@ -50,7 +51,7 @@ function NewCompony() {
               ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.
             </p>
             <div className="NewCompony__componyTop__componyRowTop__rowTopLeft__leftBut"></div>
-            <Button href={"/fullcard"}>Ko’proq o’qish </Button>
+            <Button style={{width: 175, color:'#53B175', fontWeight: 500}} href={"/fullcard"}>Ko’proq o’qish </Button>
           </Col>
         </Row>
       </div>

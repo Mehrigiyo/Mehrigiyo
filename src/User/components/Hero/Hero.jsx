@@ -21,8 +21,13 @@ export default function Hero() {
         <div className="hero__text  d-flex justify-content-center align-content-center flex-column">
           <h1 style={{ fontSize: 44 }}>Bepul shifokor maslahat kerakmi?</h1>
           <p>
-            24/7 video maslahat. Shaxsiy maslahat + Audio qo'ng'iroq Faqat mobil
+            24/7 video maslahat. Shaxsiy maslahat + Audio qo'ng'iroq 
+            Faqat 
+            <a className="hero_link" href="#">
+
+             mobil
             ilovada
+            </a>
           </p>
           <div className="hero-input__div  m-auto position-relative align-items-center"> 
             <input

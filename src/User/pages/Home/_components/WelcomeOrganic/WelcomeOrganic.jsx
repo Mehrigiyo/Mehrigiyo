@@ -29,7 +29,7 @@ const WelcomeOrganic = () => {
                                         <img src={WelocomOrganicLogos} alt="picture" />
                                     </div>
                                     <div className="wecome_organic_link d-flex">
-                                    <Button style={{width: 200}}>Batafsil</Button>
+                                    <Button style={{width: 200, marginRight: 30}}>Batafsil</Button>
                                         <VideoLink/>
                                     </div>
                                 </div>

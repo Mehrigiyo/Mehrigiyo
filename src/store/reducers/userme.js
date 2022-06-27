@@ -29,6 +29,7 @@ export const isLogin = () => {
 export const logout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
+    
 };
 
 export const setToken = (token) => {

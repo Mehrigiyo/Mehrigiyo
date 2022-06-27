@@ -1,5 +1,5 @@
 .consult_doctor {
-    /* background-image: url("../../../../../public/image/Group.png") matrix(-1, 0, 0, 1, 0, 0); */
+    /* background-image: url("") ; */
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,6 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .consult_doctor_title p {
     font-weight: 400;
     font-size: 16px;
@@ -51,7 +50,6 @@
     background: #FFFFFF;
     box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
     border-radius: 15px;
-    margin-top: 60px;
 }
 
 .consult_doctor_image img {
@@ -93,4 +91,13 @@
     display: flex;
     justify-content: center;
     margin: 60px auto 0;
+}
+
+.bg_rasm{
+    position: absolute;
+    top: 40%;
+    opacity: .2;
+    left: -5%;
+    z-index: -1;
+    max-width: 543px;
 }
