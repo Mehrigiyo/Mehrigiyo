@@ -80,7 +80,7 @@ const TopHeader = () => {
             :
             <div className="d-block ml-1 login">
                 <p className="mb-0">
-                 <Link to='/admin' >
+                 <Link className="login" to='/admin' >
                  {
                     logindate?.first_name + "." + 
                     logindate?.last_name.split(" ")[0][0]

@@ -1,6 +1,9 @@
-import React, {useState} from "react";
+import  {useState} from "react";
+import DoctorIcon from "./svg/Doctor_icon";
+import ShoppingCart from "./svg/ShopinCart";
+import Yurak from './svg/Yurak'
 import "./Bottom-Header.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import logo from "../../../icons/Logo.svg";
 import doctor from "../../../icons/doktor-icon.svg";
 import heart from "../../../icons/heartbg.png";
@@ -14,9 +17,16 @@ import { actionChangeRouter } from "../../../store/ChangeRouter/action";
 
 
 const BottomHeader = () => {
+  const {params} = useParams()
+  const {pathname} = useLocation()
+  // console.log(loco);
+  // if(params === 'lovedoctors'){
+  //     navigate('/lovedoctors')
+  // }
   const [activeDoctor, setActiveDoctor] = useState(true);
   const [activeMedice, setActiveMedice] = useState(true)
   const [activeShop, setActiveShop] = useState(true)
+  const [isActive , setIsActive ] = useState(false)
 
   const HandleActiveImage = ()=>{
     setActiveDoctor(next => !next)
@@ -96,32 +106,19 @@ const BottomHeader = () => {
           </nav>
 
           <div className="threeIcon">
-            <div className="iconca">
-              <NavLink to="/lovedoctors">
-                {activeDoctor
-                  ?
-                    <img onClick={HandleActiveImage} src={doctor} alt="" />
-                  :
-                    <img onClick={HandleActiveImage}  src={Activedoctor} alt="" />
-                }
+            <div className="iconca" >
+              <NavLink className={ "link_icons "} to="/lovedoctors" >
+                  <DoctorIcon onClick={HandleActiveImage} bool={pathname}/>
               </NavLink>
             </div>
             <div className="iconca">
-              <NavLink to="/lovemedice">
-                { activeMedice ?
-                  <img onClick={HandleActiveImage1} src={heart} alt="" />
-                  :
-                  <img onClick={HandleActiveImage1} src={AcitiveLove} alt="" />
-                }
+              <NavLink className={ "link_icons "} to="/lovemedice">
+                <Yurak  onClick={HandleActiveImage1}  bool={pathname}/>
               </NavLink>
             </div>
             <div className="iconca">
-              <NavLink to="/shopbox">
-              { activeShop ?
-                  <img onClick={HandleActiveImage2} src={Cart} alt="" />
-                  :
-                  <img onClick={HandleActiveImage2} src={ActiveShop} alt="" />
-                }
+              <NavLink className={ "link_icons "} to="/shopbox">
+               <ShoppingCart bool={pathname} />
               </NavLink>
             </div>
           </div>

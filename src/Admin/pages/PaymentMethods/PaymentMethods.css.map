@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,QAAQ,EAAE,QAAQ;CASrB;;AAVD,AAGQ,eAHO,CAEX,WAAW,CACP,GAAG,CAAC;EACA,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,KAAK;EACZ,GAAG,EAAE,KAAK;EACV,UAAU,EAAE,OAAO;CACtB",
-    "sources": [
-        "PaymentMethods.scss"
-    ],
-    "names": [],
-    "file": "PaymentMethods.css"
-}

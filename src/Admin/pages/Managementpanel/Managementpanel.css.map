@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,GAAG;EACZ,UAAU;EACV,MAAM,EAAE,mBAAmB;CAC9B",
-    "sources": [
-        "Managementpanel.scss"
-    ],
-    "names": [],
-    "file": "Managementpanel.css"
-}

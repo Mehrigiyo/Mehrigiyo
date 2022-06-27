@@ -30,11 +30,11 @@ import AdminLayout from "../Admin/components/AdminLayout/AdminLayout";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { userGet } from "../store/reducers/user/userMe/action";
+import { useSearchParams } from "react-router-dom";
+import SaveComponents from "./components/SaveComponents/SaveComponents";
 
 function User() {
-  // console.log(<Admin />);
   const {access} = useSelector(state => state.usermeReducer)
-  // console.log(access);
   const dispacht = useDispatch()
 
   useEffect(()=>{
@@ -42,27 +42,32 @@ function User() {
   }, [])
   return (
     <>
+    
       <Routes>
+
          <Route path='/' element={<Layout />} >
+            {/* <Route path="/:params"   /> */}
+            <Route path="/save" element={<SaveComponents />} />
+            <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
+            <Route path="/lovemedice" element={<LoveMedice />} />{" "}
+            <Route path="/shopbox" element={<ShopBox />} />{" "}
+
             <Route  path='/' element={<Home />} />
+
             <Route path="/onlinedoctor" element={<OnlineDoctor />} />
 
             <Route path="/news" element={<News />} />{" "}
             <Route path="/help" element={<Help />} />{" "}
             <Route path="/product" element={<Product />} />{" "}
             <Route path="/aboute" element={<About />} />{" "}        
-            <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
             <Route path="/askquestion" element={<AskQuestion />} />{" "}
-            <Route path="doctorslist" element={<DoctorsList />} />{" "}
+            <Route path="/doctorslist" element={<DoctorsList />} />{" "}
             <Route path="/productlist" element={<Productlist />} />{" "}
             <Route path="/productabout" element={<ProductAbout />} />{" "}
             <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />{" "}
-            <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
-            <Route path="/lovemedice" element={<LoveMedice />} />{" "}
             <Route path="/tohealth" element={<ToHealth />} />{" "}
             <Route path="/fullcard" element={<FullCard />} />{" "}
             <Route path="/shopmenu m" element={<ShopMenu />} />{" "}
-            <Route path="/shopbox" element={<ShopBox />} />{" "}
             <Route path="*" element={<h2>404 not found</h2>} />{" "}
          </Route>
          {/* <Route path="/admin" element={<AdminLayout />} >
@@ -80,7 +85,7 @@ function User() {
               <Route path="settings" element={<Settings />} />{" "}
          </Route>}
          
-         <Route path="onlinedoctor/:id" element={<DoctorInfo />} />{" "}
+         {/* <Route path="onlinedoctor/:id" element={<DoctorInfo />} />{" "} */}
          
            
       </Routes>
