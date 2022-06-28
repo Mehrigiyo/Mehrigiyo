@@ -6,7 +6,7 @@ import "./OnlineDoctorHeader.css";
 import { Col, Container, Row } from 'react-bootstrap';
 import Button from '../../../../components/Buttons/Button';
 import VideoLink from "../../../../components/VideoLink/VideoLink"
-import OnlineDowctorImage from "../../../../../images/Group 2535185.png"
+import OnlineDowctorImage from "../../../../../images/onlineDoctor.png";
 import FreDoctorTree from "../../../../../images/Group 2535107.png"
 import Notifacation from '../../../../components/Notifacation/Notifacation';
 
@@ -22,11 +22,11 @@ function OnlineDoctorHeader() {
                 <a href="#"><img src={CloseIcon} /></a>
             </div>
         </div>
-        <Breadcrum>Onlayn shifokorlar</Breadcrum>
         <div className="freedoctor_advice">
             <Container style={{maxWidth: 960}}>
                   <Row>
                     <Col lg={7}>
+                     <Breadcrum className='p-0'>Onlayn shifokorlar</Breadcrum>
                           <div className="left_freedoctor_advice">
                                 <div className="left_freedoctor_advice_title">
                                     <h1>Bepul shifokor maslahatini oling</h1>
@@ -40,7 +40,7 @@ function OnlineDoctorHeader() {
                     </Col> 
                     <Col lg={5}>
                           <div className="right_freedoctor_advice">
-                                <img src={OnlineDowctorImage} alt="onlineDoctor" />
+                                <img style={{width: '100%'}} src={OnlineDowctorImage} alt="onlineDoctor" />
                           </div>
                     </Col>  
                   </Row>

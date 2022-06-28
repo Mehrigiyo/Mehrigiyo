@@ -23,8 +23,8 @@
   max-width: 777px;
   margin: 0 auto;
   font-weight: 700;
-font-size: 44px;
-line-height: 66px;
+  font-size: 44px;
+  line-height: 66px;
 }
 .hero__text p {
   max-width: 460px;
@@ -78,31 +78,67 @@ line-height: 66px;
 .inputPhoto{
  margin-right: 16px;
 }
-
-.hero-bgImage{
-  margin-top: 30px;
-}
-.hero-bgImage {
-  position: relative;
+.hero_carusel{
+  padding-top: 40px ;
   display: flex;
-  justify-content: center;
-  max-width: 836px;
-  margin: 0 auto;
+  justify-content: center;  
 }
+.hero_carusel__item{
+  position: relative;
+  grid-template-columns: 100%  100%;
+  transition: transform  5s ease-in-out;
+;
+  max-width: 1045px;
+}
+.hero-bgImage{
+  /* border: 1px solid green; */
+  /* margin-left: 95px; */
+  position: relative;
+  display: grid;
+  width: 100%;
+  justify-content: center;
+}
+.hero-bgImage img{
+  max-width: 80%;
+  /* filter: drop-shadow(0px 15px 60px rgba(0, 0, 0, 0.15)); */
+  /* box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.15); */
+}
+.bgImage__rigth {
+  margin-left: 170px;
+}
+
+
 .hero-bgImage .hero-gg {
   background-color: #ffffff;
   width: 188px;
   position: absolute;
-  left: -10%;
+  left: 2%;
   bottom: 50%;
   z-index: 9;
   height: 118px;
-  box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+  /* box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1); */
   border-radius: 15px;
+}
+.hero-gg__rigth{
+  bottom: 5% !important;
 }
 .papper{
   margin-left: 20px;
   margin-top: 15px;
+}
+.papper_text{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Labels/Light/Quarternary */
+
+  color: #505050;
+
 }
 .papperOne {
   font-family: "Poppins";
@@ -129,12 +165,16 @@ line-height: 66px;
   background-color: #ffffff;
   width: 188px;
   position: absolute;
-  left: 85%;
+  /* left: 85%; */
+  right: 2%;
   bottom: 20%;
   z-index: 99;
   height: 118px;
-  box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+  /* box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1); */
   border-radius: 15px;
+}
+.hero-ggTwo_right{
+
 }
 
 .notifacation {

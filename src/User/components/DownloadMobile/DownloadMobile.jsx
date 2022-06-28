@@ -34,7 +34,7 @@ class DownloadMobile extends React.Component {
                             </form>
                             <div className="app_link">
                                 <div className="app_link_iphone">
-                                    <a href="#">
+                                    <a className='d-flex justify-content-center align-content-center' >
                                         <img src={DownloadImage} alt="apple" />
                                         <div className='phone_name'>
                                             <span>Download on the</span>
@@ -43,7 +43,7 @@ class DownloadMobile extends React.Component {
                                     </a>
                                 </div>
                                 <div className="app_link_iphone">
-                                    <a href="#">
+                                    <a className='d-flex justify-content-center align-content-center' >
                                         <img src={DownloadImage1} alt="playmarket" />
                                         <div className='phone_name'>
                                             <span>Get it on</span>

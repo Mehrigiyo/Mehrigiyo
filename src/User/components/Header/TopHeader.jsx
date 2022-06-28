@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./TopHeader.scss";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import flag from "../../../icons/UzbFlag.svg";
+import flag from "../../../images/uz_flag.png";
 import locate from "../../../icons/Location.svg";
 import Adde from "../../../icons/Add-User.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
 import Modal from "../Modal/Modal";
 import Login from "../Modal/_components/Login/Login";
-import ruFlag from "../../../icons/ru_flag.svg";
-import uzFlag from "../../../icons/uz_flag.svg";
-import engFlag from "../../../icons/eng_flag.svg";
+import ruFlag from "../../../images/ru_flag.png";
+import uzFlag from "../../../images/uz_flag.png";
+import engFlag from "../../../images/eng_flag.png";
 import { useDispatch, useSelector } from "react-redux";
 import { userGet } from "../../../store/reducers/user/userMe/action";
 const TopHeader = () => {

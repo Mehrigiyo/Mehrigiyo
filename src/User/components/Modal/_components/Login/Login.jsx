@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import GreenButton from "../../../Buttons/Button/GreenButton";
-import uzFlag from "../../../../../icons/uz_flag.svg";
+import uzFlag from "../../../../../images/uz_flag.png";
 import reg1 from "../../../../../images/registrationBg.png";
 import reg2 from "../../../../../images/registrationBg2.png";
 import { useSelector, useDispatch } from "react-redux";

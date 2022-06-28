@@ -30,10 +30,10 @@
     border-radius: 60px;
     margin-right: 16px;
     width: 240px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    /* height: 75px; */
+    
     text-decoration: none;
 }
 
@@ -46,7 +46,7 @@
     margin-bottom: 0;
     font-weight: 600;
     font-size: 20px;
-    line-height: 34px;
+    /* line-height: 34px; */
     /* identical to box height, or 170% */
     /* Labels/Light/Primary */
     color: #000000;
@@ -61,12 +61,13 @@
 
 .app_link_iphone {
     margin-right: 24px;
+    height: 55px;
 }
 
 .app_link_iphone a .phone_name span {
     font-weight: 400;
     font-size: 14px;
-    line-height: 28px;
+    /* line-height: 28px; */
     /* identical to box height, or 200% */
     color: #7C8087;
     text-decoration: none;
@@ -86,6 +87,7 @@
     height: 58px;
     border-radius: 100px;
     background: #F9F9F9;
+    border: 1px solid #E2E4E8;
     display: flex;
     align-items: center;
     justify-content: space-between;
