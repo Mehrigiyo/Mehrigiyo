@@ -12,19 +12,19 @@ import Remember from "../../../../../images/Close_Icon.svg"
 import ItemPage from '../../../../components/ItemPage/ItemPage'
 import { useDispatch, useSelector } from 'react-redux';
 import { actionDoctorByID } from '../../../../../store/reducers/Specialist/specialistDoctors/action'
-function DoctorInfo( {ids}) {
+function DoctorInfo( {ids, data}) {
     const Api="http://207.154.244.140:8000"
     // getDoctorByID
     // useSelector
-    useEffect(()=>{
-        dispatch(actionDoctorByID(1))
-    },[])
-    // actionDoctorByID
-    const dispatch = useDispatch()
+    // useEffect(()=>{
+    //     dispatch(actionDoctorByID(1))
+    // },[])
+    // // actionDoctorByID
+    // const dispatch = useDispatch()
     // useDispatch
     // useEffect
     // const {id} = useParams()
-    const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
+    // const {doctorsData} = useSelector(state => state.dataDoctorsReduser);
 //     let data = ()=>{
 //      for(let i = 0; i < doctorsData.length; i++) {
 //         const element = doctorsData[i];
@@ -34,7 +34,7 @@ function DoctorInfo( {ids}) {
 //      }
 //     }
 // }
-    const {image, full_name, description_uz,experience, type_doctor}  = doctorsData[ids]
+    const {image, full_name, description_uz,experience, type_doctor}  = data
     // const index = data.map()
 
   return (
@@ -47,7 +47,7 @@ function DoctorInfo( {ids}) {
         <div className="doctorInfo">
             <Row >
                 <Col lg={3} className="" >
-                    <img className='doctorInfo__img' src={Api + image } alt="img" />
+                    <img className='doctorInfo__img' src={image } alt="img" />
                 </Col>
                 <Col lg={7} className=''>
                     <div className="doctorInfo__item">
@@ -70,7 +70,7 @@ function DoctorInfo( {ids}) {
                             
                              </Col>
                              <Col lg={4}>
-                                 <DoctorTypeCard image={Api + type_doctor.image }  children={type_doctor.name} icon={Remember} />
+                                 <DoctorTypeCard image={ type_doctor.image }  children={type_doctor.name} icon={Remember} />
                              </Col>
                         </Row>
                     </div>

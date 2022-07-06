@@ -8,6 +8,7 @@ import { Col, Row } from 'react-bootstrap'
 import Day from './_components/Day'
 import Modal from '../../../../components/Modal/Modal'
 
+import sana from "../../../../../icons/sana.svg";
 
 function DoctorBron() {
     const {id} = useParams()
@@ -42,7 +43,7 @@ function DoctorBron() {
               <img src={img} alt="img" />
             </div>
             <div className="DoctorBron__item">
-              <div>Yanvar, 2022 yil <span><img src="" alt="img" /></span></div>
+              <div className='sana'>Yanvar, 2022 yil <span><img src={sana} alt="img" /></span></div>
               <Row >
                 {
                   g.map((item, index)=>(
@@ -58,12 +59,12 @@ function DoctorBron() {
          
             <div className="DoctorBron__item">
                <Row>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
-                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 Selected</p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat Selected'>09:00 - 10:00 </p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 </p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat Booked'>09:00 - 10:00 </p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 </p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 </p></Col>
+                  <Col lg={4}><p className='DoctorBron__soat'>09:00 - 10:00 </p></Col>
                </Row>
             </div>
          </section>

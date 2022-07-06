@@ -17,9 +17,11 @@ import DoctorBron from '../DoctorBron/DoctorBron';
 import ItemPage from '../../../../components/ItemPage/ItemPage';
 function TopDoctors() {
   const [open, setOpen ] = useState()
-   const [isActiveChild, setIsActiveChild ] = useState(true)
+   const [isActiveChild, setIsActiveChild ] = useState(0)
+   useEffect(()=>{
+     setIsActiveChild(0)
+   }, open)
  const {doctorsData, loading} = useSelector(state => state.dataDoctorsReduser);
-console.log(doctorsData);
  const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
  let settings = {
@@ -87,7 +89,7 @@ console.log(doctorsData);
       <div className="globalContainer">
         <div className="topDoctors__head d-flex justify-content-between">
             <h3>Top Shifokorlar</h3>
-            <Button>Batafsil</Button>
+            <Button style={{width: 144}}>Batafsil</Button>
         </div>
         <div className="topDoctors__body">
   
@@ -97,7 +99,7 @@ console.log(doctorsData);
                 {
                     doctorsData.map((item, index)=>(
                       <Col key={index} xs={2}>
-                          <DoctorCard set={()=>setOpen(index)}  data={item} addedFav={addedFav} />
+                          <DoctorCard set={()=>{setOpen(index); setIsActiveChild(true)}}  data={item} addedFav={addedFav} />
                       </Col>
                     ))
                 }
@@ -112,9 +114,9 @@ console.log(doctorsData);
       </div>
     </section>
     
-   { !!open && <Modal boolen={true} > 
-        <ItemPage functions={()=>setIsActiveChild(false)}>
-           { isActiveChild ? <DoctorInfo ids={open}  /> : <DoctorBron   />   }
+   { !!open && <Modal set={setOpen} boolen={false} > 
+        <ItemPage hidden={false} functions={()=>setIsActiveChild(false)}>
+           { isActiveChild ? <DoctorInfo ids={open} data={doctorsData[open]} /> : <DoctorBron   />   }
         </ItemPage>
       </Modal> }
 

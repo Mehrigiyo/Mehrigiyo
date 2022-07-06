@@ -8,7 +8,7 @@ import arrowIcons from '../../../icons/Arrow001.svg'
 
 import './Card.scss'
 
- const Card = ({data}) => {
+ const Card = ({data, link=true}) => {
   // const {title, img, deckriptoin, hashTag, date} = data
   const {id, created_at, description,  description_en,description_ru, description_uz,hashtag,image, name,name_uz} = data
   const sana = new Date(created_at)
@@ -40,7 +40,10 @@ import './Card.scss'
                   {description_uz}
                 </p>
                 </BootstrapCard.Text>
+               {link?
                 <a href="#" className="myCard__link">Ko'proq o'qish <span><img src={arrowIcons} alt="img" /></span></a>
+                 : null
+              }
               </div>
             </BootstrapCard.Body>
        </BootstrapCard>

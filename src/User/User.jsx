@@ -41,29 +41,30 @@ function User() {
       <Routes>
 
          <Route path='/' element={<Layout />} >
+            <Route  path='/' element={<Home />} />
             {/* <Route path="/save" element={<SaveComponents />} /> */}
+            {/* </Route> */}
+
             <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
             <Route path="/lovemedice" element={<LoveMedice />} />{" "}
             <Route path="/shopbox" element={<ShopBox />} />{" "}
 
-            <Route  path='/' element={<Home />} />
 
             <Route path="/onlinedoctor" element={<OnlineDoctor />} />
           <Route path="/product" element={<Product />} /> {" "}
           <Route path="/news" element={<News />} />{" "}
           <Route path="/help" element={<Help />} />{" "}
 
-            {/* </Route> */}
-              {/* <Route path="/product/about" element={<ProductAbout />} />{" "}
-            <Route path="/aboute" element={<About />} />{" "}        
+             {/* <Route path="/product/about" element={<ProductAbout />} />{" "}
+            <Route path="/aboute" element={<About />} />{" "}         */}
             <Route path="/askquestion" element={<AskQuestion />} />{" "}
             <Route path="/doctorslist" element={<DoctorsList />} />{" "}
             <Route path="/productlist" element={<Productlist />} />{" "}
             <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />{" "}
             <Route path="/tohealth" element={<ToHealth />} />{" "}
             <Route path="/fullcard" element={<FullCard />} />{" "}
-            <Route path="/shopmenu m" element={<ShopMenu />} />{" "}
-          */}
+            <Route path="/shopmenu" element={<ShopMenu />} />{" "}
+         
             <Route path="*" element={<h2>404 not found</h2>} />{" "} 
          </Route>
          {/* <Route path="/admin" element={<AdminLayout />} >

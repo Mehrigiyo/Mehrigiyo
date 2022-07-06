@@ -7,19 +7,19 @@ import shox from '../../../images/Group.png'
 import './ItemPage.scss'
 import { Link, useNavigate } from 'react-router-dom'
 
-function ItemPage({children, pageId, functions}) {
+function ItemPage({children, pageId, functions , hidden=true}) {
   const navigete = useNavigate()
   return (
 
       <>
     <section className="itemPage">
      <div className="globalContainer">
-
+{   hidden &&
           <div className="itemPage__reletive">
             <div className="itemPage__close"  >
               <img src={close} alt="img" />
             </div>
-          </div>
+          </div>}
           {children}
           <div className="itemPage__reletive bottom ">
             <div className="itemPage__reletive__item">

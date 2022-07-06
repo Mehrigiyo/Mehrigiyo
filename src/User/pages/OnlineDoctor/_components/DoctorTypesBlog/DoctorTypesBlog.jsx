@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 function DoctorTypesBlog() {
 
     const { data, access } = useSelector(state => state.getTypeDoctors)
-     console.log(data);
    
 
     const apiurl =  `http://207.154.244.140:8000/`

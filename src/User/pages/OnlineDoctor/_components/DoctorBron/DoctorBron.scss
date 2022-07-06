@@ -6,9 +6,19 @@
     margin-top: 60px;
  
     &__item{
+        
         &:nth-child(2){
             margin-top: 10px;
             margin-bottom: 26px;
+            .sana{
+            
+                font-style: italic;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #222222;
+                margin-bottom: 16px;
+            }
         }
     }
 
@@ -23,14 +33,47 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+            color:  rgba(80, 80, 80, .9);
         }
     }
 
     &__soat{
-
+        max-width: 351px;
         border-radius: 13px;
         background: #FFFFFF;
         border: 1px solid #DEE1E6;
         padding: 16px 21px;
+         color: #9093A3;;
+
+         &.Selected{
+             font-family: 'Poppins';
+             font-style: italic;
+             font-weight: 500;
+             font-size: 16px;
+             line-height: 24px;
+             /* identical to box height */
+             color: #222222;
+            display: flex;
+            justify-content: space-between;
+             &::after{
+                content: 'Selected';
+             }
+         }
+         &.Booked{
+            background: rgba(83, 177, 117, 0.1);
+            display: flex;
+            justify-content: space-between;
+            &::after{
+                content: 'Booked';
+           font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            color: #53B175;
+            }
+         }
     }
+
 }

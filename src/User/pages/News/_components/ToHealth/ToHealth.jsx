@@ -46,7 +46,7 @@ function ToHealth() {
                 <Row key={item} className="news__slider">
                   {data.map((data, index) => (
                     <Col className="" key={index} lg={3}>
-                      <Card data={data} />
+                      <Card data={data}  link={false} />
                     </Col>
                   ))}
                 </Row>
