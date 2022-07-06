@@ -79,11 +79,15 @@
   width: auto !important;
   margin-right: 30px;
 }
+.slick-dots{
+  display: none;
+}
 
 .slick-dots li button{
   content: '' !important;
   width: 40px !important;
   height: 15px !important;
   background-color: #000000 !important;
+  display: none !important;
 
 }

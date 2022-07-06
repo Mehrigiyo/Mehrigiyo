@@ -28,7 +28,6 @@ apiRoot.interceptors.request.use((config) => {
   }
  
   if (config.url.includes("login/")) {
-    console.log('login ishladi');
     return config;
   }
   if (config.headers !== undefined) {

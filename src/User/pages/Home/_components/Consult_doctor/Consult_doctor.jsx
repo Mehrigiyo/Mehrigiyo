@@ -14,12 +14,12 @@ import { useSelector } from "react-redux";
 
 const ConsultDoctor = () => {
 
-    const { data } = useSelector(state => state.getTypeDoctors)
-  const nameApi = (e) =>{
-    const sortName = data.map((item) => item.name)
-    const sortFilter =  sortName.filter((item)=> item === e)
-    return sortFilter.length
-  } 
+    const { data, access } = useSelector(state => state.getTypeDoctors)
+//   const nameApi = (e) =>{
+//     const sortName = data?.results.map((item) => item.name)
+//     const sortFilter =  sortName.filter((item)=> item === e)
+//     return sortFilter.length
+//   } 
 
   const apiurl =  `http://207.154.244.140:8000/`
     return (
@@ -33,21 +33,23 @@ const ConsultDoctor = () => {
             <Container style={{ maxWidth: 960 }}>
                 <Row>
                     {
-                        data.filter(( _, index)=> index < 4).map((item, index) => (
+                    access ?
+                        data?.results.map((item, index) => (
                             
                             <Col key={index} lg={3}>
                                 <div className="consult_doctor_item">
                                     <div className="consult_doctor_image">
-                                        <img src={apiurl + item.image} alt="image" />
+                                        <img src={ item.image} alt="image" />
                                     </div>
                                     <div className="consult_doctor_text">
                                         <h3>{item.name}</h3>
-                                        <p>{nameApi(item.name)} shifokor</p>
+                                        <p>{item.get_doctors_count} shifokor</p>
                                     </div>
                                 </div>
                             </Col>
                         )
                         )
+                        : null
                     }
                     {/* <Col lg={3}>
                         <NavLink to="/doctorslist">

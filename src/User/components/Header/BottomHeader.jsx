@@ -11,7 +11,6 @@ import Cart from "../../../icons/Cart.svg";
 import Activedoctor from  "../../../icons/avticeDoctor.svg"
 import AcitiveLove from "../../../icons/activeLove.svg";
 import { DownSvg } from "../IconSvg/IconSvg";
-import ActiveShop from '../../../images/active_shop.svg'
 import { useDispatch } from "react-redux";
 import { actionChangeRouter } from "../../../store/ChangeRouter/action";
 

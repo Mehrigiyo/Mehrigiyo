@@ -15,7 +15,6 @@ function MyAccount() {
 
     const { userData, logindate}  = useSelector((state)=> state.usermeReducer)
     const dispatch = useDispatch();
-     console.log(logindate);
     const data = userObj
    
     // const {logindate:h, error:k} = useSelector((state)=>state.dataUserMe)

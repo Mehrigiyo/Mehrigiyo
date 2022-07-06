@@ -8,13 +8,9 @@ import DoctorTypeCard from "../../../../components/DoctorTypeCard/DoctorTypeCard
 import { useSelector } from "react-redux";
 function DoctorTypesBlog() {
 
-    const { data } = useSelector(state => state.getTypeDoctors)
-
-    const nameApi = (e) =>{
-        const sortName = data.map((item) => item.name)
-        const sortFilter =  sortName.filter((item)=> item === e)
-        return sortFilter.length
-      } 
+    const { data, access } = useSelector(state => state.getTypeDoctors)
+     console.log(data);
+   
 
     const apiurl =  `http://207.154.244.140:8000/`
     return (
@@ -25,14 +21,25 @@ function DoctorTypesBlog() {
             </div>
             <div className="DoctorTypesBlog__Card">
                 <Row style={{ marginTop: 30 }}>
-                    {
-                        data.filter((_, index) => index < 12).map((item) => (
+                    {access?
+                        data?.results.filter((_, index) => index < 12).map((item) => (
                             <Col lg={2}>
                                 {/* <NavLink to="doctorslist"> */}
-                                    <DoctorTypeCard image={apiurl + item.image} children={item.name} number={'194 shifokor'} icon={Remember}></DoctorTypeCard>
+                                    <DoctorTypeCard image={item.image} children={item.name} number={'194 shifokor'} icon={Remember}></DoctorTypeCard>
                                 {/* </NavLink> */}
                             </Col>
                         ))
+                        : null
+                    }
+               {access?
+                        data?.results.filter((_, index) => index < 12).map((item) => (
+                            <Col lg={2}>
+                                {/* <NavLink to="doctorslist"> */}
+                                    <DoctorTypeCard image={item.image} children={item.name} number={'194 shifokor'} icon={Remember}></DoctorTypeCard>
+                                {/* </NavLink> */}
+                            </Col>
+                        ))
+                        : null
                     }
                 </Row>
             </div>

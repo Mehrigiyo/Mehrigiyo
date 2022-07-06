@@ -7,7 +7,7 @@ import shox from '../../../images/Group.png'
 import './ItemPage.scss'
 import { Link, useNavigate } from 'react-router-dom'
 
-function ItemPage({children, pageId}) {
+function ItemPage({children, pageId, functions}) {
   const navigete = useNavigate()
   return (
 
@@ -15,18 +15,18 @@ function ItemPage({children, pageId}) {
     <section className="itemPage">
      <div className="globalContainer">
 
-      <div className="itemPage__reletive">
-        <div className="itemPage__close" onClick={()=>navigete(-1)} >
-          <img src={close} alt="img" />
-        </div>
-      </div>
-      {children}
-      <div className="itemPage__reletive bottom ">
-            <div className="itemPage__reletive__item">
-              <Link to={`/onlinedoctor/doctors/${pageId}`} >
-                <GreenButton > Appointment</GreenButton>
-              </Link>
+          <div className="itemPage__reletive">
+            <div className="itemPage__close"  >
+              <img src={close} alt="img" />
             </div>
+          </div>
+          {children}
+          <div className="itemPage__reletive bottom ">
+            <div className="itemPage__reletive__item">
+              {/* <Link to={`/onlinedoctor/doctors/${pageId}`} > */}
+               <span onClick={functions} > <GreenButton  > Appointment</GreenButton></span>
+              {/* </Link> */}
+          </div>
       </div>
            
       

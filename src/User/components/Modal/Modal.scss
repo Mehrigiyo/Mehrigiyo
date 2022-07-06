@@ -6,8 +6,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
   max-height: 98vh;
+  max-width: 98vw;
+  
   overflow-x: hidden;
   overflow-y: auto;
+  &_item{
+    max-width: 98vw;
+  }
    &::-webkit-scrollbar {
     width: 15px;
   }

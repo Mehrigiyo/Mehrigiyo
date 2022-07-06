@@ -12,6 +12,7 @@ import { NewsGetData } from "../../../store/reducers/news/action";
 function NewsComponent() {
   const [count, setCount] = useState(0);
   const   {data,  loading, error} = useSelector(state => state.newsDataReduser)
+  // const 
   // { loading, access , data, error} 
   // data[0]
   const dispatch = useDispatch()
@@ -111,7 +112,7 @@ function NewsComponent() {
                     <Slider {...settings}>
                       { 
                       
-                     data.map((data, index) => (
+                     data?.results.map((data, index) => (
                         <Col className="" key={index} xs={3}>
                           <Card data={data} />
                         </Col>

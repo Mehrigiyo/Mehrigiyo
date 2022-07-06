@@ -4,11 +4,9 @@ import { setToken } from '../userme';
 
 export const loginPost = (object) => async(dispatch) => {
     await dispatch({ type: POST_LOGIN_LOADING });
-    console.log(object);
     try {
         const {data} = await post(object);
         //  if(data?.data?.access)
-        console.log(data);
           setToken(data?.access)
         await dispatch({ type: POST_LOGIN_SUCCESS, payload: data });
 

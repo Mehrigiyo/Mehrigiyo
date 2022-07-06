@@ -19,10 +19,8 @@ export default function Hero() {
   const [counter , setCounter] = useState(-1)
 
   const handlerClick = ()=>{
-    console.log(counter);
     setCounter(prev => prev +  1)
   }
-  console.log(counter);
   useEffect(()=>{
       setCounter(prev => prev +  1)
   },[])

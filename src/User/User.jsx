@@ -34,21 +34,14 @@ import SaveComponents from "./components/SaveComponents/SaveComponents";
 
 function User() {
   const {access} = useSelector(state => state.usermeReducer)
-  const token = localStorage.getItem('token')
-  const dispacht = useDispatch()
-
-  useEffect(()=>{
-    console.log('getUser');
-    dispacht(userGet())
-  }, [])
+ 
   return (
     <>
     
       <Routes>
 
          <Route path='/' element={<Layout />} >
-            {/* <Route path="/:params"   /> */}
-            <Route path="/save" element={<SaveComponents />} />
+            {/* <Route path="/save" element={<SaveComponents />} /> */}
             <Route path="/lovedoctors" element={<LoveDoctor />} />{" "}
             <Route path="/lovemedice" element={<LoveMedice />} />{" "}
             <Route path="/shopbox" element={<ShopBox />} />{" "}
@@ -56,20 +49,22 @@ function User() {
             <Route  path='/' element={<Home />} />
 
             <Route path="/onlinedoctor" element={<OnlineDoctor />} />
+          <Route path="/product" element={<Product />} /> {" "}
+          <Route path="/news" element={<News />} />{" "}
+          <Route path="/help" element={<Help />} />{" "}
 
-            <Route path="/news" element={<News />} />{" "}
-            <Route path="/help" element={<Help />} />{" "}
-            <Route path="/product" element={<Product />} />{" "}
+            {/* </Route> */}
+              {/* <Route path="/product/about" element={<ProductAbout />} />{" "}
             <Route path="/aboute" element={<About />} />{" "}        
             <Route path="/askquestion" element={<AskQuestion />} />{" "}
             <Route path="/doctorslist" element={<DoctorsList />} />{" "}
             <Route path="/productlist" element={<Productlist />} />{" "}
-            <Route path="/productabout" element={<ProductAbout />} />{" "}
             <Route path="/onlinedoctor/:id" element={<DoctorInfo />} />{" "}
             <Route path="/tohealth" element={<ToHealth />} />{" "}
             <Route path="/fullcard" element={<FullCard />} />{" "}
             <Route path="/shopmenu m" element={<ShopMenu />} />{" "}
-            <Route path="*" element={<h2>404 not found</h2>} />{" "}
+          */}
+            <Route path="*" element={<h2>404 not found</h2>} />{" "} 
          </Route>
          {/* <Route path="/admin" element={<AdminLayout />} >
             <Route path="/" element={<Managementpanel />} />

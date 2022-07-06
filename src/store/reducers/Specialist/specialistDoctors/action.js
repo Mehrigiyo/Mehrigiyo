@@ -8,7 +8,8 @@ export const actionGetDoctors = () => async (dispatch) => {
   await dispatch({ type: GET_TOPDOCTOR_LOADING });
   try {
     const { data } = await productget();
-    await dispatch({ type: GET_TOPDOCTOR_SUCCESS, payload: data?.data });
+    console.log(data);
+    await dispatch({ type: GET_TOPDOCTOR_SUCCESS, payload: data?.data?.results });
   } catch (error) {
     dispatch({ type: GET_TOPDOCTOR_ERROR, payload: error });
   }

@@ -29,7 +29,7 @@ function DoctorBron() {
     
   return (
       <>
-      <ItemPage>
+      {/* <ItemPage> */}
 
          {/* <div>DoctorBron <h1>{id}</h1></div> */}
 
@@ -67,7 +67,7 @@ function DoctorBron() {
                </Row>
             </div>
          </section>
-      </ItemPage>
+      {/* </ItemPage> */}
       </>
   )
 }

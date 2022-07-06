@@ -8,8 +8,8 @@ import { MdOutlineBookmarkAdded } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { postFavoriteDoc , favoritDoctorDel , getFavoritDoctors} from "../../../../../store/reducers/user/FavoritDoctor/action";
 import { useDispatch, useSelector } from "react-redux";
-function DoctorCard({ data,addedFav }) {
-  const Api = "http://207.154.244.140:8000";
+import Modal from "../../../../components/Modal/Modal";
+function DoctorCard({ data,addedFav, set }) {
 
   const dispatch = useDispatch();
   const {loading} = useSelector(state=> state.favoritDoctors)
@@ -29,7 +29,7 @@ function DoctorCard({ data,addedFav }) {
         <div className="doctorCard__imm ">
           <img
             className="doctorCard__img__first"
-            src={Api + data.image}
+            src={ data.image}
             alt="img"
           />
           <button className="doctorCard__img__button">TOP</button>
@@ -50,9 +50,9 @@ function DoctorCard({ data,addedFav }) {
               data.full_name.split(" ")[1]}
           </h5>
           <span>⭐️ 4.5 (135 reviews)</span>
-          <Link to={`/onlinedoctor/${data.id}`}>
-            <button className="doctorCard__button">Appointment</button>
-          </Link>
+          {/* <Link to={`/onlinedoctor/${data.id}`}> */}
+            <button onClick={set} className="doctorCard__button">Appointment</button>
+          {/* </Link> */}
         </div>
       </div>
     </>

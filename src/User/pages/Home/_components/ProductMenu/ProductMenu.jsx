@@ -56,7 +56,7 @@ function ProductMenu() {
 
     const newArrays = TabData.map((item, index) => (
         <Col key={index} lg={3}>
-            <NavLink to="/productabout">
+            <NavLink to="/product/about">
                 <ProductCard data={item}/>
             </NavLink>
         </Col>

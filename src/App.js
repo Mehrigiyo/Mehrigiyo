@@ -18,7 +18,6 @@ function App() {
    if(!!localStorage.getItem('token')){
      dispatch(userGet())
    }
-   console.log(active);
    if(!!localStorage.getItem('token') && !active ){
      setActive(true)
    }

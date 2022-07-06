@@ -5,6 +5,8 @@ import { Col, Container, Row, Accordion } from 'react-bootstrap';
 import Slider2 from "../../../../../images/slider-4.png";
 import Slider3 from "../../../../../images/slider-6.png";
 import Slider1 from "../../../../../images/slider-9.png";
+import Product from "../../../../../images/mehrigiyoProduct01.jpg";
+
 import InfoIcon from "../../../../../icons/info.svg";
 import HeartIcon from "../../../../../icons/heart.svg";
 import StartIcon from "../../../../../icons/star.svg";
@@ -26,7 +28,7 @@ function ProductAbout() {
     //     })
     // }
 
-    const [activeImage, setActiveImage] = useState({img:Slider1, activeClass:" active"})
+    const [activeImage, setActiveImage] = useState({img:Product, activeClass:" active"})
     
     function HandleImage(e){
         setActiveImage({img:e.target.src})
@@ -51,19 +53,19 @@ function ProductAbout() {
             </div> */}
             <Container style={{ maxWidth: 960 }}>
                 <Row>
-                    <Col lg={4}>
-                        <div className="wrapper_slider">
+                    <Col lg={5}>
+                        <div className="wrapper_slider border">
                             <div className="slider_items">
                                 <img onClick={(e)=>HandleImage(e)} className='thumbnail' src={Slider1} alt="" />
                                 <img onClick={(e)=>HandleImage(e)} className='thumbnail' src={Slider2} alt="" />
-                                <img onClick={(e)=>HandleImage(e)} className='thumbnail' src={Slider3} alt="" />
+                                {/* <img onClick={(e)=>HandleImage(e)} className='thumbnail' src={Slider3} alt="" /> */}
                             </div>
                             <div className="slider_featured">
                                 <img id='featured' src={activeImage.img} alt="" />
                             </div>
                         </div>
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={7}>
                         <div className="right_slider_about">
                             <div className="slider_about_title">
                                 <div className="slider_name">

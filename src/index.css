@@ -13,6 +13,14 @@ button {
     border: none;
 }
 
+input[type=number] {
+    -moz-appearance: textfield !important;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;

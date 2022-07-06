@@ -64,7 +64,6 @@ const Login = ({set}) => {
  
   useEffect(()=>{
     if (data?.refresh) {
-      console.log('ishladi ');
          setNum(1);
     }
   },[data])

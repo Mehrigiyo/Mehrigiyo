@@ -12,14 +12,13 @@ import './Card.scss'
   // const {title, img, deckriptoin, hashTag, date} = data
   const {id, created_at, description,  description_en,description_ru, description_uz,hashtag,image, name,name_uz} = data
   const sana = new Date(created_at)
-
   const urlnews = "http://207.154.244.140:8000/"
   return (
     <>
       {/* <section className='bg'> */}
       <BootstrapCard  className='myCard'>
             <div className="myCard__img">
-            <BootstrapCard.Img  variant="top" src={urlnews + image} />
+            <BootstrapCard.Img  variant="top" src={image} />
             {/* <img  src={src} alt="play" /> */}
             </div>
             <BootstrapCard.Body>

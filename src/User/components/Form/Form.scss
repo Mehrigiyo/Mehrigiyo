@@ -52,6 +52,37 @@
             /* grey */
             color: #B0B7C3;
             margin-top: 24px;
+
+                &:focus-within{
+                 color: #53B175;
+                }
+                .drob_down{
+                    position: absolute;
+                    background-color: rgb(255, 255, 255, .2);
+                    li{
+                        position: relative;
+                        padding: 5px 0;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        display: none;
+                        transition: all .5 ease-in-out;
+                        &:first-child{
+                            display: flex;
+                            z-index: 550;
+                        }
+                        
+                       
+                    }
+
+                    &.active{
+                        li{
+                            position: relative;
+                            display: flex;
+                            
+                        }
+                    }
+                }
         }
         input {
             border-bottom: 1px solid rgba(177, 184, 196, 0.5);
@@ -63,6 +94,9 @@
             &:focus {
                 border-bottom: 1px solid #53B175;
             }
+        }
+        #tel{
+            padding-left: 50px;
         }
         .savol {
             margin-top: 24px;

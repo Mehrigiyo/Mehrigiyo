@@ -10,11 +10,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Slider from 'react-slick';
 import { getFavoritDoctors } from '../../../../../store/reducers/user/FavoritDoctor/action';
-
+import Modal from '../../../../components/Modal/Modal'
+import { useState } from 'react';
+import DoctorInfo from '../DoctorInfo/DoctorInfo';
+import DoctorBron from '../DoctorBron/DoctorBron';
+import ItemPage from '../../../../components/ItemPage/ItemPage';
 function TopDoctors() {
-
+  const [open, setOpen ] = useState()
+   const [isActiveChild, setIsActiveChild ] = useState(true)
  const {doctorsData, loading} = useSelector(state => state.dataDoctorsReduser);
-
+console.log(doctorsData);
  const { favoriteDoc=[] } = useSelector((state) => state.favoritDoctors);
 
  let settings = {
@@ -92,7 +97,7 @@ function TopDoctors() {
                 {
                     doctorsData.map((item, index)=>(
                       <Col key={index} xs={2}>
-                          <DoctorCard data={item} addedFav={addedFav} />
+                          <DoctorCard set={()=>setOpen(index)}  data={item} addedFav={addedFav} />
                       </Col>
                     ))
                 }
@@ -107,7 +112,11 @@ function TopDoctors() {
       </div>
     </section>
     
-    {/* <Modal>smodal</Modal> */}
+   { !!open && <Modal boolen={true} > 
+        <ItemPage functions={()=>setIsActiveChild(false)}>
+           { isActiveChild ? <DoctorInfo ids={open}  /> : <DoctorBron   />   }
+        </ItemPage>
+      </Modal> }
 
     </>
   )
