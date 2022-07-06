@@ -21,6 +21,7 @@ function LoveDoctors({ title = "Saqlangan shifokorlar", name = "/ Saqlangan shif
   const addedFav = (id) => {
     return favoriteDoc.filter((a) => a.id === id).length > 0;
   };
+  console.log(favoriteDoc);
   return (
     <SaveComponents>
        {favoriteDoc?.length > 0 ? 
